@@ -1,0 +1,96 @@
+.btn, a.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: MazdaTypeTT;
+  cursor: pointer;
+  letter-spacing: 0.25em;
+  transition: ease 0.4s all;
+  display: inline-block;
+  line-height: 1.2em;
+}
+
+.btn-primary, a.btn-primary {
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+}
+
+.btn-primary:hover, a.btn-primary:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+}
+
+.btn-underline, a.btn-underline {
+  color: var(--clr-primary);
+  border-bottom: solid 1px var(--clr-primary);
+  letter-spacing: 0;
+  width: max-content;
+  border-radius: 0;
+  margin: 0 auto;
+  padding: 0;
+  text-transform: none;
+}
+
+.btn-outline, a.btn-outline {
+  color: var(--clr-dark-grey);
+  border: solid 1px var(--clr-dark-grey);
+}
+
+.btn-outline:hover, a.btn-outline:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+}
+
+
+/* Buttons on Dark BG */
+.dark-bg .btn-primary, .dark-bg a.btn-primary {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+}
+
+.dark-bg .btn-primary:hover, .dark-bg a.btn-primary:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-grey-dk);
+}
+
+.dark-bg .btn-outline, .dark-bg a.btn-outline {
+  color: var(--clr-white);
+  border: solid 1px var(--clr-white);
+}
+
+.dark-bg .btn-outline:hover, .dark-bg a.btn-outline:hover {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+}
+
+@media (max-width:575px) {
+  
+  .btn:not(.btn-underline) {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+.btn-flex {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width:575px) {
+
+  .btn-flex {
+    flex-direction: column;
+  }
+
+  .btn-flex .btn {
+    text-align: center;
+  }
+    
+}
+
+
+
+
+

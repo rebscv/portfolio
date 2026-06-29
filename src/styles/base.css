@@ -1,0 +1,33 @@
+
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.grey-bg {
+  background-color: var(--clr-grey);
+}
+
+.dark-grey-bg {
+  background-color: var(--clr-dark-grey);
+}
+
+.black-bg {
+  background-color: var(--clr-black);
+}
+
+.dark-bg, .dark-bg p, .dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4, .dark-bg .h1, .dark-bg .h2, .dark-bg .h3, .dark-bg .h4 {
+  color: var(--clr-white);
+}
+
+.white-bg {
+  background-color: var(--clr-white)!important;
+}
+
+img {
+  max-width: 100%;
+}
+

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+p a {
+  color: var(--clr-primary);
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.title-eyebrow {
+  display: block;
+  font-size: 14px;
+}
+
+.section-title {
+  max-width: 800px;
+  width: 100%;
+  display: grid;
+  gap: 8px;
+  line-height: 1;
+}
+
+.section-title.t-center, .t-center .section-title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width:1024px) {
+
+  .anchor {
+    top: -90px;
+  }
+
+  .title-eyebrow {
+    font-size: 20px;
+  }
+    
+}
+
+@media (max-width:1023) {
+  
+  .t-center-below-d {
+    text-align: center;
+  }
+
+}
+
+@media (max-width:767px) {
+  
+  .t-center-below-t {
+    text-align: center;
+  }
+
+}
+
+
+/* =========================
+   Font Sizes
+========================= */
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h1, .h1 {
+  font-size: 1.8em;
+}
+
+h2, .h2 {
+  font-size: 1.5em;
+}
+
+h3, .h3 {
+  font-size: 1.3em;
+}
+
+h4, .h4 {
+  font-size: 1em;
+}
+
+@media (min-width:576px) {
+  
+  h1, .h1 {
+    font-size: 2em;
+  }
+
+  h2, .h2 {
+    font-size: 1.8em;
+  }
+
+  h3, .h3 {
+    font-size: 1.4em;
+  }
+
+  h4, .h4 {
+    font-size: 1.3em;
+  }
+
+}
+
+@media (min-width:1024px) {
+  
+  h1, .h1 {
+    font-size: 2.5em;
+  }
+
+  h2, .h2 {
+    font-size: 2.5em;
+  }
+
+  h3, .h3 {
+    font-size: 1.6em;
+  }
+
+  h4, .h4 {
+    font-size: 1.3em;
+  }
+
+}
