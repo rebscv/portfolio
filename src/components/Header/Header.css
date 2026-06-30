@@ -1,0 +1,19 @@
+header {
+    background-color: var(--clr-grey);
+}
+
+header .lrg-wrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    display: grid;
+    gap: 12px;
+    grid-auto-flow: column;
+}

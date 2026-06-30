@@ -1,0 +1,27 @@
+.hero-content {
+    position: relative;
+}
+
+.hero-content h2 {
+    font-size: 6em;
+}
+
+.hero-content img {
+    width: 100%;
+    max-height: 800px;
+    object-fit: cover;
+}
+
+.hero-layer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: var(--lrg-wrapper);
+    width: 100%;
+    padding: var(--padding-tb) var(--padding-lr); 
+}
+
+.hero-txt {
+    max-width: 33.33%;   
+}

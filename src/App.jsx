@@ -3,8 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainLayout from "./layouts/MainLayout";
 
 import Home from "./pages/Home/Home";
-import Project from "./pages/Project/Project";
+import Projects from "./pages/Projects/Projects";
+import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
 import NotFound from "./pages/NotFound/NotFound";
+
 
 function App() {
 
@@ -16,8 +18,9 @@ function App() {
 
         <Route path="/" element={<MainLayout />}>
 
-          <Route path="/" element={<Home />} />
-          <Route path="/project/:slug" element={<Project />} />
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="projects/:slug" element={<ProjectDetails />} />
 
         </Route>     
 

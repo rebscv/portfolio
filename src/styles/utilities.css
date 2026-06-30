@@ -30,12 +30,22 @@
    Wrappers
 ========================= */
 
+.std-wrapper {
+  max-width: var(--std-wrapper);
+}
+
+.sml-wrapper {
+  max-width: var(--sml-wrapper);
+}
+
+.lrg-wrapper {
+  max-width: var(--lrg-wrapper);
+}
+
 .std-wrapper, .sml-wrapper, .lrg-wrapper, .full-wrapper {
     display: grid;
     gap: var(--wrapper-gap);
-}
-
-.std-wrapper, .sml-wrapper, .lrg-wrapper {
+    margin: 0 auto;
     padding: var(--padding-tb) var(--padding-lr);
 }
 
