@@ -2,7 +2,7 @@
 
 // Images
 // import thumbnail from "../../assets/images/projects/dealership/thumbnail.jpg";
-// import heroImage from "../../assets/images/projects/dealership/hero.jpg";
+import heroPlaceholderImg from "../../assets/projects/dealerships/dealership-placeholder.webp";
 
 const dealership = {
   id            : 2,
@@ -11,7 +11,7 @@ const dealership = {
   subtitle      : "A modern dealership website built with React and Vite.",
   featured      : true,
   year          : 2026,
-  thumbnail     : "",
+  thumbnail     : heroPlaceholderImg,
   heroImage     : "",
   technologies: [
     "React",

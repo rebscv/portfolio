@@ -1,10 +1,10 @@
 :root {
 	--std-wrapper: 1444px;
 	--sml-wrapper: 1000px;
-	--lrg-wrapper: 1824px;
+	--lrg-wrapper: 1800px;
 	--padding-lr: 24px;
 	--padding-tb: 24px;
-	--padding-lr-d: 48px;
+	--padding-lr-d: 40px;
 	--padding-tb-d: 80px;
 
   --grid-gap: 24px;
