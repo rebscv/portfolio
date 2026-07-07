@@ -1,4 +1,4 @@
-import ProjectsGrid from "../../components/ProjectsGrid/ProjectsGrid";
+import ProjectsGrid from "../../components/Projects/ProjectsGrid/ProjectsGrid";
 
 function Projects() {
 

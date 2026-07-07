@@ -23,6 +23,10 @@ body {
   color: var(--clr-white);
 }
 
+.dark-bg p, .dark-bg p a {
+  color: var(--clr-dark-bg-base);
+}
+
 .white-bg {
   background-color: var(--clr-white)!important;
 }

@@ -4,7 +4,7 @@ import MainLayout from "./layouts/MainLayout";
 
 import Home from "./pages/Home/Home";
 import Projects from "./pages/Projects/Projects";
-import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
+import Project from "./pages/Project/Project";
 import NotFound from "./pages/NotFound/NotFound";
 
 
@@ -20,7 +20,7 @@ function App() {
 
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="projects/:slug" element={<ProjectDetails />} />
+          <Route path="projects/:slug" element={<Project />} />
 
         </Route>     
 

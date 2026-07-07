@@ -1,38 +1,17 @@
 // src/data/projects/dealership.js
 
-
+// Images
 // import thumbnail from "../../assets/images/projects/dealership/thumbnail.jpg";
-import { data } from "react-router-dom";
 import heroPlaceholderImg from "../../assets/projects/dealerships/dealership-tile-placeholder-1.webp";
 
 const dealership = {
-  id            : 1,
-  slug          : "react-dealership",
-  title         : "React Dealership",
+  id            : 3,
+  slug          : "react-dealership-two",
+  title         : "React Dealership Two",
   subtitle      : "A modern dealership website built with React and Vite.",
   featured      : true,
   year          : 2026,
   thumbnail     : heroPlaceholderImg,
-  
-  sections      : [
-    {
-      type      : "hero",
-      data      : "hero"
-    },
-    {
-      type      : "intro",
-      data      : "intro"
-    }
-  ],
-
-  hero: {
-    title     : "My Hero Banner"
-  },
-
-  intro: {
-
-  },
-
   heroImage     : "",
   technologies: [
     "React",
@@ -45,9 +24,6 @@ const dealership = {
   overview      : "A fully responsive dealership website showcasing reusable React components, routing, animations, responsive layouts and modern frontend development practices.",
   github        : "",
   liveSite      : "",
-
-
-
 };
 
 export default dealership;

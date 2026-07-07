@@ -1,0 +1,36 @@
+.skill-name {
+    color: #999999;
+    background-color: #222222;
+    border: #2b2b2b 1px solid;
+    font-size: 11px;
+    line-height: 1;
+    display: block;
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.skill-col {
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    gap: 32px;
+    background-color: var(--clr-black);
+    border-radius: 8px;
+    padding: 48px 24px;
+    border: #1c1c1c 1px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-col::after {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    right: -250px;
+    bottom: -250px;
+    border-radius: 50%;
+    background: radial-gradient( circle, #ffffff0a, #ffffff00, transparent 75% );
+    pointer-events: none;
+}

@@ -1,6 +1,6 @@
 import "./FeaturedProjects.css";
 
-import projects from "../../data/projects";
+import projects from "../../../data/projects";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
 function FeaturedProjects () {
@@ -8,12 +8,10 @@ function FeaturedProjects () {
     const featuredProjects = projects.filter(project => project.featured);
 
     return (
-        <section className="featured-projects dark-bg black-bg">
+        <section className="featured-projects black-bg">
             <div className="lrg-wrapper">
-                
-                <h2>Featured Projects</h2>
 
-                <div className="grid-d-three-cols">
+                <div className="featured-projects-grid grid-d-four-cols">
                     {featuredProjects.map(project => (
                         <ProjectCard
                             key={project.id}

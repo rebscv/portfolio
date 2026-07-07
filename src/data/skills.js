@@ -1,3 +1,6 @@
+import html5Img from "../assets/skills/html5.webp";
+import css3Img from "../assets/skills/css3.webp";
+
 const skills = {
 
   frontend : {
@@ -5,17 +8,18 @@ const skills = {
       {
         id          : 1,
         title       : "HTML5",
-        description : "my skills"
+        description : "my skills",
+        image       : html5Img
       },
       {
         id          : 2,
         title       : "CSS3",
-        description : "my skills 2"
+        image       : css3Img
       },
       {
         id          : 3,
         title       : "JSS",
-        description : "my skills 3"
+        image       : html5Img
       }
     ]
   },
@@ -25,22 +29,22 @@ const skills = {
       {
         id          : 1,
         title       : "Git",
-        description : "my skills"
+        image       : html5Img
       },
       {
         id          : 2,
         title       : "Figma",
-        description : "my skills 2"
+        image       : html5Img
       },
       {
         id          : 3,
         title       : "Photoshop",
-        description : "my skills 3"
+        image       : html5Img
       },
       {
         id          : 4,
         title       : "WordPress",
-        description : "my skills 3"
+        image       : html5Img
       }
     ]
   }

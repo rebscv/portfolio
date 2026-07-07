@@ -2,7 +2,7 @@
 
 // Images
 // import thumbnail from "../../assets/images/projects/dealership/thumbnail.jpg";
-import heroPlaceholderImg from "../../assets/projects/dealerships/dealership-placeholder.webp";
+import heroPlaceholderImg from "../../assets/projects/dealerships/dealership-tile-placeholder-2.webp";
 
 const dealership = {
   id            : 2,
