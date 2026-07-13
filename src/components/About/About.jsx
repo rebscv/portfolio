@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "./About.css";
 
+import aboutImg from "../../assets/about-placeholder.webp";
+
 function About() {
     return (
         <section className="about-content dark-bg black-bg">
@@ -26,7 +28,7 @@ function About() {
                     </div>
 
                     <div className="grid-d-col-5">
-
+                        <img src={aboutImg} alt="" />
                     </div>
 
                 </div>

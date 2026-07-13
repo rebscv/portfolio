@@ -31,6 +31,10 @@ p a:hover {
   text-align: center;
 }
 
+.t-white {
+  color: var(--clr-white)!important;
+}
+
 .title-eyebrow {
   width: fit-content;
   display: block;

@@ -13,6 +13,8 @@ function Skills() {
                     <span>Frontend & Tools</span>
                 </h2>
 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin nisl vel massa placerat vestibulum. Sed lobortis quam vel elit condimentum, vitae tempus arcu dictum. Nulla turpis augue, maximus eget nisi ut, tincidunt sagittis dui. Donec id lacus eget justo finibus dictum quis bibendum ante.</p>
+
 
             
                 {Object.entries(skillsContent).map(([categoryName, categery]) => (

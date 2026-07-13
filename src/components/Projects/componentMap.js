@@ -1,5 +1,7 @@
 import Hero from "./Hero/Hero";
-// import Intro from "./Intro/Intro";
+import SummaryBlock from "./SummaryBlock/SummaryBlock";
+import TextBlock from "./TextBlock/TextBlock";
+import ImageBlock from "./ImageBlock/ImageBlock";
 // import Section from "./Section/Section";
 // import Image from "./Image/Image";
 // import Gallery from "./Gallery/Gallery";
@@ -7,10 +9,10 @@ import Hero from "./Hero/Hero";
 // import CTA from "./CTA/CTA";
 
 const componentMap = {
-    hero: Hero
-    // intro: Intro,
-    // section: Section,
-    // image: Image,
+    hero: Hero,
+    summary: SummaryBlock,
+    textblock: TextBlock,
+    image: ImageBlock
     // gallery: Gallery,
     // techStack: TechStack,
     // cta: CTA

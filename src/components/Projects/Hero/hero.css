@@ -1,0 +1,28 @@
+.project-hero .full-wrapper {
+    position: relative;
+}
+
+.project-hero img {
+    display: block;
+}
+
+.hero-banner-layer {
+    position: absolute;
+    max-width: var(--std-wrapper);
+    width: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.hero-banner-text {
+    padding: var(--padding-tb) var(--padding-lr);
+}
+
+@media (min-width:1024px) {
+
+    .hero-banner-text {
+        padding: var(--padding-tb-d) var(--padding-lr-d);
+    }    
+
+}
