@@ -15,11 +15,12 @@ function FeaturedProjects () {
                     {featuredProjects.map(project => (
                         <ProjectCard
                             key={project.id}
+                            project={project}
                             slug={project.slug}
                             title={project.title}
                             subtitle={project.subtitle}
                             thumbnail={project.thumbnail}
-                            technologies={project.technologies}
+                            summary={project.summary}
                         />
                     ))}
                 </div>

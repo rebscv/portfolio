@@ -3,7 +3,7 @@ function SummaryBlock ({ wrapperClass, bgClass, metadata, technologies, github, 
     const labels = { role: "Role", projectType: "Project Type", year: "Year", status: "Status" };
 
     return (
-        <section className={`${bgClass || 'dark-bg black-bg'} project-summary`}>
+        <section className={`project-summary ${bgClass || 'dark-bg black-bg'}`}>
             <div className={`${wrapperClass || 'std-wrapper'}`}>
 
                 <h2>Summary</h2>
@@ -26,7 +26,6 @@ function SummaryBlock ({ wrapperClass, bgClass, metadata, technologies, github, 
                         ))}
                     </ul>
                 </div>
-
 
                 <div className="project-summary-links">
                     <div className="btn-flex">

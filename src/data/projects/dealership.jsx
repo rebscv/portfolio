@@ -32,16 +32,24 @@ const dealership = {
       data      : "summary"
     },
     {
-      type      : "textblock",
+      type      : "textBlock",
       data      : "overview"
     },
     {
-      type      : "fetureGrid",
-      data      : "features"
+      type      : "featuresGrid",
+      data      : "featuresGrid"
     },
     {
       type      : "gallery",
       data      : "gallery"
+    },
+    {
+      type      : "techStack",
+      data      : "techStack"
+    },
+    {
+      type      : "cta",
+      data      : "contact"
     }
   ],
 
@@ -78,8 +86,10 @@ const dealership = {
     liveSite          : "My Live Site link"
   },  
 
-  features: {
+  featuresGrid: {
+    bgClass       : "dark-grey-bg dark-bg",
     wrapperClass  : "std-wrapper",
+    gridColumns   : "grid-d-four-cols",
     title         : "Key Features",
 
     items: [
@@ -112,27 +122,55 @@ const dealership = {
   },
 
   gallery : {
-    wrapperClass  : "xl-wrapper",
+    wrapperClass  : "lrg-wrapper",
     title         : "Project Gallery",
 
     items         : [
       {
-        // image         : homepageImg,
+        id            : "1",
+        image         : thumbPlaceholderImg,
         title         : "Homepage",
         description   : "Landing page with featured vehicles."
       },
       {
-        // image         : stockImg,
-        title         : "Stock Search",
-        description   : "Filtering and sorting functionality."
+        id            : "2",
+        image         : thumbPlaceholderImg
       },
       {
-        // image         : modelImg,
-        title         : "Vehicle Details",
-        description   : "Reusable model pages."
+        id            : "3",
+        image         : thumbPlaceholderImg
+      }
+    ]
+  },
+
+  techStack : {
+    bgClass       : "dark-grey-bg dark-bg",
+    wrapperClass  : "std-wrapper",
+    gridColumns   : "grid-d-five-cols",
+    title         : "Technology Stack",
+    items         : [ "HTML5", "CSS3", "JavaScript", "React", "Vite", "Git" ]
+  },
+
+  contact : {
+    wrapperClass  : "std-wrapper",
+    title         : "Interested in working together?",
+    text          : "If you'd like to discuss a project or learn more about my work, I'd love to hear from you.",
+    buttons       :
+    [
+      {
+          label: "Get In Touch",
+          to: "/contact",
+          style: "primary",
+      },
+      {
+          label: "View All Projects",
+          to: "/projects",
+          style: "primary",
       }
     ]
   }
+
+
 
 };
 

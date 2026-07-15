@@ -2,7 +2,12 @@ import { Link } from "react-router-dom";
 
 import "./ProjectCard.css";
 
-function ProjectCard({ slug, title, subtitle, thumbnail, technologies, }) {
+function ProjectCard({ project }) {
+
+    const { slug, title, subtitle, thumbnail, summary, }  = project;
+
+    const technologies = summary?.technologies ?? [];
+
     return (
         <article className="project-card">
 
