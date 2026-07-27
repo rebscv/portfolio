@@ -1,14 +1,14 @@
 // src/data/projects.js
 
-import dealership from "./projects/dealership";
-import dealershipTwoTest from "./projects/dealershipTwoTest";
+import mazdaDealershipReact from "./projects/mazdaDealershipReact";
+import dealershipWordPress from "./projects/dealershipWordPress";
 import dealershipThreeTest from "./projects/dealershipThreeTest";
 import dealershipFourTest from "./projects/dealershipFourTest";
 
 const projects = [ 
 
-  dealership,
-  dealershipTwoTest,
+  mazdaDealershipReact,
+  dealershipWordPress,
   dealershipThreeTest,
   dealershipFourTest,
 

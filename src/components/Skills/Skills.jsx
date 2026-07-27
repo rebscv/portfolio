@@ -1,30 +1,28 @@
 import "./Skills.css";
 import skillsContent from "../../data/skills"
 
+import skillsBg from "../../assets/skills/skills-bg.webp";
+
 function Skills() {
 
   
     return (
-        <section className="skills-content dark-bg black-bg">
-            <div className="lrg-wrapper">
+        <section className="skills-content dark-bg black-bg" style={{ backgroundImage: `url(${skillsBg})` }}>
+            <div className="std-wrapper">
                 
-                <h2>
+                <h2 className="t-center">
                     <span className="title-eyebrow">Skills</span>
-                    <span>Frontend & Tools</span>
+                    <span>Techstacks & Tools</span>
                 </h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin nisl vel massa placerat vestibulum. Sed lobortis quam vel elit condimentum, vitae tempus arcu dictum. Nulla turpis augue, maximus eget nisi ut, tincidunt sagittis dui. Donec id lacus eget justo finibus dictum quis bibendum ante.</p>
-
-
-            
                 {Object.entries(skillsContent).map(([categoryName, categery]) => (
                     <div key={categoryName} className="grid">
-                        <h3>{categoryName}</h3>
-                        <div className="skills-content-grid grid-d-five-cols">
+
+                        <div className="skills-content-grid grid-d-five-cols grid-t-two-cols">
                         {categery.items.map(skill => (
 
                             <div className="skill-col" key={skill.id}>
-                                <img src={skill.image} alt={skill.title} />
+                                <div className="skill-img"><img src={skill.image} alt={skill.title} /></div>
                                 <div className="skill-name">{skill.title}</div>                                    
                             </div>
 
@@ -34,11 +32,10 @@ function Skills() {
                 ))}
 
 
-
-
-
-
             </div>
+
+            <div className="skills-content-bg"></div>
+
         </section>
     )
 }

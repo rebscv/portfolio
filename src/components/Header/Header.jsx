@@ -3,7 +3,7 @@ import "./Header.css";
 
 function Header() {
     return (
-        <header className="dark-bg black-bg">
+        <header className="dark-bg">
             <div className="lrg-wrapper t-center">
                 <div className="header-flex">
 

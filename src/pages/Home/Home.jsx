@@ -11,8 +11,8 @@ function Home() {
 
             <Hero />
             <FeaturedProjects />
-            <Skills />
             <About />
+            <Skills />
             <Experience />
             <Contact />
 

@@ -4,23 +4,30 @@
 // import thumbnail from "../../assets/images/projects/dealership/thumbnail.jpg";
 import { data } from "react-router-dom";
 import thumbPlaceholderImg from "../../assets/projects/dealerships/dealership-tile-placeholder-1.webp";
+import thumbImg from "../../assets/projects/mazda-dealership-react/thumb.webp";
 import heroImg from "../../assets/projects/react/react-hero.webp"
+import logoImg from "../../assets/projects/react/mazda-logo.webp"
 import heroMobileImg from "../../assets/projects/react/react-hero-m.webp"
 import imagePlaceholder from "../../assets/projects/react/mazda-assured.webp"
 
 const dealership = {
-  id            : 1,
-  slug          : "react-dealership",
-  title         : "React Dealership",
-  subtitle      : "A modern dealership website built with React and Vite.",
-  featured      : true,
-  year          : 2026,
-  thumbnail     : thumbPlaceholderImg,
-  heroImage     : "",
+  id                : 1,
+  slug              : "react-dealership",
+  title             : "React Dealership",
+  subtitle          : "A modern dealership website built with React and Vite.",
+  featured          : true,
+  year              : 2026,
+  thumbnail         : thumbImg,
+  heroImage         : "",
+  platform          : "React",
+  
+  featureTitle      : "React Dealership Demo",
+  featureTagline    : "React Website Development",
+  logo              : logoImg,
 
-  overview      : "A fully responsive dealership website showcasing reusable React components, routing, animations, responsive layouts and modern frontend development practices.",
-  github        : "",
-  liveSite      : "",
+  overview          : "A fully responsive dealership website showcasing reusable React components, routing, animations, responsive layouts and modern frontend development practices.",
+  github            : "",
+  liveSite          : "",
 
   sections      : [
     {

@@ -1,7 +1,7 @@
 import "./FeaturedProjects.css";
 
 import projects from "../../../data/projects";
-import ProjectCard from "../ProjectCard/ProjectCard";
+import FeaturedProjectCard from "../FeaturedProjects/FeaturedProjectCard";
 
 function FeaturedProjects () {
 
@@ -11,9 +11,9 @@ function FeaturedProjects () {
         <section className="featured-projects black-bg">
             <div className="lrg-wrapper">
 
-                <div className="featured-projects-grid grid-d-four-cols">
+                <div className="featured-projects-grid grid-d-four-cols grid-t-two-cols">
                     {featuredProjects.map(project => (
-                        <ProjectCard
+                        <FeaturedProjectCard
                             key={project.id}
                             project={project}
                             slug={project.slug}

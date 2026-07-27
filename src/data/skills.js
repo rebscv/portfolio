@@ -20,32 +20,33 @@ const skills = {
         id          : 3,
         title       : "JSS",
         image       : html5Img
+      },
+      {
+        id          : 4,
+        title       : "Git",
+        image       : html5Img
+      },
+      {
+        id          : 5,
+        title       : "Figma",
+        image       : html5Img
+      },
+      {
+        id          : 6,
+        title       : "Photoshop",
+        image       : html5Img
+      },
+      {
+        id          : 7,
+        title       : "WordPress",
+        image       : html5Img
       }
     ]
   },
 
   Tools : {
     items : [
-      {
-        id          : 1,
-        title       : "Git",
-        image       : html5Img
-      },
-      {
-        id          : 2,
-        title       : "Figma",
-        image       : html5Img
-      },
-      {
-        id          : 3,
-        title       : "Photoshop",
-        image       : html5Img
-      },
-      {
-        id          : 4,
-        title       : "WordPress",
-        image       : html5Img
-      }
+
     ]
   }
 

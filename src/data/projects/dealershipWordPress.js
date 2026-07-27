@@ -2,20 +2,27 @@
 
 // Images
 // import thumbnail from "../../assets/images/projects/dealership/thumbnail.jpg";
-import heroPlaceholderImg from "../../assets/projects/dealership-wordpress/thumb.webp";
+import heroPlaceholderImg from "../../assets/projects/dealerships/dealership-tile-placeholder-2.webp";
+import thumbPlaceholderImg from "../../assets/projects/dealerships/dealership-tile-placeholder-2.webp";
+import thumbImg from "../../assets/projects/dealership-wordpress/thumb.webp";
 import heroImg from "../../assets/projects/react/react-hero.webp"
+import logoImg from "../../assets/projects/dealership-wordpress/mitsubishi-logo.webp"
 import heroMobileImg from "../../assets/projects/react/react-hero-m.webp"
 import imagePlaceholder from "../../assets/projects/react/mazda-assured.webp"
 
 const dealership = {
-  id            : 4,
-  slug          : "react-dealership-four",
-  title         : "React Dealership Four",
+  id            : 2,
+  slug          : "dealership-wordPress",
+  title         : "Dealership WordPress",
   subtitle      : "A modern dealership website built with React and Vite.",
   featured      : true,
   year          : 2026,
-  thumbnail     : heroPlaceholderImg,
+  thumbnail     : thumbImg,
   heroImage     : "",
+  platform      : "WordPress",
+  featureTitle  : "Wordpress Template",
+  logo          : logoImg,
+
   overview      : "A fully responsive dealership website showcasing reusable React components, routing, animations, responsive layouts and modern frontend development practices.",
   github        : "",
   liveSite      : "",

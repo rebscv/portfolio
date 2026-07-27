@@ -1,36 +1,99 @@
+.skills-content {
+    background-image: url("/src/assets/skills-bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.skills-content::before, .skills-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-image: linear-gradient(0deg, transparent, var(--clr-black));
+}
+
+.skills-content::before {
+    background-image: linear-gradient(0deg, var(--clr-black), transparent);
+    top: auto;
+    bottom: 0;
+}
+
+.skills-content-bg {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--clr-black);
+    opacity: 0.9;
+    z-index: 0;
+}
+
+.skills-content > .sml-wrapper, .skills-content > .std-wrapper, .skills-content > .lrg-wrapper, .skills-content > .fulll-wrapper {
+    z-index: 1;
+    position: relative;
+}
+
+
 .skill-name {
-    color: #999999;
-    background-color: #222222;
-    border: #2b2b2b 1px solid;
+    color: var(--clr-white);
+    font-weight: 700;
     font-size: 11px;
+    letter-spacing: var(--extra-text-spacing);
     line-height: 1;
-    display: block;
+    text-transform: uppercase;
     width: fit-content;
-    padding: 4px 8px;
-    border-radius: 8px;
+    display: grid;
+    gap: 16px;
+}
+
+.skill-name::before {
+    content: '';
+    max-width: 32px;
+    height: 1px;
+    width: 100%;
+    background-color: var(--clr-white);
+    display: block;
+    margin: 0 auto;
 }
 
 .skill-col {
     display: grid;
     justify-items: center;
-    align-items: end;
-    gap: 32px;
-    background-color: var(--clr-black);
-    border-radius: 8px;
-    padding: 48px 24px;
-    border: #1c1c1c 1px solid;
-    position: relative;
-    overflow: hidden;
+    gap: 24px;
 }
 
-.skill-col::after {
-    content: "";
+.skill-img {
+    position: relative;
+}
+
+.skill-img img {
+    position: relative;
+    z-index: 2;
+}
+
+.skill-img::after {
+    content: '';
+    z-index: 1;
     position: absolute;
-    width: 700px;
-    height: 700px;
-    right: -250px;
-    bottom: -250px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 120px;
+    height: 50px;
+    background-color: #00000080;
     border-radius: 50%;
-    background: radial-gradient( circle, #ffffff0a, #ffffff00, transparent 75% );
-    pointer-events: none;
+     filter: blur(16px);
+}
+
+@media (min-width: 1024px) {
+
+    
+    .skills-content-grid {
+        gap: 48px;
+    }
+    
 }

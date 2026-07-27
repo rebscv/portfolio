@@ -6,7 +6,7 @@ function ProjectsGrid() {
         <div className="project-grid-content">
             <div className="grid-d-three-cols">
 
-                {projects.map((project) => (<ProjectCard key={project.id} {...project} />))}
+                {projects.map((project) => (<ProjectCard key={project.id} project={project} />))}
                 
             </div>
         </div>

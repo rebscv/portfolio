@@ -7,22 +7,11 @@
 }
 
 .featured-projects-grid {
-    margin-top: -120px;
-    border: solid 2px #fff;
-    border-radius: 8px;
-    padding: var(--grid-gap-d);
-    gap: var(--grid-gap-d);
-    border: 2px solid;
-    border-image: linear-gradient(
-        45deg,
-        #00fffbc4,
-        var(--clr-black),
-        var(--clr-black),
-        #e600ffcb
-    ) 1;
-    overflow: hidden;
-    z-index: 2;
-    background-color: #1a1a1abf;
+    gap: 4px;
+}
+
+.featured-projects .project-card img {
+    display: block;
 }
 
 
