@@ -3,12 +3,14 @@
 
 // import thumbnail from "../../assets/images/projects/dealership/thumbnail.jpg";
 import { data } from "react-router-dom";
-import thumbPlaceholderImg from "../../assets/projects/dealerships/dealership-tile-placeholder-1.webp";
-import thumbImg from "../../assets/projects/mazda-dealership-react/thumb.webp";
-import heroImg from "../../assets/projects/react/react-hero.webp"
-import logoImg from "../../assets/projects/react/mazda-logo.webp"
-import heroMobileImg from "../../assets/projects/react/react-hero-m.webp"
-import imagePlaceholder from "../../assets/projects/react/mazda-assured.webp"
+
+import thumbPlaceholderImg          from "../../assets/projects/dealerships/dealership-tile-placeholder-1.webp";
+import thumbImg                     from "../../assets/projects/mazda-dealership-react/thumb.webp";
+import heroImg                      from "../../assets/projects/mazda-dealership-react/react-hero.webp"
+import logoImg                      from "../../assets/projects/mazda-dealership-react/mazda-logo.webp"
+import heroMobileImg                from "../../assets/projects/mazda-dealership-react/react-hero-m.webp"
+import imagePlaceholder             from "../../assets/projects/mazda-dealership-react/mazda-assured.webp"
+import featuredCaseStudyImg         from "../../assets/projects/mazda-dealership-react/featured-case-study.webp"
 
 const dealership = {
   id                : 1,
@@ -28,6 +30,12 @@ const dealership = {
   overview          : "A fully responsive dealership website showcasing reusable React components, routing, animations, responsive layouts and modern frontend development practices.",
   github            : "",
   liveSite          : "",
+
+  featuredCaseStudy       : true,
+  caseStudyHero           : featuredCaseStudyImg,
+  caseStudyText           : "To learn React, I went through a ‘3 Stage’ system. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus sem vitae nisi lacinia dictum. Integer auctor velit eget magna tempor dapibus. Curabitur auctor diam vel convallis tristique. Aenean nec pellentesque arcu. Duis id tellus eu purus iaculis lobortis eu in urna.",
+
+
 
   sections      : [
     {

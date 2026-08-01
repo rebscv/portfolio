@@ -1,5 +1,12 @@
 import html5Img from "../assets/skills/html5.webp";
+import jsImg from "../assets/skills/js.webp";
 import css3Img from "../assets/skills/css3.webp";
+import wordpressImg from "../assets/skills/wordpress.webp";
+import joomlaImg from "../assets/skills/joomla.webp";
+import drupalImg from "../assets/skills/drupal.webp";
+import photoshopImg from "../assets/skills/photoshop.webp";
+import figmaImg from "../assets/skills/figma.webp";
+import reactImg from "../assets/skills/react.webp";
 
 const skills = {
 
@@ -19,28 +26,39 @@ const skills = {
       {
         id          : 3,
         title       : "JSS",
-        image       : html5Img
+        image       : jsImg
       },
       {
         id          : 4,
-        title       : "Git",
-        image       : html5Img
+        title       : "React*",
+        image       : reactImg
       },
       {
         id          : 5,
-        title       : "Figma",
-        image       : html5Img
+        title       : "WordPress",
+        image       : wordpressImg
       },
       {
         id          : 6,
-        title       : "Photoshop",
-        image       : html5Img
+        title       : "Joomla",
+        image       : joomlaImg
       },
       {
         id          : 7,
-        title       : "WordPress",
-        image       : html5Img
+        title       : "Drupal",
+        image       : drupalImg
+      },
+      {
+        id          : 8,
+        title       : "Photoshop",
+        image       : photoshopImg
+      },
+      {
+        id          : 9,
+        title       : "Figma",
+        image       : figmaImg
       }
+
     ]
   },
 

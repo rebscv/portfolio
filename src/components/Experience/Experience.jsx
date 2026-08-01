@@ -1,4 +1,4 @@
-
+import "./Experience.css";
 function Experience() {
 
     const timeline = {
@@ -32,17 +32,15 @@ function Experience() {
         <section className="experience-content dark-bg black-bg">
             <div className="std-wrapper">
 
-                <h2>
+                <h2 className="t-center">
                     <span className="title-eyebrow">Experience</span>
                     <span>My Timeline</span>
                 </h2>
-                
-                <h2>Timeline</h2>
-
-                <div className="grid">
+            
+                <div className="experience-grid">
                 
                     {timeline.items.map((item) => (
-                        <div key={item.id}>
+                        <div key={item.id} className="experience-item">
                             <h3>{item.title}</h3>
                             <p>{item.description}</p>
                             <p>{item.company}</p>
