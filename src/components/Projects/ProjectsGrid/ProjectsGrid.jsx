@@ -1,10 +1,12 @@
 import projects from "../../../data/projects";
 import ProjectCard from "../../../components/Projects/ProjectCard/ProjectCard";
 
+import "./ProjectsGrid.css";
+
 function ProjectsGrid() {
     return (
         <div className="project-grid-content">
-            <div className="grid-d-three-cols">
+            <div className="project-grid grid-d-three-cols">
 
                 {projects.map((project) => (<ProjectCard key={project.id} project={project} />))}
                 

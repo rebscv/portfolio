@@ -1,16 +1,12 @@
-// src/data/projects/dealership.js
-
-
-// import thumbnail from "../../assets/images/projects/dealership/thumbnail.jpg";
 import { data } from "react-router-dom";
 
-import thumbPlaceholderImg          from "../../assets/projects/dealerships/dealership-tile-placeholder-1.webp";
-import thumbImg                     from "../../assets/projects/mazda-dealership-react/thumb.webp";
-import heroImg                      from "../../assets/projects/mazda-dealership-react/react-hero.webp"
-import logoImg                      from "../../assets/projects/mazda-dealership-react/mazda-logo.webp"
-import heroMobileImg                from "../../assets/projects/mazda-dealership-react/react-hero-m.webp"
-import imagePlaceholder             from "../../assets/projects/mazda-dealership-react/mazda-assured.webp"
-import featuredCaseStudyImg         from "../../assets/projects/mazda-dealership-react/featured-case-study.webp"
+import thumbImg                     from "../../assets/projects/react-dealership/thumb.webp";
+import featuredImg                  from "../../assets/projects/react-dealership/featured-thumb.webp";
+import logoImg                      from "../../assets/projects/react-dealership/logo.webp";
+import heroImg                      from "../../assets/projects/react-dealership/hero.webp"
+import heroMobileImg                from "../../assets/projects/react-dealership/hero-m.webp"
+import featuredCaseStudyImg         from "../../assets/projects/react-dealership/featured-case-study.webp"
+import thumbPlaceholderImg          from "../../assets/projects/react-dealership/featured-case-study.webp"
 
 const dealership = {
   id                : 1,
@@ -23,8 +19,9 @@ const dealership = {
   heroImage         : "",
   platform          : "React",
   
-  featureTitle      : "React Dealership Demo",
-  featureTagline    : "React Website Development",
+  featuredImg       : featuredImg,
+  featureTagline    : "React Dealership Demo",
+  featureTitle      : "React Website Development",
   logo              : logoImg,
 
   overview          : "A fully responsive dealership website showcasing reusable React components, routing, animations, responsive layouts and modern frontend development practices.",

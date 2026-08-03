@@ -9,3 +9,29 @@
     width: 100%;
     height: 100%;
 }
+
+.project-card-content {
+    display: none;
+}
+
+.project-card-block {
+    background-color: #151515;
+    padding: 72px 32px 32px;
+    text-align: center;
+    display: grid;
+    gap: 32px
+}
+
+.project-card-block h3 {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: var(--extra-text-spacing);
+    line-height: 1.6em;
+}
+
+.project-card-img {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}

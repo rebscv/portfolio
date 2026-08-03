@@ -13,11 +13,16 @@ function ProjectCard({ project }) {
 
             <Link to={`/projects/${slug}`}></Link>
 
-            <img src={thumbnail} alt={title} />
+            <div className="project-card-block">
+                <h3>{title}</h3>
+                <div className="project-card-img"><img src={thumbnail} alt={title} /></div>
+            </div>
+
+            
 
             <div className="project-card-content grid">
                 <Link to={`/projects/${slug}`}>View Project</Link>
-                <h3>{title}</h3>
+                
                 <p>{subtitle}</p>
                 <div>
                     {technologies.map((tech) => (<span key={tech}>{tech}</span>))}

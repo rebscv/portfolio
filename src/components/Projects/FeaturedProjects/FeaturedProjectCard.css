@@ -50,9 +50,10 @@
     margin: 0 auto;
     display: block;
     max-width: 96px;
+    max-height: 96px;
 }
 
-.feature-project-header h3 {
+.feature-project-header {
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: var(--extra-text-spacing);

@@ -1,22 +1,46 @@
+
 .project-hero .full-wrapper {
     position: relative;
 }
 
 .project-hero img {
     display: block;
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.25;
 }
 
 .hero-banner-layer {
     position: absolute;
-    max-width: var(--std-wrapper);
     width: 100%;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .hero-banner-text {
     padding: var(--padding-tb) var(--padding-lr);
+    max-width: var(--std-wrapper);
+    width: 100%;
+    text-align: center;
+}
+
+.hero-banner-text h1 {
+    font-size: 6em;
+    letter-spacing: -0.065em;
+    line-height: 0.9em;
+}
+
+.project-hero-fade {
+    position: absolute;
+    bottom: 0;
+    height: 33%;
+    width: 100%;
+    background-image: linear-gradient(0deg, var(--clr-black), transparent);
 }
 
 @media (min-width:1024px) {
