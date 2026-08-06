@@ -1,0 +1,12 @@
+.projects-page .page-hero .page-hero-img {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 360px;
+}
+
+.projects-page .page-hero .page-hero-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

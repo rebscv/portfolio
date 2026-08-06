@@ -1,8 +1,13 @@
+import { data } from "react-router-dom";
+
+import thumbImg                     from "../../assets/projects/skoda/thumb.webp";
+
 const skodaDealer = {
+
   id: 7,
   slug: "škoda-dealer-website",
 
-  title: "Škoda Dealer Website",
+  title: "Cricks Noosa Škoda",
   subtitle: "Case study coming soon.",
 
   featured: false,
@@ -10,7 +15,7 @@ const skodaDealer = {
   year: 2026,
   platform: "WordPress",
 
-  thumbnail: "",
+  thumbnail: thumbImg,
   heroImage: "",
   logo: "",
 

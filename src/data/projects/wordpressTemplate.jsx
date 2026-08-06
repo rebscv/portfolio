@@ -6,11 +6,11 @@ import logoImg                from "../../assets/projects/bmw/logo.webp"
 import featuredCaseStudyImg   from "../../assets/projects/bmw/featured-case-study.webp"
 
 
-const dealership = {
+const wordpressTemplate = {
   id                : 2,
-  slug              : "bmw",
-  title             : "BMW Dealership Website",
-  subtitle          : "A modern dealership website built with React and Vite.",
+  slug              : "wordpress-templates",
+  title             : "WordPress Template Development",
+  subtitle          : "BMW | Ford | FOTON  | Mazda | XPENG",
   featured          : true,
   year              : 2026,
   thumbnail         : thumbImg,
@@ -65,4 +65,4 @@ const dealership = {
 
 };
 
-export default dealership;
+export default wordpressTemplate;

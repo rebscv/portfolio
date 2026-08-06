@@ -11,12 +11,9 @@ p {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:visited {
-  color: inherit;
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
 }
 
 p a {
@@ -113,6 +110,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
   margin: 0;
   letter-spacing: -0.065em;
   line-height: 0.9em;
+  color: var(--clr-head);
 }
 
 h1, .h1 {

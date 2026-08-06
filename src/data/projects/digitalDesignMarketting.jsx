@@ -1,18 +1,23 @@
-const gamingLandingPages = {
-  id: 9,
-  slug: "gaming-landing-pages",
 
-  title: "Gaming Landing Pages",
-  subtitle: "Case study coming soon.",
+import thumbImg           from "../../assets/projects/digital-design/thumb.webp";
+import heroImg            from "../../assets/projects/digital-design/hero.webp"
+import heroMobileImg      from "../../assets/projects/digital-design/hero-m.webp"
+
+const digitalDesignMarketting = {
+
+  id                : 4,
+  id                : 6,
+  slug              : "digital-design",
+
+  title             : "Digital Design & Marketing",
+  subtitle          : "Gaming PCs | PC Hardware | Software",
 
   featured: false,
-
   year: 2026,
   platform: "HTML/CSS",
 
-  thumbnail: "",
-  heroImage: "",
-  logo: "",
+  thumbnail: thumbImg,
+  heroImage: heroImg,
 
   featureTagline: "Gaming Campaigns",
   featureTitle: "Landing Page Development",
@@ -31,7 +36,12 @@ const gamingLandingPages = {
     { type: "summary", data: "summary" }
   ],
 
-  hero: {},
+  hero: {
+    image         : heroImg,
+    imageMobile   : heroMobileImg,
+    imageAlt      : "Mazda",
+    title         : "My React Project"
+  },
 
   summary: {
     bgClass: "",
@@ -54,4 +64,4 @@ const gamingLandingPages = {
   contact: {}
 };
 
-export default gamingLandingPages;
+export default digitalDesignMarketting;

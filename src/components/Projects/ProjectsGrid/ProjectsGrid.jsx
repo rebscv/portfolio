@@ -6,7 +6,7 @@ import "./ProjectsGrid.css";
 function ProjectsGrid() {
     return (
         <div className="project-grid-content">
-            <div className="project-grid grid-d-three-cols">
+            <div className="project-grid grid-d-two-cols">
 
                 {projects.map((project) => (<ProjectCard key={project.id} project={project} />))}
                 

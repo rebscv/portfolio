@@ -1,24 +1,20 @@
-import thumbImg           from "../../assets/projects/mitsubishi/thumb.webp";
-import featuredImg        from "../../assets/projects/mitsubishi/featured-thumb.webp";
-import heroImg            from "../../assets/projects/mitsubishi/hero.webp"
-import heroMobileImg      from "../../assets/projects/mitsubishi/hero-m.webp"
-import logoImg            from "../../assets/projects/mitsubishi/logo.webp"
+import thumbImg                     from "../../assets/projects/model-pages/thumb.webp";
+import heroImg                      from "../../assets/projects/model-pages/hero.webp"
+import heroMobileImg                from "../../assets/projects/model-pages/hero-m.webp"
 
-const dealership = {
+const modelPages = {
   id                : 3,
-  slug              : "mitsubishi",
-  title             : "Dealership WordPress",
-  subtitle          : "A modern dealership website built with React and Vite.",
-  featured          : true,
+  slug              : "model-pages",
+  title             : "Vehicle Model Range Implementation",
+  subtitle          : "Ford | FOTON | XPENG",
   year              : 2026,
   thumbnail         : thumbImg,
   heroImage         : "",
   platform          : "WordPress",
 
-  featuredImg       : featuredImg,
-  featureTagline    : "Chadstone Mitsubishi",
+  featureTagline    : "Cricks Noosa Nissan",
   featureTitle      : "WordPress Website Migration & Development",
-  logo              : logoImg,
+  logo              : "",
 
   overview          : "A fully responsive dealership website showcasing reusable React components, routing, animations, responsive layouts and modern frontend development practices.",
   github            : "",
@@ -59,4 +55,4 @@ const dealership = {
 
 };
 
-export default dealership;
+export default modelPages;

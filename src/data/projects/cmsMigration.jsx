@@ -1,19 +1,22 @@
-import thumbImg                     from "../../assets/projects/nissan/thumb.webp";
-import logoImg                      from "../../assets/projects/nissan/logo.webp";
-import heroImg                      from "../../assets/projects/nissan/hero.webp"
-import heroMobileImg                from "../../assets/projects/nissan/hero-m.webp"
+import thumbImg           from "../../assets/projects/cms-migration/thumb.webp";
+import featuredImg        from "../../assets/projects/cms-migration/featured-thumb.webp";
+import heroImg            from "../../assets/projects/cms-migration/hero.webp"
+import heroMobileImg      from "../../assets/projects/cms-migration/hero-m.webp"
+import logoImg            from "../../assets/projects/cms-migration/logo.webp"
 
-const dealership = {
+const cmsMigration = {
   id                : 5,
-  slug              : "nissan",
-  title             : "Cricks Noosa Nissan",
-  subtitle          : "A modern dealership website built with React and Vite.",
+  slug              : "cms-migration",
+  title             : "CMS Migration & Platform Upgrades",
+  subtitle          : "Toyota | Mitsubishi | Nissan | Škoda | Volkswagen",
+  featured          : true,
   year              : 2026,
   thumbnail         : thumbImg,
   heroImage         : "",
   platform          : "WordPress",
 
-  featureTagline    : "Cricks Noosa Nissan",
+  featuredImg       : featuredImg,
+  featureTagline    : "Chadstone Mitsubishi",
   featureTitle      : "WordPress Website Migration & Development",
   logo              : logoImg,
 
@@ -56,4 +59,4 @@ const dealership = {
 
 };
 
-export default dealership;
+export default cmsMigration;

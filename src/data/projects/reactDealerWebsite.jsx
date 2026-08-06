@@ -8,11 +8,11 @@ import heroMobileImg                from "../../assets/projects/react-dealership
 import featuredCaseStudyImg         from "../../assets/projects/react-dealership/featured-case-study.webp"
 import thumbPlaceholderImg          from "../../assets/projects/react-dealership/featured-case-study.webp"
 
-const dealership = {
+const reactDealerWebsite = {
   id                : 1,
-  slug              : "react-dealership",
-  title             : "React Dealership",
-  subtitle          : "A modern dealership website built with React and Vite.",
+  slug              : "react-development",
+  title             : "React Development",
+  subtitle          : "Mazda Demo",
   featured          : true,
   year              : 2026,
   thumbnail         : thumbImg,
@@ -186,4 +186,4 @@ const dealership = {
 
 };
 
-export default dealership;
+export default reactDealerWebsite;

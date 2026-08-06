@@ -40,7 +40,9 @@
   --header-text: #ffffff;
   --header-bg: #101010;
 
-  --clr-dark-bg-base: #999999;
+  --clr-head: #e5e5e5;
+  --clr-base: #d5d5d5;
+  --clr-dark-bg-base: #d5d5d5;
 
   --clr-grey-border: #d5d5d5;
   --clr-footer-border: #333333;

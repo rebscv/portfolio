@@ -13,22 +13,42 @@ function ProjectCard({ project }) {
 
             <Link to={`/projects/${slug}`}></Link>
 
-            <div className="project-card-block">
-                <h3>{title}</h3>
-                <div className="project-card-img"><img src={thumbnail} alt={title} /></div>
-            </div>
+
 
             
 
-            <div className="project-card-content grid">
-                <Link to={`/projects/${slug}`}>View Project</Link>
-                
-                <p>{subtitle}</p>
-                <div>
-                    {technologies.map((tech) => (<span key={tech}>{tech}</span>))}
+   
+
+            <div className="project-card-block">
+
+                <div className="project-card-img-container">
+
+                    <div className="project-card-img">
+                        <img src={thumbnail} alt={title} />                    
+                    </div>      
+
+                    <div className="project-card-img-shadow"></div>
+
                 </div>
-                
-            </div>                
+
+
+                <div className="project-card-content">
+
+                    <div className="project-card-txt">
+                        <h3>{title}</h3>
+                        <p>{subtitle}</p>
+                    </div>
+
+                    <div className="project-card-cta">
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
 
         </article>
     )

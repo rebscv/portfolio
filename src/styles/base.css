@@ -4,7 +4,11 @@ html * {
 }
 
 body {
+  background-color: var(--clr-black);
+  color: var(--clr-base);
   margin: 0;
+  font-size: 14px;
+  line-height: 2em;
 }
 
 .grey-bg {
@@ -19,12 +23,12 @@ body {
   background-color: var(--clr-black);
 }
 
-.dark-bg, .dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4, .dark-bg .h1, .dark-bg .h2, .dark-bg .h3, .dark-bg .h4 {
-  color: var(--clr-white);
+.dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4, .dark-bg .h1, .dark-bg .h2, .dark-bg .h3, .dark-bg .h4 {
+  color: var(--clr-head);
 }
 
-.dark-bg p, .dark-bg p a, .dark-bg ul {
-  color: var(--clr-dark-bg-base);
+.dark-bg, .dark-bg p, .dark-bg p a, .dark-bg ul {
+  color: var(--clr-base);
 }
 
 .white-bg {

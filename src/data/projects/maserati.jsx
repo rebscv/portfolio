@@ -5,11 +5,11 @@ import heroImg                      from "../../assets/projects/maserati/hero.we
 import heroMobileImg                from "../../assets/projects/maserati/hero-m.webp"
 
 
-const dealership = {
+const maserati = {
   id                : 4,
-  slug              : "maserati",
-  title             : "Auckland Maserati",
-  subtitle          : "A modern dealership website built with React and Vite.",
+  slug              : "custom-wordpress",
+  title             : "Custom WordPress Websites",
+  subtitle          : "Maserati",
   featured          : true,
   year              : 2026,
   thumbnail         : thumbImg,
@@ -60,4 +60,4 @@ const dealership = {
 
 };
 
-export default dealership;
+export default maserati;
