@@ -1,4 +1,6 @@
-function SummaryBlock ({ wrapperClass, bgClass, metadata, technologies, github, liveSite }) {
+import "./SummaryBlock.css";
+
+function SummaryBlock ({ wrapperClass, bgClass, image, metadata, technologies, github, liveSite }) {
 
     const labels = { role: "Role", projectType: "Project Type", platform: "Platform", design: "Design", focus: "Focus", projects: "Projects" };
 
@@ -6,15 +8,23 @@ function SummaryBlock ({ wrapperClass, bgClass, metadata, technologies, github, 
         <section className={`project-summary ${bgClass || 'dark-bg black-bg'}`}>
             <div className={`${wrapperClass || 'std-wrapper'}`}>
 
-                <h2>Summary</h2>
+                <div className="grid-d-two-cols">
 
-                <div className="project-summary-details grid">
-                    {Object.entries(metadata).map(([key, value]) => (
-                        <div key={key}>
-                            <div><strong>{labels[key]}</strong></div>
-                            <div><p>{value}</p></div>
-                        </div>
-                    ))}
+                    <div className="project-summary-details">
+                        {Object.entries(metadata).map(([key, value]) => (
+
+                            <div key={key} className="project-summary-row">
+                                <div className="project-summary-row-label">{labels[key]}</div>
+                                <div className="project-summary-row-value"><p>{value}</p></div>
+                            </div>
+                            
+                        ))}
+                    </div>
+
+                    <div>
+                        <img src={image} alt="" />                        
+                    </div>
+
                 </div>
 
                 {technologies &&

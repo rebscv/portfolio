@@ -1,0 +1,48 @@
+.project-process-steps {
+    gap: 128px 64px;
+}
+
+.project-process-block {
+    padding: 48px;
+    border: solid 1px #2a2a2a;
+    border-radius: 24px;
+    background-color: #ffffff05;
+    position: relative;
+    text-align: left;
+}
+
+.project-process-block:nth-child(even) {
+    top: 96px;
+    position: relative;
+}
+
+.project-process-block::after, .project-process-block:nth-child(odd)::after {
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 1px;
+    background-color: #2a2a2a;
+    top: calc(50% + 64px);
+    right: -64px;
+    transform: translateY(-50%);
+}
+
+.project-process-block:nth-child(even)::after {
+    content: '';
+    height: 64px;
+    width: calc(100% - 160px);
+    left: calc(-100% + 158px);
+    right: auto;
+    top: auto;
+    bottom: -32px;
+    transform: none;
+    background-color: transparent;
+    border: #2a2a2a solid 1px;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 32px 0 0 0;
+}
+
+.project-process-block:last-child::after {
+    content: none;
+}

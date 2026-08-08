@@ -1,10 +1,10 @@
-import thumbImg               from "../../assets/projects/bmw/thumb.webp";
-import featuredImg            from "../../assets/projects/bmw/featured-thumb.webp";
-import heroImg                from "../../assets/projects/cms-migration/hero.webp"
-import heroMobileImg          from "../../assets/projects/bmw/hero-m.webp"
-import logoImg                from "../../assets/projects/bmw/logo.webp"
-import featuredCaseStudyImg   from "../../assets/projects/bmw/featured-case-study.webp"
-import { text, title } from "framer-motion/client";
+import thumbImg               from "../../assets/projects/wordpress-template/thumb.webp";
+import featuredImg            from "../../assets/projects/wordpress-template/featured-thumb.webp";
+import heroImg                from "../../assets/projects/wordpress-template/hero.webp"
+import heroMobileImg          from "../../assets/projects/wordpress-template/hero-m.webp"
+import logoImg                from "../../assets/projects/wordpress-template/logo.webp"
+import featuredCaseStudyImg   from "../../assets/projects/wordpress-template/featured-case-study.webp"
+import { image, text, title } from "framer-motion/client";
 import { steps } from "framer-motion";
 
 
@@ -76,23 +76,26 @@ const wordpressTemplate = {
 
   summary : {
     bgClass           : "",
-    wrapperClass      : "sml-wrapper",
+    wrapperClass      : "std-wrapper",
     metadata          :
     {
+      focus           : "Theme Development / Front End Development",
+      projects        : "BMW, Ford ZA, Foton ZA, Mazda NZ, XPENG",
       role            : "Frontend Developer",
       platform        : "WordPress",
-      design          : "Figma",
-      focus           : "Theme Development / Front End Development",
-      projects        : "BMW, Ford ZA, Foton ZA, Mazda NZ, XPENG"
+      design          : "Figma"
+
     },
     github            : "",
-    liveSite          : ""
+    liveSite          : "",
+    image             : thumbImg
   },
 
   overview : {
     bgClass           : "",
-    wrapperClass      : "sml-wrapper no-padding-top",
-    title             : "Overview",
+    wrapperClass      : "sml-wrapper",
+    titleEyebrow      : "Overview",
+    title             : "From Design to Development",
     text              :
     [
       "These dealership websites were developed using a shared WordPress foundation, allowing new brand websites to be built from an established starting point rather than from scratch.",
@@ -103,8 +106,9 @@ const wordpressTemplate = {
   
   process : {
     bgClass           : "",
-    wrapperClass      : "sml-wrapper",
-    title             : "The Process",
+    wrapperClass      : "sml-wrapper t-center",
+    titleEyebrow      : "The Process",
+    title             : "Take it step by step",
     steps             :
     [
       {
@@ -144,7 +148,8 @@ const wordpressTemplate = {
   pixelPerfect  : {
     bgClass           : "",
     wrapperClass      : "sml-wrapper no-padding-top",
-    title             : "Pixel-Perfect Implementation",
+    titleEyebrow      : "Pixel-Perfect Implementation",
+    title             : "The Extra Step",
     text              :
     [
       "These dealership websites were developed using a shared WordPress foundation, allowing new brand websites to be built from an established starting point rather than from scratch.",
@@ -156,7 +161,8 @@ const wordpressTemplate = {
   architecture  : {
     bgClass           : "",
     wrapperClass      : "sml-wrapper no-padding-top",
-    title             : "Reusable Architecture",
+    titleEyebrow      : "Reusable Architecture",
+    title             : "Ready for Use",
     text              :
     [
       "Although each site had its own visual design, the projects were built around a common WordPress foundation. This allowed recurring dealership structures and functionality to be reused while individual themes could be styled and adapted for each brand."
@@ -199,6 +205,7 @@ const wordpressTemplate = {
   outcome : {
     bgClass           : "",
     wrapperClass      : "sml-wrapper",
+    titleEyebrow      : "",
     title             : "Outcome",
     text              : "The process provided a repeatable approach for turning dealership designs into fully implemented WordPress websites. By starting from a shared foundation, new brand sites could be developed more efficiently while still maintaining the unique visual identity of each manufacturer."
   }

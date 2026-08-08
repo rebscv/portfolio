@@ -1,0 +1,23 @@
+.project-summary-details {
+    display: grid;
+    gap: 8px;
+}
+
+.project-summary-row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.project-summary-row-label {
+    grid-column: span 1;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+    line-height: 1em;
+}
+
+.project-summary-row-value {
+    grid-column: span 3;
+}
