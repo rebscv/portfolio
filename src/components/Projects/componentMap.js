@@ -6,6 +6,8 @@ import FeaturesGrid from "./FeaturesGrid/FeaturesGrid";
 import Gallery from "./Gallery/Gallery";
 import TechStack from "./TechStack/TechStack";
 import CTA from "./CTA/CTA";
+import Process from "./Process/Process";
+
 // import Section from "./Section/Section";
 // import Image from "./Image/Image";
 
@@ -20,7 +22,8 @@ const componentMap = {
     featuresGrid: FeaturesGrid,
     gallery: Gallery,
     cta: CTA,
-    techStack: TechStack
+    techStack: TechStack,
+    process: Process
 };
 
 export default componentMap;

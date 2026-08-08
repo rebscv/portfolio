@@ -68,8 +68,9 @@ const reactDealerWebsite = {
   hero: {
     image         : heroImg,
     imageMobile   : heroMobileImg,
-    imageAlt      : "Mazda",
-    title         : "My React Project"
+    imageAlt      : "MX-5 driving on highway",
+    title         : "React Developement",
+    subtitle      : "Mazda Dealership Demo"
   },
 
   overview: {
@@ -90,6 +91,7 @@ const reactDealerWebsite = {
     {
       role            : "Frontend Developer",
       projectType     : "Personal Project",
+      Platform        : "WordPress",
       year            : 2026,
       status          : "In Progress",
     },

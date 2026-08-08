@@ -1,14 +1,17 @@
 
 .project-hero .full-wrapper {
     position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100vh;
 }
 
 .project-hero img {
     display: block;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     width: 100%;
-    opacity: 0.25;
+    opacity: 0.85;
 }
 
 .hero-banner-layer {
@@ -19,20 +22,33 @@
     top: 0;
     display: grid;
     justify-items: center;
-    align-items: center;
+    align-items: start;
 }
 
 .hero-banner-text {
-    padding: var(--padding-tb) var(--padding-lr);
+    position: relative;
+    padding: var(--padding-tb) var(--padding-lr) var(--padding-tb);
     max-width: var(--std-wrapper);
     width: 100%;
     text-align: center;
+    display: grid;
+    gap: 24px;
+    height: 100%;
+    align-content: center;
 }
 
 .hero-banner-text h1 {
     font-size: 6em;
     letter-spacing: -0.065em;
     line-height: 0.9em;
+}
+
+.hero-banner-text h2 {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    line-height: 1em;
 }
 
 .project-hero-fade {
@@ -43,10 +59,24 @@
     background-image: linear-gradient(0deg, var(--clr-black), transparent);
 }
 
+.project-hero-more {
+    position: absolute;
+    left: 50%;
+    bottom: 32px;
+    transform: translateX(-50%);
+    z-index: 2;
+    line-height: 1;
+    font-size: 3em;
+}
+
+.project-hero-more svg {
+    fill: var(--clr-white);
+}
+
 @media (min-width:1024px) {
 
     .hero-banner-text {
-        padding: var(--padding-tb-d) var(--padding-lr-d);
+        padding: 240px var(--padding-lr-d);
     }    
 
 }

@@ -1,6 +1,6 @@
 function SummaryBlock ({ wrapperClass, bgClass, metadata, technologies, github, liveSite }) {
 
-    const labels = { role: "Role", projectType: "Project Type", year: "Year", status: "Status" };
+    const labels = { role: "Role", projectType: "Project Type", platform: "Platform", design: "Design", focus: "Focus", projects: "Projects" };
 
     return (
         <section className={`project-summary ${bgClass || 'dark-bg black-bg'}`}>
@@ -15,17 +15,18 @@ function SummaryBlock ({ wrapperClass, bgClass, metadata, technologies, github, 
                             <div><p>{value}</p></div>
                         </div>
                     ))}
-
                 </div>
 
-                <div className="project-summary-technologies">
-                    <p className="t-white"><strong>Technologies</strong></p>
-                    <ul>
-                        {technologies.map((tech) => (
-                            <li key={tech}><span>{tech}</span></li>
-                        ))}
-                    </ul>
-                </div>
+                {technologies &&
+                    <div className="project-summary-technologies">
+                        <p className="t-white"><strong>Technologies</strong></p>
+                        <ul>
+                            {technologies.map((tech) => (
+                                <li key={tech}><span>{tech}</span></li>
+                            ))}
+                        </ul>
+                    </div>
+                }
 
                 <div className="project-summary-links">
                     <div className="btn-flex">

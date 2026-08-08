@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+[class*=" icon-"], [class^=icon-] {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -31,6 +40,7 @@ p a:hover {
 .t-white {
   color: var(--clr-white)!important;
 }
+
 
 .title-eyebrow {
   width: fit-content;

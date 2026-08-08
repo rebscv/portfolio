@@ -1,9 +1,11 @@
 import thumbImg               from "../../assets/projects/bmw/thumb.webp";
 import featuredImg            from "../../assets/projects/bmw/featured-thumb.webp";
-import heroImg                from "../../assets/projects/bmw/hero.webp"
+import heroImg                from "../../assets/projects/cms-migration/hero.webp"
 import heroMobileImg          from "../../assets/projects/bmw/hero-m.webp"
 import logoImg                from "../../assets/projects/bmw/logo.webp"
 import featuredCaseStudyImg   from "../../assets/projects/bmw/featured-case-study.webp"
+import { text, title } from "framer-motion/client";
+import { steps } from "framer-motion";
 
 
 const wordpressTemplate = {
@@ -38,29 +40,167 @@ const wordpressTemplate = {
     {
       type      : "summary",
       data      : "summary"
+    },
+    {
+      type      : "textBlock",
+      data      : "overview"
+    },
+    {
+      type      : "process",
+      data      : "process"
+    },
+    {
+      type      : "textBlock",
+      data      : "pixelPerfect"
+    },
+    {
+      type      : "textBlock",
+      data      : "architecture"
+    },
+    {
+      type      : "process",
+      data      : "keySkills"
+    },
+    {
+      type      : "textBlock",
+      data      : "outcome"
     }
   ],
 
   hero: {
     image         : heroImg,
     imageMobile   : heroMobileImg,
-    imageAlt      : "Mazda",
-    title         : "My React Project"
+    title         : "WordPress Template Development",
+    subtitle      : "Design to reusable WordPress themes"
   },
 
   summary : {
     bgClass           : "",
-    wrapperClass      : "std-wrapper",
+    wrapperClass      : "sml-wrapper",
     metadata          :
     {
       role            : "Frontend Developer",
-      projectType     : "Personal Project",
-      year            : 2026,
-      status          : "In Progress",
+      platform        : "WordPress",
+      design          : "Figma",
+      focus           : "Theme Development / Front End Development",
+      projects        : "BMW, Ford ZA, Foton ZA, Mazda NZ, XPENG"
     },
-    technologies      : [ "React", "Vite", "React Router", "CSS", "Framer Motion", "Embla Carousel" ],
-    github            : "My Gitbug link",
-    liveSite          : "My Live Site link"
+    github            : "",
+    liveSite          : ""
+  },
+
+  overview : {
+    bgClass           : "",
+    wrapperClass      : "sml-wrapper no-padding-top",
+    title             : "Overview",
+    text              :
+    [
+      "These dealership websites were developed using a shared WordPress foundation, allowing new brand websites to be built from an established starting point rather than from scratch.",
+      "Each project began with a blank WordPress installation containing placeholder content and the core dealership page structure. Designs were supplied in Figma, which I translated into responsive WordPress templates with a strong focus on pixel-accurate implementation.",
+      "The result was a collection of brand-specific websites built on a consistent technical foundation while allowing each design to retain its own visual identity."
+    ]
+  },
+  
+  process : {
+    bgClass           : "",
+    wrapperClass      : "sml-wrapper",
+    title             : "The Process",
+    steps             :
+    [
+      {
+        number        : "01",
+        title         : "Design",
+        description   : [        
+          "The visual design was provided in Figma.",
+          "I worked from the supplied layouts, typography, spacing, imagery and component designs to establish the structure and styling required for the WordPress implementation."
+        ]
+      },
+      {
+        number        : "02",
+        title         : "WordPress Foundation",
+        description   : [
+          "Each project started from a base WordPress installation containing placeholder pages and content.",
+          "This provided the underlying structure while keeping the site free from brand-specific content."
+        ]
+      },
+      {
+        number        : "03",
+        title         : "Theme Development",
+        description   : "I translated the Figma design into the WordPress theme, developing the required templates, components and responsive layouts."
+      },
+      {
+        number        : "04",
+        title         : "Responsive Development",
+        description   : "Desktop and mobile designs were translated into responsive layouts, ensuring the design remained consistent across different screen sizes."
+      },
+      {
+        number        : "05",
+        title         : "Reusable Structure",
+        description   : "The underlying approach allowed common dealership functionality and layouts to be reused while adapting the visual implementation for each individual brand."
+      }
+    ]
+  },
+
+  pixelPerfect  : {
+    bgClass           : "",
+    wrapperClass      : "sml-wrapper no-padding-top",
+    title             : "Pixel-Perfect Implementation",
+    text              :
+    [
+      "These dealership websites were developed using a shared WordPress foundation, allowing new brand websites to be built from an established starting point rather than from scratch.",
+      "Each project began with a blank WordPress installation containing placeholder content and the core dealership page structure. Designs were supplied in Figma, which I translated into responsive WordPress templates with a strong focus on pixel-accurate implementation.",
+      "The result was a collection of brand-specific websites built on a consistent technical foundation while allowing each design to retain its own visual identity."
+    ]
+  },
+
+  architecture  : {
+    bgClass           : "",
+    wrapperClass      : "sml-wrapper no-padding-top",
+    title             : "Reusable Architecture",
+    text              :
+    [
+      "Although each site had its own visual design, the projects were built around a common WordPress foundation. This allowed recurring dealership structures and functionality to be reused while individual themes could be styled and adapted for each brand."
+    ]
+  },
+
+  keySkills : {
+    bgClass           : "",
+    wrapperClass      : "sml-wrapper",
+    title             : "Key Skills",
+    steps             :
+    [
+      {
+        title         : "WordPress Theme Development",
+        description   : ["Building and adapting WordPress themes from a shared foundation."]
+      },
+      {
+        title         : "Figma → Code",
+        description   : ["Translating supplied visual designs into accurate front-end implementations."]
+      },
+      {
+        title         : "Responsive Development",
+        description   : ["Building layouts that adapt across desktop, tablet and mobile."]
+      },
+      {
+        title         : "HTML & CSS",
+        description   : ["Developing structured, maintainable front-end layouts."]
+      },
+      {
+        title         : "Reusable Components",
+        description   : ["Creating common structures that could be reused across dealership websites."]
+      },
+      {
+        title         : "Pixel-Accurate Implementation",
+        description   : ["Matching spacing, typography, layout and visual details to the supplied designs."]
+      }
+    ]
+  },
+
+  outcome : {
+    bgClass           : "",
+    wrapperClass      : "sml-wrapper",
+    title             : "Outcome",
+    text              : "The process provided a repeatable approach for turning dealership designs into fully implemented WordPress websites. By starting from a shared foundation, new brand sites could be developed more efficiently while still maintaining the unique visual identity of each manufacturer."
   }
 
 };
