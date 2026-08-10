@@ -7,6 +7,7 @@ import Gallery from "./Gallery/Gallery";
 import TechStack from "./TechStack/TechStack";
 import CTA from "./CTA/CTA";
 import ProcessBlock from "./ProcessBlock/ProcessBlock";
+import GalleryBlock from "./GalleryBlock/GalleryBlock";
 
 // import Section from "./Section/Section";
 // import Image from "./Image/Image";
@@ -23,7 +24,8 @@ const componentMap = {
     gallery: Gallery,
     cta: CTA,
     techStack: TechStack,
-    process: ProcessBlock
+    process: ProcessBlock,
+    gallery: GalleryBlock
 };
 
 export default componentMap;

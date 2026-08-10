@@ -3,8 +3,11 @@ import featuredImg            from "../../assets/projects/wordpress-template/fea
 import heroImg                from "../../assets/projects/wordpress-template/hero.webp"
 import heroMobileImg          from "../../assets/projects/wordpress-template/hero-m.webp"
 import logoImg                from "../../assets/projects/wordpress-template/logo.webp"
+import bmwLogoImg                from "../../assets/projects/wordpress-template/bmw-logo.webp"
+import mazdaLogoImg                from "../../assets/projects/wordpress-template/bmw-logo.webp"
+import fordLogoImg                from "../../assets/projects/wordpress-template/bmw-logo.webp"
 import featuredCaseStudyImg   from "../../assets/projects/wordpress-template/featured-case-study.webp"
-import { image, text, title } from "framer-motion/client";
+import { image, p, text, title } from "framer-motion/client";
 import { steps } from "framer-motion";
 
 
@@ -48,6 +51,10 @@ const wordpressTemplate = {
     {
       type      : "process",
       data      : "process"
+    },
+    {
+      type      : "gallery",
+      data      : "implementations"
     },
     {
       type      : "textBlock",
@@ -141,6 +148,81 @@ const wordpressTemplate = {
         number        : "05",
         title         : "Reusable Structure",
         description   : "The underlying approach allowed common dealership functionality and layouts to be reused while adapting the visual implementation for each individual brand."
+      }
+    ]
+  },
+
+  implementations : {
+    bgClass           : "",
+    wrapperClass      : "",
+    titleEyebrow      : "Implementation",
+    title             : "Explore Projects",
+    items             :
+    [
+      {
+        id            : "1",
+        brand         : "BMW",
+        brandLogo     : bmwLogoImg,
+        gridColumns   : "",
+        gallery       : 
+        [
+          {
+            id          : "1",
+            image       : featuredCaseStudyImg
+          },
+          {
+            id          : "2",
+            image       : featuredCaseStudyImg
+          },
+          {
+            id          : "3",
+            image       : featuredCaseStudyImg
+          }
+        ]
+      },
+
+      {
+        id            : "2",
+        brand         : "Mazda",
+        brandLogo     : mazdaLogoImg,
+        gridColumns   : "",
+        gallery       : 
+        [
+          {
+            id          : "1",
+            image       : featuredCaseStudyImg
+          },
+          {
+            id          : "2",
+            image       : featuredCaseStudyImg
+          },
+          {
+            id          : "3",
+            image       : featuredCaseStudyImg
+          }
+        ]
+      },
+
+      {
+        id            : "3",
+        brand         : "Ford",
+        brandLogo     : fordLogoImg,
+        gridColumns   : "",
+        gallery       : 
+        [
+          {
+            id          : "1",
+            image       : featuredCaseStudyImg
+          },
+          {
+            id          : "2",
+            image       : featuredCaseStudyImg
+          },
+          {
+            id          : "3",
+            image       : featuredCaseStudyImg
+          }
+        ]
       }
     ]
   },
