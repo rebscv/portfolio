@@ -53,7 +53,7 @@ const wordpressTemplate = {
       data      : "process"
     },
     {
-      type      : "gallery",
+      type      : "galleryFancy",
       data      : "implementations"
     },
     {
@@ -160,11 +160,37 @@ const wordpressTemplate = {
     items             :
     [
       {
-        id            : "1",
-        brand         : "BMW",
-        brandLogo     : bmwLogoImg,
-        gridColumns   : "",
-        gallery       : 
+        id                : "1",
+        brand             : "BMW",
+        projectCardTitle  : "BMW AU Dealership Template",
+        brandImg          : featuredImg,
+        brandLogo         : bmwLogoImg,
+        gridColumns       : "",
+        gallery           : 
+        [
+          {
+            id            : "1",
+            image         : featuredCaseStudyImg
+          },
+          {
+            id            : "2",
+            image         : featuredCaseStudyImg
+          },
+          {
+            id            : "3",
+            image         : featuredCaseStudyImg
+          }
+        ]
+      },
+
+      {
+        id                : "2",
+        brand             : "Mazda",
+        projectCardTitle  : "Mazda NZ Dealership Template",
+        brandImg          : featuredImg,
+        brandLogo         : bmwLogoImg,
+        gridColumns       : "",
+        gallery           : 
         [
           {
             id          : "1",
@@ -182,33 +208,13 @@ const wordpressTemplate = {
       },
 
       {
-        id            : "2",
-        brand         : "Mazda",
-        brandLogo     : mazdaLogoImg,
-        gridColumns   : "",
-        gallery       : 
-        [
-          {
-            id          : "1",
-            image       : featuredCaseStudyImg
-          },
-          {
-            id          : "2",
-            image       : featuredCaseStudyImg
-          },
-          {
-            id          : "3",
-            image       : featuredCaseStudyImg
-          }
-        ]
-      },
-
-      {
-        id            : "3",
-        brand         : "Ford",
-        brandLogo     : fordLogoImg,
-        gridColumns   : "",
-        gallery       : 
+        id                : "3",
+        brand             : "Ford",
+        projectCardTitle  : "Ford ZA Dealership Template",
+        brandImg          : featuredImg,
+        brandLogo         : bmwLogoImg,
+        gridColumns       : "",
+        gallery           : 
         [
           {
             id          : "1",

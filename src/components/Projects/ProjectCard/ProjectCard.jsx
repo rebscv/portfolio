@@ -24,10 +24,13 @@ function ProjectCard({ project }) {
                 <div className="project-card-img-container">
 
                     <div className="project-card-img">
-                        <img src={thumbnail} alt={title} />                    
+                        <div className="project-card-frame">
+                            <div className="project-card-img-overflow"><img src={thumbnail} alt={title} /></div>
+                        </div>
+                        <div className="project-card-img-shadow"></div>
                     </div>      
 
-                    <div className="project-card-img-shadow"></div>
+                    
 
                 </div>
 
