@@ -11,20 +11,32 @@ import bmwLogoImg             from "../../assets/projects/wordpress-template/bmw
 import bmwGalleryImg1         from "../../assets/projects/wordpress-template/bmw-gallery-1.webp"
 import bmwGalleryImg2         from "../../assets/projects/wordpress-template/bmw-gallery-2.webp"
 import bmwGalleryImg3         from "../../assets/projects/wordpress-template/bmw-gallery-3.webp"
-import bmwGalleryImg4         from "../../assets/projects/wordpress-template/bmw-gallery-4.webp"
-import bmwGalleryImg5         from "../../assets/projects/wordpress-template/bmw-gallery-5.webp"
 
 import mazdaLogoImg           from "../../assets/projects/wordpress-template/mazda-logo.webp"
 import mazdaImg               from "../../assets/projects/wordpress-template/mazda-gallery-thumb.webp"
+import mazdaGalleryImg1         from "../../assets/projects/wordpress-template/mazda-gallery-1.webp"
+import mazdaGalleryImg2         from "../../assets/projects/wordpress-template/mazda-gallery-2.webp"
+import mazdaGalleryImg3         from "../../assets/projects/wordpress-template/mazda-gallery-3.webp"
+
 
 import fordLogoImg            from "../../assets/projects/wordpress-template/ford-logo.webp"
 import fordGalleryImg         from "../../assets/projects/wordpress-template/ford-gallery-thumb.webp"
+import fordGalleryImg1         from "../../assets/projects/wordpress-template/ford-gallery-1.webp"
+import fordGalleryImg2         from "../../assets/projects/wordpress-template/ford-gallery-2.webp"
+import fordGalleryImg3         from "../../assets/projects/wordpress-template/ford-gallery-3.webp"
 
 import xpengLogoImg            from "../../assets/projects/wordpress-template/xpeng-logo.webp"
 import xpengGalleryImg         from "../../assets/projects/wordpress-template/xpeng-gallery-thumb.webp"
+import xpengGalleryImg1         from "../../assets/projects/wordpress-template/xpeng-gallery-1.webp"
+import xpengGalleryImg2         from "../../assets/projects/wordpress-template/xpeng-gallery-2.webp"
+import xpengGalleryImg3         from "../../assets/projects/wordpress-template/xpeng-gallery-3.webp"
 
 import forthingLogoImg            from "../../assets/projects/wordpress-template/forthing-logo.webp"
 import forthingGalleryImg         from "../../assets/projects/wordpress-template/forthing-gallery-thumb.webp"
+import forthingGalleryImg1         from "../../assets/projects/wordpress-template/forthing-gallery-1.webp"
+import forthingGalleryImg2         from "../../assets/projects/wordpress-template/forthing-gallery-2.webp"
+import forthingGalleryImg3         from "../../assets/projects/wordpress-template/forthing-gallery-3.webp"
+
 
 import { image, p, text, title } from "framer-motion/client";
 import { steps } from "framer-motion";
@@ -217,15 +229,15 @@ const wordpressTemplate = {
         [
           {
             id            : "1",
-            image         : bmwGalleryImg1
+            image         : mazdaGalleryImg1
           },
           {
             id            : "2",
-            image         : bmwGalleryImg2
+            image         : mazdaGalleryImg2
           },
           {
             id            : "3",
-            image         : bmwGalleryImg3
+            image         : mazdaGalleryImg3
           }
         ]
       },
@@ -241,15 +253,15 @@ const wordpressTemplate = {
         [
           {
             id            : "1",
-            image         : bmwGalleryImg1
+            image         : fordGalleryImg1
           },
           {
             id            : "2",
-            image         : bmwGalleryImg2
+            image         : fordGalleryImg2
           },
           {
             id            : "3",
-            image         : bmwGalleryImg3
+            image         : fordGalleryImg3
           }
         ]
       },
@@ -265,15 +277,15 @@ const wordpressTemplate = {
         [
           {
             id            : "1",
-            image         : bmwGalleryImg1
+            image         : xpengGalleryImg1
           },
           {
             id            : "2",
-            image         : bmwGalleryImg2
+            image         : xpengGalleryImg2
           },
           {
             id            : "3",
-            image         : bmwGalleryImg3
+            image         : xpengGalleryImg3
           }
         ]
       },
@@ -289,15 +301,15 @@ const wordpressTemplate = {
         [
           {
             id            : "1",
-            image         : bmwGalleryImg1
+            image         : forthingGalleryImg1
           },
           {
             id            : "2",
-            image         : bmwGalleryImg2
+            image         : forthingGalleryImg2
           },
           {
             id            : "3",
-            image         : bmwGalleryImg3
+            image         : forthingGalleryImg3
           }
         ]
       }

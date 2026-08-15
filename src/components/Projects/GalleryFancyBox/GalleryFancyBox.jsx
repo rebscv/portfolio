@@ -41,11 +41,10 @@ function GalleryFancyBox ({ bgClass, titleEyebrow, title, items, project }) {
                 </div>
 
                 <Lightbox open={open} close={() => setOpen(false)} controller={{ ref: lightboxRef }} animation={{ fade: 600 }} slides={activeGallery.map((item) => ({ src: item.image }))} 
-                    on={{ view: ({ index }) => {                        
-                        console.log("Previous:", previousIndex.current);
-                        console.log("Current:", index);
+                    on={{ view: ({ index }) => {
                         if ( previousIndex.current === activeGallery.length - 1 && index === 0 ) { lightboxRef.current?.close();; return; }
-                        previousIndex.current = index;
+                        if ( previousIndex.current === 0 && index === activeGallery.length - 1 ) { lightboxRef.current?.close(); return; }
+                        previousIndex.current = index;                        
                     } }}
                 />
             
