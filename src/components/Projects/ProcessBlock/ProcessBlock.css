@@ -1,5 +1,6 @@
 .project-process-steps {
     gap: 128px 64px;
+    padding-bottom: 96px;
 }
 
 .project-process-block {
@@ -9,6 +10,7 @@
     background-color: #ffffff05;
     position: relative;
     text-align: left;
+    align-content: start;
 }
 
 .project-process-block:nth-child(even) {
