@@ -93,17 +93,6 @@ const reactDealerWebsite = {
     subtitle      : "Mazda Dealership Demo"
   },
 
-  overview: {
-    wrapperClass  : "std-wrapper",
-    title         : "My Intro Section",
-    text          : (
-    <>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla nunc nulla, at accumsan velit mollis ac. Morbi aliquet neque sit amet lectus tincidunt, at consectetur urna porta.</p>
-      <p>Mauris hendrerit nisl convallis dolor egestas posuere. Proin fermentum dictum enim vitae lacinia.</p>
-    </>
-    )
-  },
-
   summary : {
     bgClass           : "",
     wrapperClass      : "std-wrapper",
@@ -111,10 +100,7 @@ const reactDealerWebsite = {
     {
       role            : "Frontend Developer",
       projectType     : "Personal Project",
-      Platform        : "WordPress",
       year            : 2026,
-      status          : "Complete",
-      
       focus           : "React Development / Front End Development",
       projects        : "Mazda",
       role            : "Frontend Developer",

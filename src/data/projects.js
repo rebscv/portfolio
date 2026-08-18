@@ -1,7 +1,7 @@
 import reactDealerWebsite from "./projects/reactDealerWebsite";
 import wordpressTemplate from "./projects/wordpressTemplate";
 import modelPages from "./projects/modelPages";
-import maserati from "./projects/maserati";
+import customWordpress from "./projects/customWordpress";
 import cmsMigration from "./projects/cmsMigration";
 import digitalDesignMarketting from "./projects/digitalDesignMarketting";
 
@@ -10,7 +10,7 @@ const projects = [
   reactDealerWebsite,
   wordpressTemplate,
   modelPages,
-  maserati,
+  customWordpress,
   cmsMigration,
   digitalDesignMarketting,
 ];

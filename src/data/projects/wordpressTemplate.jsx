@@ -125,8 +125,7 @@ const wordpressTemplate = {
       projects        : "BMW, Ford ZA, Foton ZA, Mazda NZ, XPENG",
       role            : "Frontend Developer",
       platform        : "WordPress",
-      design          : "Figma"
-
+      design          : "Figma & Illustrator / Provided Design"
     },
     github            : "",
     liveSite          : "",

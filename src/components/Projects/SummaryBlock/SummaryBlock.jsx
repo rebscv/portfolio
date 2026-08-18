@@ -2,7 +2,7 @@ import "./SummaryBlock.css";
 
 function SummaryBlock ({ wrapperClass, bgClass, image, metadata, technologies, github, liveSite }) {
 
-    const labels = { role: "Role", projectType: "Project Type", platform: "Platform", design: "Design", focus: "Focus", projects: "Projects" };
+    const labels = { role: "Role", projectType: "Project Type", platform: "Platform", design: "Design", focus: "Focus", projects: "Projects", template: "Template", project: "Project", year: "Year" };
 
     return (
         <section className={`project-summary ${bgClass || 'dark-bg black-bg'}`}>
