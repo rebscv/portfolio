@@ -7,8 +7,8 @@ function GallerySlider({ items, title, titleEyebrow, text, wrapperClass, bgClass
     const { emblaRef, emblaApi, selectedIndex, scrollTo, resetAutoplay, scrollNext, scrollPrev, } = useEmblaWithDots({ loop: true }, 4000);
 
     return (
-        <section className={`project-text-block ${bgClass || 'dark-bg black-bg'}`}>
-            <div className={`${wrapperClass || 'std-wrapper'}`}>
+        <section className={`project-gallery-slider ${bgClass || 'dark-bg black-bg'}`}>
+            <div className={`${wrapperClass || 'full-wrapper'}`}>
 
 
 

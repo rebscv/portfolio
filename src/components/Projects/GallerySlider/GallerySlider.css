@@ -201,3 +201,17 @@ Embla Grid to Flex Styles
   }
   
 }
+
+
+.project-gallery-slider .full-wrapper {
+
+}
+
+.project-gallery-slider .embla__slide {
+
+}
+
+.project-gallery-slider .embla .embla__container > div {
+  flex: 0 0 65%;
+}
+

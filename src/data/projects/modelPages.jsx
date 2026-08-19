@@ -36,6 +36,14 @@ const modelPages = {
     {
       type      : "process",
       data      : "process"
+    },
+    {
+      type      : "gallerySlider",
+      data      : "gallery"
+    },
+    {
+      type      : "textBlock",
+      data      : "outcome"
     }
   ],
 
@@ -80,21 +88,13 @@ const modelPages = {
   process : {
     bgClass           : "",
     wrapperClass      : "sml-wrapper t-center",
-    titleEyebrow      : "The Process",
-    title             : "Take it step by step",
+    titleEyebrow      : "Key Contributions",
+    title             : "Building model pages for real-world vehicle content",
     steps             :
     [
-      {
-        number      : "01",
-        title       : "Version 1 — Component Architecture",
-        description : [
-          "The first version focused on learning and applying React fundamentals while establishing the structure of the site.",
-          "I built the interface from reusable components, using props and dynamic rendering to create sections such as the Header, Hero, QuickLinks, Featured Stock, Welcome and Footer."
-        ]
-      },
 
       {
-        number      : "02",
+        number      : "01",
         title       : "Initial Model Implementation",
         description : [
           "Built the first model page from the supplied design, establishing the structure, styling and functionality used across the range."
@@ -102,7 +102,7 @@ const modelPages = {
       },
 
       {
-        number      : "03",
+        number      : "02",
         title       : "Model Range Implementation",
         description : [
           "Used the initial model as the foundation for building the remaining vehicles, adapting content, imagery and specifications for each model."
@@ -110,7 +110,7 @@ const modelPages = {
       },
 
       {
-        number      : "04",
+        number      : "03",
         title       : "Interactive Features",
         description : [
           "Implemented interactive components including image sliders, colour pickers and tabbed content as required by the model designs."
@@ -118,7 +118,7 @@ const modelPages = {
       },
 
       {
-        number      : "05",
+        number      : "04",
         title       : "Model-Specific Content",
         description : [
           "Worked with the varying content and specifications of individual vehicles while maintaining a consistent structure across the model range."
@@ -126,7 +126,7 @@ const modelPages = {
       },
 
       {
-        number      : "06",
+        number      : "05",
         title       : "New Model Releases",
         description : [
           "Built new model pages when manufacturers introduced new vehicles, integrating them into the existing website structure."
@@ -134,7 +134,7 @@ const modelPages = {
       },
 
       {
-        number      : "07",
+        number      : "06",
         title       : "Ongoing Model Support",
         description : [
           "Assisted with updating existing model pages as vehicle content, specifications, imagery and other information changed."
@@ -143,6 +143,35 @@ const modelPages = {
 
     ]
   },
+
+  gallery : {
+    bgClass           : "",
+    wrapperClass      : "",
+    titleEyebrow      : "Implementation",
+    title             : "Explore the builds",
+    items             :
+    [
+        {
+            id: 1,
+            image: heroImg,
+        },
+        {
+            id: 2,
+            image: heroImg,
+        }
+    ]
+  },
+
+  outcome : {
+    bgClass           : "",
+    wrapperClass      : "sml-wrapper",
+    titleEyebrow      : "Outcome",
+    title             : "A consistent approach that could scale across the range",
+    text              :
+    [
+      "The result was a repeatable approach to implementing vehicle model pages from a single approved design. Each model could have its own content and interactive requirements while retaining the same underlying structure and visual language. This approach also provided a practical foundation for adding new models as manufacturers expanded or updated their vehicle ranges."
+    ]
+  }
 
 
 
