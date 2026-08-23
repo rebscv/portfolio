@@ -72,6 +72,7 @@
 .skill-img img {
     position: relative;
     z-index: 2;
+    transition: ease-out 0.3s all;
 }
 
 .skill-img::after {
@@ -87,6 +88,10 @@
     background-color: #00000080;
     border-radius: 50%;
      filter: blur(16px);
+}
+
+.skill-col:hover .skill-img img {
+    transform: scale(1.1);
 }
 
 @media (min-width: 1024px) {

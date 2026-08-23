@@ -1,6 +1,7 @@
+import FadeIn from "../../animations/FadeIn";
 import "./Skills.css";
-import skillsContent from "../../data/skills"
 
+import skillsContent from "../../data/skills"
 import skillsBg from "../../assets/skills/skills-bg.webp";
 
 function Skills() {
@@ -19,12 +20,14 @@ function Skills() {
                     <div key={categoryName} className="grid">
 
                         <div className="skills-content-grid grid-d-five-cols grid-t-two-cols">
-                        {categery.items.map(skill => (
+                        {categery.items.map((skill, index) => (
 
-                            <div className="skill-col" key={skill.id}>
-                                <div className="skill-img"><img src={skill.image} alt={skill.title} /></div>
-                                <div className="skill-name">{skill.title}</div>                                    
-                            </div>
+                            <FadeIn key={skill.id} delay={index * 0.15} once={false}>
+                                <div className="skill-col">
+                                    <div className="skill-img"><img src={skill.image} alt={skill.title} /></div>
+                                    <div className="skill-name">{skill.title}</div>
+                                </div>
+                            </FadeIn>
 
                         ))}
                         </div>
@@ -33,9 +36,7 @@ function Skills() {
 
 
             </div>
-
             <div className="skills-content-bg"></div>
-
         </section>
     )
 }

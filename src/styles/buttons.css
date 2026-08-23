@@ -1,14 +1,15 @@
 .btn, a.btn {
-  padding: 12px 20px;
+  padding: 4px 24px;
   border: none;
-  border-radius: 4px;
-  text-transform: uppercase;
-  font-family: MazdaTypeTT;
+  border-radius: 24px;
   cursor: pointer;
-  letter-spacing: 0.25em;
   transition: ease 0.4s all;
-  display: inline-block;
-  line-height: 1.2em;
+  font-size: 0.8em;
+  display: flex;
+  gap: 10px;
+  font-size: 0.8em;
+  align-items: center;
+  width: fit-content;
 }
 
 .btn-primary, a.btn-primary {
@@ -42,6 +43,10 @@
   background-color: var(--clr-black);
 }
 
+.btn svg {
+  max-width: 8px;
+  margin-top: -1px;
+}
 
 /* Buttons on Dark BG */
 .dark-bg .btn-primary, .dark-bg a.btn-primary {
@@ -56,12 +61,14 @@
 
 .dark-bg .btn-outline, .dark-bg a.btn-outline {
   color: var(--clr-white);
-  border: solid 1px var(--clr-white);
+  border: solid 1px var(--clr-dark-grey-border);
+  background-color: transparent;
 }
 
 .dark-bg .btn-outline:hover, .dark-bg a.btn-outline:hover {
   color: var(--clr-black);
   background-color: var(--clr-white);
+  border-color: var(--clr-white);
 }
 
 @media (max-width:575px) {

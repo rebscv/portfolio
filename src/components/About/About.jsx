@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "./About.css";
 
+import ImageMosaic from "../ImageMosaic/ImageMosaic";
+
 import aboutImg from "../../assets/about-placeholder.webp";
 
 function About() {
@@ -22,13 +24,15 @@ function About() {
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus sem vitae nisi lacinia dictum. Integer auctor velit eget magna tempor dapibus. Curabitur auctor diam vel convallis tristique. Aenean nec pellentesque arcu. Duis id tellus eu purus iaculis lobortis eu in urna.</p>
                             <p>Morbi efficitur id ligula quis varius. Suspendisse ultricies molestie faucibus. Nullam urna libero, volutpat a tempus vel, dapibus sed orci. Sed leo nisi, tristique ac nulla vitae, ultricies mollis dui. Quisque cursus sollicitudin convallis. Donec eu facilisis ligula, at finibus eros. In eu facilisis magna. Mauris rhoncus nunc sit amet elit lacinia tempor a sit amet nibh.</p>
-                            <Link to="/projects">View Projects</Link>
+                            <div>
+                                <Link to="/projects" className="btn btn-outline">View Projects <svg className="icon-arrow-top-right"><use xlinkHref="/icons.svg#icon-arrow-top-right"></use></svg></Link>
+                            </div>
 
                         </div>
                     </div>
 
-                    <div className="grid-d-col-5">
-                        <img src={aboutImg} alt="" />
+                    <div>
+                        <ImageMosaic />
                     </div>
 
                 </div>

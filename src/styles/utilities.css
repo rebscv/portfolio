@@ -314,16 +314,34 @@
 @media (min-width:1024px) {
   
   .grid-d-two-cols.d-grid-cols-40-60 {
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .grid-d-two-cols.d-grid-cols-40-60 > div:nth-child(odd) {
+    grid-column: span 4;
+  }
+
+  .grid-d-two-cols.d-grid-cols-40-60 > div:nth-child(even) {
+    grid-column: span 6;
   }
   
   .grid-d-two-cols.d-grid-cols-60-40 {
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .grid-d-two-cols.d-grid-cols-60-40 > div:nth-child(odd) {
+    grid-column: span 6;
+  }
+
+  .grid-d-two-cols.d-grid-cols-60-40 > div:nth-child(even) {
+    grid-column: span 4;
   }
 
   .grid-d-two-cols.d-grid-cols-20-80 {
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: repeat(10, 1fr);
   }
+
+
   
 }
 

@@ -13,14 +13,7 @@ function ProjectCard({ project }) {
 
             <Link to={`/projects/${slug}`}></Link>
 
-
-
-            
-
-   
-
             <div className="project-card-block">
-
                 <div className="project-card-img-container">
 
                     <div className="project-card-img">
@@ -28,31 +21,20 @@ function ProjectCard({ project }) {
                             <div className="project-card-img-overflow"><img src={thumbnail} alt={title} /></div>
                         </div>
                         <div className="project-card-img-shadow"></div>
-                    </div>      
-
-                    
+                    </div>                         
 
                 </div>
 
-
                 <div className="project-card-content">
-
                     <div className="project-card-txt">
                         <h3>{title}</h3>
                         <p>{subtitle}</p>
                     </div>
-
                     <div className="project-card-cta">
-
                     </div>
-
                 </div>
 
-
             </div>
-
-
-
         </article>
     )
 }

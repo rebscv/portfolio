@@ -17,17 +17,34 @@ function PageHero({ title, eyebrow, text, image, imageMobile, alt, video, videoP
       <div className="full-wrapper">
 
 
-        <motion.div className="page-hero-img" style={{ filter: blur, scale, opacity, }}>
-          
-          {image && (
-            <div className="page-hero-img">
-              <picture>
-                {imageMobile && (<source media="(max-width: 767px)" srcSet={imageMobile} />)}            
-                <img src={image} alt={alt || title || ""} fetchPriority="high" />                            
-              </picture>
-            </div>
-          )}
+        <motion.div
+          className="page-hero-img"
+          style={{ filter: blur, scale, opacity }}
+        >
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.8 }}
+            transition={{ duration: 1, ease: "easeIn" }}
+          >
+            {image && (
+              <div className="page-hero-img">
+                <picture>
+                  {imageMobile && (
+                    <source
+                      media="(max-width: 767px)"
+                      srcSet={imageMobile}
+                    />
+                  )}
 
+                  <img
+                    src={image}
+                    alt={alt || title || ""}
+                    fetchPriority="high"
+                  />
+                </picture>
+              </div>
+            )}
+          </motion.div>
         </motion.div>
 
 

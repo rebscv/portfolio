@@ -1,10 +1,10 @@
 import FadeIn from "../../../animations/FadeIn";
 import "./TextBlock.css";
 
-function Text ({ title, titleEyebrow, text, wrapperClass, bgClass }) {
+function Text ({ title, titleEyebrow, text, wrapperClass, bgClass, backgroundImage }) {
 
     return (
-        <section className={`project-text-block ${bgClass || 'dark-bg black-bg'}`}>
+        <section className={`project-text-block ${bgClass || 'dark-bg black-bg'}`} style={{backgroundImage: `url(${backgroundImage})`}}>
             <div className={`${wrapperClass || 'std-wrapper'}`}>
 
                 <FadeIn direction="up" duration={3} delay={0.3}>

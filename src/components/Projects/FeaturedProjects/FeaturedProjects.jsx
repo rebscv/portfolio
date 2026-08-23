@@ -1,3 +1,4 @@
+import FadeIn from "../../../animations/FadeIn";
 import "./FeaturedProjects.css";
 
 import projects from "../../../data/projects";
@@ -12,16 +13,12 @@ function FeaturedProjects () {
             <div className="lrg-wrapper">
 
                 <div className="featured-projects-grid grid-d-four-cols grid-t-two-cols">
-                    {featuredProjects.map(project => (
-                        <FeaturedProjectCard
-                            key={project.id}
-                            project={project}
-                            slug={project.slug}
-                            title={project.title}
-                            subtitle={project.subtitle}
-                            thumbnail={project.thumbnail}
-                            summary={project.summary}
-                        />
+                    {featuredProjects.map((project, index) => (
+
+                        <FadeIn key={project.id} delay={index * 0.25}>
+                            <FeaturedProjectCard key={project.id} project={project} slug={project.slug} title={project.title} subtitle={project.subtitle} thumbnail={project.thumbnail} summary={project.summary}/>
+                        </FadeIn>
+
                     ))}
                 </div>
                 

@@ -115,6 +115,7 @@ const reactDealerWebsite = {
 
   overview : {
     bgClass           : "",
+    backgroundImage   : heroImg,
     wrapperClass      : "sml-wrapper",
     titleEyebrow      : "Overview",
     title             : "From Frontend Foundations to React",

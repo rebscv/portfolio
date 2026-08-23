@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./FeaturedCaseStudy.css";
 import FadeIn from "../../animations/FadeIn";
 
-
 function featuredCaseStudy({ project }) {
 
     const { slug, title, subtitle, caseStudyHero, featureTitle, caseStudyText } = project;
@@ -19,13 +18,13 @@ function featuredCaseStudy({ project }) {
                 <div className="featured-case-study-text-container">
 
 
-                        <FadeIn direction="up" duration={1}>
+                        <FadeIn direction="up" duration={1} once={false}>
                             <div className="featured-case-study-text grid">
+                                
                                 <h2>{featureTitle}</h2>
                                 {caseStudyText}
-                                <div>
-                                    <Link to={`/projects/${slug}`} className="btn btn-primary">View Case Study</Link>
-                                </div>
+                                <div><Link to={`/projects/${slug}`} className="btn btn-outline">View Case Study <svg className="icon-arrow-top-right"><use xlinkHref="/icons.svg#icon-arrow-top-right"></use></svg></Link></div>
+
                             </div>
                         </FadeIn>
 
