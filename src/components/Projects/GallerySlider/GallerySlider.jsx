@@ -11,6 +11,14 @@ function GallerySlider({ items, title, titleEyebrow, text, wrapperClass, bgClass
             <div className={`${wrapperClass || 'full-wrapper'}`}>
 
 
+                {titleEyebrow && 
+                    <div className="project-text-block-title-eyebrow t-center">
+                        <h2 className="title-eyebrow">{titleEyebrow}</h2>
+                        <h3 className="h2">{title}</h3>
+                    </div>
+                }
+
+                {!titleEyebrow && title && (<h2>{title}</h2>)}
 
                 <div className="embla">
 
@@ -19,37 +27,31 @@ function GallerySlider({ items, title, titleEyebrow, text, wrapperClass, bgClass
 
                             {items.map((slide) => (
                                 <div className={`embla__slide ${slide.className}`} key={slide.id}>
-                                    <picture>
-                                        <source media="(max-width: 767px)" srcSet={slide.imageMobile} />
-                                        <img src={slide.image} alt={slide.title} fetchPriority="high" />
-                                    </picture>
+                                    <div className="project-gallery-slide-inner">
+                                        <div className="gallery-column-img">
+                                            <picture>
+                                                <source media="(max-width: 767px)" srcSet={slide.imageMobile} />
+                                                <img src={slide.image} alt={slide.title} fetchPriority="high" />
+                                            </picture>
+                                        </div>
+                                    </div>
                                 </div>
                             ))}
 
                         </div>
                     </div>
 
-                    <div className="embla__dots__container">
-                        <div className="embla__dots">
-                            {items.map((_, index) => (
+                    <div className="embla__dots__container">            
 
+                        <button className="embla__prev" onClick={() => { scrollPrev(); resetAutoplay(); }}><svg className="icon-arrow-left"><use href="/icons.svg#icon-arrow-left"></use></svg></button>
+                        <div className="embla__dots">                          
+                            {items.map((_, index) => (
                                 <button key={index} className={`embla__dot ${index === selectedIndex ? "is-active" : ""}`} onClick={() => {scrollTo(index); resetAutoplay();}} >
                                     {index === selectedIndex && (<span className="embla__dot-progress" />)}
                                 </button>
-
-                            ))}
+                            ))}                           
                         </div>
-                    </div>
-
-                    <div className="embla__arrows__container">
-
-                        <button className="embla__prev" onClick={() => { scrollPrev(); resetAutoplay(); }}>
-                            <svg className="icon-arrow-left"><use href="/icons.svg#icon-arrow-left"></use></svg>
-                        </button>
-
-                        <button className="embla__next" onClick={() => { scrollNext(); resetAutoplay(); }}>
-                            <svg className="icon-arrow-right"><use href="/icons.svg#icon-arrow-right"></use></svg>                   
-                        </button>
+                        <button className="embla__next" onClick={() => { scrollNext(); resetAutoplay(); }}><svg className="icon-arrow-right"><use href="/icons.svg#icon-arrow-right"></use></svg></button>
 
                     </div>
 

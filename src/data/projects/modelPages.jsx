@@ -1,6 +1,30 @@
 import thumbImg                     from "../../assets/projects/model-pages/thumb.webp";
 import heroImg                      from "../../assets/projects/model-pages/hero.webp"
 import heroMobileImg                from "../../assets/projects/model-pages/hero-m.webp"
+import summaryImg                   from "../../assets/projects/model-pages/summary.webp"
+import summaryBgImg                 from "../../assets/projects/summary-bg.webp";
+import rangeImg                     from "../../assets/projects/model-pages/range.webp";
+
+import fordLogoImg            from "../../assets/projects/wordpress-template/ford-logo.webp"
+import fordGalleryImg         from "../../assets/projects/wordpress-template/ford-gallery-thumb.webp"
+import fordGalleryImg1        from "../../assets/projects/model-pages/gallery-4.webp"
+import fordGalleryImg2        from "../../assets/projects/model-pages/gallery-5.webp"
+import fordGalleryImg3        from "../../assets/projects/wordpress-template/ford-gallery-3.webp"
+
+import xpengLogoImg           from "../../assets/projects/wordpress-template/xpeng-logo.webp"
+import xpengGalleryImg        from "../../assets/projects/wordpress-template/xpeng-gallery-thumb.webp"
+import xpengGalleryImg1       from "../../assets/projects/model-pages/gallery-1.webp"
+import xpengGalleryImg2       from "../../assets/projects/model-pages/gallery-2.webp"
+import xpengGalleryImg3       from "../../assets/projects/model-pages/gallery-3.webp"
+
+import forthingLogoImg        from "../../assets/projects/wordpress-template/forthing-logo.webp"
+import forthingGalleryImg     from "../../assets/projects/wordpress-template/forthing-gallery-thumb.webp"
+import forthingGalleryImg1    from "../../assets/projects/wordpress-template/forthing-gallery-1.webp"
+import forthingGalleryImg2    from "../../assets/projects/wordpress-template/forthing-gallery-2.webp"
+import forthingGalleryImg3    from "../../assets/projects/wordpress-template/forthing-gallery-3.webp"
+
+import featuredImg            from "../../assets/projects/wordpress-template/featured-thumb.webp";
+
 
 const modelPages = {
   id                : 3,
@@ -30,15 +54,15 @@ const modelPages = {
       data      : "summary"
     },
     {
-      type      : "textBlock",
-      data      : "overview"
-    },
-    {
       type      : "process",
       data      : "process"
     },
     {
-      type      : "gallerySlider",
+      type      : "textColumnBlock",
+      data      : "modelRange"
+    },
+    {
+      type      : "galleryFancy",
       data      : "gallery"
     },
     {
@@ -52,12 +76,7 @@ const modelPages = {
     imageMobile   : heroMobileImg,
     imageAlt      : "Mazda",
     title         : "Model Range Creation",
-    subtitle      : "Development"
-  },
-
-  summary : {
-    bgClass           : "",
-    wrapperClass      : "std-wrapper",
+    subtitle      : "Development",
     metadata          :
     {
       role            : "Frontend Developer",
@@ -70,19 +89,21 @@ const modelPages = {
     },
     technologies      : [ "HTML", "CSS", "JavaScript", "WordPress"],
     github            : "",
-    liveSite          : "",
-    image             : thumbImg
+    liveSite          : ""
   },
 
-  overview : {
+  summary : {
     bgClass           : "",
+    backgroundImage   : summaryBgImg,
     wrapperClass      : "sml-wrapper",
     titleEyebrow      : "Overview",
     title             : "From a single model design to a complete vehicle range",
     text              :
     [
       "Vehicle model pages are a core part of automotive websites, with each model requiring its own content, imagery, specifications and features. In many projects, I was provided with the design for a single model page. I built the initial implementation, established the page structure and functionality, and then used that implementation as the foundation for the rest of the vehicle range."
-    ]
+    ],
+    image             : summaryImg
+
   },
 
   process : {
@@ -144,23 +165,105 @@ const modelPages = {
     ]
   },
 
+  modelRange : {
+    bgClass           : "dark-grey-bg",
+    wrapperClass      : "std-wrapper",
+    gridClass         : "grid-d-two-cols gv-center",
+    titleEyebrow      : "Model Range Expansion",
+    title             : "Expanding the Initial Model Across the Range",
+    text              :
+    [
+      "After receiving the design for the initial model, I built the first model page and established the layout, content structure and overall format. This initial implementation then became the foundation for expanding the rest of the vehicle range, providing a consistent structure and experience across each model.",
+      "For the remaining models, I referenced the OEM manufacturer website to research and gather the relevant content, specifications, features and imagery. I then adapted this content to the established model page structure, making adjustments where required while maintaining consistency across the range. This approach allowed me to efficiently expand a single model implementation into a complete range of model pages."
+    ],
+    image             : rangeImg
+  },
+
   gallery : {
     bgClass           : "",
     wrapperClass      : "",
-    titleEyebrow      : "Implementation",
-    title             : "Explore the builds",
+    titleEyebrow      : "Take a Glimpse",
+    title             : "Gallery",
     items             :
     [
-        {
-            id: 1,
-            image: heroImg,
-        },
-        {
-            id: 2,
-            image: heroImg,
-        }
+
+      {
+        id                : "1",
+        brand             : "XPENG",
+        projectCardTitle  : "XPENG AU Dealership Template",
+        brandImg          : xpengGalleryImg,
+        brandLogo         : xpengLogoImg,
+        gridColumns       : "",
+        gallery           : 
+        [
+          {
+            id            : "1",
+            image         : xpengGalleryImg1
+          },
+          {
+            id            : "2",
+            image         : xpengGalleryImg2
+          },
+          {
+            id            : "3",
+            image         : xpengGalleryImg3
+          }
+        ]
+      },
+
+      {
+        id                : "2",
+        brand             : "Ford",
+        projectCardTitle  : "Ford ZA Dealership Template",
+        brandImg          : fordGalleryImg,
+        brandLogo         : fordLogoImg,
+        gridColumns       : "",
+        gallery           : 
+        [
+          {
+            id            : "1",
+            image         : fordGalleryImg1
+          },
+          {
+            id            : "2",
+            image         : fordGalleryImg2
+          },
+          {
+            id            : "3",
+            image         : fordGalleryImg3
+          }
+        ]
+      },
+
+
+
+      {
+        id                : "3",
+        brand             : "Forthing",
+        projectCardTitle  : "Forthing NZ Dealership Template",
+        brandImg          : forthingGalleryImg,
+        brandLogo         : forthingLogoImg,
+        gridColumns       : "",
+        gallery           : 
+        [
+          {
+            id            : "1",
+            image         : forthingGalleryImg1
+          },
+          {
+            id            : "2",
+            image         : forthingGalleryImg2
+          },
+          {
+            id            : "3",
+            image         : forthingGalleryImg3
+          }
+        ]
+      }
+      
     ]
   },
+
 
   outcome : {
     bgClass           : "",

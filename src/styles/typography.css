@@ -46,18 +46,14 @@ p a:hover {
   width: fit-content;
   display: block;
   font-size: 14px;
-  background: linear-gradient(45deg, #00fffc, #e400ff);
-
-  /* Clip the background to the text */
+  background: var(--clr-gradient);
   -webkit-background-clip: text;
   background-clip: text;
-
-  /* Make the text transparent so the gradient shows through */
   -webkit-text-fill-color: transparent;
   color: transparent;
+  letter-spacing: var(--extra-text-spacing);
+  text-transform: uppercase;
 }
-
-
 
 .title-eyebrow::before {
   content: "//";
@@ -89,6 +85,7 @@ p a:hover {
 
   .title-eyebrow {
     font-size: 20px;
+    font-size: 12px;
   }
     
 }

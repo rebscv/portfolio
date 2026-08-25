@@ -1,0 +1,47 @@
+.process-pinned-scroll {
+    position: relative;
+    height: calc(100vh * var(--step-count));
+}
+
+.process-pinned-scroll-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.process-pinned-scroll-steps {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.process-pinned-scroll-track {
+    display: flex;
+    flex-direction: column;
+}
+
+.process-pinned-scroll-step {
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.process-pinned-scroll-content {
+    display: grid;
+}
+
+.process-pinned-scroll-title {
+    display: flex;
+    align-items: center;
+}
+
+.process-pinned-scroll-step-block {
+    padding: 48px;
+    border: solid 1px #2a2a2a;
+    border-radius: 24px;
+    background-color: #ffffff05;
+    position: relative;
+    text-align: left;
+    align-content: start;
+}

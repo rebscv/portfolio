@@ -17,7 +17,7 @@ function GalleryFancyBox ({ bgClass, titleEyebrow, title, items, project }) {
 
                 {titleEyebrow && 
                     <div className="project-text-block-title-eyebrow t-center">
-                        <h2 className="subtitle-eyebrow">{titleEyebrow}</h2>
+                        <h2 className="title-eyebrow">{titleEyebrow}</h2>
                         <h3 className="h2">{title}</h3>
                     </div>
                 }

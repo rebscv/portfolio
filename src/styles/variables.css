@@ -5,7 +5,7 @@
 	--padding-lr: 24px;
 	--padding-tb: 24px;
 	--padding-lr-d: 40px;
-	--padding-tb-d: 80px;
+	--padding-tb-d: 120px;
 
   --grid-gap: 24px;
   --grid-gap-d: 32px;
@@ -28,12 +28,30 @@
   --clr-white: #ffffff;
   --clr-black: #101010;
 
-  --clr-grey: #f5f5f5;
+  --clr-grey: #cccccc;
   --clr-grey-dk: #999999;  
 
-  --clr-dark-grey: #3a3d46;
+  --clr-dark-grey: #151515;
   --clr-dark-grey-lt: #545760;
   --clr-dark-grey-dk: #21242D;
+
+  --clr-blue: #00fffc;
+  --clr-blue-lt: #26FFFF;
+  --clr-blue-xlt: #BFFFFF;
+  --clr-blue-dk: #00B3B0;
+  --clr-blue-xdk: #006663;
+
+  --clr-purple: #8969fa;
+  --clr-purple-lt: #AF8FFF;
+  --clr-purple-xlt: #FCDCFF;
+  --clr-purple-dk: #3D1DAE;
+  --clr-purple-xdk: #00002E;
+
+  --clr-pink: #e400ff;
+  --clr-pink-lt: #FF26FF;
+  --clr-pink-xlt: #FFBFFF;
+  --clr-pink-dk: #9800B3;
+  --clr-pink-xdk: #4B0066;
 
   --clr-nav: #000000;
 
@@ -51,6 +69,8 @@
 
   --extra-text-spacing: 1em;
 
+  --clr-gradient: linear-gradient(45deg, #00fffc, #e400ff);
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -59,4 +79,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
 }

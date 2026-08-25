@@ -31,6 +31,7 @@ function Skills() {
 
                         ))}
                         </div>
+                        
                     </div>
                 ))}
 

@@ -3,7 +3,10 @@ import featuredImg            from "../../assets/projects/wordpress-template/fea
 import heroImg                from "../../assets/projects/wordpress-template/hero.webp"
 import heroMobileImg          from "../../assets/projects/wordpress-template/hero-m.webp"
 import logoImg                from "../../assets/projects/wordpress-template/logo.webp"
-
+import summaryImg             from "../../assets/projects/wordpress-template/summary.webp";
+import summaryBgImg           from "../../assets/projects/summary-bg.webp";
+import pixelImg               from "../../assets/projects/wordpress-template/pixel-perfect.webp";
+import readyImg               from "../../assets/projects/wordpress-template/ready-for-use.webp";
 
 import featuredCaseStudyImg   from "../../assets/projects/wordpress-template/featured-case-study.webp"
 
@@ -14,28 +17,27 @@ import bmwGalleryImg3         from "../../assets/projects/wordpress-template/bmw
 
 import mazdaLogoImg           from "../../assets/projects/wordpress-template/mazda-logo.webp"
 import mazdaImg               from "../../assets/projects/wordpress-template/mazda-gallery-thumb.webp"
-import mazdaGalleryImg1         from "../../assets/projects/wordpress-template/mazda-gallery-1.webp"
-import mazdaGalleryImg2         from "../../assets/projects/wordpress-template/mazda-gallery-2.webp"
-import mazdaGalleryImg3         from "../../assets/projects/wordpress-template/mazda-gallery-3.webp"
-
+import mazdaGalleryImg1       from "../../assets/projects/wordpress-template/mazda-gallery-1.webp"
+import mazdaGalleryImg2       from "../../assets/projects/wordpress-template/mazda-gallery-2.webp"
+import mazdaGalleryImg3       from "../../assets/projects/wordpress-template/mazda-gallery-3.webp"
 
 import fordLogoImg            from "../../assets/projects/wordpress-template/ford-logo.webp"
 import fordGalleryImg         from "../../assets/projects/wordpress-template/ford-gallery-thumb.webp"
-import fordGalleryImg1         from "../../assets/projects/wordpress-template/ford-gallery-1.webp"
-import fordGalleryImg2         from "../../assets/projects/wordpress-template/ford-gallery-2.webp"
-import fordGalleryImg3         from "../../assets/projects/wordpress-template/ford-gallery-3.webp"
+import fordGalleryImg1        from "../../assets/projects/wordpress-template/ford-gallery-1.webp"
+import fordGalleryImg2        from "../../assets/projects/wordpress-template/ford-gallery-2.webp"
+import fordGalleryImg3        from "../../assets/projects/wordpress-template/ford-gallery-3.webp"
 
-import xpengLogoImg            from "../../assets/projects/wordpress-template/xpeng-logo.webp"
-import xpengGalleryImg         from "../../assets/projects/wordpress-template/xpeng-gallery-thumb.webp"
-import xpengGalleryImg1         from "../../assets/projects/wordpress-template/xpeng-gallery-1.webp"
-import xpengGalleryImg2         from "../../assets/projects/wordpress-template/xpeng-gallery-2.webp"
-import xpengGalleryImg3         from "../../assets/projects/wordpress-template/xpeng-gallery-3.webp"
+import xpengLogoImg           from "../../assets/projects/wordpress-template/xpeng-logo.webp"
+import xpengGalleryImg        from "../../assets/projects/wordpress-template/xpeng-gallery-thumb.webp"
+import xpengGalleryImg1       from "../../assets/projects/wordpress-template/xpeng-gallery-1.webp"
+import xpengGalleryImg2       from "../../assets/projects/wordpress-template/xpeng-gallery-2.webp"
+import xpengGalleryImg3       from "../../assets/projects/wordpress-template/xpeng-gallery-3.webp"
 
-import forthingLogoImg            from "../../assets/projects/wordpress-template/forthing-logo.webp"
-import forthingGalleryImg         from "../../assets/projects/wordpress-template/forthing-gallery-thumb.webp"
-import forthingGalleryImg1         from "../../assets/projects/wordpress-template/forthing-gallery-1.webp"
-import forthingGalleryImg2         from "../../assets/projects/wordpress-template/forthing-gallery-2.webp"
-import forthingGalleryImg3         from "../../assets/projects/wordpress-template/forthing-gallery-3.webp"
+import forthingLogoImg        from "../../assets/projects/wordpress-template/forthing-logo.webp"
+import forthingGalleryImg     from "../../assets/projects/wordpress-template/forthing-gallery-thumb.webp"
+import forthingGalleryImg1    from "../../assets/projects/wordpress-template/forthing-gallery-1.webp"
+import forthingGalleryImg2    from "../../assets/projects/wordpress-template/forthing-gallery-2.webp"
+import forthingGalleryImg3    from "../../assets/projects/wordpress-template/forthing-gallery-3.webp"
 
 
 import { image, p, text, title } from "framer-motion/client";
@@ -76,28 +78,20 @@ const wordpressTemplate = {
       data      : "summary"
     },
     {
-      type      : "textBlock",
-      data      : "overview"
-    },
-    {
       type      : "process",
       data      : "process"
     },
     {
-      type      : "galleryFancy",
-      data      : "implementations"
-    },
-    {
-      type      : "gallerySlider",
-      data      : "implementationsSlider"
-    },
-    {
-      type      : "textBlock",
+      type      : "textColumnBlock",
       data      : "pixelPerfect"
     },
     {
-      type      : "textBlock",
+      type      : "textColumnBlock",
       data      : "architecture"
+    },
+    {
+      type      : "galleryFancy",
+      data      : "implementations"
     },
     {
       type      : "process",
@@ -113,27 +107,22 @@ const wordpressTemplate = {
     image         : heroImg,
     imageMobile   : heroMobileImg,
     title         : "WordPress Template Development",
-    subtitle      : "Design to reusable WordPress themes"
+    subtitle      : "Design to reusable WordPress themes",
+    metadata          :
+    {
+      role            : "Frontend Developer",
+      projectType     : "Commercial",
+      year            : "2021 - Present",
+      focus           : "Theme Development / Front End Development",
+      projects        : "BMW, Ford ZA, Foton ZA, Mazda NZ, XPENG",        
+      platform        : "WordPress",
+      design          : "Figma & Illustrator / Provided Design"
+    }
   },
 
   summary : {
     bgClass           : "",
-    wrapperClass      : "std-wrapper",
-    metadata          :
-    {
-      focus           : "Theme Development / Front End Development",
-      projects        : "BMW, Ford ZA, Foton ZA, Mazda NZ, XPENG",
-      role            : "Frontend Developer",
-      platform        : "WordPress",
-      design          : "Figma & Illustrator / Provided Design"
-    },
-    github            : "",
-    liveSite          : "",
-    image             : thumbImg
-  },
-
-  overview : {
-    bgClass           : "",
+    backgroundImage   : summaryBgImg,
     wrapperClass      : "sml-wrapper",
     titleEyebrow      : "Overview",
     title             : "From Design to Development",
@@ -142,14 +131,16 @@ const wordpressTemplate = {
       "These dealership websites were developed using a shared WordPress foundation, allowing new brand websites to be built from an established starting point rather than from scratch.",
       "Each project began with a blank WordPress installation containing placeholder content and the core dealership page structure. Designs were supplied in Figma, which I translated into responsive WordPress templates with a strong focus on pixel-accurate implementation.",
       "The result was a collection of brand-specific websites built on a consistent technical foundation while allowing each design to retain its own visual identity."
-    ]
+    ],
+    image             : summaryImg
   },
+
   
   process : {
     bgClass           : "",
     wrapperClass      : "sml-wrapper t-center",
     titleEyebrow      : "The Process",
-    title             : "Take it step by step",
+    title             : "Take it Step by Step",
     steps             :
     [
       {
@@ -186,11 +177,39 @@ const wordpressTemplate = {
     ]
   },
 
+  pixelPerfect  : {
+    bgClass           : "dark-grey-bg",
+    wrapperClass      : "lrg-wrapper no-padding-bottom",
+    gridClass         : "grid-d-two-cols gv-center",
+    titleEyebrow      : "Pixel-Perfect Implementation",
+    title             : "The Extra Step",
+    text              :
+    [
+      "These dealership websites were developed using a shared WordPress foundation, allowing new brand websites to be built from an established starting point rather than from scratch.",
+      "Each project began with a blank WordPress installation containing placeholder content and the core dealership page structure. Designs were supplied in Figma, which I translated into responsive WordPress templates with a strong focus on pixel-accurate implementation.",
+      "The result was a collection of brand-specific websites built on a consistent technical foundation while allowing each design to retain its own visual identity."
+    ],
+    image             : pixelImg,
+  },
+
+  architecture  : {
+    bgClass           : "dark-grey-bg",
+    wrapperClass      : "lrg-wrapper no-padding-top",
+    gridClass         : "grid-d-two-cols grid-d-reverse gv-center",
+    titleEyebrow      : "Reusable Architecture",
+    title             : "Ready for Use",
+    text              :
+    [
+      "Although each site had its own visual design, the projects were built around a common WordPress foundation. This allowed recurring dealership structures and functionality to be reused while individual themes could be styled and adapted for each brand."
+    ],
+    image             : readyImg
+  },
+
   implementations : {
     bgClass           : "",
     wrapperClass      : "",
-    titleEyebrow      : "Implementation",
-    title             : "Explore the builds",
+    titleEyebrow      : "Take a Glimpse",
+    title             : "Gallery",
     items             :
     [
       {
@@ -316,51 +335,10 @@ const wordpressTemplate = {
     ]
   },
 
-  implementationsSlider : {
-    bgClass           : "",
-    wrapperClass      : "",
-    titleEyebrow      : "Implementation",
-    title             : "Explore the builds",
-    items             :
-    [
-        {
-            id: 1,
-            image: bmwGalleryImg1,
-        },
-        {
-            id: 2,
-            image: bmwGalleryImg2,
-        }
-    ]
-  },
-
-  pixelPerfect  : {
-    bgClass           : "",
-    wrapperClass      : "sml-wrapper no-padding-top",
-    titleEyebrow      : "Pixel-Perfect Implementation",
-    title             : "The Extra Step",
-    text              :
-    [
-      "These dealership websites were developed using a shared WordPress foundation, allowing new brand websites to be built from an established starting point rather than from scratch.",
-      "Each project began with a blank WordPress installation containing placeholder content and the core dealership page structure. Designs were supplied in Figma, which I translated into responsive WordPress templates with a strong focus on pixel-accurate implementation.",
-      "The result was a collection of brand-specific websites built on a consistent technical foundation while allowing each design to retain its own visual identity."
-    ]
-  },
-
-  architecture  : {
-    bgClass           : "",
-    wrapperClass      : "sml-wrapper no-padding-top",
-    titleEyebrow      : "Reusable Architecture",
-    title             : "Ready for Use",
-    text              :
-    [
-      "Although each site had its own visual design, the projects were built around a common WordPress foundation. This allowed recurring dealership structures and functionality to be reused while individual themes could be styled and adapted for each brand."
-    ]
-  },
-
   keySkills : {
-    bgClass           : "",
-    wrapperClass      : "sml-wrapper",
+    bgClass           : "dark-grey-bg",
+    wrapperClass      : "sml-wrapper t-center",
+    titleEyebrow      : "The Toolkit",
     title             : "Key Skills",
     steps             :
     [

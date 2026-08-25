@@ -3,6 +3,11 @@ import featuredImg                  from "../../assets/projects/custom-wordpress
 import logoImg                      from "../../assets/projects/custom-wordpress/logo.webp";
 import heroImg                      from "../../assets/projects/custom-wordpress/hero.webp"
 import heroMobileImg                from "../../assets/projects/custom-wordpress/hero-m.webp"
+import galleryImg1                  from "../../assets/projects/custom-wordpress/gallery-1.webp"
+import galleryImg2                  from "../../assets/projects/custom-wordpress/gallery-2.webp"
+import galleryImg3                  from "../../assets/projects/custom-wordpress/gallery-3.webp"
+import galleryImg4                  from "../../assets/projects/custom-wordpress/gallery-4.webp"
+import galleryImg5                  from "../../assets/projects/custom-wordpress/gallery-5.webp"
 
 
 const customWordpress = {
@@ -48,7 +53,7 @@ const customWordpress = {
       data      : "designDevelopement"
     },
     {
-      type      : "gallerySlider",
+      type      : "galleryColumnsSlider",
       data      : "implementationsSlider"
     },
     {
@@ -161,11 +166,18 @@ const customWordpress = {
     [
         {
             id: 1,
-            image: heroImg,
+            imageOne: galleryImg1,
+            imageTwo: galleryImg2,
         },
         {
             id: 2,
-            image: heroImg,
+            imageOne: galleryImg3,
+            imageTwo: galleryImg4,
+        },
+        {
+            id: 3,
+            imageOne: galleryImg5,
+            imageTwo: "",
         }
     ]
   },

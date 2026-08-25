@@ -1,3 +1,5 @@
+import "./TechStack.css";
+
 function TechStacks ({ wrapperClass, bgClass, gridColumns, title, items }) {
 
     return (
@@ -9,7 +11,7 @@ function TechStacks ({ wrapperClass, bgClass, gridColumns, title, items }) {
                 <div className={`project-teck-stacks-grid ${gridColumns || 'grid-d-three-cols'}`}>
 
                     {items.map((item, index) =>(
-                        <div key={{index}}>{item}</div>
+                        <div key={{index}} className="project-teck-stack-item">{item}</div>
                     ))}
 
                 </div>

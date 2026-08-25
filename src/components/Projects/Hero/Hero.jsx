@@ -1,6 +1,8 @@
 import "./hero.css";
 
-function Hero ({ title, subtitle, image, imageAlt, imageMobile }) {
+function Hero ({ title, subtitle, description, image, imageAlt, imageMobile, metadata, technologies, github, liveSite }) {
+
+    const labels = { role: "Role", projectType: "Project Type", platform: "Platform", design: "Design", focus: "Focus", projects: "Projects", template: "Template", project: "Project", year: "Year" };
 
     return (
         <section className="project-hero black-bg dark-bg">
@@ -15,12 +17,46 @@ function Hero ({ title, subtitle, image, imageAlt, imageMobile }) {
                 <div className="hero-banner-layer">
                     <div className="hero-banner-text">
 
-                        <h1>{title}</h1>
-                        {subtitle && <h2>{subtitle}</h2>}
+                        <div className="hero-banner-title">
+                            {subtitle && <h2>{subtitle}</h2>}
+                            <h1>{title}</h1>                            
+                        </div>
 
-                        <a className="project-hero-more" href="#overview">
-                            <svg className="icon-more-arrow" aria-hidden="true"><use xlinkHref="/icons.svg#icon-more-arrow"></use></svg>
-                        </a>
+
+
+                        <div className="hero-summary-details">
+
+                            {metadata && 
+                                <div className="hero-summary-details-rows">
+                                    {Object.entries(metadata).map(([key, value]) => (
+                                        <div key={key} className="hero-summary-row">
+                                            <div className="hero-summary-row-label">{labels[key]}</div>
+                                            <div className="hero-summary-row-value">{value}</div>
+                                        </div>
+                                    ))}
+                                </div>
+                            }
+
+                            {technologies &&
+                                <div className="hero-summary-technologies">
+                                    <p className="hero-summary-technologies-head">Technologies</p>
+                                    <ul>
+                                        {technologies.map((tech) => (
+                                            <li key={tech}><span>{tech}</span></li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            }
+                            
+                            <div className="hero-summary-links">
+                                <div className="btn-flex">
+                                    <div>{github && ( <a href={github} className="btn btn-outline">GitHub</a> )}</div>
+                                    <div>{liveSite && ( <a href={liveSite} className="btn btn-outline">Live Demo</a> )}</div>
+                                </div>
+                            </div>
+
+                        </div>
+
 
                     </div>
                 </div>

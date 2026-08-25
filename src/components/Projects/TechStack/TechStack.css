@@ -1,0 +1,16 @@
+.project-teck-stacks-grid {
+    gap: 8px;
+}
+
+.project-teck-stack-item {
+    background-color: #ffffff0a;
+    padding: 12px;
+    border-radius: 24px;
+    text-align: center;
+padding: 6px 12px 6px;
+    display: inline-block;
+    line-height: 1;
+    font-size: 0.65em;
+    border-radius: 12px;
+    background-color: #ffffff0f;
+}

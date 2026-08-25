@@ -30,10 +30,10 @@
 
 /* Dots */
 .embla__dots {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 16px;
+  align-items: center;
 }
 
 .embla__dots__container {
@@ -42,25 +42,27 @@
 
 .embla__dot {
   position: relative;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: transparent;
   overflow: hidden;
   border: none;
   cursor: pointer;
-  border: solid 2px #e5e5e5;
+  background-color: #ffffff2b;;
 }
 
 .embla__dot.is-active {
   background: transparent;
-  border: solid 2px var(--clr-primary);
+  border: solid 2px var(--clr-white);
+  width: 32px;
+  border-radius: 12px;
 }
 
 .embla__dot-progress {
   position: absolute;
   inset: 0;
-  background: var(--clr-primary);
+  background: var(--clr-white);
   transform-origin: left;
   animation: emblaProgress 4s linear forwards;
 }
@@ -83,11 +85,42 @@
   transform: translateY(-50%);
   left: var(--padding-lr);
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
 }
 
 .embla__next {
   left: auto;
   right: var(--padding-lr);
+}
+
+.embla__dots__container {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.embla__prev, .embla__next {
+  position: relative;
+  top: auto;
+  transform: none;
+  left: auto;
+  right: auto;
+  padding: 0;
+  color: var(--clr-white);
+  display: flex;
+  padding: 8px 9px 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: solid 1px #ffffff2b;
+  transition: ease 0.3s all;
+}
+
+.embla__prev:hover, .embla__next:hover {
+  background-color: #666;
+  border: solid 1px #666;
 }
 
 
@@ -211,7 +244,47 @@ Embla Grid to Flex Styles
 
 }
 
-.project-gallery-slider .embla .embla__container > div {
+.project-gallery-slider .embla .embla__container > div, .project-gallery-columns-slider .embla .embla__container > div {
   flex: 0 0 65%;
 }
 
+.project-gallery-columns-slider, .project-gallery-slider {
+  background-color: #1c1c1c;
+  display: grid;
+  align-content: center;
+}
+
+.project-gallery-columns-slider .full-wrapper, .project-gallery-slider .full-wrapper {
+  padding: 2.5% 0;
+}
+
+.project-gallery-slide-inner {
+  padding: 32px;
+}
+
+.project-gallery-flex {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 48px;
+  background-color: #f1f1f1;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px #0000005e;
+}
+
+.gallery-column-img {
+  width: 50%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: solid 1px #e5e5e5;
+}
+
+.gallery-column-img img {
+  display: block;
+  width: 100%;
+}
+
+.project-gallery-slider .gallery-column-img {
+  width: 100%;
+}

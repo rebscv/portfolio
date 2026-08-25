@@ -222,6 +222,10 @@
   object-fit: cover;
 }
 
+.gv-center {
+align-items: center!important;
+}
+
 @media (min-width:768px) {
 
   .grid-l-two-cols .center-content > div {

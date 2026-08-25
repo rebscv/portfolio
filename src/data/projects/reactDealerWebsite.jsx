@@ -1,12 +1,31 @@
-import { data } from "react-router-dom";
-
 import thumbImg                     from "../../assets/projects/react-dealership/thumb.webp";
 import featuredImg                  from "../../assets/projects/react-dealership/featured-thumb.webp";
 import logoImg                      from "../../assets/projects/react-dealership/logo.webp";
-import heroImg                      from "../../assets/projects/react-dealership/hero.webp"
-import heroMobileImg                from "../../assets/projects/react-dealership/hero-m.webp"
-import featuredCaseStudyImg         from "../../assets/projects/react-dealership/featured-case-study.webp"
-import thumbPlaceholderImg          from "../../assets/projects/react-dealership/featured-case-study.webp"
+import heroImg                      from "../../assets/projects/react-dealership/hero.webp";
+import heroMobileImg                from "../../assets/projects/react-dealership/hero-m.webp";
+import featuredCaseStudyImg         from "../../assets/projects/react-dealership/featured-case-study.webp";
+import thumbPlaceholderImg          from "../../assets/projects/react-dealership/featured-case-study.webp";
+import summaryImg                   from "../../assets/projects/react-dealership/summary.webp";
+import summaryBgImg                 from "../../assets/projects/summary-bg.webp";
+import galleryImg1                  from "../../assets/projects/react-dealership/gallery-1.webp";
+import galleryImg2                  from "../../assets/projects/react-dealership/gallery-2.webp";
+import galleryImg3                  from "../../assets/projects/react-dealership/gallery-3.webp";
+import galleryImg4                  from "../../assets/projects/react-dealership/gallery-4.webp";
+import galleryImg5                  from "../../assets/projects/react-dealership/gallery-5.webp";
+import galleryImg6                  from "../../assets/projects/react-dealership/gallery-6.webp";
+import galleryImg7                  from "../../assets/projects/react-dealership/gallery-7.webp";
+import galleryImg8                  from "../../assets/projects/react-dealership/gallery-8.webp";
+import galleryComparisonImg1        from "../../assets/projects/react-dealership/gallery-comparison-1.webp";
+import galleryComparisonImg2       from "../../assets/projects/react-dealership/gallery-comparison-2.webp";
+import galleryComparisonImg3        from "../../assets/projects/react-dealership/gallery-comparison-3.webp";
+import galleryComparisonImg4        from "../../assets/projects/react-dealership/gallery-comparison-4.webp";
+import architectureImg              from "../../assets/projects/react-dealership/architecture.webp";
+import componentsImg                from "../../assets/projects/react-dealership/components.webp";
+import buildingImg1                 from "../../assets/projects/react-dealership/building-1.webp";
+import buildingImg2                 from "../../assets/projects/react-dealership/building-2.webp";
+import buildingImg3                 from "../../assets/projects/react-dealership/building-3.webp";
+import beyondImg                    from "../../assets/projects/react-dealership/beyond.webp";
+import { image } from "framer-motion/client";
 
 const reactDealerWebsite = {
   id                : 1,
@@ -44,19 +63,15 @@ const reactDealerWebsite = {
       data      : "summary"
     },
     {
-      type      : "textBlock",
-      data      : "overview"
-    },
-    {
       type      : "process",
       data      : "process"
     },
     {
-      type      : "textBlock",
+      type      : "textColumnBlock",
       data      : "architecture"
     },
     {
-      type      : "textBlock",
+      type      : "textColumnBlock",
       data      : "dataDriven"
     },
     {
@@ -64,7 +79,11 @@ const reactDealerWebsite = {
       data      : "wordpressToReact"
     },
     {
-      type      : "textBlock",
+      type      : "gallerySlider",
+      data      : "galleryOneColumn"
+    },
+    {
+      type      : "textColumnBlock",
       data      : "dynamicFunction"
     },
     {
@@ -72,9 +91,10 @@ const reactDealerWebsite = {
       data      : "keySkills"
     },
     {
-      type      : "gallerySlider",
+      type      : "galleryColumnsSlider",
       data      : "gallery"
     },
+
     {
       type      : "techStack",
       data      : "techStack"
@@ -90,12 +110,7 @@ const reactDealerWebsite = {
     imageMobile   : heroMobileImg,
     imageAlt      : "MX-5 driving on highway",
     title         : "React Developement",
-    subtitle      : "Mazda Dealership Demo"
-  },
-
-  summary : {
-    bgClass           : "",
-    wrapperClass      : "std-wrapper",
+    subtitle      : "Mazda Dealership Demo",
     metadata          :
     {
       role            : "Frontend Developer",
@@ -108,9 +123,21 @@ const reactDealerWebsite = {
       design          : "Self-Directed & Based off Mazda AU OEM Website"
     },
     technologies      : [ "React", "Vite", "React Router", "CSS", "Framer Motion", "Embla Carousel" ],
-    github            : "https://github.com/rebscv/react-dealership-homepage",
-    liveSite          : "",
-    image             : thumbImg
+  },
+
+  summary : {
+    bgClass           : "",
+    backgroundImage   : summaryBgImg,
+    wrapperClass      : "sml-wrapper",
+    titleEyebrow      : "Overview",
+    title             : "From Frontend Foundations to React",
+    text              :
+    [
+      "This project is a dealership-style website built with React and Vite as part of my transition into modern frontend development. The project was created to expand my existing frontend experience into React and build practical experience with component-based application development.",
+      "The project was developed progressively across three stages. The first focused on establishing the component architecture and React fundamentals, including reusable components, props and dynamic rendering. The second introduced the visual foundation through CSS Grid, Flexbox, responsive layouts, spacing and typography, while the final stage brought the interface together with imagery, branding, icons, interactions and a fully responsive UI.",
+      "The result is a polished dealership website demo that demonstrates my ability to apply existing frontend development skills to a modern React-based workflow, while developing a stronger understanding of reusable components, dynamic rendering and scalable frontend architecture."
+    ],
+    image             : summaryImg
   },  
 
   overview : {
@@ -132,7 +159,7 @@ const reactDealerWebsite = {
     bgClass           : "",
     wrapperClass      : "sml-wrapper t-center",
     titleEyebrow      : "The Process",
-    title             : "Take it step by step",
+    title             : "Take it Step by Step",
     steps             :
     [
       {
@@ -168,8 +195,9 @@ const reactDealerWebsite = {
   },
 
   architecture  : {
-    bgClass           : "",
-    wrapperClass      : "sml-wrapper no-padding-top",
+    bgClass           : "dark-grey-bg",
+    wrapperClass      : "std-wrapper no-padding-bottom",
+    gridClass         : "grid-d-two-cols gv-center",
     titleEyebrow      : "Component Architecture",
     title             : "Built to Scale",
     text              :
@@ -177,12 +205,14 @@ const reactDealerWebsite = {
       "Coming from a traditional HTML and CSS workflow, React introduced a different approach to structuring a website. Instead of building each section directly into a page, I could break the interface into reusable components and compose them together.",
       "Components such as vehicle cards, sliders, content sections and navigation elements could be created once and reused wherever they were needed.",
       "As the project grew, this approach made the codebase feel much easier to extend and maintain than repeatedly creating the same HTML structures."
-    ]
+    ],
+    image             : architectureImg
   },
   
   dataDriven  : {
-    bgClass           : "",
-    wrapperClass      : "sml-wrapper no-padding-top",
+    bgClass           : "dark-grey-bg",
+    wrapperClass      : "std-wrapper no-padding-top",
+    gridClass         : "grid-d-two-cols grid-d-reverse gv-center",
     titleEyebrow      : "Data-Driven Development",
     title             : "Content Meets Components",
     text              :
@@ -191,12 +221,13 @@ const reactDealerWebsite = {
       "In my previous work, I was used to building pages directly in HTML, writing the markup and repeating the required classes and structures for each section. I had used JSON data in other projects, but primarily for simple lists such as model names, images, URLs and descriptions.",
       "React introduced a different way of thinking. Instead of creating each piece of content manually, I could define the content in JavaScript data and have reusable components render it dynamically.",
       "I found this approach much more scalable and easier to maintain. Adding new content or changing an existing section no longer meant copying and updating large amounts of HTML. The component could remain the same while the data changed."
-    ]
+    ],
+    image             : componentsImg
   },
   
   wordpressToReact  : {
     bgClass           : "",
-    wrapperClass      : "sml-wrapper no-padding-top",
+    wrapperClass      : "std-wrapper t-center",
     titleEyebrow      : "From WordPress to React",
     title             : "Building on Existing Experience",
     text              :
@@ -207,9 +238,28 @@ const reactDealerWebsite = {
     ]
   },
   
+  wordpressToReactImages  : {
+    bgClass           : "",
+    wrapperClass      : "std-wrapper no-padding-top",
+    gridClass         : "grid-d-three-cols",
+    items             :
+    [
+      {
+        image         : buildingImg1,
+      },
+      {
+        image         : buildingImg2,
+      },
+      {
+        image         : buildingImg3,
+      }
+    ]
+  },
+  
   dynamicFunction : {
     bgClass           : "",
-    wrapperClass      : "sml-wrapper no-padding-top",
+    wrapperClass      : "std-wrapper",
+    gridClass         : "grid-d-two-cols gv-center",
     titleEyebrow      : "Dynamic Functionality",
     title             : "Beyond the Homepage",
     text              :
@@ -217,12 +267,14 @@ const reactDealerWebsite = {
       "Building the stock section was one of the most valuable parts of the project. My previous work had focused primarily on dealership website templates, so I had limited experience developing the stock search functionality itself.",
       "Using React, I built a dynamic stock page with filtering, sorting and search functionality, along with individual vehicle detail pages.",
       "I was surprised by how naturally React handled this type of interface. Managing the data and UI through components and state made it possible to build a feature-rich stock experience without needing to treat each result or page as a separate piece of markup."
-    ]
+    ],
+    image             : beyondImg
   },
 
-keySkills : {
-    bgClass           : "",
-    wrapperClass      : "sml-wrapper",
+  keySkills : {
+    bgClass           : "dark-grey-bg",
+    wrapperClass      : "sml-wrapper t-center",
+    titleEyebrow      : "The Toolkit",
     title             : "Key Skills",
     steps             :
     [
@@ -264,24 +316,62 @@ keySkills : {
   gallery : {
     bgClass           : "",
     wrapperClass      : "",
+    titleEyebrow      : "Take a glimpse",
+    title             : "Gallery",
+    items             :
+    [
+        {
+            id: 1,
+            imageOne: galleryImg1,
+            imageTwo: galleryImg2,
+        },
+        {
+            id: 2,
+            imageOne: galleryImg3,
+            imageTwo: galleryImg4,
+        },  
+        {
+            id: 3,
+            imageOne: galleryImg5,
+            imageTwo: galleryImg6,
+        },
+        {
+            id: 4,
+            imageOne: galleryImg7,
+            imageTwo: galleryImg8,
+        }
+    ]
+  },
+
+  galleryOneColumn : {
+    bgClass           : "",
+    wrapperClass      : "no-padding-top",
     titleEyebrow      : "Gallery",
     title             : "Gallery",
     items             :
     [
         {
             id: 1,
-            image: featuredCaseStudyImg,
+            image: galleryComparisonImg1,
         },
         {
             id: 2,
-            image: featuredCaseStudyImg,
+            image: galleryComparisonImg2,
+        },  
+        {
+            id: 3,
+            image: galleryComparisonImg3,
+        },
+        {
+            id: 4,
+            image: galleryComparisonImg4,
         }
     ]
   },
 
   techStack : {
     bgClass       : "dark-grey-bg dark-bg",
-    wrapperClass  : "std-wrapper",
+    wrapperClass  : "sml-wrapper t-center",
     gridColumns   : "grid-d-five-cols",
     title         : "Technology Stack",
     items         : [ "React", "JavaScript (ES6+)", "Vite", "CSS", "React Router", "Embla Carousel", "Framer Motion", "React DatePicker", "Git", "Photoshop" ]
@@ -289,7 +379,7 @@ keySkills : {
 
   outcome : {
     bgClass           : "",
-    wrapperClass      : "sml-wrapper no-padding-top",
+    wrapperClass      : "sml-wrapper",
     titleEyebrow      : "",
     title             : "A Bigger Picture",
     text              :
