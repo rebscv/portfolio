@@ -7,21 +7,41 @@ import rangeImg                     from "../../assets/projects/model-pages/rang
 
 import fordLogoImg            from "../../assets/projects/wordpress-template/ford-logo.webp"
 import fordGalleryImg         from "../../assets/projects/wordpress-template/ford-gallery-thumb.webp"
-import fordGalleryImg1        from "../../assets/projects/model-pages/gallery-4.webp"
-import fordGalleryImg2        from "../../assets/projects/model-pages/gallery-5.webp"
-import fordGalleryImg3        from "../../assets/projects/wordpress-template/ford-gallery-3.webp"
+import fordGalleryImg1        from "../../assets/projects/model-pages/gallery-ford-1.webp"
+import fordGalleryImg2        from "../../assets/projects/model-pages/gallery-ford-2.webp"
+import fordGalleryImg3        from "../../assets/projects/model-pages/gallery-ford-3.webp"
+import fordGalleryImg4        from "../../assets/projects/model-pages/gallery-ford-4.webp"
+import fordGalleryImg5        from "../../assets/projects/model-pages/gallery-ford-5.webp"
+import fordGalleryImg6        from "../../assets/projects/model-pages/gallery-ford-6.webp"
+import fordGalleryImg7        from "../../assets/projects/model-pages/gallery-ford-7.webp"
+import fordGalleryImg8        from "../../assets/projects/model-pages/gallery-ford-8.webp"
+import fordGalleryImg9        from "../../assets/projects/model-pages/gallery-ford-9.webp"
 
 import xpengLogoImg           from "../../assets/projects/wordpress-template/xpeng-logo.webp"
 import xpengGalleryImg        from "../../assets/projects/wordpress-template/xpeng-gallery-thumb.webp"
-import xpengGalleryImg1       from "../../assets/projects/model-pages/gallery-1.webp"
-import xpengGalleryImg2       from "../../assets/projects/model-pages/gallery-2.webp"
-import xpengGalleryImg3       from "../../assets/projects/model-pages/gallery-3.webp"
+import xpengGalleryImg1       from "../../assets/projects/model-pages/gallery-xpeng-1.webp"
+import xpengGalleryImg2       from "../../assets/projects/model-pages/gallery-xpeng-2.webp"
+import xpengGalleryImg3       from "../../assets/projects/model-pages/gallery-xpeng-3.webp"
+import xpengGalleryImg4       from "../../assets/projects/model-pages/gallery-xpeng-4.webp"
+import xpengGalleryImg5       from "../../assets/projects/model-pages/gallery-xpeng-5.webp"
+import xpengGalleryImg6       from "../../assets/projects/model-pages/gallery-xpeng-6.webp"
 
 import forthingLogoImg        from "../../assets/projects/wordpress-template/forthing-logo.webp"
 import forthingGalleryImg     from "../../assets/projects/wordpress-template/forthing-gallery-thumb.webp"
-import forthingGalleryImg1    from "../../assets/projects/wordpress-template/forthing-gallery-1.webp"
-import forthingGalleryImg2    from "../../assets/projects/wordpress-template/forthing-gallery-2.webp"
-import forthingGalleryImg3    from "../../assets/projects/wordpress-template/forthing-gallery-3.webp"
+import forthingGalleryImg1    from "../../assets/projects/model-pages/gallery-forthing-1.webp"
+import forthingGalleryImg2    from "../../assets/projects/model-pages/gallery-forthing-2.webp"
+import forthingGalleryImg3    from "../../assets/projects/model-pages/gallery-forthing-3.webp"
+
+
+import fotonLogoImg           from "../../assets/projects/wordpress-template/foton-logo.webp"
+import fotonGalleryImg        from "../../assets/projects/wordpress-template/foton-gallery-thumb.webp"
+import fotonGalleryImg1       from "../../assets/projects/model-pages/gallery-foton-1.webp"
+import fotonGalleryImg2       from "../../assets/projects/model-pages/gallery-foton-2.webp"
+import fotonGalleryImg3       from "../../assets/projects/model-pages/gallery-foton-3.webp"
+import fotonGalleryImg4       from "../../assets/projects/model-pages/gallery-foton-4.webp"
+import fotonGalleryImg5       from "../../assets/projects/model-pages/gallery-foton-5.webp"
+
+
 
 import featuredImg            from "../../assets/projects/wordpress-template/featured-thumb.webp";
 
@@ -207,6 +227,18 @@ const modelPages = {
           {
             id            : "3",
             image         : xpengGalleryImg3
+          },
+          {
+            id            : "4",
+            image         : xpengGalleryImg4
+          },
+          {
+            id            : "5",
+            image         : xpengGalleryImg5
+          },
+          {
+            id            : "6",
+            image         : xpengGalleryImg6
           }
         ]
       },
@@ -231,14 +263,68 @@ const modelPages = {
           {
             id            : "3",
             image         : fordGalleryImg3
+          },
+          {
+            id            : "4",
+            image         : fordGalleryImg4
+          },
+          {
+            id            : "5",
+            image         : fordGalleryImg5
+          },
+          {
+            id            : "6",
+            image         : fordGalleryImg6
+          },
+          {
+            id            : "7",
+            image         : fordGalleryImg7
+          },
+          {
+            id            : "8",
+            image         : fordGalleryImg8
+          },
+          {
+            id            : "9",
+            image         : fordGalleryImg9
           }
         ]
       },
 
-
-
       {
         id                : "3",
+        brand             : "Foton",
+        projectCardTitle  : "Foton NZ Dealership Template",
+        brandImg          : fotonGalleryImg,
+        brandLogo         : fotonLogoImg,
+        gridColumns       : "",
+        gallery           : 
+        [
+          {
+            id            : "1",
+            image         : fotonGalleryImg1
+          },
+          {
+            id            : "2",
+            image         : fotonGalleryImg2
+          },
+          {
+            id            : "3",
+            image         : fotonGalleryImg3
+          },
+          {
+            id            : "4",
+            image         : fotonGalleryImg4
+          },
+          {
+            id            : "5",
+            image         : fotonGalleryImg5
+          }
+        ]
+      }
+      ,
+      {
+        id                : "4",
         brand             : "Forthing",
         projectCardTitle  : "Forthing NZ Dealership Template",
         brandImg          : forthingGalleryImg,

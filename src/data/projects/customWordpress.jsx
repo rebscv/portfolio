@@ -3,11 +3,14 @@ import featuredImg                  from "../../assets/projects/custom-wordpress
 import logoImg                      from "../../assets/projects/custom-wordpress/logo.webp";
 import heroImg                      from "../../assets/projects/custom-wordpress/hero.webp"
 import heroMobileImg                from "../../assets/projects/custom-wordpress/hero-m.webp"
+import summaryBgImg                 from "../../assets/projects/summary-bg.webp";
+import summaryImg                   from "../../assets/projects/custom-wordpress/summary.webp";
 import galleryImg1                  from "../../assets/projects/custom-wordpress/gallery-1.webp"
 import galleryImg2                  from "../../assets/projects/custom-wordpress/gallery-2.webp"
 import galleryImg3                  from "../../assets/projects/custom-wordpress/gallery-3.webp"
 import galleryImg4                  from "../../assets/projects/custom-wordpress/gallery-4.webp"
 import galleryImg5                  from "../../assets/projects/custom-wordpress/gallery-5.webp"
+import fimgmaWordPressImg           from "../../assets/projects/custom-wordpress/fimga-wordpress.webp"
 
 
 const customWordpress = {
@@ -41,15 +44,11 @@ const customWordpress = {
       data      : "summary"
     },
     {
-      type      : "textBlock",
-      data      : "overview"
-    },
-    {
       type      : "process",
       data      : "process"
     },
     {
-      type      : "textBlock",
+      type      : "textColumnBlock",
       data      : "designDevelopement"
     },
     {
@@ -66,12 +65,7 @@ const customWordpress = {
     image         : heroImg,
     imageMobile   : heroMobileImg,
     title         : "Auckland Maserati Dealership",
-    subtitle      : "Figma to WordPress Development"
-  },
-
-  summary : {
-    bgClass           : "",
-    wrapperClass      : "std-wrapper",
+    subtitle      : "Figma to WordPress Development",
     metadata          :
     {
       focus           : "Theme Development / Front End Development",
@@ -80,14 +74,12 @@ const customWordpress = {
       platform        : "WordPress",
       design          : "Figma / Provided Design",
       template        : "Base WordPress Template"
-    },
-    github            : "",
-    liveSite          : "",
-    image             : thumbImg
+    }
   },
 
-  overview : {
+  summary : {
     bgClass           : "",
+    backgroundImage   : summaryBgImg,
     wrapperClass      : "sml-wrapper",
     titleEyebrow      : "Overview",
     title             : "Bringing Maserati Auckland to Life with WordPress",
@@ -95,10 +87,11 @@ const customWordpress = {
     [
       "The Maserati Auckland website was developed using our existing WordPress base template, with a new Figma design and Maserati brand identity applied across the site. My role involved translating the supplied designs into a responsive, production-ready WordPress implementation while working within the structure and capabilities of the existing template.",
       "The project involved adapting the template's reusable components, layouts, styling, and functionality to create a custom digital experience for Maserati Auckland, while maintaining the flexibility and consistency of the underlying WordPress framework."
-    ]
+    ],
+    github            : "",
+    liveSite          : "",
+    image             : summaryImg
   },
-
-
 
   process : {
     bgClass           : "",
@@ -147,14 +140,16 @@ const customWordpress = {
   },  
 
   designDevelopement : {
-    bgClass           : "",
-    wrapperClass      : "sml-wrapper",
+    bgClass           : "dark-grey-bg",
+    wrapperClass      : "lrg-wrapper",
+    gridClass         : "grid-d-two-cols d-grid-cols-40-60 gv-center",
     titleEyebrow      : "Implementation",
     title             : "From Figma to WordPress",
     text              :
     [
       "The supplied Figma designs provided the visual direction for the Maserati Auckland website. I translated these designs into the existing WordPress framework, adapting reusable components, layouts, typography, spacing, and responsive behaviour to closely match the approved designs."
-    ]
+    ],
+    image             : fimgmaWordPressImg
   },
 
   implementationsSlider : {

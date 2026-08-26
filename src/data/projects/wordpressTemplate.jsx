@@ -39,6 +39,12 @@ import forthingGalleryImg1    from "../../assets/projects/wordpress-template/for
 import forthingGalleryImg2    from "../../assets/projects/wordpress-template/forthing-gallery-2.webp"
 import forthingGalleryImg3    from "../../assets/projects/wordpress-template/forthing-gallery-3.webp"
 
+import fotonLogoImg           from "../../assets/projects/wordpress-template/foton-logo.webp"
+import fotonGalleryImg        from "../../assets/projects/wordpress-template/foton-gallery-thumb.webp"
+import fotonGalleryImg1       from "../../assets/projects/wordpress-template/foton-gallery-1.webp"
+import fotonGalleryImg2       from "../../assets/projects/wordpress-template/foton-gallery-2.webp"
+import fotonGalleryImg3       from "../../assets/projects/wordpress-template/foton-gallery-3.webp"
+
 
 import { image, p, text, title } from "framer-motion/client";
 import { steps } from "framer-motion";
@@ -328,6 +334,30 @@ const wordpressTemplate = {
           {
             id            : "3",
             image         : forthingGalleryImg3
+          }
+        ]
+      },
+
+      {
+        id                : "6",
+        brand             : "Foton",
+        projectCardTitle  : "Foton ZA Dealership Template",
+        brandImg          : fotonGalleryImg,
+        brandLogo         : fotonLogoImg,
+        gridColumns       : "",
+        gallery           : 
+        [
+          {
+            id            : "1",
+            image         : fotonGalleryImg1
+          },
+          {
+            id            : "2",
+            image         : fotonGalleryImg2
+          },
+          {
+            id            : "3",
+            image         : fotonGalleryImg3
           }
         ]
       }
