@@ -5,12 +5,13 @@ import heroImg                      from "../../assets/projects/custom-wordpress
 import heroMobileImg                from "../../assets/projects/custom-wordpress/hero-m.webp"
 import summaryBgImg                 from "../../assets/projects/summary-bg.webp";
 import summaryImg                   from "../../assets/projects/custom-wordpress/summary.webp";
-import galleryImg1                  from "../../assets/projects/custom-wordpress/gallery-1.webp"
-import galleryImg2                  from "../../assets/projects/custom-wordpress/gallery-2.webp"
-import galleryImg3                  from "../../assets/projects/custom-wordpress/gallery-3.webp"
-import galleryImg4                  from "../../assets/projects/custom-wordpress/gallery-4.webp"
-import galleryImg5                  from "../../assets/projects/custom-wordpress/gallery-5.webp"
-import fimgmaWordPressImg           from "../../assets/projects/custom-wordpress/fimga-wordpress.webp"
+import galleryImg1                  from "../../assets/projects/custom-wordpress/gallery-1.webp";
+import galleryImg2                  from "../../assets/projects/custom-wordpress/gallery-2.webp";
+import galleryImg3                  from "../../assets/projects/custom-wordpress/gallery-3.webp";
+import galleryImg4                  from "../../assets/projects/custom-wordpress/gallery-4.webp";
+import galleryImg5                  from "../../assets/projects/custom-wordpress/gallery-5.webp";
+import galleryImg6                  from "../../assets/projects/custom-wordpress/gallery-6.webp";
+import fimgmaWordPressImg           from "../../assets/projects/custom-wordpress/fimga-wordpress.webp";
 
 
 const customWordpress = {
@@ -155,8 +156,8 @@ const customWordpress = {
   implementationsSlider : {
     bgClass           : "",
     wrapperClass      : "",
-    titleEyebrow      : "Implementation",
-    title             : "Explore the builds",
+    titleEyebrow      : "Take a Glimpse",
+    title             : "Gallery",
     items             :
     [
         {
@@ -172,7 +173,7 @@ const customWordpress = {
         {
             id: 3,
             imageOne: galleryImg5,
-            imageTwo: "",
+            imageTwo: galleryImg6
         }
     ]
   },

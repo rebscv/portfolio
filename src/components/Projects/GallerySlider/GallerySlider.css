@@ -64,7 +64,8 @@
   inset: 0;
   background: var(--clr-white);
   transform-origin: left;
-  animation: emblaProgress 4s linear forwards;
+  /* animation: emblaProgress 4s linear forwards; */
+  animation: none;
 }
 
 /* animation */
@@ -278,6 +279,10 @@ Embla Grid to Flex Styles
   border-radius: 16px;
   overflow: hidden;
   border: solid 1px #e5e5e5;
+}
+
+.dark-bg .gallery-column-img {
+  border-color: #2b2b2b;
 }
 
 .gallery-column-img img {

@@ -16,7 +16,7 @@ import galleryImg6                  from "../../assets/projects/react-dealership
 import galleryImg7                  from "../../assets/projects/react-dealership/gallery-7.webp";
 import galleryImg8                  from "../../assets/projects/react-dealership/gallery-8.webp";
 import galleryComparisonImg1        from "../../assets/projects/react-dealership/gallery-comparison-1.webp";
-import galleryComparisonImg2       from "../../assets/projects/react-dealership/gallery-comparison-2.webp";
+import galleryComparisonImg2        from "../../assets/projects/react-dealership/gallery-comparison-2.webp";
 import galleryComparisonImg3        from "../../assets/projects/react-dealership/gallery-comparison-3.webp";
 import galleryComparisonImg4        from "../../assets/projects/react-dealership/gallery-comparison-4.webp";
 import architectureImg              from "../../assets/projects/react-dealership/architecture.webp";
@@ -227,7 +227,7 @@ const reactDealerWebsite = {
   
   wordpressToReact  : {
     bgClass           : "",
-    wrapperClass      : "std-wrapper t-center",
+    wrapperClass      : "std-wrapper t-center no-padding-bottom",
     titleEyebrow      : "From WordPress to React",
     title             : "Building on Existing Experience",
     text              :
@@ -238,21 +238,29 @@ const reactDealerWebsite = {
     ]
   },
   
-  wordpressToReactImages  : {
+  galleryOneColumn : {
     bgClass           : "",
-    wrapperClass      : "std-wrapper no-padding-top",
-    gridClass         : "grid-d-three-cols",
+    wrapperClass      : "no-padding-top",
+    titleEyebrow      : "",
+    title             : "",
     items             :
     [
-      {
-        image         : buildingImg1,
-      },
-      {
-        image         : buildingImg2,
-      },
-      {
-        image         : buildingImg3,
-      }
+        {
+            id: 1,
+            image: galleryComparisonImg1,
+        },
+        {
+            id: 2,
+            image: galleryComparisonImg2,
+        },  
+        {
+            id: 3,
+            image: galleryComparisonImg3,
+        },
+        {
+            id: 4,
+            image: galleryComparisonImg4,
+        }
     ]
   },
   
@@ -343,32 +351,6 @@ const reactDealerWebsite = {
     ]
   },
 
-  galleryOneColumn : {
-    bgClass           : "",
-    wrapperClass      : "no-padding-top",
-    titleEyebrow      : "Gallery",
-    title             : "Gallery",
-    items             :
-    [
-        {
-            id: 1,
-            image: galleryComparisonImg1,
-        },
-        {
-            id: 2,
-            image: galleryComparisonImg2,
-        },  
-        {
-            id: 3,
-            image: galleryComparisonImg3,
-        },
-        {
-            id: 4,
-            image: galleryComparisonImg4,
-        }
-    ]
-  },
-
   techStack : {
     bgClass       : "dark-grey-bg dark-bg",
     wrapperClass  : "sml-wrapper t-center",
@@ -376,6 +358,7 @@ const reactDealerWebsite = {
     title         : "Technology Stack",
     items         : [ "React", "JavaScript (ES6+)", "Vite", "CSS", "React Router", "Embla Carousel", "Framer Motion", "React DatePicker", "Git", "Photoshop" ]
   },
+  
 
   outcome : {
     bgClass           : "",

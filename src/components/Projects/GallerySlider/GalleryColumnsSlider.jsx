@@ -4,7 +4,7 @@ import "./GallerySlider.css";
 
 function GalleryColumnsSlider({ items, title, titleEyebrow, wrapperClass, bgClass }) {
 
-    const { emblaRef, emblaApi, selectedIndex, scrollTo, resetAutoplay, scrollNext, scrollPrev, } = useEmblaWithDots({ loop: true }, 4000);
+    const { emblaRef, emblaApi, selectedIndex, scrollTo, scrollNext, scrollPrev, } = useEmblaWithDots({ loop: true }, false);
 
     return (
         <section className={`project-gallery-columns-slider ${bgClass || 'dark-bg'}`}>

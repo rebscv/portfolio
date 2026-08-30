@@ -1,8 +1,54 @@
 import thumbImg           from "../../assets/projects/cms-migration/thumb.webp";
-import featuredImg        from "../../assets/projects/cms-migration/featured-thumb.webp";
-import heroImg            from "../../assets/projects/cms-migration/hero.webp"
-import heroMobileImg      from "../../assets/projects/cms-migration/hero-m.webp"
-import logoImg            from "../../assets/projects/cms-migration/logo.webp"
+import featuredImg        from "../../assets/projects/cms-migration/featured-thumb.webp";;
+import heroImg            from "../../assets/projects/cms-migration/hero.webp";
+import heroMobileImg      from "../../assets/projects/cms-migration/hero-m.webp";
+import logoImg            from "../../assets/projects/cms-migration/logo.webp";
+import summaryImg         from "../../assets/projects/cms-migration/summary.webp";
+import summaryBgImg       from "../../assets/projects/summary-bg.webp";
+import migrationImg       from "../../assets/projects/cms-migration/migration.webp";
+import mitsGalleryImg1        from "../../assets/projects/cms-migration/gallery-mitsubishi-1.webp";
+import mitsGalleryImg2        from "../../assets/projects/cms-migration/gallery-mitsubishi-2.webp";
+import mitsGalleryImg3        from "../../assets/projects/cms-migration/gallery-mitsubishi-3.webp";
+import mitsGalleryImg4        from "../../assets/projects/cms-migration/gallery-mitsubishi-4.webp";
+
+import nissanLogoImg          from "../../assets/projects/cms-migration/nissan-logo.webp";
+import nissanGalleryThumb     from "../../assets/projects/cms-migration/gallery-nissan-thumb.webp";
+import nissanGalleryImg1      from "../../assets/projects/cms-migration/gallery-nissan-1.webp";
+import nissanGalleryImg2      from "../../assets/projects/cms-migration/gallery-nissan-2.webp";
+import nissanGalleryImg3      from "../../assets/projects/cms-migration/gallery-nissan-3.webp";
+import nissanGalleryImg4      from "../../assets/projects/cms-migration/gallery-nissan-4.webp";
+import nissanGalleryImg5      from "../../assets/projects/cms-migration/gallery-nissan-5.webp";
+
+import skodaLogoImg          from "../../assets/projects/cms-migration/skoda-logo.webp";
+import skodaGalleryThumb     from "../../assets/projects/cms-migration/gallery-skoda-thumb.webp";
+import skodaGalleryImg1      from "../../assets/projects/cms-migration/gallery-skoda-1.webp";
+import skodaGalleryImg2      from "../../assets/projects/cms-migration/gallery-skoda-2.webp";
+import skodaGalleryImg3      from "../../assets/projects/cms-migration/gallery-skoda-3.webp";
+import skodaGalleryImg4      from "../../assets/projects/cms-migration/gallery-skoda-4.webp";
+import skodaGalleryImg5      from "../../assets/projects/cms-migration/gallery-skoda-5.webp";
+
+import toyotaLogoImg          from "../../assets/projects/cms-migration/toyota-logo.webp";
+import toyotaGalleryThumb     from "../../assets/projects/cms-migration/gallery-toyota-thumb.webp";
+import toyotaGalleryImg1      from "../../assets/projects/cms-migration/gallery-toyota-1.webp";
+import toyotaGalleryImg2      from "../../assets/projects/cms-migration/gallery-toyota-2.webp";
+import toyotaGalleryImg3      from "../../assets/projects/cms-migration/gallery-toyota-3.webp";
+import toyotaGalleryImg4      from "../../assets/projects/cms-migration/gallery-toyota-4.webp";
+import toyotaGalleryImg5      from "../../assets/projects/cms-migration/gallery-toyota-5.webp";
+
+import vwLogoImg          from "../../assets/projects/cms-migration/vw-logo.webp";
+import vwGalleryThumb     from "../../assets/projects/cms-migration/gallery-vw-thumb.webp";
+import vwGalleryImg1      from "../../assets/projects/cms-migration/gallery-vw-1.webp";
+import vwGalleryImg2      from "../../assets/projects/cms-migration/gallery-vw-2.webp";
+import vwGalleryImg3      from "../../assets/projects/cms-migration/gallery-vw-3.webp";
+import vwGalleryImg4      from "../../assets/projects/cms-migration/gallery-vw-4.webp";
+import vwGalleryImg5      from "../../assets/projects/cms-migration/gallery-vw-5.webp";
+
+import bmwLogoImg             from "../../assets/projects/wordpress-template/bmw-logo.webp"
+import bmwGalleryThumb        from "../../assets/projects/wordpress-template/featured-thumb.webp";
+import bmwGalleryImg1         from "../../assets/projects/wordpress-template/bmw-gallery-1.webp"
+import bmwGalleryImg2         from "../../assets/projects/wordpress-template/bmw-gallery-2.webp"
+import bmwGalleryImg3         from "../../assets/projects/wordpress-template/bmw-gallery-3.webp"
+import { image } from "framer-motion/client";
 
 const cmsMigration = {
   id                : 5,
@@ -33,20 +79,16 @@ const cmsMigration = {
       data      : "summary"
     },
     {
-      type      : "textBlock",
-      data      : "overview"
-    },
-    {
       type      : "process",
       data      : "process"
     },
     {
-      type      : "textBlock",
+      type      : "textColumnBlock",
       data      : "migration"
     },
     {
-      type      : "gallerySlider",
-      data      : "gallerySlider"
+      type      : "galleryFancy",
+      data      : "implementations"
     },
     {
       type      : "textBlock",
@@ -59,12 +101,7 @@ const cmsMigration = {
     imageMobile   : heroMobileImg,
     imageAlt      : "Mazda",
     title         : "CMS Migration",
-    subtitle      : "WordPress Website Migration & Development"
-  },
-
-  summary : {
-    bgClass           : "",
-    wrapperClass      : "std-wrapper",
+    subtitle      : "WordPress Website Migration & Development",
     metadata          :
     {
       focus           : "CMS Migration / WordPress Development",
@@ -74,15 +111,16 @@ const cmsMigration = {
       migration       : "Dealership Content & Site Migration"
     },
     github            : "",
-    liveSite          : "",
-    image             : thumbImg
+    liveSite          : ""
   },
 
-  overview : {
+  summary : {
     bgClass           : "",
+    backgroundImage   : summaryBgImg,
     wrapperClass      : "sml-wrapper",
     titleEyebrow      : "Overview",
     title             : "From Joomla to WordPress",
+    image             : summaryImg,
     text              :
     [
       "As part of a broader platform upgrade, dealership websites across multiple automotive brands were migrated from Joomla to WordPress.",
@@ -163,8 +201,9 @@ const cmsMigration = {
   },
 
   migration : {
-    bgClass           : "",
-    wrapperClass      : "sml-wrapper",
+    bgClass           : "dark-grey-bg",
+    wrapperClass      : "std-wrapper",
+    gridClass         : "grid-d-two-cols gv-center",
     titleEyebrow      : "Content Migration",
     title             : "Retaining What Matters, Updating What Doesn't",
     text              :
@@ -172,29 +211,197 @@ const cmsMigration = {
       "Migrating each dealership wasn't simply a matter of copying content from Joomla into WordPress. Existing dealership-specific information needed to be retained while outdated content was replaced with the latest OEM-approved information.",
       "Location details, contact information, About Us content, offers and promotions were carried across from the original dealership websites. At the same time, areas such as Service and Finance were updated using current content from the relevant manufacturer website.",
       "Each piece of content was reviewed and adapted to fit the new WordPress template, ensuring the finished site maintained the dealership's local identity while aligning with the latest brand and product information."
-    ]
+    ],
+    image             : migrationImg
   },
 
-  gallerySlider : {
+  implementations : {
     bgClass           : "",
     wrapperClass      : "",
-    titleEyebrow      : "Implementation",
-    title             : "Explore the builds",
+    titleEyebrow      : "Take a Glimpse",
+    title             : "Gallery",
     items             :
     [
-        {
-            id: 1,
-            image: heroImg,
-        },
-        {
-            id: 2,
-            image: heroImg,
-        }
+      {
+        id                : "1",
+        brand             : "Mitsubishi",
+        projectCardTitle  : "Chadstone Mitsubishi Dealership",
+        brandImg          : featuredImg,
+        brandLogo         : logoImg,
+        gridColumns       : "",
+        gallery           : 
+        [
+          {
+            id            : "1",
+            image         : mitsGalleryImg1
+          },
+          {
+            id            : "2",
+            image         : mitsGalleryImg2
+          },
+          {
+            id            : "3",
+            image         : mitsGalleryImg3
+          },
+          {
+            id            : "4",
+            image         : mitsGalleryImg4
+          }
+        ]
+      },
+      {
+        id                : "2",
+        brand             : "Nissan",
+        projectCardTitle  : "Cricks Noosa Nissan",
+        brandImg          : nissanGalleryThumb,
+        brandLogo         : nissanLogoImg,
+        gridColumns       : "",
+        gallery           : 
+        [
+          {
+            id            : "1",
+            image         : nissanGalleryImg1
+          },
+          {
+            id            : "2",
+            image         : nissanGalleryImg2
+          },
+          {
+            id            : "3",
+            image         : nissanGalleryImg3
+          },
+          {
+            id            : "4",
+            image         : nissanGalleryImg4
+          },
+          {
+            id            : "5",
+            image         : nissanGalleryImg5
+          }
+        ]
+      },
+      {
+        id                : "3",
+        brand             : "Škoda",
+        projectCardTitle  : "Cricks Noosa Škoda ",
+        brandImg          : skodaGalleryThumb,
+        brandLogo         : skodaLogoImg,
+        gridColumns       : "",
+        gallery           : 
+        [
+          {
+            id            : "1",
+            image         : skodaGalleryImg1
+          },
+          {
+            id            : "2",
+            image         : skodaGalleryImg2
+          },
+          {
+            id            : "3",
+            image         : skodaGalleryImg3
+          },
+          {
+            id            : "4",
+            image         : skodaGalleryImg4
+          },
+          {
+            id            : "5",
+            image         : skodaGalleryImg5
+          }
+        ]
+      },
+      {
+        id                : "4",
+        brand             : "Toyota",
+        projectCardTitle  : "Hurstville Toyota",
+        brandImg          : toyotaGalleryThumb,
+        brandLogo         : toyotaLogoImg,
+        gridColumns       : "",
+        gallery           : 
+        [
+          {
+            id            : "1",
+            image         : toyotaGalleryImg1
+          },
+          {
+            id            : "2",
+            image         : toyotaGalleryImg2
+          },
+          {
+            id            : "3",
+            image         : toyotaGalleryImg3
+          },
+          {
+            id            : "4",
+            image         : toyotaGalleryImg4
+          },
+          {
+            id            : "5",
+            image         : toyotaGalleryImg5
+          }
+        ]
+      },
+      {
+        id                : "5",
+        brand             : "Volkswagen",
+        projectCardTitle  : "Moss Vale Volkswagen",
+        brandImg          : vwGalleryThumb,
+        brandLogo         : vwLogoImg,
+        gridColumns       : "",
+        gallery           : 
+        [
+          {
+            id            : "1",
+            image         : vwGalleryImg1
+          },
+          {
+            id            : "2",
+            image         : vwGalleryImg2
+          },
+          {
+            id            : "3",
+            image         : vwGalleryImg3
+          },
+          {
+            id            : "4",
+            image         : vwGalleryImg4
+          },
+          {
+            id            : "5",
+            image         : vwGalleryImg5
+          }
+        ]
+      },
+      {
+        id                : "6",
+        brand             : "BMW",
+        projectCardTitle  : "Mildura BMW",
+        brandImg          : bmwGalleryThumb,
+        brandLogo         : bmwLogoImg,
+        gridColumns       : "",
+        gallery           : 
+        [
+          {
+            id            : "1",
+            image         : bmwGalleryImg1
+          },
+          {
+            id            : "2",
+            image         : bmwGalleryImg2
+          },
+          {
+            id            : "3",
+            image         : bmwGalleryImg3
+          }
+        ]
+      }
+      
     ]
   },
 
   outcome : {
-    bgClass           : "",
+    bgClass           : "dark-grey-bg",
     wrapperClass      : "sml-wrapper",
     titleEyebrow      : "Outcome",
     title             : "A More Flexible Platform for Future Development",
