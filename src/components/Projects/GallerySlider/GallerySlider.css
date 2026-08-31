@@ -274,6 +274,10 @@ Embla Grid to Flex Styles
   box-shadow: 0 8px 16px #0000005e;
 }
 
+.dark-bg .project-gallery-flex {
+  background-color: #2b2b2b;
+}
+
 .gallery-column-img {
   width: 50%;
   border-radius: 16px;
@@ -282,7 +286,8 @@ Embla Grid to Flex Styles
 }
 
 .dark-bg .gallery-column-img {
-  border-color: #2b2b2b;
+  border-color: transparent;
+  box-shadow: 2px 8px 10px #0000007a;
 }
 
 .gallery-column-img img {
@@ -292,4 +297,24 @@ Embla Grid to Flex Styles
 
 .project-gallery-slider .gallery-column-img {
   width: 100%;
+}
+
+.gallery-react-versions {
+  background-color: var(--clr-black);
+}
+
+.gallery-react-versions .gallery-column-img {
+  position: relative;
+}
+
+.gallery-react-versions .project-gallery-slide-text {
+}
+
+.project-gallery-slide-text {
+  text-align: center;
+  padding: 24px;
+  line-height: 1;
+  font-size: 0.65em;
+  text-transform: uppercase;
+  letter-spacing: var(--extra-text-spacing);
 }

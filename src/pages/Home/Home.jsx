@@ -2,7 +2,6 @@ import Hero from "../../components/Hero/Hero";
 import FeaturedProjects from "../../components/Projects/FeaturedProjects/FeaturedProjects";
 import About from "../../components/About/About";
 import Skills from "../../components/Skills/Skills";
-import Contact from "../../components/Contact/Contact";
 import FeaturedCaseStudy from "../../components/FeaturedCaseStudy/FeaturedCaseStudy";
 
 import projects from "../../data/projects";
@@ -24,8 +23,6 @@ function Home() {
             {featuredCaseStudies.map((project, index) => (
                 <FeaturedCaseStudy key={project.slug} project={project} number={String(index + 1).padStart(2, "0")} />
             ))}
-
-            <Contact />
 
         </>
     );

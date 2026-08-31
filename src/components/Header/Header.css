@@ -7,7 +7,7 @@ header {
     color: var(--header-text);
 }
 
-header .lrg-wrapper {
+header .lrg-wrapper, header .std-wrapper {
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -162,7 +162,7 @@ header nav {
     display: none;
 }
 
-.header-fixed .header .lrg-wrapper {
+.header-fixed .header .lrg-wrapper, .header-fixed .header .std-wrapper {
     padding-top: 12px;
     padding-bottom: 0;
     max-width: 100%;

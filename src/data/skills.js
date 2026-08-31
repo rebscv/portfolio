@@ -11,6 +11,8 @@ import reactImg from "../assets/skills/react.webp";
 const skills = {
 
   frontend : {
+    title : "Primary Techstacks & Tools",
+    class : "skills-main",
     items : [
       {
         id          : 1,
@@ -25,45 +27,130 @@ const skills = {
       },
       {
         id          : 3,
-        title       : "JSS",
+        title       : "Javascript (es6+)",
         image       : jsImg
       },
       {
         id          : 4,
-        title       : "React*",
-        image       : reactImg
-      },
-      {
-        id          : 5,
         title       : "WordPress",
         image       : wordpressImg
       },
       {
-        id          : 6,
+        id          : 5,
         title       : "Joomla",
         image       : joomlaImg
       },
       {
-        id          : 7,
-        title       : "Drupal",
-        image       : drupalImg
+        id          : 6,
+        title       : "PHP",
+        image       : joomlaImg
       },
       {
-        id          : 8,
+        id          : 7,
         title       : "Photoshop",
         image       : photoshopImg
       },
       {
+        id          : 8,
+        title       : "Responsive Design",
+        image       : photoshopImg
+      },
+      {
         id          : 9,
-        title       : "Figma",
-        image       : figmaImg
+        title       : "CSS Grid / Flexbox",
+        image       : photoshopImg
+      }
+    ]
+  },
+
+  inprogress : {
+    title : "Professional Development",
+    class : "skills-main skills-prof-dev",
+    items : [
+      {
+        id          : 1,
+        title       : "React",
+        image       : reactImg
+      }
+    ]
+
+  },
+
+  secondary : {
+    title : "CMS & Development",
+    class : "skills-seconardy",
+    items : [
+      {
+        id          : 1,
+        title       : "Drupal"
+      },
+      {
+        id          : 2,
+        title       : "Figma"
+      },
+      {
+        id          : 3,
+        title       : "Advanced Custom Fields (ACF)"
+      }
+    ]
+  },
+
+  librariesTools : {
+    title : "Libraries & Tools",
+    class : "skills-seconardy",
+    items : [
+      {
+        id          : "1"  ,
+        title       : "jQuery",
+      },
+      {
+        id          : "2",
+        title       : "Embla Carousel",
+      },
+      {
+        id          : "3",
+        title       : "React Router",
+      },
+      {
+        id          : "4",
+        title       : "React DatePicker",
+      },
+      {
+        id          : "5",
+        title       : "Framer Motion",
       }
 
     ]
   },
-
-  Tools : {
+  
+  designCreative : {
+    title : "Design & Creative",
+    class : "skills-seconardy",
     items : [
+      {
+        id          : "1"  ,
+        title       : "Illustrator",
+      },
+      {
+        id          : "2",
+        title       : "After Effects",
+      },
+      {
+        id          : "3",
+        title       : "Premier",
+      },
+      {
+        id          : "4",
+        title       : "Animate",
+      },
+      {
+        id          : "5",
+        title       : "Final Cut Pro",
+      },
+      {
+        id          : "6",
+        title       : "Lightwave 3D",
+      }
 
     ]
   }

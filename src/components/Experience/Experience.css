@@ -1,7 +1,7 @@
 .experience-grid {
     position: relative;
     display: grid;
-    gap: 64px;
+    gap: 128px;
     padding: 64px 0;
 }
 
@@ -9,49 +9,85 @@
     content: '';
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 80px;
     transform: translateX(-50%);
     width: 1px;
-    height: 100%;
-    background-color: var(--clr-white);
+    height: calc(100% - 128px);
+    background-color: var(--clr-dark-grey-lt);
 }
 
 .experience-item {
     position: relative;
-    width: 50%;
-    margin-right: auto;
-    text-align: right;
-    padding-right: 64px;
-    display: grid;
-    gap: 12px;
+    width: 100%;
+    display: flex;
+    gap: 64px;
     line-height: 1em;
+    align-items: start;
 }
 
 .experience-item::before {
     content: '';
     width: 16px;
     height: 16px;
-    background-color: var(--clr-white);
+    background-color: var(--clr-dark-grey-lt);
     border-radius: 50%;
     position: absolute;
-    right: -8px;
+    left: 50%;
     top: 4px;
+    transform: translateX(-50%);
 }
 
 .experience-item:nth-child(even) {
-    margin-right: 0;
-    margin-left: auto;
-    text-align: left;
-    padding-right: 0;
-    padding-left: 64px;
-}
-
-.experience-item:nth-child(even)::before {
-    left: -8px;
-    right: 0;
+    flex-direction: row-reverse;
 }
 
 
 .experience-item::after {
 
+}
+
+.experience-text, .experience-description {
+    width: 100%;
+    grid-column: span 1;
+}
+
+.experience-text {
+    display: grid;
+    gap: 16px;
+    justify-content: end;
+    text-align: right;    
+}
+
+.experience-item:nth-child(even) .experience-text {
+    justify-content: start;
+    text-align: left;
+}
+
+.experience-company {
+    color: var(--clr-grey-dk);
+}
+
+.experience-year {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: fit-content;
+    color: black;
+    background: var(--clr-gradient);
+    line-height: 1;
+    padding: 2px 8px 0px;
+    font-weight: 700;
+    margin-left: auto;    
+}
+
+.experience-item:nth-child(even) .experience-year {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.experience-description {
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 1.6em;
+    font-size: 0.8em;
 }

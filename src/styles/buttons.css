@@ -5,6 +5,7 @@
   cursor: pointer;
   transition: ease 0.4s all;
   font-size: 0.8em;
+  font-weight: 500;
   display: flex;
   gap: 10px;
   font-size: 0.8em;
@@ -51,12 +52,12 @@
 /* Buttons on Dark BG */
 .dark-bg .btn-primary, .dark-bg a.btn-primary {
   color: var(--clr-black);
-  background-color: var(--clr-white);
+  background-color: var(--clr-grey-dk);
 }
 
 .dark-bg .btn-primary:hover, .dark-bg a.btn-primary:hover {
-  color: var(--clr-white);
-  background-color: var(--clr-grey-dk);
+  color: var(--clr-black);
+  background-color: var(--clr-white);
 }
 
 .dark-bg .btn-outline, .dark-bg a.btn-outline {

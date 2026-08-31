@@ -5,7 +5,7 @@ import logo from "../../assets/logo-wht.svg";
 function Header() {
     return (
         <header className="header">
-            <div className="lrg-wrapper t-center">
+            <div className="std-wrapper t-center">
                 <div className="header-flex">
 
                     <Link className="logo" to="/">
@@ -20,7 +20,7 @@ function Header() {
                     <nav>
                         <Link to="/projects">Projects</Link>
                         <Link to="/about">About</Link>
-                        <Link to="/contact">Contact</Link>
+                        <a href="#contact" className="smooth-scroll">Contact</a>
                     </nav>
 
                 </div>

@@ -12,6 +12,8 @@ function FeaturedProjects () {
         <section className="featured-projects black-bg">
             <div className="lrg-wrapper">
 
+                <h2 className="title-eyebrow">Jump to a Project</h2>
+
                 <div className="featured-projects-grid grid-d-four-cols grid-t-two-cols">
                     {featuredProjects.map((project, index) => (
 

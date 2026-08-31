@@ -7,8 +7,8 @@ import aboutImg from "../../assets/about-placeholder.webp";
 
 function About() {
     return (
-        <section className="about-content dark-bg black-bg">
-            <div className="lrg-wrapper">
+        <section className="about-content dark-bg dark-grey-bg">
+            <div className="std-wrapper">
 
                 <div className="grid-d-two-cols d-grid-cols-60-40">
 

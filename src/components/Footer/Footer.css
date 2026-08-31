@@ -1,8 +1,53 @@
 footer {
     background-color: var(--clr-grey);
+    background: linear-gradient(180deg, var(--clr-black), #1f0039);
+    min-height: 50vh;
 }
 
-footer .lrg-wrapper {
-    padding-top: 24px;
-    padding-bottom: 24px;
+footer .std-wrapper {
+    padding-top: 180px;
+}
+
+.footer-contact-flex {
+    display: flex;
+    gap: 64px;
+    align-items: flex-end;
+}
+
+.footer-contact-row {
+    display: grid;
+    line-height: 1em;
+    position: relative;
+    align-items: center;
+    align-content: start;
+}
+
+.footer-contact-row a {
+    display: grid;
+    line-height: 1em;
+    padding-left: 32px;
+    gap: 24px;
+    position: relative;
+    align-items: center;
+    align-content: start;
+}
+
+.footer-contact-row::after {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-image: var(--clr-gradient);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+}
+
+.footer-contact-row svg {
+    padding-top: 8px;
+    font-size: 48px;
+}
+
+.footer-contact-row svg.icon-linkedin {
+    padding-top: 8px;
 }

@@ -68,6 +68,14 @@ const reactDealerWebsite = {
     },
     {
       type      : "textColumnBlock",
+      data      : "wordpressToReact"
+    },
+    {
+      type      : "gallerySlider",
+      data      : "galleryVersions"
+    },
+    {
+      type      : "textColumnBlock",
       data      : "architecture"
     },
     {
@@ -75,25 +83,18 @@ const reactDealerWebsite = {
       data      : "dataDriven"
     },
     {
-      type      : "textBlock",
-      data      : "wordpressToReact"
-    },
-    {
-      type      : "gallerySlider",
-      data      : "galleryOneColumn"
-    },
-    {
       type      : "textColumnBlock",
       data      : "dynamicFunction"
-    },
-    {
-      type      : "process",
-      data      : "keySkills"
     },
     {
       type      : "galleryColumnsSlider",
       data      : "gallery"
     },
+    {
+      type      : "process",
+      data      : "keySkills"
+    },
+
 
     {
       type      : "techStack",
@@ -194,6 +195,50 @@ const reactDealerWebsite = {
     ]
   },
 
+  wordpressToReact  : {
+    bgClass           : "",
+    wrapperClass      : "sml-wrapper t-center no-padding-top",
+    gridClass         : "",
+    titleEyebrow      : "From WordPress to React",
+    title             : "Building on Existing Experience",
+    text              :
+    [
+      "My previous experience developing dealership websites in WordPress gave me a strong foundation for approaching this project.",
+      "Having already built a Mazda dealership template using HTML, CSS and WordPress, I was familiar with the structure, content and functionality required for this type of website. This allowed me to focus on learning how to implement those same concepts using React.",
+      "Rather than starting with a completely unfamiliar project, I could apply my existing frontend and design knowledge while learning a new way of structuring and developing the application."
+    ]
+  },
+
+  galleryVersions : {
+    bgClass           : "dark-bg gallery-react-versions",
+    wrapperClass      : "no-padding-top",
+    titleEyebrow      : "",
+    title             : "",
+    items             :
+    [
+        {
+            id: 1,
+            image: galleryComparisonImg1,
+            text: "Version comparision"
+        },
+        {
+            id: 2,
+            image: galleryComparisonImg2,
+            text: "Version comparision"
+        },  
+        {
+            id: 3,
+            image: galleryComparisonImg3,
+            text: "Version comparision"
+        },
+        {
+            id: 4,
+            image: galleryComparisonImg4,
+            text: "Version comparision"
+        }
+    ]
+  },
+
   architecture  : {
     bgClass           : "dark-grey-bg",
     wrapperClass      : "std-wrapper no-padding-bottom",
@@ -211,7 +256,7 @@ const reactDealerWebsite = {
   
   dataDriven  : {
     bgClass           : "dark-grey-bg",
-    wrapperClass      : "std-wrapper no-padding-top",
+    wrapperClass      : "std-wrapper no-padding-top no-padding-bottom",
     gridClass         : "grid-d-two-cols grid-d-reverse gv-center",
     titleEyebrow      : "Data-Driven Development",
     title             : "Content Meets Components",
@@ -225,48 +270,39 @@ const reactDealerWebsite = {
     image             : componentsImg
   },
   
-  wordpressToReact  : {
+  gallery : {
     bgClass           : "",
-    wrapperClass      : "std-wrapper t-center no-padding-bottom",
-    titleEyebrow      : "From WordPress to React",
-    title             : "Building on Existing Experience",
-    text              :
-    [
-      "My previous experience developing dealership websites in WordPress gave me a strong foundation for approaching this project.",
-      "Having already built a Mazda dealership template using HTML, CSS and WordPress, I was familiar with the structure, content and functionality required for this type of website. This allowed me to focus on learning how to implement those same concepts using React.",
-      "Rather than starting with a completely unfamiliar project, I could apply my existing frontend and design knowledge while learning a new way of structuring and developing the application."
-    ]
-  },
-  
-  galleryOneColumn : {
-    bgClass           : "",
-    wrapperClass      : "no-padding-top",
-    titleEyebrow      : "",
-    title             : "",
+    wrapperClass      : "",
+    titleEyebrow      : "Take a glimpse",
+    title             : "Gallery",
     items             :
     [
         {
             id: 1,
-            image: galleryComparisonImg1,
+            imageOne: galleryImg1,
+            imageTwo: galleryImg2,
         },
         {
             id: 2,
-            image: galleryComparisonImg2,
+            imageOne: galleryImg3,
+            imageTwo: galleryImg4,
         },  
         {
             id: 3,
-            image: galleryComparisonImg3,
+            imageOne: galleryImg5,
+            imageTwo: galleryImg6,
         },
         {
             id: 4,
-            image: galleryComparisonImg4,
+            imageOne: galleryImg7,
+            imageTwo: galleryImg8,
         }
     ]
   },
   
   dynamicFunction : {
-    bgClass           : "",
-    wrapperClass      : "std-wrapper",
+    bgClass           : "dark-grey-bg",
+    wrapperClass      : "std-wrapper no-padding-top",
     gridClass         : "grid-d-two-cols gv-center",
     titleEyebrow      : "Dynamic Functionality",
     title             : "Beyond the Homepage",
@@ -321,35 +357,7 @@ const reactDealerWebsite = {
     ]
   },
 
-  gallery : {
-    bgClass           : "",
-    wrapperClass      : "",
-    titleEyebrow      : "Take a glimpse",
-    title             : "Gallery",
-    items             :
-    [
-        {
-            id: 1,
-            imageOne: galleryImg1,
-            imageTwo: galleryImg2,
-        },
-        {
-            id: 2,
-            imageOne: galleryImg3,
-            imageTwo: galleryImg4,
-        },  
-        {
-            id: 3,
-            imageOne: galleryImg5,
-            imageTwo: galleryImg6,
-        },
-        {
-            id: 4,
-            imageOne: galleryImg7,
-            imageTwo: galleryImg8,
-        }
-    ]
-  },
+
 
   techStack : {
     bgClass       : "dark-grey-bg dark-bg",

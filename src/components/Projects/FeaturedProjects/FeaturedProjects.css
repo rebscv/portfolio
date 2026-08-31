@@ -14,4 +14,8 @@
     display: block;
 }
 
-
+.featured-projects h2 {
+    letter-spacing: var(--extra-text-spacing);
+    text-transform: uppercase;
+    font-weight: 400;
+}

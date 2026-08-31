@@ -55,31 +55,27 @@ function Hero() {
                 <div className="hero-layer dark-bg">
                     <div className="hero-txt grid">
 
+                        <FadeIn direction="up" duration={1} delay={0.2} once={false}>
+                            <h3 className="hero-subheading">Web Developer*</h3>
+                        </FadeIn>
+
                         <h2>
-                            <span className="hero-heading">
-                                <FadeIn direction="up" duration={1} delay={0.2} once={false}>
-                                    Building
-                                </FadeIn>
-
-                                <FadeIn direction="up" duration={1} delay={0.4} once={false}>
-                                    <span>Modern</span>
-                                </FadeIn>
-
-                                <FadeIn direction="up" duration={1} delay={0.6} once={false}>
-                                    <span>Responsive</span>
-                                </FadeIn>
-                            </span>
-
-                            <FadeIn direction="up" duration={1} delay={0.8} once={false}>
-                                <span className="hero-subheading">Web Experiences</span>
-                            </FadeIn>
-
-
+                            <FadeIn direction="up" duration={1} delay={0.4} once={false}><span className="hero-heading-secondary">I like to</span></FadeIn>
+                            <FadeIn direction="up" duration={1} delay={0.6} once={false}><span className="hero-heading">create</span></FadeIn>
                         </h2>
 
+                        <FadeIn direction="up" duration={1} delay={1} once={false}>
+                            <div className="hero-subheading-secondary">*and more...</div>
+                        </FadeIn>
+
+
                         <FadeIn direction="up" duration={1} delay={0.8} once={false}>
-                            <div>
-                                <Link to="/projects" className="btn btn-outline">View Projects <svg className="icon-arrow-top-right"><use xlinkHref="/icons.svg#icon-arrow-top-right"></use></svg></Link>
+                            <div className="hero-description grid">
+                                <p>Web Developer at Adtorque Edge for almost 5 year. Previous experience in Digital Design, Graphic Design & more.</p>
+                                <div className="btn-flex">
+                                    <div><Link to="/projects" className="btn btn-primary">View Projects <svg className="icon-arrow-top-right"><use xlinkHref="/icons.svg#icon-arrow-top-right"></use></svg></Link></div>
+                                    <div><Link to="/about" className="btn btn-outline">More About Me <svg className="icon-arrow-top-right"><use xlinkHref="/icons.svg#icon-arrow-top-right"></use></svg></Link></div>
+                                </div>
                             </div>
                         </FadeIn>
                     
