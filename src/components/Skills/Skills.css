@@ -1,3 +1,7 @@
+/* =========================
+   Skills - General
+========================= */
+
 .skills-content {
     background-image: url("/src/assets/skills-bg.webp");
     background-size: cover;
@@ -5,10 +9,6 @@
     background-repeat: no-repeat;
     position: relative;
     background-attachment: fixed;
-}
-
-.skills-content .std-wrapper {
-    gap: 96px;
 }
 
 .skills-content::before, .skills-content::after {
@@ -46,53 +46,116 @@
     gap: 32px;
 }
 
+
+/* =========================
+   Skills - Category Row
+========================= */
+
 .skills-content-category {
     display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(6, 1fr);
-    align-items: center;
-    padding-bottom: 32px;
-    position: relative;
+    gap: 16px;
 }
 
-.skills-content-category::after {
-    content: '';
-    background-image: var(--clr-gradient);
-    height: 1px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    opacity: 0.2;
-}
-
-.skills-content-category-title {
-    grid-column: span 1;
-    padding-right: 32px;
-    line-height: 1.3em;
-    font-weight: 700;
-    font-size: 1.2em;
-}
-
-.skills-content-items {
-    grid-column: span 7;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+.skills-content-category.skills-seconardy {
     gap: 8px;
 }
 
+.skills-content-category-title {
+    line-height: 1.3em;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.skills-content-items {
+    display: grid;
+    gap: 2px;
+}
+
+@media (min-width:375px) {
+
+    .skills-content-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width:576px) {
+
+    .skills-content-items {
+        gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+    
+@media (min-width:768px) {
+
+    .skills-content-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+    
+@media (min-width:1024px) {
+
+    .skills-content .std-wrapper {
+        gap: 96px;
+    }
+        
+    .skills-content-category {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+        padding-bottom: 32px;
+        position: relative;
+    }
+
+    .skills-content-category::after {
+        content: '';
+        background-image: var(--clr-gradient);
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0.2;
+    }
+
+    .skills-content-category.skills-seconardy {
+        gap: 16px;
+    }
+
+    .skills-content-category-title {
+        grid-column: span 1;
+        text-align: left;
+    }
+
+    .skills-content-items {
+        grid-column: span 7;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 8px;
+    }
+
+}
+
+
+/* =========================
+   Skills - Category Column
+========================= */
+
 .skill-col {
     display: flex;
-    gap: 24px;
     flex-direction: row;
     border-radius: 24px;
     height: 100%;
-    padding: 8px 24px;
+    padding: 6px 8px;
     background-color: #ffffff1a;
     text-align: center;
     align-items: center;
     justify-content: center;
-}
+    }
 
 .skill-img {
     display: flex;
@@ -110,46 +173,45 @@
     content: none;
 }
 
+@media (min-width:1024px) {
+
+    .skill-col {
+        padding: 8px 24px;
+    }
+    
+}
 
 
-
-
+/* =========================
+   Skills - Category Column Primary
+========================= */
 
 .skills-main .skill-col {
     display: grid;
     justify-items: center;
     gap: 8px;
-    padding: 0 32px;
     background-color: transparent;
 }
 
 .skills-main .skills-content-items {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-    row-gap: 48px;
+    row-gap: 12px;
 }
 
 .skills-main .skills-content-items > div {
-    grid-column: span 2;
+    grid-column: span 1;
 }
 
 .skills-main .skills-content-category-title {
     grid-column: span 1;
 }
 
-.skills-main.skills-content-category {
-    padding-bottom: 64px;
-}
-
-.skills-main.skills-prof-dev {
-    padding-top: 32px;
-}
-
 .skills-main .skill-name {
     color: var(--clr-white);
     font-weight: 700;
-    font-size: 11px;
-    letter-spacing: var(--extra-text-spacing);
+    font-size: 8px;
+    letter-spacing: 0.5em;
     line-height: 1.5;
     text-transform: uppercase;
     width: fit-content;
@@ -176,7 +238,7 @@
     position: relative;
     z-index: 2;
     transition: ease-out 0.3s all;
-    max-width: 64px;
+    max-width: 32px;
 }
 
 .skills-main .skill-img::after {
@@ -191,9 +253,94 @@
     height: 50px;
     background-color: #00000080;
     border-radius: 50%;
-     filter: blur(16px);
+    filter: blur(16px);
 }
 
 .skills-main .skill-col:hover .skill-img img {
     transform: scale(1.1);
+}
+
+@media (min-width:375px) {
+
+    .skills-main .skills-content-items {
+        gap: 16px;
+        row-gap: 24px;
+    }
+
+}
+
+@media (min-width:576px) {  
+
+    .skills-main.skills-content-category {
+        padding-bottom: 24px;
+    }
+
+    .skills-main .skills-content-items {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 32px;
+    }
+
+    .skills-main .skill-col {
+        padding: 0 32px;
+    }
+
+    .skills-main .skill-img img {
+        max-width: 48px;
+    }
+
+}
+
+@media (min-width:768px) {
+
+    .skills-main .skills-content-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    .skills-main.skills-content-category {
+        padding-bottom: 64px;
+    }
+
+    .skills-main.skills-prof-dev {
+        padding-top: 32px;
+    }
+
+    .skills-main .skills-content-items {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
+        row-gap: 48px;
+    }
+
+    .skills-main .skills-content-items > div {
+        grid-column: span 2;
+    }
+
+    .skills-main .skills-content-category-title {
+        grid-column: span 1;
+    }
+
+    .skills-main .skill-img img {
+        max-width: 64px;
+    }
+
+    .skills-main .skill-name {
+        font-size: 11px;
+        letter-spacing: var(--extra-text-spacing);
+    }
+    
+}
+
+@media (max-width:1023px) {
+
+    .skills-content h2 {
+        text-align: center;
+    }
+
+    .skills-content .title-eyebrow {
+        margin: 0 auto;
+    }
+    
 }

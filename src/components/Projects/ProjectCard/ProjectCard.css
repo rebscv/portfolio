@@ -13,24 +13,7 @@
 
 .project-card-block {
     display: grid;
-    gap: 32px;  
-}
-
-.project-card-img-container {
-    position: relative;
-    background-image: linear-gradient(130deg, #15373a, #2b213a);
-    border: 1px solid #ffffff0f;
-    box-sizing: border-box;
-    padding: 64px 48px;
-    border-radius: 16px;
-}
-
-.project-card-frame {
-    padding: 24px;
-    background-color: var(--clr-black);
-    position: relative;
-    z-index: 2;
-    border-radius: 16px;
+    gap: 16px;  
 }
 
 .project-card-img {
@@ -49,15 +32,18 @@
     border-radius: 8px;
 }
 
-.project-card-img img {
-    display: block;
-    opacity: 0.5;
-    transition: ease 0.6s all;
-}
 
 .project-card:hover .project-card-img img {
     transform: scale(1.05);
     opacity: 1;
+}
+
+.project-card-img img {
+    display: block;
+    opacity: 0.6;
+    transition: ease 0.6s all;
+    min-height: 240px;
+    object-fit: cover;
 }
 
 .project-card-img-shadow {
@@ -81,7 +67,9 @@
 
 .project-card-txt {
     display: grid;
-    gap: 12px;
+    gap: 8px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .project-card-txt h3 {
@@ -90,12 +78,82 @@
 
 .project-card-txt p {
     text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: 0.5em;
-    color: var(--clr-white);
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    line-height: 1.5em;
 }
 
 .project-card-txt a {
     position: relative;
 }
 
+@media (min-width:768px) {
+    
+    .project-card-frame {
+        padding: 16px;
+        background-color: var(--clr-black);
+        position: relative;
+        z-index: 2;
+        border-radius: 16px;
+    }
+
+    .project-card-frame {
+        padding: 24px;
+    }    
+
+    .project-card-img-container {
+        position: relative;
+        background-image: linear-gradient(130deg, #15373a, #2b213a);
+        border: 1px solid #ffffff0f;
+        box-sizing: border-box;
+        padding: 48px 24px;
+        border-radius: 16px;
+    }
+
+    .project-card-img-container {
+        padding: 64px 48px;
+    }
+
+    .project-card-txt p {
+        font-size: 10px;
+        letter-spacing: 0.5em;
+    }
+
+    .project-card-img img {
+        display: block;
+        opacity: 0.5;
+        transition: ease 0.6s all;
+        height: auto;
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    .project-card-block {
+        gap: 16px;
+    }
+
+    .project-card-content {
+        gap: 4px;
+    }
+
+    .project-card-txt {
+        margin: 0;
+        text-align: left;
+        gap: 12px;
+    }
+    
+}
+
+@media (min-width:1900px) {
+
+    .project-card-content {
+        gap: 8px;
+    }
+
+    .project-card-block {
+        gap: 32px;
+    }
+    
+}

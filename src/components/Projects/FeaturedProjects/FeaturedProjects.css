@@ -2,9 +2,8 @@
     position: relative;
     top: -50%;
 }
-.featured-projects .lrg-wrapper {
-    padding-top: 0;
-}
+
+
 
 .featured-projects-grid {
     gap: 4px;
@@ -18,4 +17,12 @@
     letter-spacing: var(--extra-text-spacing);
     text-transform: uppercase;
     font-weight: 400;
+}
+
+@media (min-width:768px) {
+
+    .featured-projects .lrg-wrapper {
+        padding-top: 0;
+    }
+
 }

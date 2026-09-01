@@ -27,7 +27,7 @@ function PageHero({ title, eyebrow, text, image, imageMobile, alt, video, videoP
             transition={{ duration: 1, ease: "easeIn" }}
           >
             {image && (
-              <div className="page-hero-img">
+              <div>
                 <picture>
                   {imageMobile && (
                     <source

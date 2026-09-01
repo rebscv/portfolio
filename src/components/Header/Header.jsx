@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
+
+import HeaderNavbar from "./HeaderNavbar";
 import "./Header.css";
+
 import logo from "../../assets/logo-wht.svg";
 
 function Header() {
+
+    const toggleMobileMenu = () => { document.body.classList.toggle("show-mobile-menu"); };
+
     return (
         <header className="header">
             <div className="std-wrapper t-center">
@@ -17,14 +23,20 @@ function Header() {
                         
                     </Link>
 
-                    <nav>
-                        <Link to="/projects">Projects</Link>
-                        <Link to="/about">About</Link>
-                        <a href="#contact" className="smooth-scroll">Contact</a>
-                    </nav>
+                    <div className="menu-button-mobile" onClick={toggleMobileMenu}>
+                        <svg className="icon-menu"><use href="/icons.svg#icon-menu"></use></svg>
+                    </div>
+
+                    <HeaderNavbar />
 
                 </div>
             </div>
+
+            <div className="menu-mobile">
+                <HeaderNavbar />                            
+            </div>  
+
+            <div className="menu-mobile-bg" onClick={() => document.body.classList.remove("show-mobile-menu")}></div>
 
         </header>
     );

@@ -4,8 +4,10 @@ import { useEffect, useRef } from "react";
 
 import "./Hero.css";
 
-import heroBanner from "../../assets/hero/hero-banner.webp";
 import FadeIn from "../../animations/FadeIn";
+
+import heroBanner           from "../../assets/hero/hero-banner.webp";
+import heroBannerMobile     from "../../assets/hero/hero-banner-m.webp";
 
 function Hero() {
     const heroRef = useRef(null);
@@ -60,18 +62,18 @@ function Hero() {
                         </FadeIn>
 
                         <h2>
-                            <FadeIn direction="up" duration={1} delay={0.4} once={false}><span className="hero-heading-secondary">I like to</span></FadeIn>
+                            <FadeIn direction="up" duration={1} delay={0.4} once={false}><span className="hero-heading-lt">I like to</span></FadeIn>
                             <FadeIn direction="up" duration={1} delay={0.6} once={false}><span className="hero-heading">create</span></FadeIn>
                         </h2>
 
                         <FadeIn direction="up" duration={1} delay={1} once={false}>
-                            <div className="hero-subheading-secondary">*and more...</div>
+                            <div className="hero-subheading-lt">*and more...</div>
                         </FadeIn>
 
 
                         <FadeIn direction="up" duration={1} delay={0.8} once={false}>
                             <div className="hero-description grid">
-                                <p>Web Developer at Adtorque Edge for almost 5 year. Previous experience in Digital Design, Graphic Design & more.</p>
+                                <p>Web Developer at Adtorque Edge, with 5 years of professional experience. Previous experience in Digital Design, Graphic Design & more.</p>
                                 <div className="btn-flex">
                                     <div><Link to="/projects" className="btn btn-primary">View Projects <svg className="icon-arrow-top-right"><use xlinkHref="/icons.svg#icon-arrow-top-right"></use></svg></Link></div>
                                     <div><Link to="/about" className="btn btn-outline">More About Me <svg className="icon-arrow-top-right"><use xlinkHref="/icons.svg#icon-arrow-top-right"></use></svg></Link></div>
@@ -81,12 +83,13 @@ function Hero() {
                     
                     </div>
                 </div>
-                
-                <img
-                    ref={heroImageRef}
-                    src={heroBanner}
-                    alt=""
-                />
+
+                <picture> 
+                    <source media="(max-width: 767px)" srcSet={heroBannerMobile} />
+                    <img src={heroBanner} alt="" fetchPriority="high" ref={heroImageRef} />
+                </picture>
+
+
 
                 <div className="hero-content-fade"></div>
 

@@ -5,7 +5,7 @@ function About() {
     return (
 
         <>
-        <section className="purple-gradiant-top-bg">
+        <section className="content purple-gradiant-top-bg">
             <div className="sml-wrapper">
 
 

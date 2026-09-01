@@ -63,6 +63,10 @@
   padding-top: 0;
 }
 
+main > section.content:first-child > .sml-wrapper, main > section.content:first-child > .std-wrapper, main > section.content:first-child > .lrg-wrapper {
+  padding-top: 120px;
+}
+
 @media (min-width:1024px) {
 
   .std-wrapper, .sml-wrapper, .lrg-wrapper, .full-wrapper {

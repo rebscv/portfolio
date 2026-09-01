@@ -11,7 +11,7 @@ footer .std-wrapper {
 .footer-contact-flex {
     display: flex;
     gap: 64px;
-    align-items: flex-end;
+    flex-direction: column;
 }
 
 .footer-contact-row {
@@ -50,4 +50,24 @@ footer .std-wrapper {
 
 .footer-contact-row svg.icon-linkedin {
     padding-top: 8px;
+}
+
+@media (min-width:576px) {
+
+    .footer-contact-flex {
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    .footer-contact-flex {
+        display: flex;
+        gap: 64px;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    
 }

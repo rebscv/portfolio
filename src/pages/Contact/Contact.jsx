@@ -3,14 +3,18 @@ function Contact() {
     return (
 
         <section>
-            <div className="sml-wrapper">
+            <div className="std-wrapper">
 
-                <h1>Contact Us</h1>
+                <h1>My H1 Heading goes here</h1>
+                <h2>Don't forget about my H2 header</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et ullamcorper augue. Duis et porta tortor. Donec pulvinar interdum nisi, at efficitur arcu luctus non. In hac habitasse platea dictumst. Aliquam arcu ex, imperdiet non malesuada in, imperdiet id turpis. Nulla placerat fermentum efficitur. Phasellus elementum, velit in tempus elementum, orci mauris elementum eros, ut scelerisque tellus elit vel leo. Sed mattis lobortis sollicitudin. Proin pharetra erat nulla, in placerat ipsum luctus vitae. Nam scelerisque sollicitudin aliquam. Praesent nec cursus felis. Donec odio justo, molestie consequat elementum vitae, facilisis ornare risus. Etiam volutpat nunc in nunc hendrerit, quis tristique diam interdum. Proin vel dapibus nisl. Donec et porttitor metus. Morbi sagittis est ac augue vulputate, non mollis elit ultrices.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur vulputate tellus eu eleifend. Integer ut leo pellentesque, ultricies enim ac, consequat nisi. Nam pretium aliquet nisl, a mollis dui sagittis eu. Etiam fermentum nisi non lectus tristique dictum. Pellentesque tincidunt eu lectus vel feugiat. Nulla tincidunt sagittis sem et scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit sollicitudin congue. Praesent sed dapibus lectus. Vivamus tortor sem, porta et dolor eu, varius aliquam ligula. Sed convallis velit sed odio sagittis molestie.</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et ullamcorper augue. Duis et porta tortor. Donec pulvinar interdum nisi, at efficitur arcu luctus non. In hac habitasse platea dictumst. Aliquam arcu ex, imperdiet non malesuada in, imperdiet id turpis. Nulla placerat fermentum efficitur. Phasellus elementum, velit in tempus elementum, orci mauris elementum eros, ut scelerisque tellus elit vel leo. Sed mattis lobortis sollicitudin. Proin pharetra erat nulla, in placerat ipsum luctus vitae. Nam scelerisque sollicitudin aliquam. Praesent nec cursus felis. Donec odio justo, molestie consequat elementum vitae, facilisis ornare risus. Etiam volutpat nunc in nunc hendrerit, quis tristique diam interdum. Proin vel dapibus nisl. Donec et porttitor metus. Morbi sagittis est ac augue vulputate, non mollis elit ultrices.</p>
+                <h3>Praesent efficitur vulputate tellus eu eleifend.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur vulputate tellus eu eleifend. Integer ut leo pellentesque, ultricies enim ac, consequat nisi. Nam pretium aliquet nisl, a mollis dui sagittis eu. Etiam fermentum nisi non lectus tristique dictum. Pellentesque tincidunt eu lectus vel feugiat.</p>
 
+                <h4>Consectetur adipiscing elit</h4>
+               
             </div>
         </section>
         

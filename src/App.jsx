@@ -26,7 +26,7 @@ function App() {
 function AppContent() {
 
   useSmoothScroll();
-  useLenis();
+  // useLenis();
   useIsScrolled(360);
 
   return (
