@@ -1,8 +1,8 @@
 import thumbImg                     from "../../assets/projects/react-dealership/thumb.webp";
 import featuredImg                  from "../../assets/projects/react-dealership/featured-thumb.webp";
 import logoImg                      from "../../assets/projects/react-dealership/logo.webp";
-import heroImg                      from "../../assets/projects/react-dealership/hero.webp";
-import heroMobileImg                from "../../assets/projects/react-dealership/hero-m.webp";
+import heroImg                      from "../../assets/projects/react-dealership/react-hero.webp";
+import heroMobileImg                from "../../assets/projects/react-dealership/react-hero-m.webp";
 import featuredCaseStudyImg         from "../../assets/projects/react-dealership/featured-case-study.webp";
 import thumbPlaceholderImg          from "../../assets/projects/react-dealership/featured-case-study.webp";
 import summaryImg                   from "../../assets/projects/react-dealership/summary.webp";
@@ -139,22 +139,7 @@ const reactDealerWebsite = {
       "The result is a polished dealership website demo that demonstrates my ability to apply existing frontend development skills to a modern React-based workflow, while developing a stronger understanding of reusable components, dynamic rendering and scalable frontend architecture."
     ],
     image             : summaryImg
-  },  
-
-  overview : {
-    bgClass           : "",
-    backgroundImage   : heroImg,
-    wrapperClass      : "sml-wrapper",
-    titleEyebrow      : "Overview",
-    title             : "From Frontend Foundations to React",
-    text              :
-    [
-      "This project is a dealership-style website built with React and Vite as part of my transition into modern frontend development. The project was created to expand my existing frontend experience into React and build practical experience with component-based application development.",
-      "The project was developed progressively across three stages. The first focused on establishing the component architecture and React fundamentals, including reusable components, props and dynamic rendering. The second introduced the visual foundation through CSS Grid, Flexbox, responsive layouts, spacing and typography, while the final stage brought the interface together with imagery, branding, icons, interactions and a fully responsive UI.",
-      "The result is a polished dealership website demo that demonstrates my ability to apply existing frontend development skills to a modern React-based workflow, while developing a stronger understanding of reusable components, dynamic rendering and scalable frontend architecture."
-    ]
   },
-
 
   process : {
     bgClass           : "",
@@ -212,8 +197,8 @@ const reactDealerWebsite = {
   galleryVersions : {
     bgClass           : "dark-bg gallery-react-versions",
     wrapperClass      : "no-padding-top",
-    titleEyebrow      : "",
-    title             : "",
+    titleEyebrow      : "Version Comparison",
+    title             : "Side By Side",
     items             :
     [
         {

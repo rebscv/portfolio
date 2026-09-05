@@ -9,7 +9,7 @@ function Hero ({ title, subtitle, description, image, imageAlt, imageMobile, met
             <div className="full-wrapper">
 
                 <picture>
-                    <source media="(min-width: 1025px)" srcSet={image} />
+                    <source media="(min-width: 768px)" srcSet={image} />
                     <source srcSet={imageMobile} />
                     <img src={image} alt={imageAlt} loading="eager" fetchPriority="high" />
                 </picture>
@@ -18,7 +18,7 @@ function Hero ({ title, subtitle, description, image, imageAlt, imageMobile, met
                     <div className="hero-banner-text">
 
                         <div className="hero-banner-title">
-                            {subtitle && <h2>{subtitle}</h2>}
+                            {subtitle && <h2 className="title-eyebrow">{subtitle}</h2>}
                             <h1>{title}</h1>                            
                         </div>
 
@@ -48,20 +48,18 @@ function Hero ({ title, subtitle, description, image, imageAlt, imageMobile, met
                                 </div>
                             }
                             
-                            <div className="hero-summary-links">
+                            {/* <div className="hero-summary-links">
                                 <div className="btn-flex">
                                     <div>{github && ( <a href={github} className="btn btn-outline">GitHub</a> )}</div>
                                     <div>{liveSite && ( <a href={liveSite} className="btn btn-outline">Live Demo</a> )}</div>
                                 </div>
-                            </div>
+                            </div> */}
 
                         </div>
 
 
                     </div>
                 </div>
-
-
 
                 <div className="project-hero-fade"></div>
 

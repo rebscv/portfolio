@@ -1,10 +1,6 @@
-.project-process-steps {
-    gap: 128px 64px;
-    padding-bottom: 96px;
-}
 
 .project-process-block {
-    padding: 48px;
+    padding: 32px 16px;
     border: solid 1px #2a2a2a;
     border-radius: 24px;
     background-color: #ffffff05;
@@ -12,6 +8,17 @@
     text-align: left;
     align-content: start;
     height: 100%;
+}
+
+.project-process-block::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 24px;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    background-color: #2a2a2a;
 }
 
 .project-process-block .h2 {
@@ -30,37 +37,80 @@
 }
 
 .project-process-block:nth-child(even), .project-process-steps > div:nth-child(even) {
-    top: 96px;
     position: relative;
-}
-
-.project-process-block::after, .project-process-block:nth-child(odd)::after, .project-process-block::after, .project-process-block:nth-child(odd)::after {
-    content: '';
-    position: absolute;
-    width: 64px;
-    height: 1px;
-    background-color: #2a2a2a;
-    top: calc(50% + 64px);
-    right: -64px;
-    transform: translateY(-50%);
-}
-
-.project-process-steps > div:nth-child(even) .project-process-block::after {
-    content: '';
-    height: 64px;
-    width: calc(100% - 160px);
-    left: calc(-100% + 158px);
-    right: auto;
-    top: auto;
-    bottom: -32px;
-    transform: none;
-    background-color: transparent;
-    border: #2a2a2a solid 1px;
-    border-bottom: none;
-    border-right: none;
-    border-radius: 32px 0 0 0;
 }
 
 .project-process-steps > div:last-child .project-process-block::after {
     content: none;
+}
+
+@media (min-width:768px) {
+
+    .project-process-steps {
+        gap: 64px 32px;
+        padding-bottom: 64px;
+    }
+
+    .project-process-block:nth-child(even), .project-process-steps > div:nth-child(even) {
+        top: 64px;
+        position: relative;
+    }
+
+    .project-process-block::after, .project-process-block:nth-child(odd)::after, .project-process-block::after, .project-process-block:nth-child(odd)::after {
+        width: 64px;
+        height: 1px;
+        top: calc(50% + 64px);
+        right: -64px;
+        left: auto;
+        transform: translateY(-50%);
+        width: 32px;
+        right: -32px;
+    }
+
+    .project-process-steps > div:nth-child(even) .project-process-block::after {
+        height: 32px;
+        right: auto;
+        top: auto;
+        bottom: -2px;
+        transform: none;
+        background-color: transparent;
+        border: #2a2a2a solid 1px;
+        border-bottom: none;
+        border-right: none;
+        border-radius: 32px 0 0 0;
+        width: calc(50% + 32px);
+        left: calc(-50% - 32px);
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    .project-process-steps {
+        gap: 96px 64px;
+        padding-bottom: 96px;
+    }
+
+    .project-process-block {
+        padding: 48px;
+    }
+
+    .project-process-block:nth-child(even), .project-process-steps > div:nth-child(even) {
+        top: 96px;
+        top: 64px;
+    }
+
+    .project-process-steps > div:nth-child(even) .project-process-block::after {
+        width: calc(100% - 160px);
+        left: calc(-100% + 158px);
+        height: 64px;
+        bottom: -32px;
+
+    }
+
+    .project-process-block::after, .project-process-block:nth-child(odd)::after, .project-process-block::after, .project-process-block:nth-child(odd)::after {
+        width: 64px;
+        right: -64px;
+    }
+    
 }

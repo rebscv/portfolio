@@ -13,11 +13,11 @@ function Projects() {
 
         <div className="projects-page">
 
-            <PageHero
+            <PageHero 
+                image={heroImg}
                 title="Selected Work"
                 eyebrow="Explore"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt neque suscipit tincidunt euismod. Cras congue pharetra arcu non rutrum. Praesent ac magna rutrum, consectetur lacus sed, eleifend tellus. Vestibulum at varius ligula. Sed ultricies lacinia nisl id vestibulum. Vivamus gravida mi vel erat commodo lobortis."
-                image={heroImg}
+                text="Explore a selection of projects from my career as a Web Developer, with a focus on WordPress, custom template development and responsive design. I’m also expanding my skills in React through personal projects, including a recreation of a dealership website built from the ground up. Alongside web development, you’ll find a selection of digital design and creative work from my previous experience."
             />
 
             <section className="projects-content">

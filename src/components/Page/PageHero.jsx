@@ -50,12 +50,12 @@ function PageHero({ title, eyebrow, text, image, imageMobile, alt, video, videoP
 
 
         <div className="page-hero-content t-center grid">
-          {title && <h1> {eyebrow && <span className="title-eyebrow">{eyebrow}</span>} {title}</h1>}
+          {title && <div>{eyebrow && <span className="title-eyebrow">{eyebrow}</span>}<h1>{title}</h1></div>}
+
           {text && <p>{text}</p>}
-
-
-
         </div>
+
+
 
       </div>
     </section>

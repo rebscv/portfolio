@@ -33,8 +33,7 @@ function GallerySlider({ items, title, titleEyebrow, text, wrapperClass, bgClass
                                                 <source media="(max-width: 767px)" srcSet={slide.imageMobile} />
                                                 <img src={slide.image} alt={slide.title} fetchPriority="high" />
                                             </picture>                                            
-                                        </div>
-                                        <div className="project-gallery-slide-text">{Array.isArray(slide.text) ? slide.text.map((para, i) => <div key={i}>{para}</div>) : slide.text && <p>{slide.text}</p> }</div>
+                                        </div>                                        
                                     </div>
                                 </div>
                             ))}

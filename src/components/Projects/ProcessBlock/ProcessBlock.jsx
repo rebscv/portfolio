@@ -19,7 +19,7 @@ function ProcessBlock ({ wrapperClass, bgClass, title, titleEyebrow, steps = [] 
                             </div>
                         }
                         {!titleEyebrow && title && (<h2>{title}</h2>)}
-                        <div className="project-process-steps grid-t-two-cols">
+                        <div className="project-process-steps grid-l-two-cols">
 
                             {steps.map((step, index) => (
 
