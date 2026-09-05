@@ -1,6 +1,6 @@
 import "./hero.css";
 
-function Hero ({ title, subtitle, description, image, imageAlt, imageMobile, metadata, technologies, github, liveSite }) {
+function Hero ({ title, subtitle, description, image, imageAlt, imageMobile, imageTablet, metadata, technologies, github, liveSite }) {
 
     const labels = { role: "Role", projectType: "Project Type", platform: "Platform", design: "Design", focus: "Focus", projects: "Projects", template: "Template", project: "Project", year: "Year" };
 
@@ -10,7 +10,8 @@ function Hero ({ title, subtitle, description, image, imageAlt, imageMobile, met
 
                 <picture>
                     <source media="(min-width: 768px)" srcSet={image} />
-                    <source srcSet={imageMobile} />
+                    {imageTablet && <source media="(min-width: 576px)" srcSet={imageTablet} />}
+                    {imageMobile && <source srcSet={imageMobile} />}
                     <img src={image} alt={imageAlt} loading="eager" fetchPriority="high" />
                 </picture>
                 

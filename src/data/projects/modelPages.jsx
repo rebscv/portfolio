@@ -1,6 +1,7 @@
 import thumbImg                     from "../../assets/projects/model-pages/thumb.webp";
-import heroImg                      from "../../assets/projects/model-pages/hero.webp"
-import heroMobileImg                from "../../assets/projects/model-pages/hero-m.webp"
+import heroImg                      from "../../assets/projects/model-pages/model-hero.webp"
+import heroTabletImg                from "../../assets/projects/model-pages/model-hero-t.webp"
+import heroMobileImg                from "../../assets/projects/model-pages/model-hero-m.webp"
 import summaryImg                   from "../../assets/projects/model-pages/summary.webp"
 import summaryBgImg                 from "../../assets/projects/summary-bg.webp";
 import rangeImg                     from "../../assets/projects/model-pages/range.webp";
@@ -93,6 +94,7 @@ const modelPages = {
 
   hero: {
     image         : heroImg,
+    imageTablet   : heroTabletImg,
     imageMobile   : heroMobileImg,
     imageAlt      : "Mazda",
     title         : "Model Range Creation",

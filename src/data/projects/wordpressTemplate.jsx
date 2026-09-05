@@ -1,6 +1,7 @@
 import thumbImg               from "../../assets/projects/wordpress-template/thumb.webp";
 import featuredImg            from "../../assets/projects/wordpress-template/featured-thumb.webp";
 import heroImg                from "../../assets/projects/wordpress-template/bmw-hero.webp"
+import heroTabletImg          from "../../assets/projects/wordpress-template/bmw-hero-t.webp"
 import heroMobileImg          from "../../assets/projects/wordpress-template/bmw-hero-m.webp"
 import logoImg                from "../../assets/projects/wordpress-template/logo.webp"
 import summaryImg             from "../../assets/projects/wordpress-template/summary.webp";
@@ -111,6 +112,7 @@ const wordpressTemplate = {
 
   hero: {
     image         : heroImg,
+    imageTablet  : heroTabletImg,
     imageMobile   : heroMobileImg,
     title         : "WordPress Template Development",
     subtitle      : "Design to reusable WordPress themes",

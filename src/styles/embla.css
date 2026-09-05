@@ -1,4 +1,36 @@
 /* =========================
+Embla Styles
+========================= */
+
+.embla {
+  position: relative;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 2px;
+}
+
+.embla__container {
+  display: flex;
+}
+
+/* Slide */
+.embla__slide {
+  flex: 0 0 100%;
+  position: relative;
+}
+
+.embla__slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+/* =========================
 Embla Grid to Flex Styles
 ========================= */
 
@@ -117,3 +149,125 @@ Embla Grid to Flex Styles
   }
   
 }
+
+/* =========================
+Embla Dots
+========================= */
+
+.embla__dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.embla__dots__container {
+  padding: var(--padding-tb) 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.embla__dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff2b;;
+}
+
+.embla__dot.is-active {
+  background: transparent;
+}
+
+.embla__dot-progress {
+  position: absolute;
+  inset: 0;
+  background: var(--clr-white);
+  transform-origin: left;
+  /* animation: emblaProgress 4s linear forwards; */
+  animation: none;
+}
+
+
+@media (min-width:480px) {
+
+  .embla__dots {
+    gap: 16px;
+  }
+
+  .embla__dot {
+    width: 12px;
+    height: 12px;
+  }
+
+}
+
+@media (min-width:768px) {
+
+  .embla__dots__container {
+    gap: 48px;
+  }
+  
+}
+
+/* =========================
+Embla Arrows
+========================= */
+
+
+
+.embla__prev, .embla__next {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: var(--padding-lr);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+}
+
+.embla__next {
+  left: auto;
+  right: var(--padding-lr);
+}
+
+.embla__prev, .embla__next {
+  position: relative;
+  top: auto;
+  transform: none;
+  left: auto;
+  right: auto;
+  padding: 0;
+  color: var(--clr-white);
+
+  padding: 8px 9px 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: solid 1px #ffffff2b;
+  transition: ease 0.3s all;
+}
+
+.embla__prev:hover, .embla__next:hover {
+  background-color: #666;
+  border: solid 1px #666;
+}
+
+@media (min-width:576px) {
+
+  .embla__prev, .embla__next {
+    display: flex;
+  }
+
+    
+}
+

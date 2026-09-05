@@ -1,7 +1,8 @@
 import thumbImg           from "../../assets/projects/cms-migration/thumb.webp";
 import featuredImg        from "../../assets/projects/cms-migration/featured-thumb.webp";;
-import heroImg            from "../../assets/projects/cms-migration/hero.webp";
-import heroMobileImg      from "../../assets/projects/cms-migration/hero-m.webp";
+import heroImg            from "../../assets/projects/cms-migration/cms-hero.webp";
+import heroTabletImg      from "../../assets/projects/cms-migration/cms-hero-t.webp";
+import heroMobileImg      from "../../assets/projects/cms-migration/cms-hero-m.webp";
 import logoImg            from "../../assets/projects/cms-migration/logo.webp";
 import summaryImg         from "../../assets/projects/cms-migration/summary.webp";
 import summaryBgImg       from "../../assets/projects/summary-bg.webp";
@@ -98,6 +99,7 @@ const cmsMigration = {
 
   hero: {
     image         : heroImg,
+    imageTablet   : heroTabletImg,
     imageMobile   : heroMobileImg,
     imageAlt      : "Mazda",
     title         : "CMS Migration",

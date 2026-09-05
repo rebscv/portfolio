@@ -1,7 +1,8 @@
 
 import thumbImg           from "../../assets/projects/digital-design/thumb.webp";
-import heroImg            from "../../assets/projects/digital-design/hero.webp"
-import heroMobileImg      from "../../assets/projects/digital-design/hero-m.webp"
+import heroImg            from "../../assets/projects/digital-design/digital-hero.webp"
+import heroTabletImg      from "../../assets/projects/digital-design/digital-hero-t.webp"
+import heroMobileImg      from "../../assets/projects/digital-design/digital-hero-m.webp"
 import summaryBgImg       from "../../assets/projects/summary-bg.webp";
 
 import galleryImg1        from "../../assets/projects/digital-design/gallery-1.webp";
@@ -66,6 +67,7 @@ const digitalDesignMarketting = {
 
   hero: {
     image             : heroImg,
+    imageTablet       : heroTabletImg,
     imageMobile       : heroMobileImg,
     imageAlt          : "Mazda",
     subtitle          : "Computer & IT retailer",
@@ -82,7 +84,7 @@ const digitalDesignMarketting = {
 
   summary : {
     bgClass           : "",
-    backgroundImage   : "",
+    backgroundImage   : summaryBgImg, 
     wrapperClass      : "std-wrapper",
     titleEyebrow      : "Overview",
     title             : "Design, Content & Marketing",

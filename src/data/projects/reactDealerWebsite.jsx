@@ -2,6 +2,7 @@ import thumbImg                     from "../../assets/projects/react-dealership
 import featuredImg                  from "../../assets/projects/react-dealership/featured-thumb.webp";
 import logoImg                      from "../../assets/projects/react-dealership/logo.webp";
 import heroImg                      from "../../assets/projects/react-dealership/react-hero.webp";
+import heroTabletImg                from "../../assets/projects/react-dealership/react-hero-t.webp";
 import heroMobileImg                from "../../assets/projects/react-dealership/react-hero-m.webp";
 import featuredCaseStudyImg         from "../../assets/projects/react-dealership/featured-case-study.webp";
 import thumbPlaceholderImg          from "../../assets/projects/react-dealership/featured-case-study.webp";
@@ -108,6 +109,7 @@ const reactDealerWebsite = {
 
   hero: {
     image         : heroImg,
+    imageTablet   : heroTabletImg,
     imageMobile   : heroMobileImg,
     imageAlt      : "MX-5 driving on highway",
     title         : "React Developement",
