@@ -11,7 +11,7 @@
 
 
 .project-gallery-columns-slider .embla .embla__container > div {
-  flex: 0 0 100%;
+  flex: 0 0 95%;
 }
 
 .project-gallery-slider .embla .embla__container > div {
@@ -114,6 +114,11 @@
 }
 
 @media (min-width:1024px) {
+
+  .project-gallery-columns-slider .full-wrapper, .project-gallery-slider .full-wrapper {
+    padding: var(--padding-tb-d) 0;
+  }
+
 
   .project-gallery-slider .embla .embla__container > div, .project-gallery-columns-slider .embla .embla__container > div {
     padding-left: 0;

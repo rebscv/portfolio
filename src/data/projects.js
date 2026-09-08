@@ -9,9 +9,9 @@ import digitalDesignMarketting from "./projects/digitalDesignMarketting";
 const projects = [
   reactDealerWebsite,
   wordpressTemplate,
-  modelPages,
-  customWordpress,
   cmsMigration,
+  customWordpress,
+  modelPages,
   digitalDesignMarketting,
 ];
 

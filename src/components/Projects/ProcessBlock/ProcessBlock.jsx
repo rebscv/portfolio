@@ -3,10 +3,10 @@ import { div } from "framer-motion/client";
 
 import "./ProcessBlock.css"
 
-function ProcessBlock ({ wrapperClass, bgClass, title, titleEyebrow, steps = [] }) {
+function ProcessBlock ({ wrapperClass, bgClass, title, titleEyebrow, backgroundImage, steps = [] }) {
 
     return (
-        <section className={`project-process ${bgClass || 'dark-bg black-bg'}`}>
+        <section className={`project-process ${bgClass || 'dark-bg black-bg'}`} style={{backgroundImage: `url(${backgroundImage})`}}>
             <div className={`${wrapperClass || 'std-wrapper'}`}>
 
                 <FadeIn direction="up" duration={2} delay={0.3}>

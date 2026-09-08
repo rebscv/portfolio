@@ -1,14 +1,14 @@
 import FadeIn from "../../animations/FadeIn";
 import "./Skills.css";
 
-import skillsContent from "../../data/skills"
-import skillsBg from "../../assets/skills/skills-bg.webp";
+import skillsContent    from "../../data/skills"
+import gradiantBg       from "../../assets/gradient-bg.webp";
 
 function Skills() {
 
   
     return (
-        <section className="skills-content dark-bg black-bg" style={{ backgroundImage: `url(${skillsBg})` }}>
+        <section className="skills-content dark-bg black-bg" style={{ backgroundImage: `url(${gradiantBg})` }}>
             <div className="std-wrapper">
                 
                 <h2>
@@ -19,10 +19,9 @@ function Skills() {
                 <div className="skills-content-grid">                
 
                     {Object.entries(skillsContent).map(([categoryName, categery]) => (
-                        <div key={categoryName} className={`${categery.class} skills-content-category`}>
+                        <div key={categoryName} className={`skills-content-category ${categery.class}`}>
 
                             <div className="skills-content-category-title">{categery.title}</div>
-
                             <div className="skills-content-items">
 
                                     {categery.items.map((skill, index) => (
@@ -36,19 +35,14 @@ function Skills() {
 
                                     ))}
 
-                            </div>
-                            
+                            </div>                            
                         </div>
                     ))}
 
                 </div>
 
 
-
-
-
             </div>
-            <div className="skills-content-bg"></div>
         </section>
     )
 }

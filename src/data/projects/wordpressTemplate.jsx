@@ -73,7 +73,7 @@ const wordpressTemplate = {
 
   featuredCaseStudy       : true,
   caseStudyHero           : featuredCaseStudyImg,
-  caseStudyText           : "To learn React, I went through a ‘3 Stage’ system. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus sem vitae nisi lacinia dictum. Integer auctor velit eget magna tempor dapibus. Curabitur auctor diam vel convallis tristique. Aenean nec pellentesque arcu. Duis id tellus eu purus iaculis lobortis eu in urna.",
+  caseStudyText           : "Over several years, I've developed a range of dealership websites using WordPress, taking supplied designs and turning them into responsive, production-ready themes. The projects were built around a reusable foundation, allowing different automotive brands to maintain their own visual identity while sharing common functionality and structure.",
 
   sections      : [
     {
@@ -125,7 +125,8 @@ const wordpressTemplate = {
       projects        : "BMW, Ford ZA, Foton ZA, Mazda NZ, XPENG",        
       platform        : "WordPress",
       design          : "Figma & Illustrator / Provided Design"
-    }
+    },
+    technologies      : [   "WordPress", "PHP", "HTML", "CSS", "JavaScript", "ACF", "Git", "Figma", "Photoshop", "Embla Carousel" ],
   },
 
   summary : {

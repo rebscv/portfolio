@@ -1,12 +1,15 @@
-import html5Img from "../assets/skills/html5.webp";
-import jsImg from "../assets/skills/js.webp";
-import css3Img from "../assets/skills/css3.webp";
-import wordpressImg from "../assets/skills/wordpress.webp";
-import joomlaImg from "../assets/skills/joomla.webp";
-import drupalImg from "../assets/skills/drupal.webp";
-import photoshopImg from "../assets/skills/photoshop.webp";
-import figmaImg from "../assets/skills/figma.webp";
-import reactImg from "../assets/skills/react.webp";
+import html5Img from      "../assets/skills/html5.webp";
+import jsImg from         "../assets/skills/js.webp";
+import css3Img from       "../assets/skills/css3.webp";
+import wordpressImg from  "../assets/skills/wordpress.webp";
+import joomlaImg from     "../assets/skills/joomla.webp";
+import drupalImg from     "../assets/skills/drupal.webp";
+import photoshopImg from  "../assets/skills/photoshop.webp";
+import figmaImg from      "../assets/skills/figma.webp";
+import reactImg from      "../assets/skills/react.webp";
+import phpImg from        "../assets/skills/php.webp";
+import responsiveImg from "../assets/skills/responsive.webp";
+import flexGridImg from   "../assets/skills/flex-grid.webp";
 
 const skills = {
 
@@ -43,7 +46,7 @@ const skills = {
       {
         id          : 6,
         title       : "PHP",
-        image       : joomlaImg
+        image       : phpImg
       },
       {
         id          : 7,
@@ -53,12 +56,12 @@ const skills = {
       {
         id          : 8,
         title       : "Responsive Design",
-        image       : photoshopImg
+        image       : responsiveImg
       },
       {
         id          : 9,
         title       : "CSS Grid / Flexbox",
-        image       : photoshopImg
+        image       : flexGridImg
       }
     ]
   },

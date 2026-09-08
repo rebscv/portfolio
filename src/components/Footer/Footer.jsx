@@ -4,15 +4,15 @@ import "./Footer.css";
 function Footer() {
     return (
         <>
-        <span id="contact"></span>
         <footer className="dark-bg" >
+            <span id="contact"></span>
             <div className="std-wrapper">
                 
                 
                 <div className="grid-d-two-cols">
 
                     <div className="grid">
-                        <h2 className="h1"><span class="title-eyebrow">Let's chat</span><span>Get in Touch</span></h2>
+                        <h2 className="h1"><span className="title-eyebrow">Let's chat</span><span>Get in Touch</span></h2>
                         <p>Wanna learn more? Feel free to reach out to via email or LinkedIn</p>
                     </div>
 

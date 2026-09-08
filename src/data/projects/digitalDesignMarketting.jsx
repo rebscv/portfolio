@@ -99,7 +99,7 @@ const digitalDesignMarketting = {
   },
 
   work : {
-    bgClass           : "dark-grey-bg",
+    bgClass           : "",
     wrapperClass      : "sml-wrapper",
     titleEyebrow      : "Selected Work",
     title             : "A Mix of Digital, Social & Print",

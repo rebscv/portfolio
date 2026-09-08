@@ -26,6 +26,7 @@ import buildingImg1                 from "../../assets/projects/react-dealership
 import buildingImg2                 from "../../assets/projects/react-dealership/building-2.webp";
 import buildingImg3                 from "../../assets/projects/react-dealership/building-3.webp";
 import beyondImg                    from "../../assets/projects/react-dealership/beyond.webp";
+import gradientBg                   from "../../assets/gradient-bg.webp";
 import { image } from "framer-motion/client";
 
 const reactDealerWebsite = {
@@ -48,9 +49,9 @@ const reactDealerWebsite = {
   github            : "",
   liveSite          : "",
 
-  featuredCaseStudy       : true,
-  caseStudyHero           : featuredCaseStudyImg,
-  caseStudyText           : "To learn React, I went through a ‘3 Stage’ system. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus sem vitae nisi lacinia dictum. Integer auctor velit eget magna tempor dapibus. Curabitur auctor diam vel convallis tristique. Aenean nec pellentesque arcu. Duis id tellus eu purus iaculis lobortis eu in urna.",
+  featuredCaseStudy : true,
+  caseStudyHero     : featuredCaseStudyImg,
+  caseStudyText     : "I took a dealership template I had previously built and rebuilt it from the ground up in React. What started as a way to learn React became a full dealership demo featuring reusable components, dynamic content, routing, animations and an interactive vehicle stock experience.",
 
 
 
@@ -95,12 +96,6 @@ const reactDealerWebsite = {
       type      : "process",
       data      : "keySkills"
     },
-
-
-    {
-      type      : "techStack",
-      data      : "techStack"
-    },
     {
       type      : "textBlock",
       data      : "outcome"
@@ -125,7 +120,7 @@ const reactDealerWebsite = {
       platform        : "React / Vite",
       design          : "Self-Directed & Based off Mazda AU OEM Website"
     },
-    technologies      : [ "React", "Vite", "React Router", "CSS", "Framer Motion", "Embla Carousel" ],
+    technologies      : [ "React", "JavaScript (ES6+)", "Vite", "CSS", "React Router", "Embla Carousel", "Framer Motion", "React DatePicker", "Git", "Photoshop" ],
   },
 
   summary : {
@@ -183,8 +178,9 @@ const reactDealerWebsite = {
   },
 
   wordpressToReact  : {
-    bgClass           : "",
-    wrapperClass      : "sml-wrapper t-center no-padding-top",
+    bgClass           : "gradient-border-bg",
+    backgroundImage   : gradientBg,
+    wrapperClass      : "sml-wrapper t-center",
     gridClass         : "",
     titleEyebrow      : "From WordPress to React",
     title             : "Building on Existing Experience",
@@ -198,7 +194,7 @@ const reactDealerWebsite = {
 
   galleryVersions : {
     bgClass           : "dark-bg gallery-react-versions",
-    wrapperClass      : "no-padding-top",
+    wrapperClass      : "",
     titleEyebrow      : "Version Comparison",
     title             : "Side By Side",
     items             :
@@ -228,7 +224,7 @@ const reactDealerWebsite = {
 
   architecture  : {
     bgClass           : "dark-grey-bg",
-    wrapperClass      : "std-wrapper no-padding-bottom",
+    wrapperClass      : "std-wrapper",
     gridClass         : "grid-d-two-cols gv-center",
     titleEyebrow      : "Component Architecture",
     title             : "Built to Scale",
@@ -242,8 +238,9 @@ const reactDealerWebsite = {
   },
   
   dataDriven  : {
-    bgClass           : "dark-grey-bg",
-    wrapperClass      : "std-wrapper no-padding-top no-padding-bottom",
+    backgroundImage   : gradientBg,
+    bgClass           : "dark-grey-bg gradient-border-bg",
+    wrapperClass      : "std-wrapper",
     gridClass         : "grid-d-two-cols grid-d-reverse gv-center",
     titleEyebrow      : "Data-Driven Development",
     title             : "Content Meets Components",
@@ -255,6 +252,21 @@ const reactDealerWebsite = {
       "I found this approach much more scalable and easier to maintain. Adding new content or changing an existing section no longer meant copying and updating large amounts of HTML. The component could remain the same while the data changed."
     ],
     image             : componentsImg
+  },
+  
+  dynamicFunction : {
+    bgClass           : "dark-grey-bg",
+    wrapperClass      : "std-wrapper",
+    gridClass         : "grid-d-two-cols gv-center",
+    titleEyebrow      : "Dynamic Functionality",
+    title             : "Beyond the Homepage",
+    text              :
+    [
+      "Building the stock section was one of the most valuable parts of the project. My previous work had focused primarily on dealership website templates, so I had limited experience developing the stock search functionality itself.",
+      "Using React, I built a dynamic stock page with filtering, sorting and search functionality, along with individual vehicle detail pages.",
+      "I was surprised by how naturally React handled this type of interface. Managing the data and UI through components and state made it possible to build a feature-rich stock experience without needing to treat each result or page as a separate piece of markup."
+    ],
+    image             : beyondImg
   },
   
   gallery : {
@@ -286,24 +298,10 @@ const reactDealerWebsite = {
         }
     ]
   },
-  
-  dynamicFunction : {
-    bgClass           : "dark-grey-bg",
-    wrapperClass      : "std-wrapper no-padding-top",
-    gridClass         : "grid-d-two-cols gv-center",
-    titleEyebrow      : "Dynamic Functionality",
-    title             : "Beyond the Homepage",
-    text              :
-    [
-      "Building the stock section was one of the most valuable parts of the project. My previous work had focused primarily on dealership website templates, so I had limited experience developing the stock search functionality itself.",
-      "Using React, I built a dynamic stock page with filtering, sorting and search functionality, along with individual vehicle detail pages.",
-      "I was surprised by how naturally React handled this type of interface. Managing the data and UI through components and state made it possible to build a feature-rich stock experience without needing to treat each result or page as a separate piece of markup."
-    ],
-    image             : beyondImg
-  },
 
   keySkills : {
-    bgClass           : "dark-grey-bg",
+    backgroundImage   : gradientBg,
+    bgClass           : "dark-grey-bg gradient-border-bg",
     wrapperClass      : "sml-wrapper t-center",
     titleEyebrow      : "The Toolkit",
     title             : "Key Skills",
@@ -343,17 +341,6 @@ const reactDealerWebsite = {
 
     ]
   },
-
-
-
-  techStack : {
-    bgClass       : "dark-grey-bg dark-bg",
-    wrapperClass  : "sml-wrapper t-center",
-    gridColumns   : "grid-d-five-cols",
-    title         : "Technology Stack",
-    items         : [ "React", "JavaScript (ES6+)", "Vite", "CSS", "React Router", "Embla Carousel", "Framer Motion", "React DatePicker", "Git", "Photoshop" ]
-  },
-  
 
   outcome : {
     bgClass           : "",

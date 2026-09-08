@@ -52,7 +52,7 @@ import bmwGalleryImg3         from "../../assets/projects/wordpress-template/bmw
 import { image } from "framer-motion/client";
 
 const cmsMigration = {
-  id                : 5,
+  id                : 3,
   slug              : "cms-migration",
   title             : "CMS Migration & Platform Upgrades",
   subtitle          : "Mitsubishi | Toyota | Nissan | Škoda | Volkswagen",
@@ -128,7 +128,8 @@ const cmsMigration = {
       "As part of a broader platform upgrade, dealership websites across multiple automotive brands were migrated from Joomla to WordPress.",
       "Brand-specific WordPress templates were developed first, providing a new foundation for each dealership. The existing Joomla websites were then reviewed and migrated into these templates, carrying across dealership-specific content such as locations, contact details, About Us information, offers and promotions.",
       "At the same time, updated OEM content was introduced across areas such as Service and Finance. The challenge was to bring this new content into the WordPress structure while retaining the dealership-specific information and context of the original site."
-    ]
+    ],
+    technologies      : [   "WordPress", "PHP", "HTML", "CSS", "JavaScript", "ACF", "Photoshop", "Embla Carousel" ],
   },
 
   process : {
@@ -403,7 +404,7 @@ const cmsMigration = {
   },
 
   outcome : {
-    bgClass           : "dark-grey-bg",
+    bgClass           : "",
     wrapperClass      : "sml-wrapper",
     titleEyebrow      : "Outcome",
     title             : "A More Flexible Platform for Future Development",

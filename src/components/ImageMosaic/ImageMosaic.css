@@ -36,3 +36,20 @@
     object-fit: cover;
 }
 
+@media (min-width:768px) {
+
+    .image-mosaic-item {
+        width: 240px;
+        aspect-ratio: 16 / 10;
+    }
+        
+}
+
+@media (min-width:1024px) {
+
+    .image-mosaic-item {
+        width: 280px;
+        aspect-ratio: 4 / 3;
+    }
+        
+}

@@ -1,14 +1,13 @@
 .btn, a.btn {
-  padding: 4px 24px;
+  padding: 12px 20px;
   border: none;
   border-radius: 24px;
   cursor: pointer;
   transition: ease 0.4s all;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 500;
   display: flex;
   gap: 10px;
-  font-size: 0.8em;
   align-items: center;
   width: fit-content;
 }
@@ -98,7 +97,10 @@
     
 }
 
+@media (max-width:1024px) {
 
+  .btn, a.btn {
+    padding: 8px 24px;
+  }
 
-
-
+}

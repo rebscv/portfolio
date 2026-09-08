@@ -25,6 +25,14 @@
 
 }
 
+@media (max-width:767px) {
+
+  .hide-mobile {
+      display: none!important;
+  }
+
+}
+
 
 /* =========================
    Wrappers
@@ -56,11 +64,11 @@
 }
 
 .std-wrapper.no-padding-bottom, .sml-wrapper.no-padding-bottom, .lrg-wrapper.no-padding-bottom, .full-wrapper.no-padding-bottom {
-  padding-bottom: 0;
+  padding-bottom: 0!important;
 }
 
 .std-wrapper.no-padding-top, .sml-wrapper.no-padding-top, .lrg-wrapper.no-padding-top, .full-wrapper.no-padding-top {
-  padding-top: 0;
+  padding-top: 0!important;
 }
 
 main > section.content:first-child > .sml-wrapper, main > section.content:first-child > .std-wrapper, main > section.content:first-child > .lrg-wrapper {
@@ -265,9 +273,9 @@ align-items: center!important;
 @media (min-width:1024px) {
 
   .grid-d-two-cols .center-content > div {
-    padding-top: var(--padding-tb-d);
-    padding-bottom: var(--padding-tb-d);
-    padding-right: var(--padding-tb-d);
+    padding-top: var(--padding-tb);
+    padding-bottom: var(--padding-tb);
+    padding-right: var(--padding-tb);
   }
 
   .grid-d-two-cols.grid-d-reverse .center-content > div {
@@ -285,6 +293,16 @@ align-items: center!important;
 
 }
 
+@media (min-width:1600px) {
+
+  .grid-d-two-cols .center-content > div {
+    padding-top: var(--padding-tb-d);
+    padding-bottom: var(--padding-tb-d);
+    padding-right: var(--padding-tb-d);
+  }
+  
+}
+
 @media (max-width:1023px) {
 
   .full-wrapper .grid-d-two-cols .center-content > div {
@@ -293,7 +311,7 @@ align-items: center!important;
   }
 
   .lrg-wrapper .grid-d-two-cols .center-content > div {
-    padding: 0 var(--padding-lr) var(--padding-tb);
+    padding: 0 0;
   }
 
   .full-wrapper .grid-d-two-cols.no-gaps .center-content > div, .lrg-wrapper .grid-d-two-cols.no-gaps .center-content > div {
@@ -353,7 +371,6 @@ align-items: center!important;
   
 }
 
-
 /* =========================
    Grid Columns Block Styles
 ========================= */
@@ -366,5 +383,35 @@ align-items: center!important;
 
 .grey-bg .block-col {
   background-color: #ffffff;
+}
+
+/* =========================
+   Block Styles
+========================= */
+
+.block-padding {
+  padding: 12px;
+}
+
+.block-round-border {
+  border-radius: 12px;
+  border: solid 1px var(--clr-dark-grey-dk);
+  overflow: hidden;
+}
+
+@media (min-width:576px) {
+
+  .block-padding {
+    padding: 16px;
+  }
+
+}
+
+@media (min-width:1024px) {
+
+  .block-padding {
+    padding: 24px;
+  }
+  
 }
 

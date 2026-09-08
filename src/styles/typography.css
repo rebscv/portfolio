@@ -77,6 +77,14 @@ p a:hover {
   margin-right: auto;
 }
 
+.t-spacing {
+  line-height: 1.5em;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8em;
+}    
+
 @media (min-width:1024px) {
 
   .anchor {

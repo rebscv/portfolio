@@ -1,3 +1,20 @@
+.gradient-border-bg::before, .gradient-border-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    z-index: 2;
+    background-image: var(--clr-gradient);
+    opacity: 0.1;
+}
+
+.gradient-border-bg::before {
+    top: auto;
+    bottom: 0;
+}
+
 .project-text-block {
     background-position: center;
     background-repeat: no-repeat;

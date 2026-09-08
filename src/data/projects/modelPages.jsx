@@ -48,7 +48,7 @@ import featuredImg            from "../../assets/projects/wordpress-template/fea
 
 
 const modelPages = {
-  id                : 3,
+  id                : 5,
   slug              : "model-pages",
   title             : "Vehicle Model Range Implementation",
   subtitle          : "Ford | FOTON | XPENG",
@@ -109,7 +109,7 @@ const modelPages = {
       platform        : "WordPress",
       design          : "Provided OEM Designs / Existing Website Templates"
     },
-    technologies      : [ "HTML", "CSS", "JavaScript", "WordPress"],
+    technologies      : [ "HTML", "CSS", "JavaScript", "WordPress", "Embla Carousel"],
     github            : "",
     liveSite          : ""
   },

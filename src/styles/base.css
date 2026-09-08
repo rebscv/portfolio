@@ -60,6 +60,10 @@ img {
   background-color: var(--clr-purple-xdk);
 }
 
+.blue-gradiant-bg {
+  background: linear-gradient(135deg, var(--clr-purple-xdk), var(--clr-blue-xdk));
+}
+
 .blue-gradiant-top-bg {
   background: linear-gradient(0deg, var(--clr-black), var(--clr-blue-xdk));
 }
@@ -67,7 +71,3 @@ img {
 .purple-gradiant-top-bg {
   background: linear-gradient(0deg, var(--clr-black), var(--clr-purple-xdk));
 }
-
-
-
-

@@ -20,7 +20,7 @@
     left: 0;
     width: 100%;
     height: 75%;
-    background-image: linear-gradient(0deg, #101010, transparent ) ;
+    background-image: linear-gradient(0deg, #101010, #1010106e, transparent ) ;
     z-index: 1;
 }
 
@@ -37,6 +37,7 @@
 
 .hero-txt {
     padding: var(--padding-tb) var(--padding-lr);
+    gap: 12px;
 }
 
 .hero-content h2 {
@@ -88,6 +89,7 @@
     }
 
     .hero-txt {
+        gap: var(--grid-gap);
         padding: var(--padding-tb) var(--padding-lr);
     }
     
@@ -140,6 +142,10 @@
 
     .hero-content .full-wrapper::after {
         height: 50%;
+    }
+
+    .hero-description .btn-flex {
+        flex-direction: column;
     }
 
 }
@@ -195,7 +201,10 @@
     .hero-description p {
         font-size: 1.2em;
     }
-    
+
+    .hero-description .btn-flex {
+        flex-direction: row;
+    }    
     
     
 }

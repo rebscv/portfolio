@@ -1,10 +1,24 @@
 .project-summary {
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
-.project-summary .full-wrapper {
+.project-summary::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 25%;
+    background: linear-gradient(0deg, var(--clr-black), transparent);
+    z-index: 1;
+    display: block;
+    left: 0;
+    width: 100%;
+}
+
+.project-summary .full-wrapper, .project-summary .lrg-wrapper, .project-summary .std-wrapper, .project-summary .sml-wrapper {
+    z-index: 2;
     position: relative;
 }
 
@@ -14,11 +28,10 @@
 }
 
 .project-summary-text p {
-    font-weight: 300;
-    letter-spacing: -0.065em;
-    line-height: 1.3em;
-    font-size: 1.5em;
-    text-shadow: 0 1px 4px #00000040;
+    font-weight:700;
+    letter-spacing: normal;
+    line-height: 1.5em;
+    font-size: 1em;
 }
 
 .project-summary-container {
@@ -102,9 +115,13 @@
     width: 100%;
 }
 
-@media (min-width:1024px) {
+@media (min-width:768px) {
 
     .project-summary-text p {
+        font-weight: 300;
+        letter-spacing: -0.065em;
+        line-height: 1.3em;
+        text-shadow: 0 1px 4px #00000040;
         font-size: 1.8em;
     }
     
