@@ -17,7 +17,10 @@ function Projects() {
                 image={heroImg}
                 title="Selected Work"
                 eyebrow="Explore"
-                text="Explore a selection of projects from my career as a Web Developer, with a focus on WordPress, custom template development and responsive design. I’m also expanding my skills in React through personal projects, including a recreation of a dealership website built from the ground up. Alongside web development, you’ll find a selection of digital design and creative work from my previous experience."
+                text={[
+                    "Explore a selection of projects from my career as a Web Developer, with a focus on WordPress, custom template development and responsive design.",
+                    "I’m also expanding my skills in React through personal projects, including a recreation of a dealership website built from the ground up. Alongside web development, you’ll find a selection of digital design and creative work from my previous experience."
+                ]}
             />
 
             <section className="projects-content">

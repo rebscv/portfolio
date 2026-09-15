@@ -171,7 +171,7 @@ function About() {
 
                 
 
-                <div className="grid-d-three-cols no-gaps">
+                <div className="grid-d-three-cols grid-l-two-cols no-gaps">
                     <div><img src={codeImg} alt="" /></div>
                     <div><img src={filesImg} alt="" /></div>
                     <div><img src={layersImg} alt="" /></div>

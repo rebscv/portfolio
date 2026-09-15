@@ -6,6 +6,7 @@ import heroTabletImg                from "../../assets/projects/react-dealership
 import heroMobileImg                from "../../assets/projects/react-dealership/react-hero-m.webp";
 import featuredCaseStudyImg         from "../../assets/projects/react-dealership/featured-case-study.webp";
 import thumbPlaceholderImg          from "../../assets/projects/react-dealership/featured-case-study.webp";
+import heroWebsiteImg               from "../../assets/projects/react-dealership/react-hero-website.webp";
 import summaryImg                   from "../../assets/projects/react-dealership/summary.webp";
 import summaryBgImg                 from "../../assets/projects/summary-bg.webp";
 import galleryImg1                  from "../../assets/projects/react-dealership/gallery-1.webp";
@@ -27,6 +28,10 @@ import buildingImg2                 from "../../assets/projects/react-dealership
 import buildingImg3                 from "../../assets/projects/react-dealership/building-3.webp";
 import beyondImg                    from "../../assets/projects/react-dealership/beyond.webp";
 import gradientBg                   from "../../assets/gradient-bg.webp";
+import websiteVersion1Img           from "../../assets/projects/react-dealership/react-website-version-1.webp";
+import websiteVersion2Img           from "../../assets/projects/react-dealership/react-website-version-2.webp";
+import websiteVersion3Img           from "../../assets/projects/react-dealership/react-website-version-3.webp";
+
 import { image } from "framer-motion/client";
 
 const reactDealerWebsite = {
@@ -53,8 +58,6 @@ const reactDealerWebsite = {
   caseStudyHero     : featuredCaseStudyImg,
   caseStudyText     : "I took a dealership template I had previously built and rebuilt it from the ground up in React. What started as a way to learn React became a full dealership demo featuring reusable components, dynamic content, routing, animations and an interactive vehicle stock experience.",
 
-
-
   sections      : [
     {
       type      : "hero",
@@ -65,12 +68,16 @@ const reactDealerWebsite = {
       data      : "summary"
     },
     {
+      type      : "textColumnBlock",
+      data      : "wordpressToReact"
+    },
+    {
       type      : "process",
       data      : "process"
     },
     {
-      type      : "textColumnBlock",
-      data      : "wordpressToReact"
+      type      : "versionBlock",
+      data      : "versionComparison"
     },
     {
       type      : "gallerySlider",
@@ -88,18 +95,20 @@ const reactDealerWebsite = {
       type      : "textColumnBlock",
       data      : "dynamicFunction"
     },
-    {
-      type      : "galleryColumnsSlider",
-      data      : "gallery"
-    },
+
     {
       type      : "process",
       data      : "keySkills"
     },
     {
+      type      : "galleryColumnsSlider",
+      data      : "gallery"
+    },
+    {
       type      : "textBlock",
       data      : "outcome"
     }
+    
   ],
 
   hero: {
@@ -109,7 +118,8 @@ const reactDealerWebsite = {
     imageAlt      : "MX-5 driving on highway",
     title         : "React Developement",
     subtitle      : "Mazda Dealership Demo",
-    metadata          :
+    summaryImage  : heroWebsiteImg,
+    metadata      :
     {
       role            : "Frontend Developer",
       projectType     : "Personal Project",
@@ -177,24 +187,19 @@ const reactDealerWebsite = {
     ]
   },
 
-  wordpressToReact  : {
-    bgClass           : "gradient-border-bg",
-    backgroundImage   : gradientBg,
-    wrapperClass      : "sml-wrapper t-center",
-    gridClass         : "",
-    titleEyebrow      : "From WordPress to React",
-    title             : "Building on Existing Experience",
-    text              :
-    [
-      "My previous experience developing dealership websites in WordPress gave me a strong foundation for approaching this project.",
-      "Having already built a Mazda dealership template using HTML, CSS and WordPress, I was familiar with the structure, content and functionality required for this type of website. This allowed me to focus on learning how to implement those same concepts using React.",
-      "Rather than starting with a completely unfamiliar project, I could apply my existing frontend and design knowledge while learning a new way of structuring and developing the application."
-    ]
+  versionComparison  : {
+    bgClass           : "",
+    wrapperClass      : "lrg-wrapper no-padding-top t-center",
+    titleEyebrow      : "Version Comparison",
+    title             : "From scaffolding, re to polish",
+    version1Image     : websiteVersion1Img,
+    version2Image     : websiteVersion2Img,
+    version3Image     : websiteVersion3Img
   },
 
   galleryVersions : {
     bgClass           : "dark-bg gallery-react-versions",
-    wrapperClass      : "",
+    wrapperClass      : "no-padding-top",
     titleEyebrow      : "Version Comparison",
     title             : "Side By Side",
     items             :
@@ -222,8 +227,24 @@ const reactDealerWebsite = {
     ]
   },
 
+  wordpressToReact  : {
+    bgClass           : "gradient-bg",
+    backgroundImage   : gradientBg,
+    wrapperClass      : "sml-wrapper t-center",
+    gridClass         : "",
+    titleEyebrow      : "From WordPress to React",
+    title             : "Building on Existing Experience",
+    text              :
+    [
+      "My previous experience developing dealership websites in WordPress gave me a strong foundation for approaching this project.",
+      "Having already built a Mazda dealership template using HTML, CSS and WordPress, I was familiar with the structure, content and functionality required for this type of website. This allowed me to focus on learning how to implement those same concepts using React.",
+      "Rather than starting with a completely unfamiliar project, I could apply my existing frontend and design knowledge while learning a new way of structuring and developing the application."
+    ]
+  },
+
+
   architecture  : {
-    bgClass           : "dark-grey-bg",
+    bgClass           : "",
     wrapperClass      : "std-wrapper",
     gridClass         : "grid-d-two-cols gv-center",
     titleEyebrow      : "Component Architecture",
@@ -238,8 +259,8 @@ const reactDealerWebsite = {
   },
   
   dataDriven  : {
-    backgroundImage   : gradientBg,
-    bgClass           : "dark-grey-bg gradient-border-bg",
+    backgroundImage   : "",
+    bgClass           : "dark-grey-bg",
     wrapperClass      : "std-wrapper",
     gridClass         : "grid-d-two-cols grid-d-reverse gv-center",
     titleEyebrow      : "Data-Driven Development",
@@ -255,7 +276,7 @@ const reactDealerWebsite = {
   },
   
   dynamicFunction : {
-    bgClass           : "dark-grey-bg",
+    bgClass           : "",
     wrapperClass      : "std-wrapper",
     gridClass         : "grid-d-two-cols gv-center",
     titleEyebrow      : "Dynamic Functionality",
@@ -270,7 +291,7 @@ const reactDealerWebsite = {
   },
   
   gallery : {
-    bgClass           : "",
+    bgClass           : "black-bg",
     wrapperClass      : "",
     titleEyebrow      : "Take a glimpse",
     title             : "Gallery",
@@ -301,7 +322,7 @@ const reactDealerWebsite = {
 
   keySkills : {
     backgroundImage   : gradientBg,
-    bgClass           : "dark-grey-bg gradient-border-bg",
+    bgClass           : "dark-grey-bg gradient-bg",
     wrapperClass      : "sml-wrapper t-center",
     titleEyebrow      : "The Toolkit",
     title             : "Key Skills",
@@ -344,7 +365,7 @@ const reactDealerWebsite = {
 
   outcome : {
     bgClass           : "",
-    wrapperClass      : "sml-wrapper",
+    wrapperClass      : "sml-wrapper no-padding-top",
     titleEyebrow      : "",
     title             : "A Bigger Picture",
     text              :

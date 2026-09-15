@@ -1,0 +1,14 @@
+.page-not-found-grid {
+    min-height: 240px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+@media (min-width:1024px) {
+    
+    .page-not-found-grid {
+        min-height: 480px;
+    }
+
+}

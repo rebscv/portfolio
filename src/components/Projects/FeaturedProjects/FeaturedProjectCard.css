@@ -35,11 +35,18 @@
     margin-top: auto;
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
 }
 
 .feature-project-card-title h3 {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.feature-project-card-title svg {
+    font-size: 10px;
 }
 
 .feature-project-header {

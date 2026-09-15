@@ -71,3 +71,22 @@ img {
 .purple-gradiant-top-bg {
   background: linear-gradient(0deg, var(--clr-black), var(--clr-purple-xdk));
 }
+
+.gradiant-black-overlay-bg {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000bf;
+}
+
+@media (min-width:1024px) {
+
+  .gradiant-black-overlay-bg {
+    background-color: #000000d1;
+  }
+
+  
+}

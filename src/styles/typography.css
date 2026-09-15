@@ -41,6 +41,10 @@ p a:hover {
   color: var(--clr-white)!important;
 }
 
+.h1, h1, .h2, h2 {
+  display: grid;
+  gap: 8px;
+}
 
 .title-eyebrow {
   font-size: 8px;
@@ -51,7 +55,8 @@ p a:hover {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  letter-spacing: var(--extra-text-spacing);
+  letter-spacing: 0.25em;
+  line-height: 1.5em;
   text-transform: uppercase;
 }
 
@@ -93,6 +98,11 @@ p a:hover {
 
   .title-eyebrow {
     font-size: 12px;
+    letter-spacing: var(--extra-text-spacing);
+  }
+
+  .h1, h1, .h2, h2 {
+    gap: 16px;
   }
     
 }

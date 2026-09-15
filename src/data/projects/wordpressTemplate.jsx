@@ -6,8 +6,10 @@ import heroMobileImg          from "../../assets/projects/wordpress-template/bmw
 import logoImg                from "../../assets/projects/wordpress-template/logo.webp"
 import summaryImg             from "../../assets/projects/wordpress-template/summary.webp";
 import summaryBgImg           from "../../assets/projects/summary-bg.webp";
+import heroWebsiteImg         from "../../assets/projects/wordpress-template/wordpress-hero-website.webp";
 import pixelImg               from "../../assets/projects/wordpress-template/pixel-perfect.webp";
 import readyImg               from "../../assets/projects/wordpress-template/ready-for-use.webp";
+import gradientBg             from "../../assets/gradient-bg.webp";
 
 import featuredCaseStudyImg   from "../../assets/projects/wordpress-template/featured-case-study.webp"
 
@@ -112,10 +114,11 @@ const wordpressTemplate = {
 
   hero: {
     image         : heroImg,
-    imageTablet  : heroTabletImg,
+    imageTablet   : heroTabletImg,
     imageMobile   : heroMobileImg,
     title         : "WordPress Template Development",
     subtitle      : "Design to reusable WordPress themes",
+    summaryImage  : heroWebsiteImg,
     metadata          :
     {
       role            : "Frontend Developer",
@@ -146,7 +149,6 @@ const wordpressTemplate = {
 
   
   process : {
-    bgClass           : "",
     wrapperClass      : "sml-wrapper t-center",
     titleEyebrow      : "The Process",
     title             : "Take it Step by Step",
@@ -188,7 +190,7 @@ const wordpressTemplate = {
 
   pixelPerfect  : {
     bgClass           : "dark-grey-bg",
-    wrapperClass      : "lrg-wrapper no-padding-bottom",
+    wrapperClass      : "lrg-wrapper",
     gridClass         : "grid-d-two-cols gv-center",
     titleEyebrow      : "Pixel-Perfect Implementation",
     title             : "The Extra Step",
@@ -369,7 +371,8 @@ const wordpressTemplate = {
   },
 
   keySkills : {
-    bgClass           : "dark-grey-bg",
+    backgroundImage   : gradientBg,
+    bgClass           : "dark-grey-bg gradient-bg",
     wrapperClass      : "sml-wrapper t-center",
     titleEyebrow      : "The Toolkit",
     title             : "Key Skills",

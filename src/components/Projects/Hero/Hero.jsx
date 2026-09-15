@@ -1,19 +1,30 @@
-import "./hero.css";
+import { useEffect, useState } from "react";
+import FadeIn from "../../../animations/FadeIn";
 
-function Hero ({ title, subtitle, description, image, imageAlt, imageMobile, imageTablet, metadata, technologies, github, liveSite }) {
+import "./Hero.css";
+import websiteOverlayImg    from "../../../assets/projects/website-overlay.webp";
 
-    const labels = { role: "Role", projectType: "Project Type", platform: "Platform", design: "Design", focus: "Focus", projects: "Projects", template: "Template", project: "Project", year: "Year" };
+function Hero ({ title, subtitle, description, image, imageAlt, imageMobile, imageTablet, summaryImage, metadata, technologies, github, liveSite, heroClass }) { 
+
+    const [imageLoaded, setImageLoaded] = useState(false);    
+    useEffect(() => { setImageLoaded(false); }, [image, imageTablet, imageMobile] );
+
+    const labels = { role: "Role", projectType: "Project Type", platform: "Platform", design: "Design", focus: "Focus", projects: "Projects", template: "Template", project: "Project", year: "Year" };    
 
     return (
-        <section className="project-hero black-bg dark-bg">
+        <section className={`project-hero black-bg dark-bg ${heroClass || ''}`}>
             <div className="full-wrapper">
 
-                <picture>
-                    <source media="(min-width: 768px)" srcSet={image} />
-                    {imageTablet && <source media="(min-width: 576px)" srcSet={imageTablet} />}
-                    {imageMobile && <source srcSet={imageMobile} />}
-                    <img src={image} alt={imageAlt} loading="eager" fetchPriority="high" />
-                </picture>
+                <div className="hero-banner">
+                    <FadeIn direction="up" duration={1} delay={0.3}>
+                        <picture>
+                            <source media="(min-width: 1024px)" srcSet={image} />
+                            {imageTablet && <source media="(min-width: 768px)" srcSet={imageTablet} />}
+                            {imageMobile && <source srcSet={imageMobile} />}
+                            <img src={image} alt={imageAlt} loading="eager" fetchPriority="high" onLoad={() => setImageLoaded(true)} />
+                        </picture>
+                    </FadeIn>
+                </div>
                 
                 <div className="hero-banner-layer">
                     <div className="hero-banner-text">
@@ -22,6 +33,25 @@ function Hero ({ title, subtitle, description, image, imageAlt, imageMobile, ima
                             {subtitle && <h2 className="title-eyebrow">{subtitle}</h2>}
                             <h1>{title}</h1>                            
                         </div>
+
+
+                        {summaryImage && ( <div className="hero-summary-img">
+                            <div className="hero-summary-img-window">
+                                <div className="hero-summary-img-screen">
+                                    
+                                    <img src={summaryImage} alt={`${title} website preview`} loading="lazy" />
+                                    
+                                </div>
+                            </div>                            
+                        </div> )}
+
+
+
+                        {/* ADD SCROLLING SCREENSHOT HERE */}
+
+                        {/* {<div className="hero-summary-img">
+                            {summaryImage && <img src={summaryImage} />}
+                        </div>} */}
 
 
 

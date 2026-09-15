@@ -1,0 +1,60 @@
+.version-block-tabs-btns {
+    border: solid 1px var(--clr-dark-grey-lt);
+    padding: 6px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+.t-center .version-block-tabs-btns {
+    margin: 0 auto;
+}
+
+.version-block-tabs-btns button {
+    border: none;
+    border-radius: 24px;
+    background-color: transparent;
+    padding: 12px 24px;
+    color: var(--clr-grey-dk);
+    cursor: pointer;
+    transition: ease 0.3s all;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+}
+
+.version-block-tabs-btns button:hover {
+    color: var(--clr-grey-lt);
+}
+
+.version-block-tabs-btns button.active {
+    border: none;
+    background-color: var(--clr-grey);
+    color: var(--clr-black);
+}
+
+.version-block-tab-content {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.version-block-tab-content img {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width:576px) {
+
+    .version-block-tabs-btns {
+        flex-direction: row;
+        width: fit-content;
+    }
+
+    .version-block-tabs-btns button {
+        letter-spacing: 0.5em;
+    }
+    
+}

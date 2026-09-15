@@ -5,6 +5,7 @@ import heroMobileImg                from "../../assets/projects/model-pages/mode
 import summaryImg                   from "../../assets/projects/model-pages/summary.webp"
 import summaryBgImg                 from "../../assets/projects/summary-bg.webp";
 import rangeImg                     from "../../assets/projects/model-pages/range.webp";
+import heroWebsiteImg               from "../../assets/projects/model-pages/model-hero-website.webp";
 
 import fordLogoImg            from "../../assets/projects/wordpress-template/ford-logo.webp"
 import fordGalleryImg         from "../../assets/projects/wordpress-template/ford-gallery-thumb.webp"
@@ -99,6 +100,7 @@ const modelPages = {
     imageAlt      : "Mazda",
     title         : "Model Range Creation",
     subtitle      : "Development",
+    summaryImage  : heroWebsiteImg,
     metadata          :
     {
       role            : "Frontend Developer",

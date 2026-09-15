@@ -71,6 +71,11 @@
   border-color: var(--clr-white);
 }
 
+.t-center .btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width:575px) {
   
   .btn:not(.btn-underline) {

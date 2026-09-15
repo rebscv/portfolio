@@ -26,7 +26,7 @@ function GalleryFancyBox ({ bgClass, titleEyebrow, title, items, project }) {
 
 
 
-                <div className="project-gallery-fancybox-grid grid-d-three-cols">
+                <div className="project-gallery-fancybox-grid grid-d-three-cols grid-t-two-cols">
                     {items.map((item, index) =>(
 
                         <button className="project-gallery-card" key={index} type="button" onClick={() => {setActiveGallery(item.gallery); previousIndex.current = 0; setOpen(true); }}>

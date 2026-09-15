@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import FadeIn from "../../../animations/FadeIn";
 import "./FeaturedProjects.css";
 
@@ -9,7 +11,7 @@ function FeaturedProjects () {
     const featuredProjects = projects.filter(project => project.featured);
 
     return (
-        <section className="featured-projects black-bg">
+        <section className="featured-projects black-bg dark-bg">
             <div className="lrg-wrapper">
 
                 <h2 className="title-eyebrow">Jump to a Project</h2>
@@ -23,6 +25,8 @@ function FeaturedProjects () {
 
                     ))}
                 </div>
+
+                <div><Link to="/projects" className="btn btn-outline">View All Projects <svg className="icon-arrow-top-right"><use xlinkHref="/icons.svg#icon-arrow-top-right"></use></svg></Link></div>
                 
             </div>
         </section>

@@ -196,9 +196,9 @@ header nav {
     justify-content: center;
     align-items: center;
     gap: 32px;
-    background-color: #ffffff1a;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: #222222cc;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-radius: 32px;
     border: solid 1px #ffffff12;
     padding: 12px var(--padding-lr);

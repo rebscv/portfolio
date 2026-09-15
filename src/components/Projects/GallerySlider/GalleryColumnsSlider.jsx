@@ -32,7 +32,7 @@ function GalleryColumnsSlider({ items, title, titleEyebrow, wrapperClass, bgClas
 
                                     <div className="project-gallery-slide-inner">
                                         <div className="project-gallery-flex">
-                                            <div class="gallery-column-img">
+                                            <div className="gallery-column-img">
                                                 <picture>
                                                     <source media="(max-width: 767px)" srcSet={slide.imageMobile} />
                                                     <img src={slide.imageOne} alt={slide.title} fetchPriority="high" />
@@ -41,7 +41,7 @@ function GalleryColumnsSlider({ items, title, titleEyebrow, wrapperClass, bgClas
 
                                             {slide.imageTwo && 
 
-                                                <div class="gallery-column-img">
+                                                <div className="gallery-column-img">
                                                     <picture>
                                                         <source media="(max-width: 767px)" srcSet={slide.imageMobile} />
                                                         <img src={slide.imageTwo} alt={slide.title} fetchPriority="high" />

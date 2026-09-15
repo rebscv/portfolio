@@ -2,6 +2,20 @@
    Hero Banner
 ========================= */
 
+.hero-banner {
+    background-color: var(--clr-black);
+}
+
+.hero-banner img {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    /* position: absolute; */
+}
+
+.hero-banner img.is-loaded {
+    opacity: 1;
+}
+
 .project-hero {
     overflow: hidden;
 }
@@ -13,33 +27,44 @@
     gap: 0;
 }
 
-.project-hero img {
-    opacity: 0.8;
-    position: absolute;
-}
-
 .project-hero-fade {
     position: absolute;
-    bottom: 0;
+    bottom: auto;
+    top: 0;
     height: 33%;
     width: 100%;
-    background-image: linear-gradient(0deg, var(--clr-black), transparent);
+    background-image: linear-gradient(180deg, #000000cc, #0000009a, transparent);
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
 
-    .project-hero .full-wrapper {
-        height: 100vh;
-        max-height: 800px;
-    }
-
-    .project-hero img {
-        opacity: 0.5;
-        position: relative;
-        display: block;
+    .hero-banner img {
+        max-height: 576px;
         object-fit: cover;
         width: 100%;
-        height: 100%;
+        object-position: bottom;
+    }
+}
+
+@media (min-width:1024px) {
+
+    .project-hero-fade {
+        display: none;
+    }
+
+    .hero-banner img {
+        position: absolute;
+        top: 0;
+        object-position: center;
+        max-height: none;
+        opacity: 0.5;
+    }
+
+    .project-hero-fade {
+        display: block;
+        background-image: linear-gradient(0deg, var(--clr-black), transparent);
+        top: auto;
+        bottom: 0;
     }
 
 }
@@ -53,23 +78,108 @@
 }
 
 /* =========================
+   Hero Summary Image
+========================= */
+
+.hero-summary-img {
+    width: 100%;
+    max-width: 900px;
+    margin: 24px auto;
+    position: relative;
+}
+
+.hero-summary-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 75%;
+    background-color: #000;
+    z-index: -1;
+    filter: blur(64px);
+    opacity: 0.75;
+}
+
+.hero-summary-img-window {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    --preview-height: 480px;
+    height: var(--preview-height);
+    border: solid 4px #1a1a1a;
+    border-radius: 12px;
+    background: #111;
+    box-shadow: 0 24px 72px rgba(0, 0, 0, 0.5);
+}
+
+.hero-summary-img-window::before {
+    content: "●  ●  ●";
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 36px;
+    padding: 0 16px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    background: #1a1a1a;
+    color: #666;
+}
+
+.hero-summary-img-screen {
+    position: relative;
+    height: calc(var(--preview-height) - 36px);
+    overflow: hidden;
+}
+
+.hero-summary-img-screen img {
+    display: block;
+    width: 100%;
+    height: auto;
+    animation: heroWebsiteScroll 6s ease-in-out infinite alternate;
+    opacity: 0.85;
+}
+
+@keyframes heroWebsiteScroll {
+    0%, 15% {
+        transform: translateY(0);
+    }
+
+    85%, 100% {
+        transform: translateY(
+            min(0px, calc(-100% + var(--preview-height) - 36px))
+        );
+    }
+}
+
+@media (max-width: 1023px) {
+
+    .hero-summary-img {
+        display: none;
+    }
+
+}
+
+/* =========================
    Hero Text
 ========================= */
 
 .hero-banner-layer {
     max-width: var(--std-wrapper);
-    padding: 25vh var(--padding-lr) var(--padding-tb);
+    padding: 0 var(--padding-lr) var(--padding-tb) ;
     z-index: 1;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .hero-banner-text {
-    position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     display: grid;
-    align-content: start;
-    gap: 32px;    
+    gap: var(--grid-gap);
+    align-content: start;   
 }
 
 .hero-banner-text h1 {
@@ -84,6 +194,13 @@
 .hero-banner-title {
     display: grid;
     gap: 8px;
+    z-index: 4;
+    position: relative;
+    position: absolute;
+    left: 0;
+    top: 84px;
+    width: 100%;
+    padding: 0 var(--padding-lr);
 }
 
 .hero-banner-description {
@@ -101,27 +218,10 @@
 
 @media (min-width: 768px) {
 
-    .hero-banner-layer {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translateX(-50%);
-        width: 100%;
-        height: 100%;
-        display: grid;
-        justify-items: center;
-        align-items: start;
-        padding: 96px var(--padding-lr) var(--padding-tb);
-    }
-
     .hero-banner-title {
+        top: 96px;
         display: grid;
         gap: 24px;
-    }
-
-    .hero-banner-text {
-        align-content: space-between;
-        gap: 48px;
     }
 
 }
@@ -131,10 +231,18 @@
     .hero-banner-layer {
         padding: 180px var(--padding-lr-d) var(--padding-lr-d);
     }
+
+    .hero-banner-title {
+        position: relative;
+        top: auto;
+        padding: 0;
+    }
+
 }
 
 @media (min-width:1600px) {
 
+    
     .hero-banner-text h1 {
         font-size: 6em;
     }
@@ -147,7 +255,7 @@
 
 .hero-summary-details {
     display: grid;
-    gap: 32px;
+    gap: var(--grid-gap);
 }
 
 .hero-summary-details-rows {
@@ -282,6 +390,41 @@
 
     .hero-summary-row-value {
         font-size: 16px;
+    }
+
+}
+
+
+/* =========================
+   Hero Banner - Digital Design Marketting
+========================= */
+
+@media (min-width:1024px) {
+
+    .project-hero.hero-banner-static .hero-banner img {
+        position: relative;
+        opacity: 0.8;
+    }
+
+    .project-hero.hero-banner-static .hero-banner-layer {
+        padding-top: 0;
+    }
+
+    .project-hero.hero-banner-static .hero-banner-title {
+        position: absolute;
+        top: 180px;
+    }
+
+    .project-hero-fade {
+        display: none;
+    }
+
+}
+
+@media (min-width:1440px) {
+
+    .project-hero.hero-banner-static .hero-banner-layer {
+        max-width: var(--std-wrapper);
     }
 
 }

@@ -66,6 +66,7 @@ const digitalDesignMarketting = {
   ],
 
   hero: {
+    heroClass         : "hero-banner-static",
     image             : heroImg,
     imageTablet       : heroTabletImg,
     imageMobile       : heroMobileImg,

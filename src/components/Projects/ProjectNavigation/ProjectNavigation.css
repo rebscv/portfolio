@@ -45,14 +45,14 @@ section.dark-grey-bg + .project-navigation {
 
 .project-navigation-flex svg {
     font-size: 24px;
-    color: var(--clr-dark-grey-lt);
+    color: var(--clr-white);
 }
 
 .project-navigation-title {
     font-weight: 400;
     font-size: 2em;
     line-height: 1em;
-    color: var(--clr-dark-grey-lt);
+    color: var(--clr-white);
 }
 
 .project-navigation-flex a.project-navigation-previous {

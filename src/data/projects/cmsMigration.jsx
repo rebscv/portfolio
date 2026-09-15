@@ -5,6 +5,7 @@ import heroTabletImg      from "../../assets/projects/cms-migration/cms-hero-t.w
 import heroMobileImg      from "../../assets/projects/cms-migration/cms-hero-m.webp";
 import logoImg            from "../../assets/projects/cms-migration/logo.webp";
 import summaryImg         from "../../assets/projects/cms-migration/summary.webp";
+import heroWebsiteImg     from "../../assets/projects/cms-migration/cms-hero-website.webp";
 import summaryBgImg       from "../../assets/projects/summary-bg.webp";
 import migrationImg       from "../../assets/projects/cms-migration/migration.webp";
 import mitsGalleryImg1        from "../../assets/projects/cms-migration/gallery-mitsubishi-1.webp";
@@ -104,6 +105,7 @@ const cmsMigration = {
     imageAlt      : "Mazda",
     title         : "CMS Migration",
     subtitle      : "WordPress Website Migration & Development",
+    summaryImage  : heroWebsiteImg,
     metadata          :
     {
       focus           : "CMS Migration / WordPress Development",

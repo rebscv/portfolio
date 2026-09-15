@@ -8,7 +8,7 @@ function Skills() {
 
   
     return (
-        <section className="skills-content dark-bg black-bg" style={{ backgroundImage: `url(${gradiantBg})` }}>
+        <section className="skills-content dark-bg black-bg gradiant-black-overlay-bg" style={{ backgroundImage: `url(${gradiantBg})` }}>
             <div className="std-wrapper">
                 
                 <h2>
@@ -26,7 +26,7 @@ function Skills() {
 
                                     {categery.items.map((skill, index) => (
 
-                                        <FadeIn key={skill.id} once={false}>
+                                        <FadeIn key={skill.id}>
                                             <div className="skill-col">
                                                 {skill.image && <div className="skill-img"><img src={skill.image} alt={skill.title} /></div>}
                                                 <div className="skill-name">{skill.title}</div>
@@ -43,6 +43,8 @@ function Skills() {
 
 
             </div>
+
+            <div className="gradiant-black-overlay-bg"></div>
         </section>
     )
 }

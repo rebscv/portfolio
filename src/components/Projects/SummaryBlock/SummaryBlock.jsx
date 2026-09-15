@@ -30,10 +30,13 @@ function SummaryBlock ({ bgClass, backgroundImage, titleEyebrow, title, text, im
             </div>
 
             <div className="sml-wrapper no-padding-top t-center">              
-                <FadeIn direction="up" duration={1} delay={0.9}>
-                    <div className="project-summary-text grid">{Array.isArray(text) ? text.map((para, i) => <p key={i}>{para}</p> ) : <p>{text}</p> }</div>
-                </FadeIn>                        
-            </div>            
+                
+                    <div className="project-summary-text grid">
+                        {Array.isArray(text) ? text.map((para, i) => <FadeIn key={i} direction="up" duration={1}><p>{para}</p></FadeIn>) : <FadeIn direction="up" duration={1}><p>{text}</p></FadeIn> }
+                    </div>
+                                       
+            </div>   
+       
         </section>
 
     )

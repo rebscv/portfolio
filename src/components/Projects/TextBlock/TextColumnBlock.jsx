@@ -33,7 +33,10 @@ function TextColumnBlock ({ title, titleEyebrow, text, wrapperClass, bgClass, ba
                 </div>
 
 
-            </div>            
+            </div>    
+
+            <div className="gradiant-black-overlay-bg"></div>
+
         </section>
     )
 }

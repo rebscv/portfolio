@@ -19,7 +19,7 @@ function ProjectNavigation({ previousProject, nextProject }) {
 
                             <Link className="project-navigation-previous" to={`/projects/${previousProject.slug}`}>
                                 <div>
-                                    <span>Previous Project</span>
+                                    <span className="title-eyebrow">Previous Project</span>
                                     <div className="project-navigation-title">{previousProject.title}</div>
                                 </div>
 
@@ -34,7 +34,7 @@ function ProjectNavigation({ previousProject, nextProject }) {
 
                             <Link to={`/projects/${nextProject.slug}`}>
                                 <div>
-                                    <span>Next Project</span>
+                                    <span className="title-eyebrow">Next Project</span>
                                     <div className="project-navigation-title">{nextProject.title}</div>
                                 </div>
 
@@ -44,7 +44,7 @@ function ProjectNavigation({ previousProject, nextProject }) {
                         ) : (
                         <Link to="/projects" className="project-navigation-return">
                                 <div>
-                                    <span>Return to</span>
+                                    <span className="title-eyebrow">Return to</span>
                                     <div className="project-navigation-title">All Projects</div>
                                 </div>
                                 <svg className="icon-arrow-top-right"><use xlinkHref="/icons.svg#icon-arrow-top-right"></use></svg>      

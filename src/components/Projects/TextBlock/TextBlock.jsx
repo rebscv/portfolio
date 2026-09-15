@@ -25,7 +25,10 @@ function Text ({ title, titleEyebrow, text, wrapperClass, bgClass, backgroundIma
                 </FadeIn>
 
 
-            </div>            
+            </div>
+
+            <div className="gradiant-black-overlay-bg"></div>
+            
         </section>
     )
 }

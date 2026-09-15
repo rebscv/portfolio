@@ -6,6 +6,7 @@ import heroTabletImg                from "../../assets/projects/custom-wordpress
 import heroMobileImg                from "../../assets/projects/custom-wordpress/custom-hero-m.webp"
 import summaryBgImg                 from "../../assets/projects/summary-bg.webp";
 import summaryImg                   from "../../assets/projects/custom-wordpress/summary.webp";
+import heroWebsiteImg               from "../../assets/projects/custom-wordpress/custom-hero-website.webp";
 import galleryImg1                  from "../../assets/projects/custom-wordpress/gallery-1.webp";
 import galleryImg2                  from "../../assets/projects/custom-wordpress/gallery-2.webp";
 import galleryImg3                  from "../../assets/projects/custom-wordpress/gallery-3.webp";
@@ -69,6 +70,7 @@ const customWordpress = {
     imageMobile   : heroMobileImg,
     title         : "Auckland Maserati Dealership",
     subtitle      : "Figma to WordPress Development",
+    summaryImage  : heroWebsiteImg,
     metadata          :
     {
       focus           : "Theme Development / Front End Development",

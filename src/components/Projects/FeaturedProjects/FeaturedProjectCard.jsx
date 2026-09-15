@@ -26,8 +26,8 @@ function ProjectCard({ project }) {
 
                 </div>
                 
-                <div className="feature-project-card-title">
-                    <h3>{featureTitle}</h3>
+                <div className="feature-project-card-title">                    
+                    <h3>{featureTitle}</h3><svg className="icon-arrow-top-right"><use xlinkHref="/icons.svg#icon-arrow-top-right"></use></svg>                    
                 </div>
 
             </div>                
