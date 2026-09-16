@@ -31,6 +31,7 @@ import gradientBg                   from "../../assets/gradient-bg.webp";
 import websiteVersion1Img           from "../../assets/projects/react-dealership/react-website-version-1.webp";
 import websiteVersion2Img           from "../../assets/projects/react-dealership/react-website-version-2.webp";
 import websiteVersion3Img           from "../../assets/projects/react-dealership/react-website-version-3.webp";
+import livePreviewImg               from "../../assets/projects/react-dealership/react-live-preview.webp";
 
 import { image } from "framer-motion/client";
 
@@ -51,8 +52,6 @@ const reactDealerWebsite = {
   logo              : logoImg,
 
   overview          : "A fully responsive dealership website showcasing reusable React components, routing, animations, responsive layouts and modern frontend development practices.",
-  github            : "",
-  liveSite          : "",
 
   featuredCaseStudy : true,
   caseStudyHero     : featuredCaseStudyImg,
@@ -107,6 +106,10 @@ const reactDealerWebsite = {
     {
       type      : "textBlock",
       data      : "outcome"
+    },
+    {
+      type      : "previewBlock",
+      data      : "livePreview"
     }
     
   ],
@@ -366,7 +369,7 @@ const reactDealerWebsite = {
   outcome : {
     bgClass           : "",
     wrapperClass      : "sml-wrapper no-padding-top",
-    titleEyebrow      : "",
+    titleEyebrow      : "Outcome",
     title             : "A Bigger Picture",
     text              :
     [
@@ -376,7 +379,37 @@ const reactDealerWebsite = {
     ]
   },
 
-
+  livePreview : {
+    bgClass           : "",
+    wrapperClass      : "",
+    titleEyebrow      : "React Demo",
+    title             : "Live Preview",
+    text              :
+    [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et sollicitudin erat. Nullam finibus, arcu quis mollis auctor, orci lectus tincidunt massa, vitae rutrum eros purus quis sapien."
+    ],
+    github            : "https://github.com/rebscv/react-dealership-homepage",
+    liveSite          : "https://reuvenvergara.com/react-demo/version-3",
+    liveSiteBtn       : "View Live Demo",
+    image             : livePreviewImg,
+    versions          :
+    [
+      {
+        title         : "Version 2 - Live Demo",
+        text          : ["Working with React helped me see frontend development."],
+        image         : websiteVersion2Img,
+        link          : "https://reuvenvergara.com/react-demo/version-2",
+        linkText      : "Version 2 - View Demo"
+      },
+      {
+        title         : "Version 1 - Live Demo",
+        text          : ["Rather than thinking about a website as a collection of individual."],
+        image         : websiteVersion3Img,
+        link          : "https://reuvenvergara.com/react-demo/version-1",
+        linkText      : "Version 1 - View Demo"
+      }
+    ]
+  }
 
 };
 

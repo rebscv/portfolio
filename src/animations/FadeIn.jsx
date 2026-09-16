@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-function FadeIn ({ children, direction = "up", delay = 0, duration = 0.5,  once = true, blur = 10 }) {
+function FadeIn ({ children, direction = "up", delay = 0, duration = 0.5,  once = true, blur = 10, className = "" }) {
 
     const directions = { up: { x: 0, y: 120 }, down: { x: 0, y: -120 }, left: { x: 120, y: 0 }, right: { x: -120, y: 0 }, };
 
@@ -11,6 +11,7 @@ function FadeIn ({ children, direction = "up", delay = 0, duration = 0.5,  once 
             whileInView={{ opacity: 1, x: 0, y: 0, filter: "blur(0px)", }}
             viewport={{ once, amount: 0.3, }}
             transition={{ duration, delay, ease: [0.22, 1, 0.36, 1], }}
+            className={className}
         >
             {children}
         </motion.div>

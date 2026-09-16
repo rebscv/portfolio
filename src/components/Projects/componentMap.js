@@ -14,6 +14,7 @@ import GallerySlider from "./GallerySlider/GallerySlider";
 import GalleryColumnsSlider from "./GallerySlider/GalleryColumnsSlider";
 import ProcessPinnedScrolled from "./ProcessPinnedScrolled/ProcessPinnedScrolled";
 import VersionBlock from "./VersionBlock/VersionBlock";
+import PreviewBlock from "./PreviewBlock/PreviewBlock";
 
 // import Section from "./Section/Section";
 // import Image from "./Image/Image";
@@ -37,7 +38,8 @@ const componentMap = {
     gallerySlider: GallerySlider,
     galleryColumnsSlider: GalleryColumnsSlider,
     processPinnedScrolled: ProcessPinnedScrolled,
-    versionBlock: VersionBlock
+    versionBlock: VersionBlock,
+    previewBlock: PreviewBlock
 };
 
 export default componentMap;
