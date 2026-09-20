@@ -9,7 +9,7 @@ function ViewProjects () {
         <section className="black-bg dark-bg">
             <div className="std-wrapper no-padding-bottom no-padding-top">
 
-                <h2><span class="title-eyebrow">Latest Work</span><span>Disover Projects</span></h2>
+                <h2><span className="title-eyebrow">Latest Work</span><span>Disover Projects</span></h2>
 
                 <p>Learn about my latest project and discover the process, challenges and outcomes I've experienced.</p>
 

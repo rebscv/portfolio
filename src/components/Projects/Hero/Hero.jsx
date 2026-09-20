@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import FadeIn from "../../../animations/FadeIn";
 
 import "./Hero.css";
-import websiteOverlayImg    from "../../../assets/projects/website-overlay.webp";
 
-function Hero ({ title, subtitle, description, image, imageAlt, imageMobile, imageTablet, summaryImage, metadata, technologies, github, liveSite, heroClass }) { 
+function Hero ({ title, subtitle, image, imageAlt, imageMobile, imageTablet, summaryImage, metadata, technologies, heroClass }) { 
 
     const [imageLoaded, setImageLoaded] = useState(false);    
     useEffect(() => { setImageLoaded(false); }, [image, imageTablet, imageMobile] );
@@ -46,15 +45,6 @@ function Hero ({ title, subtitle, description, image, imageAlt, imageMobile, ima
                         </div> )}
 
 
-
-                        {/* ADD SCROLLING SCREENSHOT HERE */}
-
-                        {/* {<div className="hero-summary-img">
-                            {summaryImage && <img src={summaryImage} />}
-                        </div>} */}
-
-
-
                         <div className="hero-summary-details">
 
                             {metadata && 
@@ -79,15 +69,7 @@ function Hero ({ title, subtitle, description, image, imageAlt, imageMobile, ima
                                 </div>
                             }
                             
-                            {/* <div className="hero-summary-links">
-                                <div className="btn-flex">
-                                    <div>{github && ( <a href={github} className="btn btn-outline">GitHub</a> )}</div>
-                                    <div>{liveSite && ( <a href={liveSite} className="btn btn-outline">Live Demo</a> )}</div>
-                                </div>
-                            </div> */}
-
                         </div>
-
 
                     </div>
                 </div>

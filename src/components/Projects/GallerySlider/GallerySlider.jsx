@@ -31,7 +31,7 @@ function GallerySlider({ items, title, titleEyebrow, text, wrapperClass, bgClass
                                         <div className="gallery-column-img">
                                             <picture>
                                                 <source media="(max-width: 767px)" srcSet={slide.imageMobile} />
-                                                <img src={slide.image} alt={slide.title} fetchPriority="high" />
+                                                <img src={slide.image} alt={slide.alt} width={slide.width} height={slide.height} fetchPriority="high" />
                                             </picture>                                            
                                         </div>                                        
                                     </div>

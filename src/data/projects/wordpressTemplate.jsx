@@ -144,7 +144,9 @@ const wordpressTemplate = {
       "Each project began with a blank WordPress installation containing placeholder content and the core dealership page structure. Designs were supplied in Figma, which I translated into responsive WordPress templates with a strong focus on pixel-accurate implementation.",
       "The result was a collection of brand-specific websites built on a consistent technical foundation while allowing each design to retain its own visual identity."
     ],
-    image             : summaryImg
+    image             : summaryImg,
+    imageWidth        : "1200",
+    imageHeight       : "800"
   },
 
   

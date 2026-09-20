@@ -76,6 +76,10 @@
   margin-right: auto;
 }
 
+.btn-full {
+  width: 100%;
+}
+
 @media (max-width:575px) {
   
   .btn:not(.btn-underline) {

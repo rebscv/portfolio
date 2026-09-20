@@ -5,7 +5,6 @@ import heroImg                      from "../../assets/projects/react-dealership
 import heroTabletImg                from "../../assets/projects/react-dealership/react-hero-t.webp";
 import heroMobileImg                from "../../assets/projects/react-dealership/react-hero-m.webp";
 import featuredCaseStudyImg         from "../../assets/projects/react-dealership/featured-case-study.webp";
-import thumbPlaceholderImg          from "../../assets/projects/react-dealership/featured-case-study.webp";
 import heroWebsiteImg               from "../../assets/projects/react-dealership/react-hero-website.webp";
 import summaryImg                   from "../../assets/projects/react-dealership/summary.webp";
 import summaryBgImg                 from "../../assets/projects/summary-bg.webp";
@@ -148,7 +147,10 @@ const reactDealerWebsite = {
       "The project was developed progressively across three stages. The first focused on establishing the component architecture and React fundamentals, including reusable components, props and dynamic rendering. The second introduced the visual foundation through CSS Grid, Flexbox, responsive layouts, spacing and typography, while the final stage brought the interface together with imagery, branding, icons, interactions and a fully responsive UI.",
       "The result is a polished dealership website demo that demonstrates my ability to apply existing frontend development skills to a modern React-based workflow, while developing a stronger understanding of reusable components, dynamic rendering and scalable frontend architecture."
     ],
-    image             : summaryImg
+    image             : summaryImg,
+    imageAlt          : "React Demo Mazda Dealership Website",
+    imageWidth        : "1200",
+    imageHeight       : "800"
   },
 
   process : {
@@ -195,9 +197,18 @@ const reactDealerWebsite = {
     wrapperClass      : "lrg-wrapper no-padding-top t-center",
     titleEyebrow      : "Version Comparison",
     title             : "From scaffolding, re to polish",
-    version1Image     : websiteVersion1Img,
-    version2Image     : websiteVersion2Img,
-    version3Image     : websiteVersion3Img
+    version1Image         : websiteVersion1Img,
+    version1ImageAlt      : "Version 1 or React Demo",
+    version1ImageWidth    : "1024",
+    version1ImageHeight   : "1280",
+    version2Image         : websiteVersion2Img,
+    version2ImageAlt      : "Version 2 or React Demo",
+    version2ImageWidth    : "1024",
+    version2ImageHeight   : "1280",
+    version3Image         : websiteVersion3Img,
+    version3ImageAlt      : "Version 3 or React Demo",
+    version3ImageWidth    : "1024",
+    version3ImageHeight   : "1280"
   },
 
   galleryVersions : {
@@ -210,22 +221,30 @@ const reactDealerWebsite = {
         {
             id: 1,
             image: galleryComparisonImg1,
-            text: "Version comparision"
+            alt: "React Demo Homepage comparison with all versions",
+            width: "1920",
+            height: "1080"
         },
         {
             id: 2,
             image: galleryComparisonImg2,
-            text: "Version comparision"
+            alt: "React Demo Offers Page comparison with all versions",
+            width: "1920",
+            height: "1080"
         },  
         {
             id: 3,
             image: galleryComparisonImg3,
-            text: "Version comparision"
+            alt: "React Demo Finace Page comparison with all versions",
+            width: "1920",
+            height: "1080"
         },
         {
             id: 4,
             image: galleryComparisonImg4,
-            text: "Version comparision"
+            alt: "React Demo About Page comparison with all versions",
+            width: "1920",
+            height: "1080"
         }
     ]
   },
@@ -258,7 +277,10 @@ const reactDealerWebsite = {
       "Components such as vehicle cards, sliders, content sections and navigation elements could be created once and reused wherever they were needed.",
       "As the project grew, this approach made the codebase feel much easier to extend and maintain than repeatedly creating the same HTML structures."
     ],
-    image             : architectureImg
+    image             : architectureImg,
+    imageAlt          : "Three screenshots Collage of React Demo",
+    imageWidth        : "1200",
+    imageHeight       : "800" 
   },
   
   dataDriven  : {
@@ -275,7 +297,10 @@ const reactDealerWebsite = {
       "React introduced a different way of thinking. Instead of creating each piece of content manually, I could define the content in JavaScript data and have reusable components render it dynamically.",
       "I found this approach much more scalable and easier to maintain. Adding new content or changing an existing section no longer meant copying and updating large amounts of HTML. The component could remain the same while the data changed."
     ],
-    image             : componentsImg
+    image             : componentsImg,
+    imageAlt          : "Grid Collage of React Demo",
+    imageWidth        : "1200",
+    imageHeight       : "800" 
   },
   
   dynamicFunction : {
@@ -290,7 +315,10 @@ const reactDealerWebsite = {
       "Using React, I built a dynamic stock page with filtering, sorting and search functionality, along with individual vehicle detail pages.",
       "I was surprised by how naturally React handled this type of interface. Managing the data and UI through components and state made it possible to build a feature-rich stock experience without needing to treat each result or page as a separate piece of markup."
     ],
-    image             : beyondImg
+    image             : beyondImg,
+    imageAlt          : "Three image collage of React Demo",
+    imageWidth        : "1200",
+    imageHeight       : "800" 
   },
   
   gallery : {
@@ -303,22 +331,46 @@ const reactDealerWebsite = {
         {
             id: 1,
             imageOne: galleryImg1,
+            imageOneAlt: "",
+            imageOneWidth: "1024",
+            imageOneHeight: "1024",
             imageTwo: galleryImg2,
+            imageTwoAlt: "",
+            imageTwoWidth: "1024",
+            imageTwoHeight: "1024"
         },
         {
             id: 2,
             imageOne: galleryImg3,
+            imageOneAlt: "",
+            imageOneWidth: "1024",
+            imageOneHeight: "1024",
             imageTwo: galleryImg4,
+            imageTwoAlt: "",
+            imageTwoWidth: "1024",
+            imageTwoHeight: "1024"
         },  
         {
             id: 3,
             imageOne: galleryImg5,
+            imageOneAlt: "",
+            imageOneWidth: "1024",
+            imageOneHeight: "1024",
             imageTwo: galleryImg6,
+            imageTwoAlt: "",
+            imageTwoWidth: "1024",
+            imageTwoHeight: "1024"
         },
         {
             id: 4,
             imageOne: galleryImg7,
+            imageOneAlt: "",
+            imageOneWidth: "1024",
+            imageOneHeight: "1024",
             imageTwo: galleryImg8,
+            imageTwoAlt: "",
+            imageTwoWidth: "1024",
+            imageTwoHeight: "1024"
         }
     ]
   },
@@ -386,27 +438,31 @@ const reactDealerWebsite = {
     title             : "Live Preview",
     text              :
     [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et sollicitudin erat. Nullam finibus, arcu quis mollis auctor, orci lectus tincidunt massa, vitae rutrum eros purus quis sapien."
+      "Get hands on and take a closer look at the finished React dealership demo, or explore the earlier versions to see how the project evolved from its initial component architecture into a fully realised responsive interface."
     ],
     github            : "https://github.com/rebscv/react-dealership-homepage",
     liveSite          : "https://reuvenvergara.com/react-demo/version-3",
     liveSiteBtn       : "View Live Demo",
     image             : livePreviewImg,
+    imageAlt          : "Web Browser on top of Mazda MX-5 car on highway",
+    imageWidth        : "1920",
+    imageHeight       : "1440",
     versions          :
     [
-      {
-        title         : "Version 2 - Live Demo",
-        text          : ["Working with React helped me see frontend development."],
-        image         : websiteVersion2Img,
-        link          : "https://reuvenvergara.com/react-demo/version-2",
-        linkText      : "Version 2 - View Demo"
-      },
+
       {
         title         : "Version 1 - Live Demo",
-        text          : ["Rather than thinking about a website as a collection of individual."],
+        text          : ["Explore the original version focused on React fundamentals, reusable components and dynamic rendering."],
         image         : websiteVersion3Img,
         link          : "https://reuvenvergara.com/react-demo/version-1",
         linkText      : "Version 1 - View Demo"
+      },
+      {
+        title         : "Version 2 - Live Demo",
+        text          : ["See how the project developed with responsive layouts, CSS Grid, Flexbox, spacing and typography."],
+        image         : websiteVersion2Img,
+        link          : "https://reuvenvergara.com/react-demo/version-2",
+        linkText      : "Version 2 - View Demo"
       }
     ]
   }

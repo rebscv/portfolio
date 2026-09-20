@@ -126,7 +126,9 @@ const modelPages = {
     [
       "Vehicle model pages are a core part of automotive websites, with each model requiring its own content, imagery, specifications and features. In many projects, I was provided with the design for a single model page. I built the initial implementation, established the page structure and functionality, and then used that implementation as the foundation for the rest of the vehicle range."
     ],
-    image             : summaryImg
+    image             : summaryImg,
+    imageWidth        : "1200",
+    imageHeight       : "800"
 
   },
 

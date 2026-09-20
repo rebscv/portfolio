@@ -4,7 +4,6 @@
 
 .preview-block-content .btn {
     width: 100%;
-    border-radius: 8px;
 }
 
 .preview-block-content .btn svg {
@@ -84,15 +83,13 @@
     display: none;
 }
 
-
 @media (min-width:576px) {
 
-    .preview-block-content .btn {
-        max-width: 240px;
+    .preview-block-content .btn-flex > div {
+        width: 50%;
     }
 
 }
-
 
 @media (min-width:768px) {
 

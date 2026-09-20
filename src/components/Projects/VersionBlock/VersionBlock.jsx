@@ -3,7 +3,7 @@ import FadeIn from "../../../animations/FadeIn";
 
 import "./VersionBlock.css";
 
-function VersionBlock ({ title, titleEyebrow, text, wrapperClass, bgClass, backgroundImage, version1Image, version2Image, version3Image, }) {
+function VersionBlock ({ title, titleEyebrow, text, wrapperClass, bgClass, backgroundImage, version1Image, version2Image, version3Image, version1ImageAlt, version1ImageWidth, version1ImageHeight, version2ImageAlt, version2ImageWidth, version2ImageHeight, version3ImageAlt, version3ImageWidth, version3ImageHeight }) {
 
     const [activeTab, setActiveTab] = useState(1);
 
@@ -37,16 +37,15 @@ function VersionBlock ({ title, titleEyebrow, text, wrapperClass, bgClass, backg
                 <div className="version-block-tabs">
 
                     {activeTab === 1 && (
-                        <FadeIn direction="up" duration={1.5}><div className="version-block-tab-content">{version1Image && <div className=""><img src={version1Image} /></div>}</div></FadeIn>
+                        <FadeIn direction="up" duration={1.5}><div className="version-block-tab-content">{version1Image && <div className=""><img src={version1Image} alt={version1ImageAlt} width={version1ImageWidth} height={version1ImageHeight} /></div>}</div></FadeIn>
                     )}
 
                     {activeTab === 2 && (
-                        <FadeIn direction="up" duration={1.5}><div className="version-block-tab-content">{version2Image && <div className=""><img src={version2Image} /></div>}</div></FadeIn>
+                        <FadeIn direction="up" duration={1.5}><div className="version-block-tab-content">{version2Image && <div className=""><img src={version2Image} alt={version2ImageAlt} width={version2ImageWidth} height={version2ImageHeight} /></div>}</div></FadeIn>
                     )}
 
-
                     {activeTab === 3 && (
-                        <FadeIn direction="up" duration={1.5}><div className="version-block-tab-content">{version3Image && <div className=""><img src={version3Image} /></div>}</div></FadeIn>
+                        <FadeIn direction="up" duration={1.5}><div className="version-block-tab-content">{version3Image && <div className=""><img src={version3Image} alt={version3ImageAlt} width={version3ImageWidth} height={version3ImageHeight} /></div>}</div></FadeIn>
                     )}
 
                 </div>

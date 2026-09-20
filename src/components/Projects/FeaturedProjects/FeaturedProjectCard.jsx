@@ -20,7 +20,7 @@ function ProjectCard({ project }) {
 
                 <div className="feature-project-header">
 
-                    {logo && <img src={logo} alt={title} />}
+                    {logo && <img src={logo} alt={title} width={logoWidth} height={logoHeight} />}
                     <div>{featureTagline}</div>
                     
 

@@ -125,6 +125,8 @@ const cmsMigration = {
     titleEyebrow      : "Overview",
     title             : "From Joomla to WordPress",
     image             : summaryImg,
+    imageWidth        : "1200",
+    imageHeight       : "800",
     text              :
     [
       "As part of a broader platform upgrade, dealership websites across multiple automotive brands were migrated from Joomla to WordPress.",

@@ -95,7 +95,9 @@ const customWordpress = {
     ],
     github            : "",
     liveSite          : "",
-    image             : summaryImg
+    image             : summaryImg,
+    imageWidth        : "1200",
+    imageHeight       : "800"
   },
 
   process : {

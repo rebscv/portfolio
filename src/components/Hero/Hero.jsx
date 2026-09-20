@@ -5,7 +5,10 @@ import "./Hero.css";
 
 import FadeIn from "../../animations/FadeIn";
 
-import heroBanner           from "../../assets/hero/hero-banner.webp";
+import heroBannerDesktopXl  from "../../assets/hero/hero-banner-2560x1440.webp";
+import heroBannerDesktop    from "../../assets/hero/hero-banner-1920x1080.webp";
+import heroBannerLaptop     from "../../assets/hero/hero-banner-1440x810.webp";
+import heroBannerTablet     from "../../assets/hero/hero-banner-1024x576.webp";
 import heroBannerMobile     from "../../assets/hero/hero-banner-m.webp";
 
 function Hero() {
@@ -84,8 +87,12 @@ function Hero() {
                 </div>
 
                 <picture> 
-                    <source media="(max-width: 767px)" srcSet={heroBannerMobile} />
-                    <img src={heroBanner} alt="" fetchPriority="high" ref={heroImageRef} />
+                    <source media="(min-width: 2000px)" srcSet={heroBannerDesktopXl} />
+                    <source media="(min-width: 1440px)" srcSet={heroBannerDesktop} />
+                    <source media="(min-width: 1024px)" srcSet={heroBannerLaptop} />
+                    <source media="(min-width: 768px)" srcSet={heroBannerTablet} />
+                    <source srcSet={heroBannerMobile} />
+                    <img src={heroBannerDesktopXl} alt="" fetchPriority="high" ref={heroImageRef} width="2560" height="1440" />
                 </picture>
 
 

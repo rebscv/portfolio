@@ -96,7 +96,9 @@ const digitalDesignMarketting = {
       "I also supported brand-specific campaigns by creating Proof of Execution (POE) reports, documenting how promotional assets were delivered across channels including web, social, email and landing pages.",
       "Working across so many different formats meant adapting content for different platforms while keeping the brand, product and promotional message consistent."
     ],
-    image             : thumbImg
+    image             : thumbImg,
+    imageWidth        : "1024",
+    imageHeight       : "583"
   },
 
   work : {

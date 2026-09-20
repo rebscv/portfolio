@@ -2,7 +2,7 @@ import { img } from "framer-motion/client";
 import FadeIn from "../../../animations/FadeIn";
 import "./TextBlock.css";
 
-function TextColumnBlock ({ title, titleEyebrow, text, wrapperClass, bgClass, backgroundImage, gridClass, image }) {
+function TextColumnBlock ({ title, titleEyebrow, text, wrapperClass, bgClass, backgroundImage, gridClass, image, imageAlt, imageWidth, imageHeight }) {
 
     return (
         <section className={`project-text-block ${bgClass || 'dark-bg black-bg'}`} style={{backgroundImage: `url(${backgroundImage})`}}>
@@ -28,7 +28,7 @@ function TextColumnBlock ({ title, titleEyebrow, text, wrapperClass, bgClass, ba
                     </FadeIn>
 
                     
-                    {image && <FadeIn direction="up" duration={1} delay={0.6}><div className=""><img src={image} /></div></FadeIn>}
+                    {image && <FadeIn direction="up" duration={1} delay={0.6}><div className=""><img src={image} alt={imageAlt} width={imageWidth} height={imageHeight} /></div></FadeIn>}
 
                 </div>
 

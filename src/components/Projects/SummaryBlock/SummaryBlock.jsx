@@ -1,7 +1,7 @@
 import FadeIn from "../../../animations/FadeIn";
 import "./SummaryBlock.css";
 
-function SummaryBlock ({ bgClass, backgroundImage, titleEyebrow, title, text, image }) {
+function SummaryBlock ({ bgClass, backgroundImage, titleEyebrow, title, text, image, imageAlt, imageWidth, imageHeight }) {
 
     return (
 
@@ -23,7 +23,7 @@ function SummaryBlock ({ bgClass, backgroundImage, titleEyebrow, title, text, im
                 <div className="grid">
 
                     <FadeIn direction="up" duration={1} delay={0.6}>
-                        <div className="project-summary-img"><img src={image} /></div>    
+                        <div className="project-summary-img"><img src={image} alt={imageAlt} width={imageWidth} height={imageHeight} /></div>    
                     </FadeIn>                     
 
                 </div>

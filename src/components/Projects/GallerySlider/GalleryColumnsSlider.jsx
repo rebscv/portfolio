@@ -35,7 +35,7 @@ function GalleryColumnsSlider({ items, title, titleEyebrow, wrapperClass, bgClas
                                             <div className="gallery-column-img">
                                                 <picture>
                                                     <source media="(max-width: 767px)" srcSet={slide.imageMobile} />
-                                                    <img src={slide.imageOne} alt={slide.title} fetchPriority="high" />
+                                                    <img src={slide.imageOne} alt={slide.imageOneAlt} width={slide.imageOneWidth} height={slide.imageOneHeight} fetchPriority="high" />
                                                 </picture>
                                             </div>
 
@@ -44,7 +44,7 @@ function GalleryColumnsSlider({ items, title, titleEyebrow, wrapperClass, bgClas
                                                 <div className="gallery-column-img">
                                                     <picture>
                                                         <source media="(max-width: 767px)" srcSet={slide.imageMobile} />
-                                                        <img src={slide.imageTwo} alt={slide.title} fetchPriority="high" />
+                                                        <img src={slide.imageTwo} alt={slide.imageTwoAlt} width={slide.imageTwoWidth} height={slide.imageTwoHeight} fetchPriority="high" />
                                                     </picture>
                                                 </div>
 
