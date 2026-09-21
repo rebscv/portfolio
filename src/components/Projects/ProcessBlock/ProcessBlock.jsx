@@ -24,7 +24,7 @@ function ProcessBlock ({ wrapperClass, bgClass, title, titleEyebrow, backgroundI
                             {steps.map((step, index) => (
 
                                 <FadeIn direction="up" key={index} delay={index * 0.3}>
-                                    <div className="project-process-block grid">
+                                    <div className={`project-process-block grid ${step.extraClass || ''}`}>
                                         {step.number && ( <div className="h2">{step.number}</div> )}
                                         {step.title && ( <div className="project-process-block-title">{step.title}</div> )}                            
                                         {step.description && ( Array.isArray(step.description) ? step.description.map((para, i) => <p key={i}>{para}</p> ) : <p>{step.description}</p> )}

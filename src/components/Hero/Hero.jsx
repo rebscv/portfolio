@@ -64,8 +64,8 @@ function Hero() {
                         </FadeIn>
 
                         <h2>
-                            <FadeIn direction="up" duration={1} delay={0.4} once={false}><span className="hero-heading-lt">I like to</span></FadeIn>
-                            <FadeIn direction="up" duration={1} delay={0.6} once={false}><span className="hero-heading">create</span></FadeIn>
+                            <FadeIn direction="up" duration={1} delay={0.4} once={false} className="hero-heading-lt">I like to</FadeIn>
+                            <FadeIn direction="up" duration={1} delay={0.6} once={false} className="hero-heading">create</FadeIn>
                         </h2>
 
                         <FadeIn direction="up" duration={1} delay={1} once={false}>

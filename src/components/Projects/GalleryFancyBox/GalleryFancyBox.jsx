@@ -31,8 +31,8 @@ function GalleryFancyBox ({ bgClass, titleEyebrow, title, items, project }) {
 
                         <button className="project-gallery-card" key={index} type="button" onClick={() => {setActiveGallery(item.gallery); previousIndex.current = 0; setOpen(true); }}>
 
-                            <img className="project-gallery-card-logo" src={item.brandLogo} />
-                            <img className="project-gallery-thumb" src={item.brandImg} />
+                            <img loading="lazy" className="project-gallery-card-logo" src={item.brandLogo} width="120" height="120" alt={item.brand} />
+                            <img loading="lazy" className="project-gallery-thumb" src={item.brandImg} width="1024" height="1024" alt={`${item.brand} Website`}  />
                             <h3>{item.projectCardTitle}</h3>
 
                         </button>

@@ -20,15 +20,15 @@ function Footer() {
 
                         <div className="footer-contact-row">
                             <a href="mailto:jose.vergara@live.com.au" target="_blank">
-                                <svg className="icon-arrow-top-right"><use xlinkHref="/icons.svg#icon-arrow-top-right"></use></svg>   
-                                <div>jose.vergara@live.com.au</div>
+                                <svg className="icon-arrow-top-right"><use xlinkHref="/icons.svg#icon-arrow-top-right"></use></svg>
+                                <div>Email Reuven Vergara <small>jose.vergara@live.com.au</small></div>
                             </a>
                         </div>
 
                         <div className="footer-contact-row">           
                             <a href="https://au.linkedin.com/in/reuven-vergara-a98148167" target="_blank">
                                 <svg className="icon-linkedin"><use xlinkHref="/icons.svg#icon-linkedin"></use></svg>
-                                <div>LinkedIn</div>
+                                <div>LinkedIn <small>Send Message</small></div>
                             </a>
                         </div>
 

@@ -29,6 +29,7 @@ const customWordpress = {
   logo              : logoImg,
 
   featuredImg       : featuredImg,
+  featuredImgAlt    : "Maserati Car",
   featureTagline    : "Auckland Maserati",
   featureTitle      : "Figma to WordPress Development",
   logo              : logoImg,
@@ -71,6 +72,8 @@ const customWordpress = {
     title         : "Auckland Maserati Dealership",
     subtitle      : "Figma to WordPress Development",
     summaryImage  : heroWebsiteImg,
+    summaryImageWidth   : 892,
+    summaryImageHeight  : 2386,
     metadata          :
     {
       focus           : "Theme Development / Front End Development",
@@ -96,6 +99,7 @@ const customWordpress = {
     github            : "",
     liveSite          : "",
     image             : summaryImg,
+    imageAlt          : "Maserati website",
     imageWidth        : "1200",
     imageHeight       : "800"
   },
@@ -156,7 +160,10 @@ const customWordpress = {
     [
       "The supplied Figma designs provided the visual direction for the Maserati Auckland website. I translated these designs into the existing WordPress framework, adapting reusable components, layouts, typography, spacing, and responsive behaviour to closely match the approved designs."
     ],
-    image             : fimgmaWordPressImg
+    image             : fimgmaWordPressImg,
+    imageAlt          : "Creating a website from a Figma design",
+    imageWidth        : "1200",
+    imageHeight       : "800" 
   },
 
   implementationsSlider : {
@@ -169,17 +176,35 @@ const customWordpress = {
         {
             id: 1,
             imageOne: galleryImg1,
+            imageOneAlt: "Maserati Homepage",
+            imageOneWidth: "1024",
+            imageOneHeight: "1024",
             imageTwo: galleryImg2,
+            imageTwoAlt: "Maserati Homepage Featured stock section",
+            imageTwoWidth: "1024",
+            imageTwoHeight: "1024"
         },
         {
             id: 2,
             imageOne: galleryImg3,
+            imageOneAlt: "Maserati Service Page",
+            imageOneWidth: "1024",
+            imageOneHeight: "1024",
             imageTwo: galleryImg4,
+            imageTwoAlt: "Maserati Service Options",
+            imageTwoWidth: "1024",
+            imageTwoHeight: "1024",
         },
         {
             id: 3,
             imageOne: galleryImg5,
-            imageTwo: galleryImg6
+            imageOneAlt: "Maserati Contact Page",
+            imageOneWidth: "1024",
+            imageOneHeight: "1024",
+            imageTwo: galleryImg6,
+            imageTwoAlt: "Maserati Website Pages",
+            imageTwoWidth: "1024",
+            imageTwoHeight: "1024",
         }
     ]
   },

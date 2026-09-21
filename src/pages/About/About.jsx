@@ -49,7 +49,7 @@ function About() {
                     </div>
 
                     <div>
-                        <img src={reactImg} alt="" />
+                        <img loading="lazy" src={reactImg} width="1920" height="1080" alt="Three Website Version of React Demo" />
                     </div>
 
                 </div>
@@ -88,7 +88,7 @@ function About() {
 
                     <div className="block-round-border">
                         <div className="block-padding"><h4 className="t-spacing">Dealership Rebuild</h4></div>
-                        <img src={reactThumbImg} alt="" />
+                        <img loading="lazy" src={reactThumbImg} alt="React Demo Mazda Dealership Website" width="1024" height="583" />
                         <div className="block-padding grid">
                             <p><b>Status: Complete</b></p>                          
                             <p>A larger, realistic React project focused on component architecture, routing, dynamic data and complex UI.</p>
@@ -98,7 +98,7 @@ function About() {
 
                     <div className="block-round-border">
                         <div className="block-padding"><h4 className="t-spacing">Portfolio Website</h4></div>
-                        <img src={portfolioThumbImg} alt="" />
+                        <img loading="lazy" src={portfolioThumbImg} alt="Portfolio website build with React" width="1024" height="583" />
                         <div className="block-padding grid">     
                             <p><b>Status: Complete</b></p>                       
                             <p>A real-world React application built to create my own portfolio while continuing to develop my React skills.</p>                            
@@ -107,7 +107,7 @@ function About() {
 
                     <div className="block-round-border">
                         <div className="block-padding"><h4 className="t-spacing">Weather App</h4></div>
-                        <img src={reactSoonThumbImg} alt="" />
+                        <img loading="lazy" src={reactSoonThumbImg} alt="" width="1024" height="583" />
                         <div className="block-padding grid">
                             <p><b>Status: TBC</b></p>
                             <p>An API-driven application focused on fetching external data, asynchronous JavaScript, loading states and error handling.</p>
@@ -116,7 +116,7 @@ function About() {
 
                     <div className="block-round-border">
                         <div className="block-padding"><h4 className="t-spacing">Movie / TV App</h4></div>
-                        <img src={reactSoonThumbImg} alt="" />
+                        <img loading="lazy" src={reactSoonThumbImg} alt="" width="1024" height="583" />
                         <div className="block-padding grid">
                             <p><b>Status: TBC</b></p>
                             <p>A project focused on API integration, searching, filtering, pagination and displaying dynamic results.</p>
@@ -125,7 +125,7 @@ function About() {
 
                     <div className="block-round-border">
                         <div className="block-padding"><h4 className="t-spacing">Expense Tracker</h4></div>
-                        <img src={reactSoonThumbImg} alt="" />
+                        <img loading="lazy" src={reactSoonThumbImg} alt="" width="1024" height="583" />
                         <div className="block-padding grid">
                             <p><b>Status: TBC</b></p>
                             <p>An application focused on React state, forms, calculations and persisting data with local storage.</p>
@@ -134,7 +134,7 @@ function About() {
 
                     <div className="block-round-border">
                         <div className="block-padding"><h4 className="t-spacing">Headless WordPress + React</h4></div>
-                        <img src={reactSoonThumbImg} alt="" />
+                        <img loading="lazy" src={reactSoonThumbImg} alt="" width="1024" height="583" />
                         <div className="block-padding grid">
                             <p><b>Status: TBC</b></p>
                             <p>A project combining my existing WordPress experience with React, exploring REST APIs and using WordPress as a headless CMS.</p>
@@ -172,9 +172,9 @@ function About() {
                 
 
                 <div className="grid-d-three-cols grid-l-two-cols no-gaps">
-                    <div><img src={codeImg} alt="" /></div>
-                    <div><img src={filesImg} alt="" /></div>
-                    <div><img src={layersImg} alt="" /></div>
+                    <div><img loading="lazy" src={codeImg} width="1200" height="960" alt="Clean code" /></div>
+                    <div><img loading="lazy" src={filesImg} width="1200" height="960" alt="Organised files" /></div>
+                    <div><img loading="lazy" src={layersImg} width="1200" height="960" alt="Name and label layers" /></div>
                 </div>
 
 

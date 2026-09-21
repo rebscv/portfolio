@@ -18,7 +18,7 @@ function ProjectCard({ project }) {
 
                     <div className="project-card-img">
                         <div className="project-card-frame">
-                            <div className="project-card-img-overflow"><img src={thumbnail} alt={title} /></div>
+                            <div className="project-card-img-overflow"><img loading="lazy" src={thumbnail} alt={title} width="1024" height="583" /></div>
                         </div>
                         <div className="project-card-img-shadow"></div>
                     </div>                         

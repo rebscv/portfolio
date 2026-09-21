@@ -75,12 +75,15 @@ const digitalDesignMarketting = {
     title             : "Digital Design & Marketing",
     metadata          :
     {
-      focus           : "Digital Design / Content & Marketing",
       projects        : "Gaming PCs, PC Hardware, Software & Brand Promotions",
       role            : "Digital Designer & Content Creator",
+      year            : "2018-2021",
+      focus           : "Digital Design / Content & Marketing", 
       platform        : "Web / Social Media / Email / Print",
       design          : "Photoshop & Illustrator"
-    }
+    },
+    technologies      : [ "Custom CMS", "eDMs", "HTML", "CSS", "Photoshop", "Illustrator", "Print", "Mailchimp", "Facebook", "Instagram" ],
+
   },
 
   summary : {
@@ -97,6 +100,7 @@ const digitalDesignMarketting = {
       "Working across so many different formats meant adapting content for different platforms while keeping the brand, product and promotional message consistent."
     ],
     image             : thumbImg,
+    imageAlt          : "eDM with Gaming Chairs projects, ASUS laptop and GIGABYTE Graphics Card",
     imageWidth        : "1024",
     imageHeight       : "583"
   },
@@ -122,46 +126,77 @@ const digitalDesignMarketting = {
         {
             id: 1,
             image: galleryImg1,
+            width: "1920",
+            height: "1080",
+            alt: "Varienty Gaming PCs and Facebook posts promoting Intel NUC, gaming chairs, promototions and computer hardware"
         },
         {
             id: 2,
             image: salesGalleryImg1,
+            width: "1920",
+            height: "1080",
+            alt: "eDM ad for We bought too much sale and Nunawading Grand Opening"
         },
         {
             id: 3,
             image: salesGalleryImg2,
+            width: "1920",
+            height: "1080",
+            alt: "eDM ad for Blitz and Boxing Day sale"
         },
         {
             id: 4,
             image: salesGalleryImg3,
+            width: "1920",
+            height: "1080",
+            alt: "eDM ad for End of Summer sale and Wednesday Thursday Friday Sale"
         },
         {
             id: 5,
             image: salesGalleryImg4,
+            width: "1920",
+            height: "1080",
+            alt: "eDM ad for Mega Tech Deals and Moving out Sale"
         },
         {
             id: 6,
             image: msGalleryImg1,
+            width: "1920",
+            height: "1080",
+            alt: "Win a Home Offer Landing Page and Products for the Win a Home Offer"
         },
         {
             id: 7,
             image: msGalleryImg2,
+            width: "1920",
+            height: "1080",
+            alt: "Products for the Win a Home Offer and promoting Microsoft"
         },
         {
             id: 8,
             image: epicGalleryImg1,
+            width: "1920",
+            height: "1080",
+            alt: ""
         },
         {
             id: 9,
             image: intelGalleryImg1,
+            width: "1920",
+            height: "1080",
+            alt: "Intel Gamer Days landing page and Gaming PCs"
         },
         {
             id: 10,
             image: intelGalleryImg2,
+            width: "1920",
+            height: "1080",
+            alt: "Gaming PCs and give away offers"
         },
         {
             id: 11,
             image: intelGalleryImg3,
+            alt: "Addtional offers, $100 off PCs and Laptops for Intel Gamer days"
         }
     ]
   },

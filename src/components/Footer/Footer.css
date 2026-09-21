@@ -32,7 +32,18 @@ footer .std-wrapper {
     position: relative;
     align-items: center;
     align-content: start;
+    font-weight: 700;
+    letter-spacing: -0.1em;
+    font-size: 1.3em;
+}
+
+.footer-contact-row a small {
     color: var(--clr-grey-dk);
+    display: block;
+    font-weight: normal;
+    letter-spacing: normal;
+    margin-top: 4px;
+    font-size: 0.65em;
 }
 
 
@@ -98,6 +109,7 @@ footer .std-wrapper {
         align-items: flex-end;
         padding-top: 0;
     }
+
 
     .footer-text {
         font-size: 1.2em;

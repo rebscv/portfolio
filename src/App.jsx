@@ -10,7 +10,6 @@ import Home from "./pages/Home/Home";
 import Projects from "./pages/Projects/Projects";
 import Project from "./pages/Project/Project";
 import About from "./pages/About/About";
-import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
@@ -41,7 +40,6 @@ function AppContent() {
           <Route path="projects" element={<Projects />} />
           <Route path="projects/:slug" element={<Project />} />
           <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
         </Route>     
 
         <Route path="*" element={<NotFound />} />  

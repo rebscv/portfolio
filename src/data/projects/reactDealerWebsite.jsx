@@ -5,6 +5,10 @@ import heroImg                      from "../../assets/projects/react-dealership
 import heroTabletImg                from "../../assets/projects/react-dealership/react-hero-t.webp";
 import heroMobileImg                from "../../assets/projects/react-dealership/react-hero-m.webp";
 import featuredCaseStudyImg         from "../../assets/projects/react-dealership/featured-case-study.webp";
+import featuredCaseStudyImgDesktop  from "../../assets/projects/react-dealership/featured-case-study-1920x1280.webp"
+import featuredCaseStudyImgLaptop   from "../../assets/projects/react-dealership/featured-case-study-1440x960.webp"
+import featuredCaseStudyImgTablet   from "../../assets/projects/react-dealership/featured-case-study-1024x683.webp"
+import featuredCaseStudyImgMobile   from "../../assets/projects/react-dealership/featured-case-study-768x512.webp"
 import heroWebsiteImg               from "../../assets/projects/react-dealership/react-hero-website.webp";
 import summaryImg                   from "../../assets/projects/react-dealership/summary.webp";
 import summaryBgImg                 from "../../assets/projects/summary-bg.webp";
@@ -44,16 +48,23 @@ const reactDealerWebsite = {
   thumbnail         : thumbImg,
   heroImage         : "",
   platform          : "React",
-  
+  logo              : logoImg,
+
   featuredImg       : featuredImg,
+  featuredImgAlt    : "Mazda Car with two people",
   featureTagline    : "React Dealership Demo",
   featureTitle      : "React Website Development",
-  logo              : logoImg,
 
   overview          : "A fully responsive dealership website showcasing reusable React components, routing, animations, responsive layouts and modern frontend development practices.",
 
-  featuredCaseStudy : true,
-  caseStudyHero     : featuredCaseStudyImg,
+  featuredCaseStudy     : true,
+  caseStudyHero         : featuredCaseStudyImg,
+  caseStudyHeroDesktop  : featuredCaseStudyImgDesktop,
+  caseStudyHeroLaptop   : featuredCaseStudyImgLaptop,
+  caseStudyHeroTablet   : featuredCaseStudyImgTablet,
+  caseStudyHeroMobile   : featuredCaseStudyImgMobile,
+
+  caseStudyHeroAlt  : "React Demo for Mazda Dealership Website",
   caseStudyText     : "I took a dealership template I had previously built and rebuilt it from the ground up in React. What started as a way to learn React became a full dealership demo featuring reusable components, dynamic content, routing, animations and an interactive vehicle stock experience.",
 
   sections      : [
@@ -121,6 +132,8 @@ const reactDealerWebsite = {
     title         : "React Developement",
     subtitle      : "Mazda Dealership Demo",
     summaryImage  : heroWebsiteImg,
+    summaryImageWidth   : 892,
+    summaryImageHeight  : 2030,
     metadata      :
     {
       role            : "Frontend Developer",
@@ -331,44 +344,44 @@ const reactDealerWebsite = {
         {
             id: 1,
             imageOne: galleryImg1,
-            imageOneAlt: "",
+            imageOneAlt: "React Demo Homepage",
             imageOneWidth: "1024",
             imageOneHeight: "1024",
             imageTwo: galleryImg2,
-            imageTwoAlt: "",
+            imageTwoAlt: "React Demo Homepage featured vehicles section",
             imageTwoWidth: "1024",
             imageTwoHeight: "1024"
         },
         {
             id: 2,
             imageOne: galleryImg3,
-            imageOneAlt: "",
+            imageOneAlt: "React Demo Vehicle Stock Listings",
             imageOneWidth: "1024",
             imageOneHeight: "1024",
             imageTwo: galleryImg4,
-            imageTwoAlt: "",
+            imageTwoAlt: "React Demo Vehicle Listing Page",
             imageTwoWidth: "1024",
             imageTwoHeight: "1024"
         },  
         {
             id: 3,
             imageOne: galleryImg5,
-            imageOneAlt: "",
+            imageOneAlt: "Car Menu",
             imageOneWidth: "1024",
             imageOneHeight: "1024",
             imageTwo: galleryImg6,
-            imageTwoAlt: "",
+            imageTwoAlt: "Book a Test Drive",
             imageTwoWidth: "1024",
             imageTwoHeight: "1024"
         },
         {
             id: 4,
             imageOne: galleryImg7,
-            imageOneAlt: "",
+            imageOneAlt: "React Demo Finance page",
             imageOneWidth: "1024",
             imageOneHeight: "1024",
             imageTwo: galleryImg8,
-            imageTwoAlt: "",
+            imageTwoAlt: "React Demo About page",
             imageTwoWidth: "1024",
             imageTwoHeight: "1024"
         }
@@ -386,32 +399,38 @@ const reactDealerWebsite = {
 
       {
         title         : "React Development",
-        description   : "Building a responsive dealership application using React and reusable components."
+        description   : "Building a responsive dealership application using React and reusable components.",
+        extraClass    : "header-accent"
       },
 
       {
         title         : "Component Architecture",
-        description   : "Creating reusable components that can be composed across different pages and sections."
+        description   : "Creating reusable components that can be composed across different pages and sections.",
+        extraClass    : "header-accent"
       },
 
       {
         title         : "Dynamic Rendering",
-        description   : "Using props, arrays and map() to generate reusable, data-driven interfaces."
+        description   : "Using props, arrays and map() to generate reusable, data-driven interfaces.",
+        extraClass    : "header-accent"
       },
 
       {
         title         : "State & Filtering",
-        description   : "Managing UI state to build interactive stock search, filtering and sorting functionality."
+        description   : "Managing UI state to build interactive stock search, filtering and sorting functionality.",
+        extraClass    : "header-accent"
       },
 
       {
         title         : "Responsive Development",
-        description   : "Applying existing HTML and CSS experience to create responsive React interfaces."
+        description   : "Applying existing HTML and CSS experience to create responsive React interfaces.",
+        extraClass    : "header-accent"
       },
 
       {
         title         : "React & Vite",
-        description   : "Developing a modern frontend application using React with Vite as the development environment."
+        description   : "Developing a modern frontend application using React with Vite as the development environment.",
+        extraClass    : "header-accent"
       }
 
 

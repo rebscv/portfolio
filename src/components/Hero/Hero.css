@@ -41,15 +41,20 @@
 }
 
 .hero-content h2 {
-    font-size: 3em;
     line-height: 0.75;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     column-gap: 10px;
+    width: 100%;
+    font-size: clamp(2rem, 14vw, 5rem);
 }
 
 .hero-txt .hero-heading {
     display: grid;
+}
+
+.hero-heading-lt, .hero-heading {
+    white-space: nowrap;
 }
 
 .hero-txt .hero-heading-lt {
@@ -94,7 +99,7 @@
     }
     
     .hero-content h2 {
-        font-size: 6em;
+        font-size: clamp(2rem, 15vw, 8rem);
         column-gap: 18px;
     }
 
@@ -140,6 +145,18 @@
         display: block;
     }
 
+    .hero-content h2 {
+        font-size: 2.5em;
+    }
+
+    .hero-heading-lt, .hero-heading {
+        font-size: clamp(2rem, 12vw, 10rem);
+    }
+
+    .hero-description {
+        width: 50%;
+    }
+
     .hero-content .full-wrapper::after {
         height: 50%;
     }
@@ -157,20 +174,8 @@
         padding-right: var(--padding-lr-d); 
     }
 
-    .hero-txt {
-        width: 33.33333%;
-    }
-        
-    .hero-content h2 {
-        font-size: 8em;
-    }
-
     .hero-subheading {
         font-size: 1em;
-    }
-
-    .hero-subheading-lt {
-        font-size: 0.65em;
     }
 
     .hero-description p {
@@ -182,10 +187,6 @@
 
 @media (min-width:1440px) {
 
-    .hero-content h2 {
-        font-size: 10em;
-    }
-
     .hero-subheading {
         font-size: 1.4em;
     }
@@ -195,6 +196,7 @@
     }
 
     .hero-description {
+        width: 33.33%;
         padding-top: 32px;
     }
 
@@ -204,27 +206,23 @@
 
     .hero-description .btn-flex {
         flex-direction: row;
-    }    
+    }
     
     
 }
 
 @media (min-width:1900px) {
 
-    .hero-content h2 {
-        font-size: 12em;
+    .hero-heading-lt, .hero-heading {
+        font-size: clamp(2rem, 12vw, 10rem);
     }
 
     .hero-subheading {
         font-size: 1.8em;
-    }
-
-    .hero-subheading-lt {
-        font-size: 0.85em;
-    }
+    }  
 
     .hero-description {
-        padding-top: 64px;
+        padding-top: 64px;        
     }
 
     .hero-description p {
@@ -234,10 +232,6 @@
 }
 
 @media (min-width:2500px) {
-
-    .hero-content h2 {
-        font-size: 16em;
-    }
 
     .hero-subheading {
         font-size: 2em;
@@ -285,3 +279,16 @@
 
     
 }
+
+
+
+
+
+
+.hero-txt {
+    width: 100%;
+}
+
+
+
+

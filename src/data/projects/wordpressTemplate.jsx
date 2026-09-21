@@ -11,7 +11,11 @@ import pixelImg               from "../../assets/projects/wordpress-template/pix
 import readyImg               from "../../assets/projects/wordpress-template/ready-for-use.webp";
 import gradientBg             from "../../assets/gradient-bg.webp";
 
-import featuredCaseStudyImg   from "../../assets/projects/wordpress-template/featured-case-study.webp"
+import featuredCaseStudyImg         from "../../assets/projects/wordpress-template/featured-case-study.webp"
+import featuredCaseStudyImgDesktop  from "../../assets/projects/wordpress-template/featured-case-study-1920x1280.webp"
+import featuredCaseStudyImgLaptop   from "../../assets/projects/wordpress-template/featured-case-study-1440x960.webp"
+import featuredCaseStudyImgTablet   from "../../assets/projects/wordpress-template/featured-case-study-1024x683.webp"
+import featuredCaseStudyImgMobile   from "../../assets/projects/wordpress-template/featured-case-study-768x512.webp"
 
 import bmwLogoImg             from "../../assets/projects/wordpress-template/bmw-logo.webp"
 import bmwGalleryImg1         from "../../assets/projects/wordpress-template/bmw-gallery-1.webp"
@@ -49,7 +53,7 @@ import fotonGalleryImg2       from "../../assets/projects/wordpress-template/fot
 import fotonGalleryImg3       from "../../assets/projects/wordpress-template/foton-gallery-3.webp"
 
 
-import { image, p, text, title } from "framer-motion/client";
+import { form, image, p, text, title } from "framer-motion/client";
 import { steps } from "framer-motion";
 
 
@@ -66,6 +70,7 @@ const wordpressTemplate = {
   logo              : logoImg,
 
   featuredImg       : featuredImg,
+  featuredImgAlt    : "BMW Car",
   featureTagline    : "BMW Dealership Website",
   featureTitle      : "Custom WordPress Theme Development",
 
@@ -75,6 +80,11 @@ const wordpressTemplate = {
 
   featuredCaseStudy       : true,
   caseStudyHero           : featuredCaseStudyImg,
+  caseStudyHeroDesktop    : featuredCaseStudyImgDesktop,
+  caseStudyHeroLaptop     : featuredCaseStudyImgLaptop,
+  caseStudyHeroTablet     : featuredCaseStudyImgTablet,
+  caseStudyHeroMobile     : featuredCaseStudyImgMobile,
+  caseStudyHeroAlt        : "Three WordPress Website Templates",
   caseStudyText           : "Over several years, I've developed a range of dealership websites using WordPress, taking supplied designs and turning them into responsive, production-ready themes. The projects were built around a reusable foundation, allowing different automotive brands to maintain their own visual identity while sharing common functionality and structure.",
 
   sections      : [
@@ -119,17 +129,19 @@ const wordpressTemplate = {
     title         : "WordPress Template Development",
     subtitle      : "Design to reusable WordPress themes",
     summaryImage  : heroWebsiteImg,
+    summaryImageWidth   : 892,
+    summaryImageHeight  : 1780,
     metadata          :
     {
       role            : "Frontend Developer",
       projectType     : "Commercial",
-      year            : "2021 - Present",
+      year            : "Multiple Projects",
       focus           : "Theme Development / Front End Development",
       projects        : "BMW, Ford ZA, Foton ZA, Mazda NZ, XPENG",        
       platform        : "WordPress",
       design          : "Figma & Illustrator / Provided Design"
     },
-    technologies      : [   "WordPress", "PHP", "HTML", "CSS", "JavaScript", "ACF", "Git", "Figma", "Photoshop", "Embla Carousel" ],
+    technologies      : [ "WordPress", "PHP", "HTML", "CSS", "JavaScript", "ACF", "Figma", "Photoshop", "Embla Carousel" ],
   },
 
   summary : {
@@ -145,6 +157,7 @@ const wordpressTemplate = {
       "The result was a collection of brand-specific websites built on a consistent technical foundation while allowing each design to retain its own visual identity."
     ],
     image             : summaryImg,
+    imageAlt          : "BMW Template Website",
     imageWidth        : "1200",
     imageHeight       : "800"
   },
@@ -203,6 +216,9 @@ const wordpressTemplate = {
       "The result was a collection of brand-specific websites built on a consistent technical foundation while allowing each design to retain its own visual identity."
     ],
     image             : pixelImg,
+    imageAlt          : "PixelPerfect demonstration",
+    imageWidth        : "1200",
+    imageHeight       : "800"
   },
 
   architecture  : {
@@ -215,7 +231,10 @@ const wordpressTemplate = {
     [
       "Although each site had its own visual design, the projects were built around a common WordPress foundation. This allowed recurring dealership structures and functionality to be reused while individual themes could be styled and adapted for each brand."
     ],
-    image             : readyImg
+    image             : readyImg,
+    imageAlt          : "Foton, XPENG, Ford and Mazda WordPress Templates",
+    imageWidth        : "1200",
+    imageHeight       : "800"
   },
 
   implementations : {
@@ -374,7 +393,7 @@ const wordpressTemplate = {
 
   keySkills : {
     backgroundImage   : gradientBg,
-    bgClass           : "dark-grey-bg gradient-bg",
+    bgClass           : "dark-grey-bg gradient-bg ",
     wrapperClass      : "sml-wrapper t-center",
     titleEyebrow      : "The Toolkit",
     title             : "Key Skills",
@@ -382,27 +401,33 @@ const wordpressTemplate = {
     [
       {
         title         : "WordPress Theme Development",
-        description   : ["Building and adapting WordPress themes from a shared foundation."]
+        description   : ["Building and adapting WordPress themes from a shared foundation."],
+        extraClass    : "header-accent"
       },
       {
         title         : "Figma → Code",
-        description   : ["Translating supplied visual designs into accurate front-end implementations."]
+        description   : ["Translating supplied visual designs into accurate front-end implementations."],
+        extraClass    : "header-accent"
       },
       {
         title         : "Responsive Development",
-        description   : ["Building layouts that adapt across desktop, tablet and mobile."]
+        description   : ["Building layouts that adapt across desktop, tablet and mobile."],
+        extraClass    : "header-accent"
       },
       {
         title         : "HTML & CSS",
-        description   : ["Developing structured, maintainable front-end layouts."]
+        description   : ["Developing structured, maintainable front-end layouts."],
+        extraClass    : "header-accent"
       },
       {
         title         : "Reusable Components",
-        description   : ["Creating common structures that could be reused across dealership websites."]
+        description   : ["Creating common structures that could be reused across dealership websites."],
+        extraClass    : "header-accent"
       },
       {
         title         : "Pixel-Accurate Implementation",
-        description   : ["Matching spacing, typography, layout and visual details to the supplied designs."]
+        description   : ["Matching spacing, typography, layout and visual details to the supplied designs."],
+        extraClass    : "header-accent"
       }
     ]
   },

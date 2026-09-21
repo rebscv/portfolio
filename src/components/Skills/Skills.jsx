@@ -28,7 +28,7 @@ function Skills() {
 
                                         <FadeIn key={skill.id}>
                                             <div className="skill-col">
-                                                {skill.image && <div className="skill-img"><img src={skill.image} alt={skill.title} /></div>}
+                                                {skill.image && <div className="skill-img"><img loading="lazy" src={skill.image} alt={skill.title} width="64" height="64" /></div>}
                                                 <div className="skill-name">{skill.title}</div>
                                             </div>
                                         </FadeIn>

@@ -64,6 +64,7 @@ const cmsMigration = {
 
   featuredImg       : featuredImg,
   featureTagline    : "CMS Migration",
+  featuredImgAlt    : "Mitsubishi Triton driving through sand",
   featureTitle      : "WordPress Website Migration & Development",
   logo              : logoImg,
 
@@ -108,12 +109,14 @@ const cmsMigration = {
     summaryImage  : heroWebsiteImg,
     metadata          :
     {
-      focus           : "CMS Migration / WordPress Development",
-      projects        : "Toyota, Mitsubishi, Nissan, Škoda, Volkswagen",
       role            : "Frontend Developer",
-      platform        : "WordPress",
-      migration       : "Dealership Content & Site Migration"
+      projectType     : "Commercial",
+      year            : "Multiple Projects",
+      projects        : "Toyota, Mitsubishi, Nissan, Škoda, Volkswagen",
+      focus           : "CMS Migration / WordPress Development",
+      platform        : "WordPress"
     },
+    technologies      : [ "WordPress", "PHP", "HTML", "CSS", "JavaScript", "ACF", "Photoshop", "Embla Carousel" ],
     github            : "",
     liveSite          : ""
   },
@@ -125,6 +128,7 @@ const cmsMigration = {
     titleEyebrow      : "Overview",
     title             : "From Joomla to WordPress",
     image             : summaryImg,
+    imageAlt          : "Mitsubishi Dealership Website",
     imageWidth        : "1200",
     imageHeight       : "800",
     text              :
@@ -143,7 +147,6 @@ const cmsMigration = {
     title             : "Take it step by step",
     steps             :
     [
-
 
       {
         number: "01",
@@ -219,7 +222,10 @@ const cmsMigration = {
       "Location details, contact information, About Us content, offers and promotions were carried across from the original dealership websites. At the same time, areas such as Service and Finance were updated using current content from the relevant manufacturer website.",
       "Each piece of content was reviewed and adapted to fit the new WordPress template, ensuring the finished site maintained the dealership's local identity while aligning with the latest brand and product information."
     ],
-    image             : migrationImg
+    image             : migrationImg,
+    imageAlt          : "Carry over content to WordPress website",
+    imageWidth        : "1200",
+    imageHeight       : "800"
   },
 
   implementations : {

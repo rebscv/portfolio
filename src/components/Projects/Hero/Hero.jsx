@@ -3,12 +3,12 @@ import FadeIn from "../../../animations/FadeIn";
 
 import "./Hero.css";
 
-function Hero ({ title, subtitle, image, imageAlt, imageMobile, imageTablet, summaryImage, metadata, technologies, heroClass }) { 
+function Hero ({ title, subtitle, image, imageAlt, imageMobile, imageTablet, summaryImage, metadata, technologies, heroClass, summaryImageWidth, summaryImageHeight }) { 
 
     const [imageLoaded, setImageLoaded] = useState(false);    
     useEffect(() => { setImageLoaded(false); }, [image, imageTablet, imageMobile] );
 
-    const labels = { role: "Role", projectType: "Project Type", platform: "Platform", design: "Design", focus: "Focus", projects: "Projects", template: "Template", project: "Project", year: "Year" };    
+    const labels = { role: "Role", projectType: "Project Type", platform: "Platform", design: "Design", focus: "Focus", projects: "Projects", template: "Template", project: "Project", year: "Year", migration: "Migration" };    
 
     return (
         <section className={`project-hero black-bg dark-bg ${heroClass || ''}`}>
@@ -38,7 +38,7 @@ function Hero ({ title, subtitle, image, imageAlt, imageMobile, imageTablet, sum
                             <div className="hero-summary-img-window">
                                 <div className="hero-summary-img-screen">
                                     
-                                    <img src={summaryImage} alt={`${title} website preview`} loading="lazy" />
+                                    <img src={summaryImage} alt={`${title} website preview`} width={summaryImageWidth} height={summaryImageHeight} loading="lazy" />
                                     
                                 </div>
                             </div>                            

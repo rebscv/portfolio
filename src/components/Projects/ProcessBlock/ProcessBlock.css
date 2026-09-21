@@ -67,6 +67,22 @@
     content: none;
 }
 
+.header-accent .project-process-block-title {
+    position: relative;
+    padding-left: 12px;
+}
+
+.header-accent .project-process-block-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: calc(100% - 12px);
+    background-image: var(--clr-gradient);
+    transform: translateY(-50%);
+}
+
 @media (min-width:768px) {
 
     .project-process-steps {
@@ -138,5 +154,9 @@
         width: 64px;
         right: -64px;
     }
-    
+
+    .header-accent .project-process-block-title {
+        padding-left: 20px;
+    }
+        
 }

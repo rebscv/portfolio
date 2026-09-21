@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import "./PageHero.css";
 
 
-function PageHero({ title, eyebrow, text, image, imageMobile, alt, video, videoPoster }) {
+function PageHero({ title, eyebrow, text, image, imageMobile, imageTablet, imageLaptop, imageDesktop, alt, video, videoPoster }) {
 
 
     const { scrollY, scrollYProgress } = useScroll();
@@ -36,8 +36,11 @@ function PageHero({ title, eyebrow, text, image, imageMobile, alt, video, videoP
             {image && (
               <div>
                 <picture>
+                  {imageDesktop && ( <source media="(max-width: 1999px)" srcSet={imageDesktop} /> )}
+                  {imageLaptop && ( <source media="(max-width: 1439px)" srcSet={imageLaptop} /> )}
+                  {imageTablet && ( <source media="(max-width: 1023px)" srcSet={imageTablet} /> )}
                   {imageMobile && ( <source media="(max-width: 767px)" srcSet={imageMobile} /> )}
-                  <img src={image} alt={alt || title || ""} fetchPriority="high" />
+                  <img src={image} alt={alt || title || ""} fetchPriority="high" width="2560" height="1080" />
                 </picture>
               </div>
             )}

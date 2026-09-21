@@ -108,10 +108,10 @@ const modelPages = {
       year            : "Multiple Projects",
       focus           : "Front End Development / Model Range Implementation",
       projects        : "Ford | FOTON | XPENG",
-      platform        : "WordPress",
+      platform        : "WordPress | Joomla",
       design          : "Provided OEM Designs / Existing Website Templates"
     },
-    technologies      : [ "HTML", "CSS", "JavaScript", "WordPress", "Embla Carousel"],
+    technologies      : [ "HTML", "CSS", "JavaScript", "WordPress", "Embla Carousel", "Figma", "Photoshop"],
     github            : "",
     liveSite          : ""
   },
@@ -127,6 +127,7 @@ const modelPages = {
       "Vehicle model pages are a core part of automotive websites, with each model requiring its own content, imagery, specifications and features. In many projects, I was provided with the design for a single model page. I built the initial implementation, established the page structure and functionality, and then used that implementation as the foundation for the rest of the vehicle range."
     ],
     image             : summaryImg,
+    imageAlt          : "XPENG Website Model Page",
     imageWidth        : "1200",
     imageHeight       : "800"
 
@@ -202,7 +203,10 @@ const modelPages = {
       "After receiving the design for the initial model, I built the first model page and established the layout, content structure and overall format. This initial implementation then became the foundation for expanding the rest of the vehicle range, providing a consistent structure and experience across each model.",
       "For the remaining models, I referenced the OEM manufacturer website to research and gather the relevant content, specifications, features and imagery. I then adapted this content to the established model page structure, making adjustments where required while maintaining consistency across the range. This approach allowed me to efficiently expand a single model implementation into a complete range of model pages."
     ],
-    image             : rangeImg
+    image             : rangeImg,
+    imageAlt          : "Model page expansion",
+    imageWidth        : "1200",
+    imageHeight       : "800"
   },
 
   gallery : {

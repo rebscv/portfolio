@@ -48,7 +48,7 @@ function MosaicRow({ images, direction, progress }) {
         <div className="image-mosaic">
             <motion.div className="image-mosaic-row" style={{ x }}>
 
-                {images.map((image, index) => ( <div className="image-mosaic-item" key={index}><img src={image} alt="" loading="lazy" /></div> ))}
+                {images.map((image, index) => ( <div className="image-mosaic-item" key={index}><img src={image} alt="" width={1024} height={768} loading="lazy" /></div> ))}
 
             </motion.div>
         </div>

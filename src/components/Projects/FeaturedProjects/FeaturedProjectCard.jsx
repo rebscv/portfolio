@@ -4,7 +4,7 @@ import "./FeaturedProjectCard.css";
 
 function ProjectCard({ project }) {
 
-    const { slug, title, featureTitle, featureTagline, logo , featuredImg, summary }  = project;
+    const { slug, title, featureTitle, featureTagline, logo, featuredImg, featuredImgAlt, summary }  = project;
 
     const technologies = summary?.technologies ?? [];
 
@@ -14,13 +14,13 @@ function ProjectCard({ project }) {
             <Link to={`/projects/${slug}`}></Link>
 
             <div className="feature-project-img-overlay"></div>
-            <img className="feature-project-img" src={featuredImg} alt={title} />
+            <img className="feature-project-img" loading="lazy" src={featuredImg} width="1024" height="1024" alt={featuredImgAlt} />
 
             <div className="feature-project-content dark-bg">
 
                 <div className="feature-project-header">
 
-                    {logo && <img src={logo} alt={title} width={logoWidth} height={logoHeight} />}
+                    {logo && <img loading="lazy" src={logo} alt={title} width="96" height="96" />}
                     <div>{featureTagline}</div>
                     
 
