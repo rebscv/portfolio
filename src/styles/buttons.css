@@ -76,7 +76,7 @@
   margin-right: auto;
 }
 
-.btn-full {
+.btn-full, .btn.btn-full, a.btn.btn-full {
   width: 100%;
 }
 

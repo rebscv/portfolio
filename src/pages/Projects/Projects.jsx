@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import PageHero from "../../components/Page/PageHero";
 import ProjectsGrid from "../../components/Projects/ProjectsGrid/ProjectsGrid";
 
@@ -10,6 +12,21 @@ import "./Projects.css";
 
 
 function Projects() {
+
+    useEffect(() => { 
+
+        document.title = `Projects - Reuven Vergara`;
+        const description = document.querySelector(`meta[name="description"]`);        
+        if (description) { description.setAttribute(
+            "content", "Explore a selection of projects from my career as a Web Developer, with a focus on WordPress, custom template development and responsive design."
+        ); }
+
+        return () => {
+            document.title = "Reuven Vergara - Front End Developer";
+            if (description) { description.setAttribute("content",  "Portfolio of Reuven Vergara, a Front End Developer specialising in React, JavaScript, HTML, CSS and WordPress."); }
+        };
+        
+    }, []);
 
     return (
 

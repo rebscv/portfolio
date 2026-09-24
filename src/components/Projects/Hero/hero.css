@@ -137,8 +137,11 @@
     display: block;
     width: 100%;
     height: auto;
-    animation: heroWebsiteScroll 6s ease-in-out infinite alternate;
     opacity: 0.85;
+}
+
+.hero-summary-img-screen .image-loader.is-loaded img {
+    animation: heroWebsiteScroll 6s ease-in-out infinite alternate;
 }
 
 @keyframes heroWebsiteScroll {
@@ -427,4 +430,18 @@
         max-width: var(--std-wrapper);
     }
 
+}
+
+/* =========================
+   Loader for Hero Banner
+========================= */
+
+.hero-summary-img-screen .image-loader {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.hero-summary-img-screen .image-loader .image-loader-spinner {
+    z-index: 1;
 }

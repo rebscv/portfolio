@@ -1,6 +1,8 @@
 
 import thumbImg           from "../../assets/projects/digital-design/thumb.webp";
+import ogImg              from "../../assets/projects/digital-design/digital-og.jpg";
 import heroImg            from "../../assets/projects/digital-design/digital-hero.webp"
+import heroDesktopImg     from "../../assets/projects/digital-design/digital-hero-d.webp"
 import heroTabletImg      from "../../assets/projects/digital-design/digital-hero-t.webp"
 import heroMobileImg      from "../../assets/projects/digital-design/digital-hero-m.webp"
 import summaryBgImg       from "../../assets/projects/summary-bg.webp";
@@ -21,22 +23,19 @@ import intelGalleryImg3   from "../../assets/projects/digital-design/gallery-int
 
 const digitalDesignMarketting = {
 
-  id                : 4,
   id                : 6,
   slug              : "digital-design",
-
   title             : "Digital Design & Marketing",
   subtitle          : "Gaming PCs | PC Hardware | Software",
+  featured          : false,
 
-  featured: false,
+  thumbnail         : thumbImg,
+  heroImage         : heroImg,
+  platform          : "",
+  logo              : "",
+  ogImage           : ogImg,
 
-  thumbnail: thumbImg,
-  heroImage: heroImg,
-
-  description: "This case study is currently being documented.",
-
-  github: "",
-  liveSite: "",
+  overview          : "A hands-on digital design and marketing role supporting the promotion of gaming PCs, PC hardware and software across digital, social, email, print and retail channels.",
 
   featuredCaseStudy: false,
   caseStudyHero: "",
@@ -68,16 +67,18 @@ const digitalDesignMarketting = {
   hero: {
     heroClass         : "hero-banner-static",
     image             : heroImg,
+    imageDesktop      : heroDesktopImg,
     imageTablet       : heroTabletImg,
     imageMobile       : heroMobileImg,
-    imageAlt          : "Mazda",
+    imageAlt          : "Microsoft Office Make Over Offer, Gaming PCs and eDM",
     subtitle          : "Computer & IT retailer",
     title             : "Digital Design & Marketing",
     metadata          :
     {
-      projects        : "Gaming PCs, PC Hardware, Software & Brand Promotions",
       role            : "Digital Designer & Content Creator",
+      projectType     : "Commercial",
       year            : "2018-2021",
+      projects        : "Gaming PCs, PC Hardware, Software & Brand Promotions",
       focus           : "Digital Design / Content & Marketing", 
       platform        : "Web / Social Media / Email / Print",
       design          : "Photoshop & Illustrator"
@@ -95,7 +96,7 @@ const digitalDesignMarketting = {
     text              :
     [
       "A hands-on digital design and marketing role supporting the promotion of gaming PCs, PC hardware and software across digital, social, email, print and retail channels.",
-      "The work covered a wide range of day-to-day content, from creating promotional EDMs, web banners and landing pages to producing daily Facebook and Instagram content, photographing custom-built gaming PCs and preparing artwork for in-store signage and print.",
+      "The work covered a wide range of day-to-day content, from creating promotional eDMs, web banners and landing pages to producing daily Facebook and Instagram content, photographing custom-built gaming PCs and preparing artwork for in-store signage and print.",
       "I also supported brand-specific campaigns by creating Proof of Execution (POE) reports, documenting how promotional assets were delivered across channels including web, social, email and landing pages.",
       "Working across so many different formats meant adapting content for different platforms while keeping the brand, product and promotional message consistent."
     ],
@@ -109,7 +110,7 @@ const digitalDesignMarketting = {
     bgClass           : "",
     wrapperClass      : "sml-wrapper",
     titleEyebrow      : "Selected Work",
-    title             : "A Mix of Digital, Social & Print",
+    title             : "A mix of Digital, Social & Print",
     text              :
     [
       "A selection of digital, social, photography, print and retail work created across a range of promotional campaigns. From everyday product content to larger brand promotions, each piece was created with a focus on presenting products clearly and keeping the overall campaign consistent across different channels."
@@ -119,8 +120,8 @@ const digitalDesignMarketting = {
   gallery : {
     bgClass           : "",
     wrapperClass      : "",
-    titleEyebrow      : "Implementation",
-    title             : "Explore the builds",
+    titleEyebrow      : "Selected Work",
+    title             : "Digital work and creative projects",
     items             :
     [
         {

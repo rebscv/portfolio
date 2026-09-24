@@ -1,6 +1,8 @@
 import thumbImg               from "../../assets/projects/wordpress-template/thumb.webp";
+import ogImg                  from "../../assets/projects/wordpress-template/bmw-og.jpg";
 import featuredImg            from "../../assets/projects/wordpress-template/featured-thumb.webp";
 import heroImg                from "../../assets/projects/wordpress-template/bmw-hero.webp"
+import heroDesktopImg         from "../../assets/projects/wordpress-template/bmw-hero-d.webp"
 import heroTabletImg          from "../../assets/projects/wordpress-template/bmw-hero-t.webp"
 import heroMobileImg          from "../../assets/projects/wordpress-template/bmw-hero-m.webp"
 import logoImg                from "../../assets/projects/wordpress-template/logo.webp"
@@ -68,15 +70,14 @@ const wordpressTemplate = {
   heroImage         : "",
   platform          : "WordPress",
   logo              : logoImg,
+  ogImage           : ogImg,
 
   featuredImg       : featuredImg,
   featuredImgAlt    : "BMW Car",
   featureTagline    : "BMW Dealership Website",
   featureTitle      : "Custom WordPress Theme Development",
 
-  overview          : "A fully responsive dealership website showcasing reusable React components, routing, animations, responsive layouts and modern frontend development practices.",
-  github            : "",
-  liveSite          : "",
+  overview          : "Each project began with a blank WordPress installation containing placeholder content and the core dealership page structure. Designs were supplied in Figma, which I translated into responsive WordPress templates.",
 
   featuredCaseStudy       : true,
   caseStudyHero           : featuredCaseStudyImg,
@@ -117,13 +118,14 @@ const wordpressTemplate = {
       data      : "keySkills"
     },
     {
-      type      : "textBlock",
+      type      : "previewBlock",
       data      : "outcome"
     }
   ],
 
   hero: {
     image         : heroImg,
+    imageDesktop  : heroDesktopImg,
     imageTablet   : heroTabletImg,
     imageMobile   : heroMobileImg,
     title         : "WordPress Template Development",
@@ -141,7 +143,7 @@ const wordpressTemplate = {
       platform        : "WordPress",
       design          : "Figma & Illustrator / Provided Design"
     },
-    technologies      : [ "WordPress", "PHP", "HTML", "CSS", "JavaScript", "ACF", "Figma", "Photoshop", "Embla Carousel" ],
+    technologies      : [ "WordPress", "PHP", "HTML", "CSS", "JavaScript", "ACF", "Custom API", "Figma", "Photoshop", "Embla Carousel" ],
   },
 
   summary : {
@@ -211,9 +213,7 @@ const wordpressTemplate = {
     title             : "The Extra Step",
     text              :
     [
-      "These dealership websites were developed using a shared WordPress foundation, allowing new brand websites to be built from an established starting point rather than from scratch.",
-      "Each project began with a blank WordPress installation containing placeholder content and the core dealership page structure. Designs were supplied in Figma, which I translated into responsive WordPress templates with a strong focus on pixel-accurate implementation.",
-      "The result was a collection of brand-specific websites built on a consistent technical foundation while allowing each design to retain its own visual identity."
+      "With the supplied Figma design, I would translate into a responsive WordPress templates with a strong focus on pixel-accurate implementation. I used the Pixel Perfect browser extension to overlay the live website against the original designs, allowing me to closely compare spacing, sizing, typography and positioning to achieve an almost 1:1 match between the design and final website."
     ],
     image             : pixelImg,
     imageAlt          : "PixelPerfect demonstration",
@@ -434,10 +434,17 @@ const wordpressTemplate = {
 
   outcome : {
     bgClass           : "",
-    wrapperClass      : "sml-wrapper",
-    titleEyebrow      : "",
-    title             : "Outcome",
-    text              : "The process provided a repeatable approach for turning dealership designs into fully implemented WordPress websites. By starting from a shared foundation, new brand sites could be developed more efficiently while still maintaining the unique visual identity of each manufacturer."
+    wrapperClass      : "",
+    titleEyebrow      : "Outcome",
+    title             : "A Scalable Foundation for Future Websites",
+    text              :
+    [
+      "The process provided a repeatable approach for turning dealership designs into fully implemented WordPress websites. By starting from a shared foundation, new brand sites could be developed more efficiently while still maintaining the unique visual identity of each manufacturer."
+    ],
+    image             : featuredCaseStudyImgDesktop,
+    imageAlt          : "Web Browser on top of Mazda MX-5 car on highway",
+    imageWidth        : "1920",
+    imageHeight       : "1440",
   }
 
 };

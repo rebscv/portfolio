@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import FadeIn from "../../../animations/FadeIn";
+import ImageLoader from "../../../components/UI/ImageLoader";
 
 import "./Hero.css";
 
-function Hero ({ title, subtitle, image, imageAlt, imageMobile, imageTablet, summaryImage, metadata, technologies, heroClass, summaryImageWidth, summaryImageHeight }) { 
+function Hero ({ title, subtitle, image, imageAlt, imageMobile, imageTablet, imageDesktop, summaryImage, metadata, technologies, heroClass, summaryImageWidth, summaryImageHeight }) { 
 
-    const [imageLoaded, setImageLoaded] = useState(false);    
-    useEffect(() => { setImageLoaded(false); }, [image, imageTablet, imageMobile] );
+    const [imageLoaded, setImageLoaded] = useState(false);
+    useEffect( () => { setImageLoaded(false); }, [image, imageTablet, imageMobile] );
 
     const labels = { role: "Role", projectType: "Project Type", platform: "Platform", design: "Design", focus: "Focus", projects: "Projects", template: "Template", project: "Project", year: "Year", migration: "Migration" };    
 
@@ -17,7 +18,8 @@ function Hero ({ title, subtitle, image, imageAlt, imageMobile, imageTablet, sum
                 <div className="hero-banner">
                     <FadeIn direction="up" duration={1} delay={0.3}>
                         <picture>
-                            <source media="(min-width: 1024px)" srcSet={image} />
+                            <source media="(min-width: 2000px)" srcSet={image} />
+                            {imageDesktop && <source media="(min-width: 1024px)" srcSet={imageDesktop} />}
                             {imageTablet && <source media="(min-width: 768px)" srcSet={imageTablet} />}
                             {imageMobile && <source srcSet={imageMobile} />}
                             <img src={image} alt={imageAlt} loading="eager" fetchPriority="high" onLoad={() => setImageLoaded(true)} />
@@ -33,17 +35,15 @@ function Hero ({ title, subtitle, image, imageAlt, imageMobile, imageTablet, sum
                             <h1>{title}</h1>                            
                         </div>
 
-
-                        {summaryImage && ( <div className="hero-summary-img">
-                            <div className="hero-summary-img-window">
-                                <div className="hero-summary-img-screen">
-                                    
-                                    <img src={summaryImage} alt={`${title} website preview`} width={summaryImageWidth} height={summaryImageHeight} loading="lazy" />
-                                    
-                                </div>
-                            </div>                            
-                        </div> )}
-
+                        {summaryImage && ( 
+                            <div className="hero-summary-img">
+                                <div className="hero-summary-img-window">
+                                    <div className="hero-summary-img-screen">
+                                        <ImageLoader src={summaryImage} width={summaryImageWidth} height={summaryImageHeight} alt={`${title} website preview`} />
+                                    </div>
+                                </div>                            
+                            </div>
+                        )}
 
                         <div className="hero-summary-details">
 

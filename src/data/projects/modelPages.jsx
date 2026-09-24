@@ -1,11 +1,13 @@
-import thumbImg                     from "../../assets/projects/model-pages/thumb.webp";
-import heroImg                      from "../../assets/projects/model-pages/model-hero.webp"
-import heroTabletImg                from "../../assets/projects/model-pages/model-hero-t.webp"
-import heroMobileImg                from "../../assets/projects/model-pages/model-hero-m.webp"
-import summaryImg                   from "../../assets/projects/model-pages/summary.webp"
-import summaryBgImg                 from "../../assets/projects/summary-bg.webp";
-import rangeImg                     from "../../assets/projects/model-pages/range.webp";
-import heroWebsiteImg               from "../../assets/projects/model-pages/model-hero-website.webp";
+import thumbImg               from "../../assets/projects/model-pages/thumb.webp";
+import ogImg                  from "../../assets/projects/model-pages/model-og.jpg";
+import heroImg                from "../../assets/projects/model-pages/model-hero.webp"
+import heroDesktopImg         from "../../assets/projects/model-pages/model-hero-d.webp"
+import heroTabletImg          from "../../assets/projects/model-pages/model-hero-t.webp"
+import heroMobileImg          from "../../assets/projects/model-pages/model-hero-m.webp"
+import summaryImg             from "../../assets/projects/model-pages/summary.webp"
+import summaryBgImg           from "../../assets/projects/summary-bg.webp";
+import rangeImg               from "../../assets/projects/model-pages/range.webp";
+import heroWebsiteImg         from "../../assets/projects/model-pages/model-hero-website.webp";
 
 import fordLogoImg            from "../../assets/projects/wordpress-template/ford-logo.webp"
 import fordGalleryImg         from "../../assets/projects/wordpress-template/ford-gallery-thumb.webp"
@@ -61,10 +63,9 @@ const modelPages = {
   featureTagline    : "Cricks Noosa Nissan",
   featureTitle      : "WordPress Website Migration & Development",
   logo              : "",
+  ogImage           : ogImg,
 
-  overview          : "A fully responsive dealership website showcasing reusable React components, routing, animations, responsive layouts and modern frontend development practices.",
-  github            : "",
-  liveSite          : "",
+  overview          : "Vehicle model pages are a core part of automotive websites, with each model requiring its own content, imagery, specifications and features. Building model pages for real-world vehicle content",
 
   sections      : [
     {
@@ -95,6 +96,7 @@ const modelPages = {
 
   hero: {
     image         : heroImg,
+    imageDesktop  : heroDesktopImg,
     imageTablet   : heroTabletImg,
     imageMobile   : heroMobileImg,
     imageAlt      : "Mazda",
@@ -104,11 +106,11 @@ const modelPages = {
     metadata          :
     {
       role            : "Frontend Developer",
-      projectType     : "Website Development",
+      projectType     : "Commercial",
       year            : "Multiple Projects",
       focus           : "Front End Development / Model Range Implementation",
       projects        : "Ford | FOTON | XPENG",
-      platform        : "WordPress | Joomla",
+      platform        : "HTML with Custom API",
       design          : "Provided OEM Designs / Existing Website Templates"
     },
     technologies      : [ "HTML", "CSS", "JavaScript", "WordPress", "Embla Carousel", "Figma", "Photoshop"],
@@ -161,7 +163,7 @@ const modelPages = {
         number      : "03",
         title       : "Interactive Features",
         description : [
-          "Implemented interactive components including image sliders, colour pickers and tabbed content as required by the model designs."
+          "Implemented interactive components including image sliders, colour pickers and content tabs as required by the model designs."
         ]
       },
 
@@ -169,7 +171,7 @@ const modelPages = {
         number      : "04",
         title       : "Model-Specific Content",
         description : [
-          "Worked with the varying content and specifications of individual vehicles while maintaining a consistent structure across the model range."
+          "Worked with the a variety content and specifications of individual vehicles while maintaining a consistent structure across the model range."
         ]
       },
 
@@ -177,7 +179,7 @@ const modelPages = {
         number      : "05",
         title       : "New Model Releases",
         description : [
-          "Built new model pages when manufacturers introduced new vehicles, integrating them into the existing website structure."
+          "Build new model pages when manufacturers introduced new vehicles, integrating them into the existing website structure."
         ]
       },
 
@@ -197,7 +199,7 @@ const modelPages = {
     wrapperClass      : "std-wrapper",
     gridClass         : "grid-d-two-cols gv-center",
     titleEyebrow      : "Model Range Expansion",
-    title             : "Expanding the Initial Model Across the Range",
+    title             : "Expanding the initial model across the whole range",
     text              :
     [
       "After receiving the design for the initial model, I built the first model page and established the layout, content structure and overall format. This initial implementation then became the foundation for expanding the rest of the vehicle range, providing a consistent structure and experience across each model.",

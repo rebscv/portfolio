@@ -400,6 +400,15 @@ align-items: center!important;
   overflow: hidden;
 }
 
+.block-round-border .btn {
+  width: 100%;
+}
+.block-round-border .btn-github svg {
+  max-width: none;
+  font-size: 24px;
+  margin-left: auto;
+}
+
 @media (min-width:576px) {
 
   .block-padding {
@@ -411,7 +420,7 @@ align-items: center!important;
 @media (min-width:1024px) {
 
   .block-padding {
-    padding: 24px;
+    padding: 32px 24px;
   }
   
 }

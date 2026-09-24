@@ -1,16 +1,57 @@
-# React + Vite
+# React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website rebuilt in React and Vite to showcase my front-end development experience, projects, and technical skills.
 
-Currently, two official plugins are available:
+## About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is a rebuild of my previous portfolio, developed using the knowledge and experience I gained while building my first React project — a responsive dealership website demo.
+The goal was to create a more modern, scalable portfolio while continuing to improve my understanding of React, component architecture, reusable UI patterns, and data-driven development.
 
-## React Compiler
+## Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive design across desktop, tablet, and mobile
+- Reusable React components
+- Data-driven project pages
+- React Router for client-side routing
+- Reusable animation components
+- Responsive image loading and loading states
+- Project galleries and image previews
+- Responsive navigation and mobile menu
+- Custom 404 page
+- SEO and social sharing metadata
 
-## Expanding the ESLint configuration
+## Data-Driven Content
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A key focus of this project was moving away from hard-coded page content and using structured data to drive the UI.
+Project information is stored separately from the components and used to generate project pages dynamically. This allows new projects to be added without creating a separate page component for each project.
+This approach also keeps the presentation layer separate from the content and makes the project structure easier to maintain and expand.
+
+## Technologies
+
+- React
+- Vite
+- JavaScript
+- React Router
+- Framer Motion
+- Embla Carousel
+- React DatePicker
+- HTML5
+- CSS3
+
+## Development Focus
+
+Through this project I focused on improving my:
+
+- React component architecture
+- Reusable component patterns
+- Data-driven development
+- Responsive CSS and layout systems
+- Client-side routing
+- Animation and interaction
+- Image loading and performance
+- Accessibility
+- Production deployment
+
+## Related Project
+
+This portfolio was developed after building my first React project — a dealership website demo — which helped me develop a stronger understanding of React and component-based development.

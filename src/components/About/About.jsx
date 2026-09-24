@@ -3,7 +3,6 @@ import "./About.css";
 
 import ImageMosaic from "../ImageMosaic/ImageMosaic";
 
-import aboutImg from "../../assets/about-placeholder.webp";
 
 function About() {
     return (
@@ -15,10 +14,8 @@ function About() {
                     <div className="center-content">
                         <div className="grid">
 
-                            <h2>
-                                <span className="title-eyebrow">About</span>
-                                <span>HEYY!</span>
-                            </h2>
+                            <span className="title-eyebrow">Greetings and Salutations</span>
+                            <h1>I'm Reuven. I like creating, building and more.</h1>
                             
                             <p>Hi, I'm Reuven. I'm a Front End Developer who enjoys building clean, responsive and maintainable websites using HTML, CSS, JavaScript and WordPress, while continuing to expand my skills with React.</p>
                             <p>With a background in both development and digital design, I enjoy combining the technical and creative sides of a project to build websites that look good, work well and are easy to maintain. I'm always looking to learn, experiment and find better ways to build things.</p>

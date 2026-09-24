@@ -1,21 +1,16 @@
 import { useState } from "react";
 import "./ImageLoader.css";
 
-function ImageLoader({ src, alt, className = "" }) {
+function ImageLoader({ src, alt, width, height, loading = "lazy", className = "" }) {
 
     const [isLoaded, setIsLoaded] = useState(false);
 
     return (
 
-        <div className={`image-loader ${isLoaded ? "is-loaded" : ""} ${className}`}>
-            
+        <div className={`image-loader ${isLoaded ? "is-loaded" : ""} ${className}`}>            
 
             <div className="image-loader-spinner"></div>
-            <img src={src} alt={alt} onLoad={() => {
-    setTimeout(() => {
-        setIsLoaded(true);
-    }, 10000);
-}} />
+            <img loading={loading} src={src} alt={alt} width={width} height={height} onLoad={() => setIsLoaded(true)} />
 
         </div>
 

@@ -27,56 +27,51 @@ function PreviewBlock ({ title, titleEyebrow, text, wrapperClass, bgClass, backg
                             {!titleEyebrow && title && (<h2>{title}</h2>)}
                             
                             {Array.isArray(text) ? text.map((para, i) => <p key={i}>{para}</p> ) : <p>{text}</p> }
-
-                            <FadeIn direction="up" duration={1} delay={0.6} ></FadeIn>
                             
                             <div className="btn-flex">
 
-                            {liveSite && 
-                                <FadeIn direction="up" duration={1} delay={0.6}>
+                                {liveSite &&                                 
                                     <Link className="btn btn-primary btn-full" to={liveSite} target="_blank">
                                         <svg className="icon-website"><use xlinkHref="/icons.svg#icon-website"></use></svg>
                                         <span>{liveSiteBtn}</span>                                        
-                                    </Link>
-                                </FadeIn>
-                            }
+                                    </Link>                                
+                                }
 
-                            {github && 
-                                <FadeIn direction="up" duration={1} delay={0.6} >
-
+                                {github &&                                
                                     <Link className="btn btn-outline btn-full" to={github} target="_blank">                                        
-                                        <svg className="icon-github3"><use xlinkHref="/icons.svg#icon-github3"></use></svg>
+                                        <svg className="icon-github"><use xlinkHref="/icons.svg#icon-github"></use></svg>
                                         <span>View GitHub</span>
-                                    </Link>
-
-                                </FadeIn>
-                            }
+                                    </Link>                              
+                                }
 
                             </div>
 
-                            {versions && <><div className="preview-block-versions-border"></div><div className="preview-block-versions">
+                            {versions && 
+                                <>                                
+                                    <div className="preview-block-versions-border"></div>                                
+                                    <div className="preview-block-versions grid-xl-two-cols">
 
-                                {versions.map((version, index) => (
+                                        {versions.map((version, index) => (
 
-                                    <div key={index} className="preview-version-item">      
+                                            <div key={index} className="preview-version-item grid">     
 
-                                        {version.title && (
-                                             <p className="preview-version-head">                                                
-                                                <svg className="icon-website"><use xlinkHref="/icons.svg#icon-website"></use></svg>
-                                                <span>{version.title}</span>
-                                             </p>
-                                             
-                                        )}      
+                                                {version.title && ( 
+                                                    <div className="project-text-block-title-eyebrow">
+                                                        <div className="h2"><span className="title-eyebrow">Live Demo</span></div>
+                                                        <h4 className="preview-version-head">{version.title}</h4> 
+                                                    </div>
+                                                )}
 
-                                        {version.text && ( Array.isArray(version.text) ? version.text.map((para, i) => <p key={i}>{para}</p> ) : <p>{version.text}</p> )}
+                                                {version.text && ( Array.isArray(version.text) ? version.text.map((para, i) => <p key={i}>{para}</p> ) : <p>{version.text}</p> )}                                        
+                                                {version.link && (<Link to={version.link} className="btn btn-outline" target="_blank"><svg className="icon-website"><use xlinkHref="/icons.svg#icon-website"></use></svg>View Demo</Link>)}
+                                                                                  
+                                            </div>
+
+                                        ))}                                
                                         
-                                        {version.link && (<Link to={version.link} target="_blank"><strong>{version.linkText}</strong></Link>)}                                        
                                     </div>
-
-                                ))}                                
-                                
-                            </div></>}
-
+                                </>
+                            }
 
                         </div>
                     </FadeIn>                    

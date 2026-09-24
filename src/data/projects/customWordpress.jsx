@@ -1,7 +1,9 @@
 import thumbImg                     from "../../assets/projects/custom-wordpress/thumb.webp";
+import ogImg                        from "../../assets/projects/custom-wordpress/custom-og.jpg";
 import featuredImg                  from "../../assets/projects/custom-wordpress/featured-thumb.webp";
 import logoImg                      from "../../assets/projects/custom-wordpress/logo.webp";
 import heroImg                      from "../../assets/projects/custom-wordpress/custom-hero.webp"
+import heroDesktopImg               from "../../assets/projects/custom-wordpress/custom-hero-d.webp"
 import heroTabletImg                from "../../assets/projects/custom-wordpress/custom-hero-t.webp"
 import heroMobileImg                from "../../assets/projects/custom-wordpress/custom-hero-m.webp"
 import summaryBgImg                 from "../../assets/projects/summary-bg.webp";
@@ -22,11 +24,11 @@ const customWordpress = {
   title             : "Custom WordPress Websites",
   subtitle          : "Maserati",
   featured          : true,
-  year              : 2026,
   thumbnail         : thumbImg,
   heroImage         : "",
   platform          : "WordPress",
   logo              : logoImg,
+  ogImage           : ogImg,
 
   featuredImg       : featuredImg,
   featuredImgAlt    : "Maserati Car",
@@ -34,9 +36,7 @@ const customWordpress = {
   featureTitle      : "Figma to WordPress Development",
   logo              : logoImg,
 
-  overview          : "",
-  github            : "",
-  liveSite          : "",
+  overview          : "The Maserati Auckland website was developed using our existing WordPress base template, with a new Figma design and Maserati brand identity applied across the site. ",
 
   sections      : [
     {
@@ -67,6 +67,7 @@ const customWordpress = {
 
   hero: {
     image         : heroImg,
+    imageDesktop  : heroDesktopImg,
     imageTablet   : heroTabletImg,
     imageMobile   : heroMobileImg,
     title         : "Auckland Maserati Dealership",
@@ -76,13 +77,16 @@ const customWordpress = {
     summaryImageHeight  : 2386,
     metadata          :
     {
+      role            : "Frontend Developer",
+      projectType     : "Commercial",
+      year            : "2024",
       focus           : "Theme Development / Front End Development",
       project         : "Maserati Auckland",
-      role            : "Frontend Developer",
       platform        : "WordPress",
       design          : "Figma / Provided Design",
       template        : "Base WordPress Template"
-    }
+    },
+    technologies      : [ "WordPress", "PHP", "HTML", "CSS", "JavaScript", "ACF", "Custom API", "Photoshop", "Figma", "Embla Carousel" ],
   },
 
   summary : {
@@ -213,11 +217,11 @@ const customWordpress = {
     bgClass           : "",
     wrapperClass      : "sml-wrapper",
     titleEyebrow      : "Outcome",
-    title             : "Built for the Team That Comes Next",
+    title             : "Built for the Team that comes next",
     text              :
     [
       "The Maserati Auckland website demonstrates my ability to take an established WordPress foundation and adapt it to a new brand and design direction while maintaining the structure and conventions of the underlying platform.",
-      "A key consideration throughout the project was that the website would be maintained by our support team rather than the development team. With this in mind, the content structure and frontend code were kept clear, consistent, and easy to understand, making it straightforward for the team to manage existing content and add new content as required.",
+      "A key consideration throughout the project was that the website would be maintained by our Support Team rather than the development team. With this in mind, the content structure and frontend code were kept clear, consistent, and easy to understand, making it straightforward for the team to manage existing content and add new content as required.",
       "The result is a production-ready WordPress website that not only reflects the supplied Maserati Auckland design but also remains practical to maintain, extend, and support within an existing development workflow."
     ]
   }

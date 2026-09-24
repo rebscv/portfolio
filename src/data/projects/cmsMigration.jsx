@@ -1,6 +1,8 @@
 import thumbImg           from "../../assets/projects/cms-migration/thumb.webp";
+import ogImg              from "../../assets/projects/cms-migration/cms-og.jpg";
 import featuredImg        from "../../assets/projects/cms-migration/featured-thumb.webp";;
 import heroImg            from "../../assets/projects/cms-migration/cms-hero.webp";
+import heroDesktopImg     from "../../assets/projects/cms-migration/cms-hero-d.webp";
 import heroTabletImg      from "../../assets/projects/cms-migration/cms-hero-t.webp";
 import heroMobileImg      from "../../assets/projects/cms-migration/cms-hero-m.webp";
 import logoImg            from "../../assets/projects/cms-migration/logo.webp";
@@ -61,6 +63,7 @@ const cmsMigration = {
   thumbnail         : thumbImg,
   heroImage         : "",
   platform          : "WordPress",
+  ogImage           : ogImg,
 
   featuredImg       : featuredImg,
   featureTagline    : "CMS Migration",
@@ -68,9 +71,7 @@ const cmsMigration = {
   featureTitle      : "WordPress Website Migration & Development",
   logo              : logoImg,
 
-  overview          : "A fully responsive dealership website showcasing reusable React components, routing, animations, responsive layouts and modern frontend development practices.",
-  github            : "",
-  liveSite          : "",
+  overview          : "Brand-specific WordPress templates were developed first, providing a new foundation for each dealership. The existing Joomla websites were then reviewed and migrated into these templates",
 
   sections      : [
     {
@@ -101,6 +102,7 @@ const cmsMigration = {
 
   hero: {
     image         : heroImg,
+    imageDesktop  : heroDesktopImg,
     imageTablet   : heroTabletImg,
     imageMobile   : heroMobileImg,
     imageAlt      : "Mazda",
@@ -112,11 +114,13 @@ const cmsMigration = {
       role            : "Frontend Developer",
       projectType     : "Commercial",
       year            : "Multiple Projects",
-      projects        : "Toyota, Mitsubishi, Nissan, Škoda, Volkswagen",
       focus           : "CMS Migration / WordPress Development",
-      platform        : "WordPress"
+      projects        : "Toyota, Mitsubishi, Nissan, Škoda, Volkswagen",
+      platform        : "WordPress / Joomla",
+      design          : "Figma / Provided Design",
+      template        : "Base WordPress Template",
     },
-    technologies      : [ "WordPress", "PHP", "HTML", "CSS", "JavaScript", "ACF", "Photoshop", "Embla Carousel" ],
+    technologies      : [ "WordPress", "PHP", "HTML", "CSS", "JavaScript", "ACF", "Custom API", "Photoshop", "Embla Carousel" ],
     github            : "",
     liveSite          : ""
   },
@@ -169,14 +173,25 @@ const cmsMigration = {
       {
         number: "03",
         title: "Migrate Dealership-Specific Content",
-        description: [
-          "Important local content was carried across from the Joomla site, including:",
-          "Dealership location and contact details",
-          "About Us information",
-          "Dealership-specific pages and messaging",
-          "Localised content",
-          "Offers and promotions",
-          "The goal was to preserve the information that made each dealership website unique."
+        descriptionBlock: [
+          {
+              type: "paragraph",
+              text: "Important local content was carried across from the Joomla site, including:"
+          },
+          {
+              type: "list",
+              items: [
+                  "Dealership location and contact details",
+                  "About Us information",
+                  "Dealership-specific pages and messaging",
+                  "Localised content",
+                  "Offers and promotions"
+              ]
+          },
+          {
+              type: "paragraph",
+              text: "The goal was to preserve the information that made each dealership website unique."
+          }
         ]
       },
 

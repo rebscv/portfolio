@@ -1,4 +1,6 @@
 import "./Experience.css";
+import FadeIn from "../../animations/FadeIn";
+
 function Experience() {
 
     const timeline = {
@@ -10,7 +12,8 @@ function Experience() {
                 position    : "Front End Developer",
                 company     : "AdTorque Edge",
                 description : [
-                    "Develop and maintain front-end components and reusable templates for automotive dealership websites, building responsive pages using HTML, CSS, and JavaScript within CMS platforms such as WordPress and Joomla. Translate UI/UX designs from Figma into functional and accessible web interfaces while ensuring consistency and performance across multiple dealership sites. Collaborate with internal teams and external developers to deliver website builds, updates, and production support."
+                    "Develop and maintain responsive front-end components and reusable templates for automotive dealership websites using HTML, CSS, and JavaScript across WordPress and Joomla.",
+                    "Translate Figma designs into accessible, consistent interfaces while collaborating with internal teams and external developers on website builds, updates, and ongoing production support."
                 ]
             },
             {
@@ -19,7 +22,8 @@ function Experience() {
                 position    : "Lead Digital Designer",
                 company     : "Centre Com",
                 description : [
-                    "Designed and developed responsive landing pages and campaign pages supporting e-commerce promotions and marketing initiatives. Produced digital marketing assets including banners, eDM newsletters, and social media graphics, while also creating print and in-store materials for 10 retail locations. Photographed and retouched product imagery for e-commerce catalogues and collaborated closely with marketing teams and external partners to deliver campaign content. Managed multiple digital design projects simultaneously while meeting tight deadlines."
+                    "Designed and developed responsive landing pages and campaign content supporting e-commerce and marketing initiatives. Created digital assets including banners, eDMs, and social media graphics, alongside print and in-store materials across 10 retail locations.",
+                    "Produced and retouched product photography for e-commerce catalogues while collaborating with marketing teams and external partners to deliver campaigns on schedule."
                 ]
             },
             {
@@ -28,7 +32,8 @@ function Experience() {
                 position    : "English Teacher",
                 company     : "Kids World — Tokyo, Japan",
                 description : [
-                    "Conducted English classes for students aged 1–12, preparing lesson plans and teaching materials to support engaging learning experiences. Supervised excursions and centre activities, communicated with parents regarding student progress, and participated in seasonal events and school programs. Also created artwork and decorations to support the centre’s events and learning environment."
+                    "Taught English to students aged 1–12, developing lesson plans and teaching materials to support engaging learning experiences.",
+                    "Supervised excursions and centre activities, communicated with parents about student progress, and contributed to seasonal events and school programs through artwork and creative displays."
                 ]
             },
             {
@@ -37,7 +42,8 @@ function Experience() {
                 position    : "Project Officer – Online Education",
                 company     : "Pharmaceutical Society of Australia",
                 description : [
-                    "Managed and maintained website content while creating new digital resources for online education programs. Developed e-learning modules using Adobe Captivate and produced video content including filming events, lectures, and conventions both in-house and interstate. Edited video and created motion graphics using Final Cut Pro to support educational and promotional materials. Supported customer engagement through data management and by responding to enquiries via email and phone."
+                    "Managed website content and developed digital resources for online education programs, including e-learning modules using Adobe Captivate.",
+                    "Produced and edited video content, filming events, lectures, and conventions and creating motion graphics using Final Cut Pro. Supported customer engagement through data management and email and phone enquiries."
                 ]
             },
             {
@@ -46,16 +52,18 @@ function Experience() {
                 position    : "Web Designer",
                 company     : "G.I Computer Innovations",
                 description : [
-                    "Designed and developed commercial websites and e-commerce stores using WordPress and Drupal, translating client requirements into functional and user-friendly digital experiences. Consulted with clients to recommend website solutions aligned with their business goals and provided ongoing support to help them manage and update their sites. Created supporting marketing assets including digital graphics and signage for advertising campaigns. Managed multiple projects simultaneously, tracking timelines and milestones to ensure on-time delivery while maintaining clear communication with clients and internal teams."
+                    "Designed and developed commercial websites and e-commerce stores using WordPress and Drupal, translating client requirements into functional and user-friendly digital experiences.",
+                    "Consulted with clients to recommend web solutions aligned with their business goals and provided ongoing website support. Created supporting digital and print marketing assets while managing multiple projects and timelines from concept through to delivery."
                 ]
             },
             {
                 id          : 6,
                 year        : "2011",
-                position    : "Graphic Designer",
-                company     : "BOOYAH Web and Graphic Design",
+                position    : "Web and Graphic Design",
+                company     : "BOOYAH",
                 description : [
-                    "Designed website templates and visual layouts in Adobe Photoshop for web development production, researching design trends and best practices to inform creative direction. Created logo branding and visual identities based on client briefs, producing concepts and prototypes for review and approval. Developed marketing and print collateral including business cards, brochures, and letterheads, preparing artwork to meet professional print production standards."
+                    "Designed website templates and visual layouts using Adobe Photoshop, researching design trends and best practices to inform creative direction.",
+                    "Developed logos and visual identities from client briefs, creating concepts and prototypes for approval. Produced digital and print marketing collateral, including business cards, brochures, and letterheads, preparing artwork for professional print production."
                 ]
             }
         ]
@@ -66,29 +74,33 @@ function Experience() {
   
     return (
         <section className="experience-content dark-bg black-bg">
-            <div className="sml-wrapper no-padding-top">
+            <div className="std-wrapper no-padding-top">
 
-                <h2 className="t-center">
-                    <span className="title-eyebrow">Experience</span>
-                    <span>The journey so far</span>
-                </h2>
+                <FadeIn>
+                    <h2 className="t-center">
+                        <span className="title-eyebrow">Experience</span>
+                        <span>The journey so far</span>
+                    </h2>
+                </FadeIn>
             
                 <div className="experience-grid">
                 
-                    {timeline.items.map((item) => (
-                        <div key={item.id} className="experience-item">
+                    {timeline.items.map((item, index) => (
+                        <FadeIn key={item.id} className="experience-item" delay={index * 0.25} direction="right">
 
                             <div className="experience-text">
                                 <div className="experience-year">{item.year}</div>
-                                <div>
+                                <div className="experience-head">
                                     <div className="experience-position h3">{item.position}</div>
                                     <div className="experience-company">{item.company}</div>                                    
                                 </div>
                             </div>
 
-                            <div className="experience-description">{item.description}</div>
+                            <div className="experience-description">
+                                {Array.isArray(item.description) ? item.description.map((para, i) => <p key={i}>{para}</p> ) : <p>{item.description}</p> }
+                            </div>
 
-                        </div>
+                        </FadeIn>
                     ))}
 
                 </div>

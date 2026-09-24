@@ -1,7 +1,9 @@
 import thumbImg                     from "../../assets/projects/react-dealership/thumb.webp";
+import ogImg                        from "../../assets/projects/react-dealership/react-og.jpg";
 import featuredImg                  from "../../assets/projects/react-dealership/featured-thumb.webp";
 import logoImg                      from "../../assets/projects/react-dealership/logo.webp";
 import heroImg                      from "../../assets/projects/react-dealership/react-hero.webp";
+import heroDesktopImg               from "../../assets/projects/react-dealership/react-hero-d.webp";
 import heroTabletImg                from "../../assets/projects/react-dealership/react-hero-t.webp";
 import heroMobileImg                from "../../assets/projects/react-dealership/react-hero-m.webp";
 import featuredCaseStudyImg         from "../../assets/projects/react-dealership/featured-case-study.webp";
@@ -49,6 +51,9 @@ const reactDealerWebsite = {
   heroImage         : "",
   platform          : "React",
   logo              : logoImg,
+  ogImage           : ogImg,
+  github            : "https://github.com/rebscv/react-dealership-homepage",
+  url               : "https://reuvenvergara.com/react-demo/version-3",
 
   featuredImg       : featuredImg,
   featuredImgAlt    : "Mazda Car with two people",
@@ -126,6 +131,7 @@ const reactDealerWebsite = {
 
   hero: {
     image         : heroImg,
+    imageDesktop  : heroDesktopImg,
     imageTablet   : heroTabletImg,
     imageMobile   : heroMobileImg,
     imageAlt      : "MX-5 driving on highway",
@@ -157,7 +163,7 @@ const reactDealerWebsite = {
     text              :
     [
       "This project is a dealership-style website built with React and Vite as part of my transition into modern frontend development. The project was created to expand my existing frontend experience into React and build practical experience with component-based application development.",
-      "The project was developed progressively across three stages. The first focused on establishing the component architecture and React fundamentals, including reusable components, props and dynamic rendering. The second introduced the visual foundation through CSS Grid, Flexbox, responsive layouts, spacing and typography, while the final stage brought the interface together with imagery, branding, icons, interactions and a fully responsive UI.",
+      "The project was developed in three stages. The first focused on starting the component architecture and React fundamentals, including reusable components, props and dynamic rendering. The second introduced the visual foundation through CSS Grid, Flexbox, responsive layouts, spacing and typography, while the final stage brought the interface together with imagery, branding, icons, interactions and a fully responsive UI.",
       "The result is a polished dealership website demo that demonstrates my ability to apply existing frontend development skills to a modern React-based workflow, while developing a stronger understanding of reusable components, dynamic rendering and scalable frontend architecture."
     ],
     image             : summaryImg,
@@ -306,7 +312,7 @@ const reactDealerWebsite = {
     text              :
     [
       "This was my first project where I used JavaScript data to drive the content and components of an entire website.",
-      "In my previous work, I was used to building pages directly in HTML, writing the markup and repeating the required classes and structures for each section. I had used JSON data in other projects, but primarily for simple lists such as model names, images, URLs and descriptions.",
+      "In my previous work, I was use to building pages directly in HTML, writing the markup and repeating the required classes and structures for each section. I had used JSON data in other projects, but primarily for simple lists such as model names, images, URLs and descriptions.",
       "React introduced a different way of thinking. Instead of creating each piece of content manually, I could define the content in JavaScript data and have reusable components render it dynamically.",
       "I found this approach much more scalable and easier to maintain. Adding new content or changing an existing section no longer meant copying and updating large amounts of HTML. The component could remain the same while the data changed."
     ],
@@ -470,14 +476,14 @@ const reactDealerWebsite = {
     [
 
       {
-        title         : "Version 1 - Live Demo",
+        title         : "Version 1",
         text          : ["Explore the original version focused on React fundamentals, reusable components and dynamic rendering."],
         image         : websiteVersion3Img,
         link          : "https://reuvenvergara.com/react-demo/version-1",
         linkText      : "Version 1 - View Demo"
       },
       {
-        title         : "Version 2 - Live Demo",
+        title         : "Version 2",
         text          : ["See how the project developed with responsive layouts, CSS Grid, Flexbox, spacing and typography."],
         image         : websiteVersion2Img,
         link          : "https://reuvenvergara.com/react-demo/version-2",

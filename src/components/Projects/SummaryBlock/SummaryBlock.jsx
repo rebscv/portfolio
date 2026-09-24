@@ -1,4 +1,5 @@
 import FadeIn from "../../../animations/FadeIn";
+import ImageLoader from "../../../components/UI/ImageLoader";
 import "./SummaryBlock.css";
 
 function SummaryBlock ({ bgClass, backgroundImage, titleEyebrow, title, text, image, imageAlt, imageWidth, imageHeight }) {
@@ -23,7 +24,7 @@ function SummaryBlock ({ bgClass, backgroundImage, titleEyebrow, title, text, im
                 <div className="grid">
 
                     <FadeIn direction="up" duration={1} delay={0.6}>
-                        <div className="project-summary-img"><img src={image} alt={imageAlt} width={imageWidth} height={imageHeight} /></div>    
+                        <div className="project-summary-img"><ImageLoader loading="lazy" src={image} alt={imageAlt} width={imageWidth} height={imageHeight} /></div>    
                     </FadeIn>                     
 
                 </div>

@@ -3,24 +3,23 @@ import { useRef } from "react";
 
 import "./ImageMosaic.css";
 
-import bmwImg1 from "../../assets/welcome/bmw-1.webp";
-import bmwImg2 from "../../assets/welcome/bmw-2.webp";
-import fordImg1 from "../../assets/welcome/ford-1.webp";
-import forthingImg1 from "../../assets/welcome/forthing-1.webp";
-import maseratiImg1 from "../../assets/welcome/maserati-1.webp";
-import mitsubishiImg1 from "../../assets/welcome/mitsubishi-1.webp";
-import nissanImg1 from "../../assets/welcome/nissan-1.webp";
-import skodaImg1 from "../../assets/welcome/skoda-1.webp";
-import toyotaImg1 from "../../assets/welcome/toyota-1.webp";
-import vwImg1 from "../../assets/welcome/vw-1.webp";
-import pcImg1 from "../../assets/welcome/pc-1.webp";
-import pcImg2 from "../../assets/welcome/pc-2.webp";
-import pcImg3 from "../../assets/welcome/pc-3.webp";
-import pcImg4 from "../../assets/welcome/pc-4.webp";
-import razerImg1 from "../../assets/welcome/razer-1.webp";
-import xpengImg1 from "../../assets/welcome/xpeng-1.webp";
-import fotonImg1 from "../../assets/welcome/foton-1.webp";
-
+import bmwImg1          from "../../assets/welcome/bmw-1.webp";
+import bmwImg2          from "../../assets/welcome/bmw-2.webp";
+import fordImg1         from "../../assets/welcome/ford-1.webp";
+import forthingImg1     from "../../assets/welcome/forthing-1.webp";
+import maseratiImg1     from "../../assets/welcome/maserati-1.webp";
+import mitsubishiImg1   from "../../assets/welcome/mitsubishi-1.webp";
+import nissanImg1       from "../../assets/welcome/nissan-1.webp";
+import skodaImg1        from "../../assets/welcome/skoda-1.webp";
+import toyotaImg1       from "../../assets/welcome/toyota-1.webp";
+import vwImg1           from "../../assets/welcome/vw-1.webp";
+import pcImg1           from "../../assets/welcome/pc-1.webp";
+import pcImg2           from "../../assets/welcome/pc-2.webp";
+import pcImg3           from "../../assets/welcome/pc-3.webp";
+import pcImg4           from "../../assets/welcome/pc-4.webp";
+import razerImg1        from "../../assets/welcome/razer-1.webp";
+import xpengImg1        from "../../assets/welcome/xpeng-1.webp";
+import fotonImg1        from "../../assets/welcome/foton-1.webp";
 
 
 const rows = [

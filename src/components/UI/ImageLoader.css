@@ -13,7 +13,7 @@
 }
 
 .image-loader.is-loaded img {
-    opacity: 1;
+    opacity: 1;    
 }
 
 .image-loader-spinner {
@@ -22,8 +22,8 @@
     left: 50%;
     width: 32px;
     height: 32px;
-    border: 3px solid rgba(255, 255, 255, 0.25);
-    border-top-color: #fff;
+    border: 3px solid #9999991f;
+    border-top-color: #e5e5e5;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     animation: image-loader-spin 0.8s linear infinite;
@@ -34,12 +34,9 @@
     to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-.image-loader.is-loaded img {
-    opacity: 1;
-}
-
 .image-loader.is-loaded .image-loader-spinner {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    animation: none;
 }

@@ -19,7 +19,7 @@ function featuredCaseStudy({ project }) {
                         {caseStudyHeroLaptop && <source media="(min-width: 768px)" srcSet={caseStudyHeroLaptop} />}
                         {caseStudyHeroTablet && <source media="(min-width: 768px)" srcSet={caseStudyHeroTablet} />}
                         {caseStudyHeroMobile && <source srcSet={caseStudyHeroMobile} />}
-                        <img src={caseStudyHero} alt={caseStudyHeroAlt} fetchPriority="high" width="3000" height="2000" />
+                        <img loading="lazy" src={caseStudyHero} alt={caseStudyHeroAlt} width="3000" height="2000" />
                     </picture>
 
                 </div>
