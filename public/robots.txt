@@ -1,4 +1,6 @@
 User-agent: *
-Allow: /
 
+Allow: /
 Disallow: /react-demo/
+
+Sitemap: https://reuvenvergara.com/sitemap.xml
