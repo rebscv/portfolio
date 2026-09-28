@@ -9,7 +9,7 @@ function Footer() {
             <div className="std-wrapper">
                 
                 
-                <div className="grid-d-two-cols">
+                <div className="grid-xl-two-cols">
 
                     <div className="grid footer-text">
                         <h2 className="h1"><span className="title-eyebrow">Let's chat</span><span>Get in Touch</span></h2>
