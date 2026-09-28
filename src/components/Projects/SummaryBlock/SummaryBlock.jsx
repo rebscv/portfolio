@@ -2,7 +2,7 @@ import FadeIn from "../../../animations/FadeIn";
 import ImageLoader from "../../../components/UI/ImageLoader";
 import "./SummaryBlock.css";
 
-function SummaryBlock ({ bgClass, backgroundImage, titleEyebrow, title, text, image, imageAlt, imageWidth, imageHeight }) {
+function SummaryBlock ({ bgClass, backgroundImage, titleEyebrow, title, text, image, imageAlt, imageWidth, imageHeight, github, url, urlCta }) {
 
     return (
 
@@ -25,16 +25,16 @@ function SummaryBlock ({ bgClass, backgroundImage, titleEyebrow, title, text, im
 
                     <FadeIn direction="up" duration={1} delay={0.6}>
                         <div className="project-summary-img"><ImageLoader loading="lazy" src={image} alt={imageAlt} width={imageWidth} height={imageHeight} /></div>    
-                    </FadeIn>                     
+                    </FadeIn>
 
                 </div>
             </div>
 
             <div className="sml-wrapper no-padding-top t-center">              
                 
-                    <div className="project-summary-text grid">
-                        {Array.isArray(text) ? text.map((para, i) => <FadeIn key={i} direction="up" duration={1}><p>{para}</p></FadeIn>) : <FadeIn direction="up" duration={1}><p>{text}</p></FadeIn> }
-                    </div>
+                <div className="project-summary-text grid">
+                    {Array.isArray(text) ? text.map((para, i) => <FadeIn key={i} direction="up" duration={1}><p>{para}</p></FadeIn>) : <FadeIn direction="up" duration={1}><p>{text}</p></FadeIn> }
+                </div>
                                        
             </div>   
        

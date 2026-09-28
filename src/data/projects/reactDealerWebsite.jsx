@@ -169,7 +169,8 @@ const reactDealerWebsite = {
     image             : summaryImg,
     imageAlt          : "React Demo Mazda Dealership Website",
     imageWidth        : "1200",
-    imageHeight       : "800"
+    imageHeight       : "800",
+    urlCta            : "View Live Demo"
   },
 
   process : {
@@ -465,8 +466,6 @@ const reactDealerWebsite = {
     [
       "Get hands on and take a closer look at the finished React dealership demo, or explore the earlier versions to see how the project evolved from its initial component architecture into a fully realised responsive interface."
     ],
-    github            : "https://github.com/rebscv/react-dealership-homepage",
-    liveSite          : "https://reuvenvergara.com/react-demo/version-3",
     liveSiteBtn       : "View Live Demo",
     image             : livePreviewImg,
     imageAlt          : "Web Browser on top of Mazda MX-5 car on highway",

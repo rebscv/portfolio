@@ -67,7 +67,7 @@ function Project() {
                 <motion.div key={slug} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.35 }}>
 
                     {project.sections.map((section, index) => {
-                        const Component = componentMap[section.type]; if (!Component) return null; return ( <Component key={index} {...project[section.data]} /> );
+                        const Component = componentMap[section.type]; if (!Component) return null; return ( <Component key={index} {...project[section.data]} url={project.url} github={project.github} /> );
                     })}
 
                 </motion.div>

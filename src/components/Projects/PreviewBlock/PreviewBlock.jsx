@@ -4,7 +4,7 @@ import FadeIn from "../../../animations/FadeIn";
 
 import "./PreviewBlock.css";
 
-function PreviewBlock ({ title, titleEyebrow, text, wrapperClass, bgClass, backgroundImage, gridClass, image, imageAlt, imageWidth, imageHeight, github, liveSite, liveSiteBtn, versions = [] }) {
+function PreviewBlock ({ title, titleEyebrow, text, wrapperClass, bgClass, backgroundImage, gridClass, image, imageAlt, imageWidth, imageHeight, github, liveSite, liveSiteBtn, versions = [], url }) {
 
     return (
         <section className={`preview-block-content ${bgClass || 'dark-bg black-bg'}`} style={{backgroundImage: `url(${backgroundImage})`}}>
@@ -30,8 +30,8 @@ function PreviewBlock ({ title, titleEyebrow, text, wrapperClass, bgClass, backg
                             
                             <div className="btn-flex">
 
-                                {liveSite &&                                 
-                                    <Link className="btn btn-primary btn-full" to={liveSite} target="_blank">
+                                {url &&                                 
+                                    <Link className="btn btn-primary btn-full" to={url} target="_blank">
                                         <svg className="icon-website"><use xlinkHref="/icons.svg#icon-website"></use></svg>
                                         <span>{liveSiteBtn}</span>                                        
                                     </Link>                                

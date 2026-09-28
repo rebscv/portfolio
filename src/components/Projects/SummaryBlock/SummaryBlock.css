@@ -110,7 +110,6 @@
     background-color: #ffffff0f;
 }
 
-
 .project-summary-bg-img img {
     width: 100%;
 }
@@ -127,4 +126,13 @@
         font-weight: 600;
     }
     
+}
+
+@media (min-width:1024px) {
+
+    .project-summary .btn-outline svg {
+        font-size: 1.5em;
+    }
+
+
 }

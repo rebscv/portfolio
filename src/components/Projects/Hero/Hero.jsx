@@ -4,7 +4,7 @@ import ImageLoader from "../../../components/UI/ImageLoader";
 
 import "./Hero.css";
 
-function Hero ({ title, subtitle, image, imageAlt, imageMobile, imageTablet, imageDesktop, summaryImage, metadata, technologies, heroClass, summaryImageWidth, summaryImageHeight }) { 
+function Hero ({ title, subtitle, image, imageAlt, imageMobile, imageTablet, imageDesktop, summaryImage, metadata, technologies, heroClass, summaryImageWidth, summaryImageHeight, url, github }) { 
 
     const [imageLoaded, setImageLoaded] = useState(false);
     useEffect( () => { setImageLoaded(false); }, [image, imageTablet, imageMobile] );
@@ -41,14 +41,16 @@ function Hero ({ title, subtitle, image, imageAlt, imageMobile, imageTablet, ima
                                     <div className="hero-summary-img-screen">
                                         <ImageLoader src={summaryImage} width={summaryImageWidth} height={summaryImageHeight} alt={`${title} website preview`} />
                                     </div>
-                                </div>                            
+                                </div>
+                                
                             </div>
-                        )}
+                        )}   
+
 
                         <div className="hero-summary-details">
 
                             {metadata && 
-                                <div className="hero-summary-details-rows">
+                                <div className="hero-summary-details-rows t-center">
                                     {Object.entries(metadata).map(([key, value]) => (
                                         <div key={key} className="hero-summary-row">
                                             <div className="hero-summary-row-label">{labels[key]}</div>
@@ -59,7 +61,7 @@ function Hero ({ title, subtitle, image, imageAlt, imageMobile, imageTablet, ima
                             }
 
                             {technologies &&
-                                <div className="hero-summary-technologies">
+                                <div className="hero-summary-technologies t-center">
                                     <p className="hero-summary-technologies-head">Technologies</p>
                                     <ul>
                                         {technologies.map((tech) => (
@@ -68,8 +70,41 @@ function Hero ({ title, subtitle, image, imageAlt, imageMobile, imageTablet, ima
                                     </ul>
                                 </div>
                             }
+
+                            {github && 
+                                <div className="hero-summary-cta">
+                                    <div className="btn-flex">
+
+                                        <div>
+                                            <a href={url} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                                                <svg className="icon-website"><use xlinkHref="/icons.svg#icon-website"></use></svg><span>Live Demo</span>
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <a href={github} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                                                <svg className="icon-github"><use xlinkHref="/icons.svg#icon-github"></use></svg><span>Github</span>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            }
+
+                            {!github && url && (
+                                <div className="hero-summary-cta">
+                                    <a href={url} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                                        <svg className="icon-website"><use xlinkHref="/icons.svg#icon-website"></use></svg><span>View Live Demo</span>
+                                    </a>
+                                </div>
+                            )}
                             
                         </div>
+
+
+
+
+
 
                     </div>
                 </div>

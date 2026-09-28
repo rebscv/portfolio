@@ -198,7 +198,6 @@
     display: grid;
     gap: 8px;
     z-index: 4;
-    position: relative;
     position: absolute;
     left: 0;
     top: 84px;
@@ -223,7 +222,6 @@
 
     .hero-banner-title {
         top: 96px;
-        display: grid;
         gap: 24px;
     }
 
@@ -250,6 +248,26 @@
         font-size: 6em;
     }
 
+}
+
+/* =========================
+   Hero - CTA
+========================= */
+
+.hero-summary-cta {
+    padding-top: 16px;
+}
+
+.hero-summary-cta svg {
+    max-width: none;
+}
+
+@media (min-width:1024px) {
+
+    .hero-summary-cta {
+        padding-top: 32px;
+    }
+        
 }
 
 /* =========================

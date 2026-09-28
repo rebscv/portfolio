@@ -1,7 +1,7 @@
 .btn, a.btn {
   padding: 12px 20px;
   border: none;
-  border-radius: 24px;
+  border-radius: 32px;
   cursor: pointer;
   transition: ease 0.4s all;
   font-size: 1em;
@@ -48,6 +48,10 @@
   margin-top: -1px;
 }
 
+.t-center .btn-flex {
+  justify-content: center;
+}
+
 /* Buttons on Dark BG */
 .dark-bg .btn-primary, .dark-bg a.btn-primary {
   color: var(--clr-black);
@@ -80,27 +84,24 @@
   width: 100%;
 }
 
-@media (max-width:575px) {
-  
-  .btn:not(.btn-underline) {
-    width: 100%;
-    text-align: center;
-  }
-
-}
-
 .btn-flex {
   display: flex;
   gap: 16px;
 }
 
-@media (max-width:575px) {
+@media (max-width:479px) {
 
   .btn-flex {
     flex-direction: column;
   }
 
   .btn-flex .btn {
+    text-align: center;
+  }
+
+  .btn:not(.btn-underline) {
+    width: 100%;
+    max-width: none;
     text-align: center;
   }
     
